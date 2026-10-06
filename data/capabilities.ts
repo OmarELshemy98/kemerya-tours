@@ -1,3 +1,5 @@
+import { datasetTranslations, type Locale } from "@/lib/i18n";
+
 export type Capability = {
   title: string;
   description: string;
@@ -92,3 +94,14 @@ export const capabilities = [
     icon: "puzzle" as const,
   },
 ] as const;
+
+export function getCapabilities(locale: Locale) {
+  if (locale === "en") return capabilities;
+  const copy = datasetTranslations[locale].capabilities;
+  if (copy.length !== capabilities.length) throw new Error(`Incomplete capabilities translation: ${locale}`);
+  return capabilities.map((item, index) => ({
+    ...item,
+    title: copy[index][0],
+    description: copy[index][1],
+  }));
+}

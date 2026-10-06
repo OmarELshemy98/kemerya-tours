@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { business } from "@/data/business";
+import type { UiTranslations } from "@/lib/i18n";
 
 type WhoKemeryaProps = {
+  ui: UiTranslations;
   copy: {
     eyebrow: string;
     title: string;
@@ -13,7 +15,7 @@ type WhoKemeryaProps = {
   };
 };
 
-export function WhoKemerya({ copy }: WhoKemeryaProps) {
+export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
   return (
     <section className="section" id="who-kemerya">
       <Container>
@@ -32,7 +34,7 @@ export function WhoKemerya({ copy }: WhoKemeryaProps) {
           </div>
 
           <div className="who-kemerya__cta">
-            <Button href={business.partnerCtaUrl} external variant="gold" aria-label="Partner with Kemerya Tours">
+            <Button href={business.partnerCtaUrl} external variant="gold" aria-label={ui.partnerWithKemeryaTours}>
               {copy.cta}
             </Button>
           </div>

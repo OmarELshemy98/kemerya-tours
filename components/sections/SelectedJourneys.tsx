@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import type { UiTranslations } from "@/lib/i18n";
 
 type Journey = {
   title: string;
@@ -10,6 +11,7 @@ type Journey = {
 };
 
 type SelectedJourneysProps = {
+  ui: UiTranslations;
   journeys: readonly Journey[];
   copy: {
     eyebrow: string;
@@ -19,7 +21,7 @@ type SelectedJourneysProps = {
   };
 };
 
-export function SelectedJourneys({ journeys, copy }: SelectedJourneysProps) {
+export function SelectedJourneys({ journeys, copy, ui }: SelectedJourneysProps) {
   return (
     <section className="section" id="journeys">
       <Container>
@@ -39,9 +41,9 @@ export function SelectedJourneys({ journeys, copy }: SelectedJourneysProps) {
                 <h3>{journey.title}</h3>
                 <p>{journey.description}</p>
                 <div className="journey-card__meta">
-                  <span>Private</span>
+                  <span>{ui.private}</span>
                   <a href={journey.href} className="inline-link" target="_blank" rel="noopener noreferrer">
-                    Explore
+                    {ui.explore}
                   </a>
                 </div>
               </div>

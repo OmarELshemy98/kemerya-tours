@@ -1,13 +1,14 @@
 import { notFound } from "next/navigation";
 import { business } from "@/data/business";
-import { journeys } from "@/data/journeys";
+import { getJourneys } from "@/data/journeys";
 import { socialLinks } from "@/data/social";
-import { testimonials } from "@/data/testimonials";
-import { clientTypes } from "@/data/clientTypes";
-import { whyPartnerItems } from "@/data/whyPartner";
-import { capabilities } from "@/data/capabilities";
-import { advantages } from "@/data/advantages";
-import { commercialCategories } from "@/data/commercialCategories";
+import { getTestimonials } from "@/data/testimonials";
+import { getClientTypes } from "@/data/clientTypes";
+import { getWhyPartner } from "@/data/whyPartner";
+import { getCapabilities } from "@/data/capabilities";
+import { getAdvantages } from "@/data/advantages";
+import { getCommercialCategories } from "@/data/commercialCategories";
+import { getPartnershipSteps } from "@/data/partnershipSteps";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
@@ -23,7 +24,12 @@ import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { CommercialCategories } from "@/components/sections/CommercialCategories";
 import { B2BContactForm } from "@/components/sections/B2BContactForm";
 import { ConversionCTA } from "@/components/sections/ConversionCTA";
-import { locales, translations, type Locale } from "@/lib/i18n";
+import {
+  locales,
+  translations,
+  uiTranslations,
+  type Locale,
+} from "@/lib/i18n";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -42,6 +48,7 @@ export default async function LocalePage({
 
   const safeLocale = locale as Locale;
   const copy = translations[safeLocale];
+  const ui = uiTranslations[safeLocale];
   const schema = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
@@ -56,8 +63,7 @@ export default async function LocalePage({
     },
     sameAs: socialLinks.map((link) => link.href),
     areaServed: "Egypt",
-    description:
-      "White-label Egypt operations, private journeys, and seamless on-ground support for international travel partners.",
+    description: copy.meta.description,
   };
 
   return (
@@ -67,32 +73,45 @@ export default async function LocalePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <div className="page-shell" dir={safeLocale === "ar" ? "rtl" : "ltr"}>
-        <Header locale={safeLocale} copy={copy.nav} />
+        <Header locale={safeLocale} copy={copy.nav} ui={ui} />
         <main id="main-content">
-          <Hero copy={copy.hero} />
+          <Hero copy={copy.hero} ui={ui} />
           <TrustBar
+            locale={safeLocale}
             items={copy.trust.items}
             copy={{
               eyebrow: copy.trust.eyebrow,
               statement: copy.trust.statement,
+              sectionLabel: ui.businessProof,
             }}
           />
-          <WhoKemerya copy={copy.whoKemerya} />
-          <ClientTypes copy={copy.clientTypes} items={clientTypes} />
-          <WhyPartner copy={copy.whyPartner} items={whyPartnerItems} />
-          <Capabilities copy={copy.capabilities} items={capabilities} />
-          <KemeryaAdvantage copy={copy.advantages} items={advantages} />
-          <KemeryaDifference copy={copy.partnership} />
+          <WhoKemerya copy={copy.whoKemerya} ui={ui} />
+          <ClientTypes copy={copy.clientTypes} items={getClientTypes(safeLocale)} />
+          <WhyPartner copy={copy.whyPartner} items={getWhyPartner(safeLocale)} />
+          <Capabilities copy={copy.capabilities} items={getCapabilities(safeLocale)} />
+          <KemeryaAdvantage copy={copy.advantages} items={getAdvantages(safeLocale)} />
+          <KemeryaDifference
+            copy={copy.partnership}
+            steps={getPartnershipSteps(safeLocale)}
+          />
           <CommercialCategories
             copy={copy.categories}
-            items={commercialCategories}
+            items={getCommercialCategories(safeLocale)}
+            ui={ui}
           />
-          <SelectedJourneys journeys={journeys} copy={copy.journeys} />
-          <Testimonials items={testimonials} copy={copy.testimonials} />
-          <B2BContactForm copy={copy.contact} />
-          <ConversionCTA copy={copy.conversion} />
+          <SelectedJourneys
+            journeys={getJourneys(safeLocale)}
+            copy={copy.journeys}
+            ui={ui}
+          />
+          <Testimonials
+            items={getTestimonials(safeLocale)}
+            copy={copy.testimonials}
+          />
+          <B2BContactForm copy={copy.contact} ui={ui} />
+          <ConversionCTA copy={copy.conversion} ui={ui} />
         </main>
-        <Footer locale={safeLocale} copy={copy.footer} />
+        <Footer locale={safeLocale} copy={copy.footer} ui={ui} />
       </div>
     </>
   );

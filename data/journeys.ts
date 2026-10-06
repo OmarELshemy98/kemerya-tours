@@ -1,3 +1,5 @@
+import { datasetTranslations, type Locale } from "@/lib/i18n";
+
 export const journeys = [
   {
     title: "Cairo & Giza Private Journey",
@@ -32,3 +34,14 @@ export const journeys = [
     href: "https://www.kemeryatours.com",
   },
 ] as const;
+
+export function getJourneys(locale: Locale) {
+  if (locale === "en") return journeys;
+  const copy = datasetTranslations[locale].journeys;
+  if (copy.length !== journeys.length) throw new Error(`Incomplete journeys translation: ${locale}`);
+  return journeys.map((item, index) => ({
+    ...item,
+    title: copy[index][0],
+    description: copy[index][1],
+  }));
+}

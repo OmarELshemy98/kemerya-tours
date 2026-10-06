@@ -1,3 +1,5 @@
+import { datasetTranslations, type Locale } from "@/lib/i18n";
+
 export type Advantage = {
   title: string;
   description: string;
@@ -38,3 +40,14 @@ export const advantages = [
     icon: "brand" as const,
   },
 ] as const;
+
+export function getAdvantages(locale: Locale) {
+  if (locale === "en") return advantages;
+  const copy = datasetTranslations[locale].advantages;
+  if (copy.length !== advantages.length) throw new Error(`Incomplete advantages translation: ${locale}`);
+  return advantages.map((item, index) => ({
+    ...item,
+    title: copy[index][0],
+    description: copy[index][1],
+  }));
+}

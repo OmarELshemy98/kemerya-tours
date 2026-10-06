@@ -1,3 +1,5 @@
+import { datasetTranslations, type Locale } from "@/lib/i18n";
+
 export type WhyPartnerItem = {
   title: string;
   description: string;
@@ -55,3 +57,14 @@ export const whyPartnerItems = [
       "Quarterly reviews, new product development, and feedback-driven improvements — together.",
   },
 ] as const;
+
+export function getWhyPartner(locale: Locale) {
+  if (locale === "en") return whyPartnerItems;
+  const copy = datasetTranslations[locale].whyPartner;
+  if (copy.length !== whyPartnerItems.length) throw new Error(`Incomplete partner benefits translation: ${locale}`);
+  return whyPartnerItems.map((item, index) => ({
+    ...item,
+    title: copy[index][0],
+    description: copy[index][1],
+  }));
+}

@@ -1,8 +1,8 @@
 import { Container } from "@/components/ui/Container";
-import { partnershipSteps } from "@/data/partnershipSteps";
 import type { PartnershipStep } from "@/data/partnershipSteps";
 
 type KemeryaDifferenceProps = {
+  steps: readonly PartnershipStep[];
   copy: {
     eyebrow: string;
     title: string;
@@ -10,9 +10,7 @@ type KemeryaDifferenceProps = {
   };
 };
 
-export function KemeryaDifference({ copy }: KemeryaDifferenceProps) {
-  const steps: readonly PartnershipStep[] = partnershipSteps;
-
+export function KemeryaDifference({ copy, steps }: KemeryaDifferenceProps) {
   return (
     <section className="section" id="partnership">
       <Container>

@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { Container } from "@/components/ui/Container";
+import type { Locale } from "@/lib/i18n";
 
 type TrustBarProps = {
+  locale: Locale;
   items: ReadonlyArray<{ value: string; label: string }>;
-  copy?: {
+  copy: {
     eyebrow: string;
     statement: string;
+    sectionLabel: string;
   };
 };
 
@@ -23,11 +26,11 @@ function parseMetric(value: string) {
     numericValue,
     prefix,
     suffix,
-    hasDecimal: value.includes(".") || value.includes(",") || numericValue % 1 !== 0,
+    hasDecimal: numericText.includes(".") || numericValue % 1 !== 0,
   };
 }
 
-function AnimatedMetric({ value }: { value: string }) {
+function AnimatedMetric({ value, locale }: { value: string; locale: Locale }) {
   const [displayValue, setDisplayValue] = useState(0);
   const { numericValue, prefix, suffix, hasDecimal } = parseMetric(value);
 
@@ -52,15 +55,20 @@ function AnimatedMetric({ value }: { value: string }) {
     return () => window.cancelAnimationFrame(frameId);
   }, [numericValue]);
 
-  const formatted = hasDecimal
-    ? new Intl.NumberFormat("en-US", {
+  const numberFormat = new Intl.NumberFormat(
+    locale,
+    hasDecimal
+      ? {
         minimumFractionDigits: 1,
         maximumFractionDigits: 1,
-      }).format(displayValue)
-    : new Intl.NumberFormat("en-US").format(Math.round(displayValue));
+      }
+      : undefined,
+  );
+  const formatted = numberFormat.format(displayValue);
+  const accessibleValue = `${prefix}${numberFormat.format(numericValue)}${suffix}`;
 
   return (
-    <span className="trust-item__value trust-item__value--counting" aria-label={value}>
+    <span className="trust-item__value trust-item__value--counting" aria-label={accessibleValue}>
       {prefix}
       {formatted}
       {suffix}
@@ -68,20 +76,20 @@ function AnimatedMetric({ value }: { value: string }) {
   );
 }
 
-export function TrustBar({ items, copy }: TrustBarProps) {
+export function TrustBar({ locale, items, copy }: TrustBarProps) {
   return (
-    <section className="trust-bar" aria-label="Business proof">
+    <section className="trust-bar" aria-label={copy.sectionLabel}>
       <Container>
         <div className="trust-bar__wrap">
               <div className="trust-bar__statement">
-            <p className="eyebrow">{copy?.eyebrow ?? "PROVEN ON THE GROUND"}</p>
-            <h3>{copy?.statement ?? "Boutique local operator with verified results across Egypt since 2016."}</h3>
+            <p className="eyebrow">{copy.eyebrow}</p>
+            <h3>{copy.statement}</h3>
           </div>
 
           <div className="trust-bar__inner">
             {items.map((item) => (
               <div key={item.label} className="trust-item">
-                <AnimatedMetric value={item.value} />
+                <AnimatedMetric value={item.value} locale={locale} />
                 <span className="trust-item__label">{item.label}</span>
               </div>
             ))}

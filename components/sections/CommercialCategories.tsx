@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { business } from "@/data/business";
 import type { CommercialCategory } from "@/data/commercialCategories";
+import type { UiTranslations } from "@/lib/i18n";
 
 type CommercialCategoriesProps = {
+  ui: UiTranslations;
   copy: {
     eyebrow: string;
     title: string;
@@ -14,7 +16,7 @@ type CommercialCategoriesProps = {
   items: readonly CommercialCategory[];
 };
 
-export function CommercialCategories({ copy, items }: CommercialCategoriesProps) {
+export function CommercialCategories({ copy, items, ui }: CommercialCategoriesProps) {
   return (
     <section className="section" id="categories">
       <Container>
@@ -39,7 +41,7 @@ export function CommercialCategories({ copy, items }: CommercialCategoriesProps)
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Explore →
+                  {ui.explore} →
                 </a>
               </div>
             </article>

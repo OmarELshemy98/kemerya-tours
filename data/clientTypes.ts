@@ -1,3 +1,5 @@
+import { datasetTranslations, type Locale } from "@/lib/i18n";
+
 export type ClientType = {
   title: string;
   description: string;
@@ -50,3 +52,14 @@ export const clientTypes = [
     icon: "pyramid" as const,
   },
 ] as const;
+
+export function getClientTypes(locale: Locale) {
+  if (locale === "en") return clientTypes;
+  const copy = datasetTranslations[locale].clientTypes;
+  if (copy.length !== clientTypes.length) throw new Error(`Incomplete client type translation: ${locale}`);
+  return clientTypes.map((item, index) => ({
+    ...item,
+    title: copy[index][0],
+    description: copy[index][1],
+  }));
+}

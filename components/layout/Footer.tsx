@@ -4,10 +4,11 @@ import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
 import { Container } from "@/components/ui/Container";
 import { SocialIcon } from "@/components/ui/SocialIcon";
-import type { Locale } from "@/lib/i18n";
+import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type FooterProps = {
   locale: Locale;
+  ui: UiTranslations;
   copy: {
     blurb: string;
     navTitle: string;
@@ -23,20 +24,21 @@ type FooterProps = {
   };
 };
 
-export function Footer({ locale, copy }: FooterProps) {
+export function Footer({ locale, copy, ui }: FooterProps) {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="site-footer">
+    <footer className="site-footer" role="contentinfo">
       <Container>
         <div className="footer-compact">
-          {/* Brand */}
           <div className="footer-brand">
             <Link
               href={`/${locale}`}
               className="brand brand--footer"
-              aria-label="Kemerya Tours home"
+              aria-label={ui.kemeryaToursHome}
             >
               <Image
-                src="/images/kemerya-logo.webP"
+                src="/images/kemerya-logo.svg"
                 alt="Kemerya Tours"
                 width={220}
                 height={72}
@@ -46,18 +48,28 @@ export function Footer({ locale, copy }: FooterProps) {
             <p className="footer-tagline">{copy.business.headline}</p>
           </div>
 
-          {/* Contact */}
+          <nav className="footer-nav" aria-label={copy.navTitle}>
+            <h3>{copy.navTitle}</h3>
+            <ul className="footer-nav__list">
+              <li>
+                <Link href={`/${locale}`}>{business.name}</Link>
+              </li>
+              <li>
+                <Link href={`/${locale}#contact`}>{copy.contactTitle}</Link>
+              </li>
+            </ul>
+          </nav>
+
           <div className="footer-contact">
             <h3>{copy.contactTitle}</h3>
-            <address>
+            <address className="footer-contact__details">
               <span>{copy.business.address}</span>
               <a href={`tel:${business.tel}`}>{business.phone}</a>
               <a href={`mailto:${business.email}`}>{business.email}</a>
             </address>
           </div>
 
-          {/* Social icons */}
-          <div className="footer-social">
+          <div className="footer-social" aria-label={ui.socialMediaLinks}>
             {socialLinks.map((link) => (
               <a
                 key={link.label}
@@ -73,15 +85,22 @@ export function Footer({ locale, copy }: FooterProps) {
           </div>
         </div>
 
-        {/* Bottom meta + neon credit */}
         <div className="footer-bottom">
-          <div className="footer-bottom__links">
-            <a href={`${business.website}/privacy`}>{copy.policy}</a>
-            <span className="footer-bottom__separator">·</span>
-            <a href={`${business.website}/terms`}>{copy.terms}</a>
+          <div className="footer-bottom__links" aria-label={ui.legalLinks}>
+            <a href={`${business.website}/privacy`} target="_blank" rel="noreferrer noopener">
+              {copy.policy}
+            </a>
+            <span className="footer-bottom__separator" aria-hidden="true">
+              ·
+            </span>
+            <a href={`${business.website}/terms`} target="_blank" rel="noreferrer noopener">
+              {copy.terms}
+            </a>
           </div>
 
-          <div className="footer-credit neon-text">{copy.developer}</div>
+          <p className="footer-credit neon-text">
+            © {currentYear} {business.name}. {copy.developer}
+          </p>
         </div>
       </Container>
     </footer>

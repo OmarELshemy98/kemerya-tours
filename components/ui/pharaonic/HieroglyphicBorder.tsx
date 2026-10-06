@@ -8,10 +8,14 @@ import type { SVGProps } from "react";
 export function HieroglyphicBorder({
   variant = "horizontal",
   className,
+  style,
   ...props
 }: SVGProps<SVGSVGElement> & {
   variant?: "horizontal" | "vertical";
 }) {
+  const isVertical = variant === "vertical";
+  const svgStyle = isVertical ? { ...style, transform: "rotate(90deg)" } : style;
+
   // Motifs inspired by hieroglyphic forms — stylised, not literal
   const motifs = [
     // Ankh (life symbol) simplified
@@ -30,10 +34,11 @@ export function HieroglyphicBorder({
 
   return (
     <svg
-      viewBox="0 0 480 24"
+      viewBox={isVertical ? "0 0 24 480" : "0 0 480 24"}
       role="presentation"
       aria-hidden="true"
       className={className}
+      style={svgStyle}
       {...props}
     >
       {motifs.map((d, i) => (

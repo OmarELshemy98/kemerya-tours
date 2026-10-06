@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import type { Locale } from "@/lib/i18n";
+import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type LanguageSwitcherProps = {
   locale: Locale;
+  ui: UiTranslations;
 };
 
 const languageOptions: ReadonlyArray<{
@@ -20,6 +22,10 @@ const languageOptions: ReadonlyArray<{
   { code: "fr", label: "Français", native: "Français", href: "/fr", flag: "fr" },
   { code: "it", label: "Italiano", native: "Italiano", href: "/it", flag: "it" },
   { code: "es", label: "Español", native: "Español", href: "/es", flag: "es" },
+  { code: "de", label: "Deutsch", native: "Deutsch", href: "/de", flag: "de" },
+  { code: "pt", label: "Português", native: "Português", href: "/pt", flag: "pt" },
+  { code: "nl", label: "Nederlands", native: "Nederlands", href: "/nl", flag: "nl" },
+  { code: "zh", label: "中文", native: "中文", href: "/zh", flag: "zh" },
 ];
 
 function FlagSvg({ country }: { country: string }) {
@@ -29,6 +35,10 @@ function FlagSvg({ country }: { country: string }) {
     fr: "#0055A4",
     it: "#009246",
     es: "#C60B1E",
+    de: "#000000",
+    pt: "#006600",
+    nl: "#AE1C28",
+    zh: "#D12A2A",
   };
 
   const color = map[country] ?? "#ffffff";
@@ -73,13 +83,46 @@ function FlagSvg({ country }: { country: string }) {
           <rect y="9" width="24" height="6" fill="#C60B1E" />
         </>
       )}
+      {(country === "de" || country === "pt" || country === "nl" || country === "zh") && (
+        <>
+          <rect width="24" height="24" fill={color} />
+          {country === "de" && (
+            <>
+              <rect y="0" width="24" height="8" fill="#000" />
+              <rect y="8" width="24" height="8" fill="#DD0000" />
+              <rect y="16" width="24" height="8" fill="#FFCE00" />
+            </>
+          )}
+          {country === "pt" && (
+            <>
+              <rect width="8" height="24" fill="#006600" />
+              <rect x="8" width="8" height="24" fill="#FFCC00" />
+              <rect x="16" width="8" height="24" fill="#006600" />
+            </>
+          )}
+          {country === "nl" && (
+            <>
+              <rect y="0" width="24" height="8" fill="#AE1C28" />
+              <rect y="8" width="24" height="8" fill="#fff" />
+              <rect y="16" width="24" height="8" fill="#21468B" />
+            </>
+          )}
+          {country === "zh" && (
+            <>
+              <rect width="24" height="24" fill="#D12A2A" />
+              <circle cx="12" cy="12" r="4" fill="#FFD466" />
+            </>
+          )}
+        </>
+      )}
     </svg>
   );
 }
 
-export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
+export function LanguageSwitcher({ locale, ui }: LanguageSwitcherProps) {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (!open) return;
@@ -112,7 +155,7 @@ export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
         className="lang-trigger"
         aria-haspopup="listbox"
         aria-expanded={open}
-        aria-label="Select language"
+        aria-label={ui.selectLanguage}
         onClick={() => setOpen((current) => !current)}
       >
         <FlagSvg country={selected.flag} />
@@ -122,14 +165,21 @@ export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
         </span>
       </button>
 
-      <div className={`lang-menu ${open ? "is-open" : ""}`} role="listbox" aria-label="Language selector menu">
+      <div className={`lang-menu ${open ? "is-open" : ""}`} role="listbox" aria-label={ui.languageSelectorMenu}>
         {languageOptions.map((option) => (
           <Link
             key={option.code}
             href={option.href}
             className={`lang-option ${option.code === locale ? "is-active" : ""}`}
             aria-current={option.code === locale ? "page" : undefined}
-            onClick={() => setOpen(false)}
+            onClick={(event) => {
+              setOpen(false);
+              const suffix = `${window.location.search}${window.location.hash}`;
+              if (suffix) {
+                event.preventDefault();
+                router.push(`${option.href}${suffix}`);
+              }
+            }}
           >
             <FlagSvg country={option.flag} />
             <span className="lang-option__meta">

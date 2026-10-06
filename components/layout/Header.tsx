@@ -7,10 +7,11 @@ import { business } from "@/data/business";
 import { LanguageSwitcher } from "@/components/navigation/LanguageSwitcher";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import type { Locale } from "@/lib/i18n";
+import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type HeaderProps = {
   locale: Locale;
+  ui: UiTranslations;
   copy: {
     capabilities: string;
     categories: string;
@@ -21,7 +22,7 @@ type HeaderProps = {
   };
 };
 
-export function Header({ locale, copy }: HeaderProps) {
+export function Header({ locale, copy, ui }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -43,15 +44,15 @@ export function Header({ locale, copy }: HeaderProps) {
   return (
     <>
       <a href="#main-content" className="skip-link">
-        Skip to main content
+        {ui.skipToMainContent}
       </a>
 
       <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
         <Container>
           <div className="navbar">
-            <Link href={`/${locale}`} className="brand" aria-label="Kemerya Tours home">
+            <Link href={`/${locale}`} className="brand" aria-label={ui.kemeryaToursHome}>
               <Image
-                src="/images/kemerya-logo.webP"
+                src="/images/kemerya-logo.svg"
                 alt="Kemerya Tours"
                 width={220}
                 height={72}
@@ -60,7 +61,7 @@ export function Header({ locale, copy }: HeaderProps) {
               />
             </Link>
 
-            <nav aria-label="Main navigation" className="desktop-nav">
+            <nav aria-label={ui.mainNavigation} className="desktop-nav">
               <ul className="nav-links">
                 {navItems.map((item) => (
                   <li key={item.href}>
@@ -71,8 +72,8 @@ export function Header({ locale, copy }: HeaderProps) {
             </nav>
 
             <div className="nav-actions">
-              <LanguageSwitcher locale={locale} />
-                            <Button href={business.partnerCtaUrl} variant="dark" external aria-label="Contact Kemerya Tours">
+              <LanguageSwitcher locale={locale} ui={ui} />
+              <Button href={business.partnerCtaUrl} variant="dark" external aria-label={ui.contactKemeryaTours}>
                 {copy.contact}
               </Button>
               <button
@@ -80,7 +81,7 @@ export function Header({ locale, copy }: HeaderProps) {
                 className="menu-toggle"
                 aria-expanded={menuOpen}
                 aria-controls="mobile-menu"
-                aria-label={menuOpen ? "Close main menu" : "Open main menu"}
+                aria-label={menuOpen ? ui.closeMainMenu : ui.openMainMenu}
                 onClick={() => setMenuOpen((value) => !value)}
               >
                 <span />
@@ -93,7 +94,7 @@ export function Header({ locale, copy }: HeaderProps) {
           <nav
             id="mobile-menu"
             className={`mobile-menu ${menuOpen ? "is-open" : ""}`}
-            aria-label="Mobile navigation"
+            aria-label={ui.mobileNavigation}
           >
             <ul>
               {navItems.map((item) => (

@@ -1,3 +1,5 @@
+import { datasetTranslations, type Locale } from "@/lib/i18n";
+
 export type CommercialCategory = {
   title: string;
   description: string;
@@ -39,3 +41,14 @@ export const commercialCategories: readonly CommercialCategory[] = [
     href: "https://www.kemeryatours.com/nile",
   },
 ] as const;
+
+export function getCommercialCategories(locale: Locale) {
+  if (locale === "en") return commercialCategories;
+  const copy = datasetTranslations[locale].commercialCategories;
+  if (copy.length !== commercialCategories.length) throw new Error(`Incomplete category translation: ${locale}`);
+  return commercialCategories.map((item, index) => ({
+    ...item,
+    title: copy[index][0],
+    description: copy[index][1],
+  }));
+}

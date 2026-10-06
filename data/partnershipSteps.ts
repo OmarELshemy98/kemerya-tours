@@ -1,3 +1,5 @@
+import { datasetTranslations, type Locale } from "@/lib/i18n";
+
 export type PartnershipStep = {
   step: string;
   title: string;
@@ -36,3 +38,14 @@ export const partnershipSteps = [
       "Continuous feedback loop, quarterly reviews, and evolving product development together.",
   },
 ] as const;
+
+export function getPartnershipSteps(locale: Locale) {
+  if (locale === "en") return partnershipSteps;
+  const copy = datasetTranslations[locale].partnershipSteps;
+  if (copy.length !== partnershipSteps.length) throw new Error(`Incomplete partnership steps translation: ${locale}`);
+  return partnershipSteps.map((item, index) => ({
+    ...item,
+    title: copy[index][0],
+    description: copy[index][1],
+  }));
+}

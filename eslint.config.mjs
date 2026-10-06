@@ -12,6 +12,13 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Ignore temporary repair/helper scripts that are not part of the app source.
+    "**/*.js",
+    "**/*.cjs",
+    "**/fix_*.js",
+    "**/check_*.js",
+    "**/find_*.js",
+    "**/verify.js",
   ]),
 ]);
 

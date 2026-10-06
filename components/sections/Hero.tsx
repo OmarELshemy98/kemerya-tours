@@ -2,8 +2,10 @@ import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import type { UiTranslations } from "@/lib/i18n";
 
 type HeroProps = {
+  ui: UiTranslations;
   copy: {
     eyebrow: string;
     title: readonly string[];
@@ -14,13 +16,13 @@ type HeroProps = {
   };
 };
 
-export function Hero({ copy }: HeroProps) {
+export function Hero({ copy, ui }: HeroProps) {
   return (
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero__image">
         <Image
           src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1800&q=80"
-          alt="Private Egypt travel experience near the pyramids"
+          alt={ui.heroImageAlt}
           fill
           priority
           sizes="100vw"
@@ -74,10 +76,10 @@ export function Hero({ copy }: HeroProps) {
           <p className="hero__lead">{copy.subtitle}</p>
 
                     <div className="hero__actions">
-            <Button href={business.partnerCtaUrl} external variant="primary" aria-label="Become a partner with Kemerya Tours">
+            <Button href={business.partnerCtaUrl} external variant="primary" aria-label={ui.becomePartnerKemeryaTours}>
               {copy.primary}
             </Button>
-            <Button href={business.website} external variant="secondary" aria-label="Visit the Kemerya homepage">
+            <Button href={business.website} external variant="secondary" aria-label={ui.visitKemeryaHomepage}>
               {copy.secondary}
             </Button>
           </div>

@@ -2,8 +2,10 @@ import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import type { UiTranslations } from "@/lib/i18n";
 
 type TailorMadeCTAProps = {
+  ui: UiTranslations;
   copy: {
     eyebrow: string;
     title: readonly string[];
@@ -13,7 +15,7 @@ type TailorMadeCTAProps = {
   };
 };
 
-export function TailorMadeCTA({ copy }: TailorMadeCTAProps) {
+export function TailorMadeCTA({ copy, ui }: TailorMadeCTAProps) {
   return (
     <section className="section">
       <Container>
@@ -21,7 +23,7 @@ export function TailorMadeCTA({ copy }: TailorMadeCTAProps) {
           <div className="cta-panel__image">
             <Image
               src="https://images.unsplash.com/photo-1505761671935-60eb70fe6ed4?auto=format&fit=crop&w=1800&q=80"
-              alt="Cinematic view of Egypt and the Nile"
+              alt={ui.nileImageAlt}
               fill
               sizes="(max-width: 768px) 100vw, 60vw"
             />
@@ -38,7 +40,7 @@ export function TailorMadeCTA({ copy }: TailorMadeCTAProps) {
             </h2>
             <p>{copy.description}</p>
             <div className="cta-panel__actions">
-              <Button href={business.ctaUrl} external variant="primary" aria-label="Contact Kemerya Tours">
+              <Button href={business.ctaUrl} external variant="primary" aria-label={ui.contactKemeryaTours}>
                 {copy.primary}
               </Button>
               <Button href="tel:+201275050450" variant="light">
