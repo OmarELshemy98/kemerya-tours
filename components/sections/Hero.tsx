@@ -21,7 +21,7 @@ export function Hero({ copy, ui }: HeroProps) {
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero__image">
         <Image
-          src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1800&q=80"
+                src="https://images.unsplash.com/photo-esxEOZJu4ug?auto=format&fit=crop&w=1800&q=80"
           alt={ui.heroImageAlt}
           fill
           priority

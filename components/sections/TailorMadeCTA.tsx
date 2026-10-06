@@ -22,7 +22,7 @@ export function TailorMadeCTA({ copy, ui }: TailorMadeCTAProps) {
         <div className="cta-panel">
           <div className="cta-panel__image">
             <Image
-              src="https://images.unsplash.com/photo-1505761671935-60eb70fe6ed4?auto=format&fit=crop&w=1800&q=80"
+                    src="https://images.unsplash.com/photo-2bgirUct1MU?auto=format&fit=crop&w=1800&q=80"
               alt={ui.nileImageAlt}
               fill
               sizes="(max-width: 768px) 100vw, 60vw"

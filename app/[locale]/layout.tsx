@@ -85,9 +85,9 @@ export async function generateMetadata({
         zh: "zh_CN",
       }[safeLocale],
       type: "website",
-      images: [
+            images: [
         {
-          url: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=80",
+          url: "https://images.unsplash.com/photo-1k7JC31SRyI?auto=format&fit=crop&w=1200&q=80",
           width: 1200,
           height: 630,
           alt: uiTranslations[safeLocale].heroImageAlt,
@@ -98,8 +98,8 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: copy.meta.title,
       description: copy.meta.description,
-      images: [
-        "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=80",
+            images: [
+        "https://images.unsplash.com/photo-1k7JC31SRyI?auto=format&fit=crop&w=1200&q=80",
       ],
     },
     other: {

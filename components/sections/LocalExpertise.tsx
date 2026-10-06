@@ -22,7 +22,7 @@ export function LocalExpertise({ copy, ui }: LocalExpertiseProps) {
         <div className="story-layout">
           <div className="story-photo">
             <Image
-              src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80"
+                    src="https://images.unsplash.com/photo-8LbpYRX-Nlg?auto=format&fit=crop&w=1200&q=80"
               alt={ui.localGuideImageAlt}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

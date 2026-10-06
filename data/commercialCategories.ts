@@ -13,7 +13,7 @@ export const commercialCategories: readonly CommercialCategory[] = [
     description:
       "Curated city experiences in Cairo, Alexandria, and Luxor — heritage sites, bazaars, and cultural immersion for urban travelers.",
     image:
-      "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-2bgirUct1MU?auto=format&fit=crop&w=900&q=80",
     href: "https://www.kemeryatours.com/urban",
   },
   {
@@ -21,7 +21,7 @@ export const commercialCategories: readonly CommercialCategory[] = [
     description:
       "Deep cultural journeys with local communities, Egyptologist guides, and authentic experiences across Egypt's historic heartland.",
     image:
-      "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-ycZRsz3aNyE?auto=format&fit=crop&w=900&q=80",
     href: "https://www.kemeryatours.com/immersive",
   },
   {
@@ -29,7 +29,7 @@ export const commercialCategories: readonly CommercialCategory[] = [
     description:
       "Red Sea and Mediterranean coastlines — beach retreats, diving, and seaside relaxation with Egyptian hospitality.",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-JIRsG1pmA7U?auto=format&fit=crop&w=900&q=80",
     href: "https://www.kemeryatours.com/coastal",
   },
   {
@@ -37,7 +37,7 @@ export const commercialCategories: readonly CommercialCategory[] = [
     description:
       "Dahabiya sailing and Nile cruises — a gentler way to experience Egypt's river landscapes and riverside communities.",
     image:
-      "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-sdOQl33RPLU?auto=format&fit=crop&w=900&q=80",
     href: "https://www.kemeryatours.com/nile",
   },
 ] as const;
