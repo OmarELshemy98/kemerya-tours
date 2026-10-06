@@ -139,6 +139,10 @@ export const translations = {
       policy: "Privacy Policy",
       terms: "Terms of Service",
       developer: "Designed and developed by Omar Elshemy",
+      business: {
+        headline: "Your trusted Egyptian partner for private journeys.",
+        address: "250 Aboul Houl Street, Haram, Giza, Egypt",
+      },
     },
   },
   ar: {
@@ -268,7 +272,11 @@ export const translations = {
       contactTitle: "اتصل بنا",
       policy: "سياسة الخصوصية",
       terms: "شروط الخدمة",
-      developer: "صمم وطور بواسطة عمر الشهابي",
+      developer: "صمم وطور بواسطة عمر الشيمي",
+      business: {
+        headline: "شريكك الموثوق في مصر للرحلات الخاصة.",
+        address: "شارع أبو هل 250، الهرم، جيزة، مصر",
+      },
     },
   },
   fr: {
@@ -397,13 +405,18 @@ export const translations = {
     },
     footer: {
       blurb:
-        "Votre partenaire égyptien de confiance pour les traversées privées et les opérations terrain fiables.",
+        "Votre partenaire égyptien de confiance pour des voyages privés et des opérations fiables sur le terrain.",
       navTitle: "Explorer",
       partnerTitle: "Partenariat",
       contactTitle: "Contact",
       policy: "Politique de Confidentialité",
       terms: "Conditions d'Utilisation",
       developer: "Conçu et développé par Omar Elshemy",
+      business: {
+        headline:
+          "Votre partenaire égyptien de confiance pour des voyages privés.",
+        address: "250, rue Aboul Houl, Haram, Gizeh, Égypte",
+      },
     },
   },
   it: {
@@ -538,6 +551,10 @@ export const translations = {
       policy: "Politica sulla Privacy",
       terms: "Termini di Servizio",
       developer: "Progettato e sviluppato da Omar Elshemy",
+      business: {
+        headline: "Il tuo partner egiziano affidabile per viaggi privati.",
+        address: "Via Aboul Houl, 250, Il Cairo, Egitto",
+      },
     },
   },
   es: {
@@ -672,6 +689,10 @@ export const translations = {
       policy: "Política de Privacidad",
       terms: "Términos de Servicio",
       developer: "Diseñado y desarrollado por Omar Elshemy",
+      business: {
+        headline: "Su socio egipcio de confianza para viajes privados.",
+        address: "Calle Aboul Houl 250, El Cairo, Egipto",
+      },
     },
   },
 } as const;

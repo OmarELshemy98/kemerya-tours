@@ -51,7 +51,7 @@ export function Header({ locale, copy }: HeaderProps) {
           <div className="navbar">
             <Link href={`/${locale}`} className="brand" aria-label="Kemerya Tours home">
               <Image
-                src="/images/kemerya-logo.svg"
+                src="/images/kemerya-logo.webP"
                 alt="Kemerya Tours"
                 width={220}
                 height={72}

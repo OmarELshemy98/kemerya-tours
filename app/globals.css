@@ -862,7 +862,9 @@ h4 {
 .hero__details,
 .nav-links a,
 .footer-brand p,
-.footer-box li {
+.footer-tagline,
+.footer-contact address,
+.footer-bottom {
   letter-spacing: 0.01em;
 }
 
@@ -1492,68 +1494,7 @@ h4 {
   gap: 1rem;
 }
 
-.site-footer {
-  padding: 4.1rem 0 1.5rem;
-  background: var(--color-obsidian);
-  color: rgba(255, 255, 255, 0.82);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
-  gap: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.footer-brand {
-  max-width: 25rem;
-}
-
-.footer-brand .brand {
-  color: var(--color-white);
-}
-
-.footer-brand p,
-.footer-box p,
-.footer-box a,
-.footer-box li {
-  color: rgba(255, 255, 255, 0.72);
-}
-
-.footer-box h3 {
-  color: var(--color-white);
-  font-size: 0.84rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.footer-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.7rem;
-}
-
-.footer-meta {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding-top: 1.5rem;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.footer-meta a {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.footer-meta__credit {
-  text-align: center;
-}
+/* Footer base styles — see enhanced section below */
 
 .empty-state {
   min-height: 70vh;
@@ -2808,20 +2749,26 @@ h4 {
   display: block;
 }
 
-/* === Footer (enhanced) === */
+/* === Footer (compact) === */
 
 .site-footer {
-  padding: 4.5rem 0 2rem;
+  padding: 3rem 0 2rem;
   background: var(--color-obsidian);
   color: rgba(255, 255, 255, 0.82);
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
-  gap: 2.5rem;
-  padding-bottom: 2.5rem;
+.footer-compact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand {
+  max-width: 240px;
 }
 
 .footer-brand .brand {
@@ -2832,12 +2779,13 @@ h4 {
   filter: brightness(1.1) contrast(1.1);
 }
 
-.footer-brand p {
+.footer-tagline {
   color: rgba(255, 255, 255, 0.72);
   margin-top: 1rem;
+  font-size: 0.85rem;
 }
 
-.footer-box h3 {
+.footer-contact h3 {
   color: var(--color-white);
   font-size: 0.84rem;
   letter-spacing: 0.16em;
@@ -2845,33 +2793,97 @@ h4 {
   margin-bottom: 1rem;
 }
 
-.footer-box a,
-.footer-box li {
+.footer-contact address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.footer-contact address span,
+.footer-contact a {
   color: rgba(255, 255, 255, 0.72);
   transition: color 0.25s ease;
 }
 
-.footer-box a:hover {
+.footer-contact a:hover {
   color: var(--color-antique-gold);
 }
 
-.footer-meta {
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: rgba(255, 255, 255, 0.72);
+  transition: color 0.25s ease;
+}
+
+.social-link:hover {
+  color: var(--color-antique-gold);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-bottom {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 1rem;
   padding-top: 1.8rem;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-meta a {
-  color: rgba(255, 255, 255, 0.8);
+.footer-bottom__links a {
+  color: rgba(255, 255, 255, 0.72);
   transition: color 0.25s ease;
 }
 
-.footer-meta a:hover {
+.footer-bottom__links a:hover {
   color: var(--color-antique-gold);
+}
+
+/* Neon developer credit */
+
+.neon-text {
+  color: var(--color-antique-gold);
+  text-shadow:
+    0 0 5px rgba(200, 143, 47, 0.7),
+    0 0 10px rgba(200, 143, 47, 0.5),
+    0 0 20px rgba(200, 143, 47, 0.3),
+    0 0 40px rgba(200, 143, 47, 0.2);
+  animation: neonPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px rgba(200, 143, 47, 0.7),
+      0 0 10px rgba(200, 143, 47, 0.5),
+      0 0 20px rgba(200, 143, 47, 0.3),
+      0 0 40px rgba(200, 143, 47, 0.2);
+  }
+  50% {
+    text-shadow:
+      0 0 10px rgba(200, 143, 47, 0.9),
+      0 0 20px rgba(200, 143, 47, 0.7),
+      0 0 30px rgba(200, 143, 47, 0.5),
+      0 0 60px rgba(200, 143, 47, 0.3);
+  }
 }
 
 .footer-hieroglyphic {
