@@ -21,7 +21,7 @@ export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
-          <h2 className="split-lines">{copy.title}</h2>
+          <h1 className="split-lines">{copy.title}</h1>
           <p className="section-intro">{copy.subtitle}</p>
         </div>
 

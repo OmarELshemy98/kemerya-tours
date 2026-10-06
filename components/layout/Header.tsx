@@ -34,11 +34,11 @@ export function Header({ locale, copy, ui }: HeaderProps) {
   }, []);
 
     const navItems = [
-    { label: copy.capabilities, href: `/${locale}#capabilities` },
-    { label: copy.categories, href: `/${locale}#categories` },
-    { label: copy.whyPartner, href: `/${locale}#why-partner` },
-    { label: copy.whoWeWorkWith, href: `/${locale}#who-we-work-with` },
-    { label: copy.workWithUs, href: `/${locale}#conversion` },
+      { label: copy.capabilities, href: `/${locale}/capabilities` },
+      { label: copy.categories, href: `/${locale}/categories` },
+      { label: copy.whyPartner, href: `/${locale}/why-partner` },
+      { label: copy.whoWeWorkWith, href: `/${locale}/who-we-work-with` },
+      { label: copy.workWithUs, href: `/${locale}/contact` },
   ];
 
   return (

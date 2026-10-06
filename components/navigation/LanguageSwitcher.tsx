@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import type { Locale, UiTranslations } from "@/lib/i18n";
 
@@ -123,6 +123,7 @@ export function LanguageSwitcher({ locale, ui }: LanguageSwitcherProps) {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     if (!open) return;
@@ -147,6 +148,7 @@ export function LanguageSwitcher({ locale, ui }: LanguageSwitcherProps) {
   }, [open]);
 
   const selected = languageOptions.find((option) => option.code === locale) ?? languageOptions[0];
+  const localizedPath = pathname.replace(/^\/[^/]+/, "");
 
   return (
     <div className="lang-switcher" ref={containerRef}>
@@ -169,7 +171,7 @@ export function LanguageSwitcher({ locale, ui }: LanguageSwitcherProps) {
         {languageOptions.map((option) => (
           <Link
             key={option.code}
-            href={option.href}
+            href={`${option.href}${localizedPath}`}
             className={`lang-option ${option.code === locale ? "is-active" : ""}`}
             aria-current={option.code === locale ? "page" : undefined}
             onClick={(event) => {
@@ -177,7 +179,7 @@ export function LanguageSwitcher({ locale, ui }: LanguageSwitcherProps) {
               const suffix = `${window.location.search}${window.location.hash}`;
               if (suffix) {
                 event.preventDefault();
-                router.push(`${option.href}${suffix}`);
+                router.push(`${option.href}${localizedPath}${suffix}`);
               }
             }}
           >

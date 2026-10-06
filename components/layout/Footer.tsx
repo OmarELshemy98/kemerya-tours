@@ -55,7 +55,7 @@ export function Footer({ locale, copy, ui }: FooterProps) {
                 <Link href={`/${locale}`}>{business.name}</Link>
               </li>
               <li>
-                <Link href={`/${locale}#contact`}>{copy.contactTitle}</Link>
+                <Link href={`/${locale}/contact`}>{copy.contactTitle}</Link>
               </li>
             </ul>
           </nav>
