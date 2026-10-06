@@ -1,0 +1,16 @@
+export const business = {
+  name: "Kemerya Tours",
+  website: "https://www.kemeryatours.com",
+  ctaUrl: "https://www.kemeryatours.com/partners",
+  partnerCtaUrl: "https://www.kemeryatours.com/partners",
+  email: "info@kemeryatours.com",
+  phone: "+20 127 505 0450",
+  tel: "+201275050450",
+  address: "250 Aboul Houl Street, Haram, Giza, Egypt",
+  experience: "10+",
+  travelers: "2,000+",
+  rating: "4.9",
+  tailorMade: "100%",
+  support: "24/7",
+  headline: "Your trusted Egyptian partner for private journeys.",
+} as const;
