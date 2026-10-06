@@ -2,7 +2,6 @@ import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Container";
 import type { AdvantageData } from "@/data/advantages";
 
-type AdvantageIcon = "client" | "ops" | "expertise" | "commission" | "brand";
 type KemeryaAdvantageProps = {
   copy: {
     eyebrow: string;
@@ -26,7 +25,7 @@ export function KemeryaAdvantage({ copy, items }: KemeryaAdvantageProps) {
           {items.map((item) => (
             <article key={item.title} className="advantage-card">
               <div className="advantage-card__icon">
-                <Icon name={item.icon as AdvantageIcon} />
+                <Icon name={item.icon} />
               </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>

@@ -106,6 +106,9 @@ export async function generateMetadata({
       "og:see_also": socialLinks.map((item) => item.href).join(","),
       "theme-color": "#171b1a",
     },
+    icons: {
+      icon: "/images/favicon.ico",
+    },
   };
 }
 

@@ -1014,22 +1014,7 @@ h4 {
 .trust-item__value--counting {
   opacity: 1;
   transform: translateY(0);
-  animation: numberReveal 0.9s ease-out both;
-}
-
-@keyframes numberReveal {
-  0% {
-    opacity: 0.4;
-    transform: translateY(18px) scale(0.95);
-  }
-  45% {
-    opacity: 1;
-    transform: translateY(-2px) scale(1.03);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+    animation: numberReveal 0.9s ease-out both;
 }
 
 .trust-item__label {
@@ -1675,76 +1660,8 @@ h4 {
     transform: scale(1.1);
   }
   100% {
-    opacity: 0.9;
+      opacity: 0.9;
     transform: scale(1);
-  }
-}
-
-@keyframes numberReveal {
-  0% {
-    opacity: 0.4;
-    transform: translateY(18px) scale(0.95);
-  }
-  45% {
-    opacity: 1;
-    transform: translateY(-2px) scale(1.03);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes titleReveal {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-    letter-spacing: 0.1em;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    letter-spacing: -0.04em;
-  }
-}
-
-@keyframes chapterReveal {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes obeliskLine {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 80;
-  }
-  100% {
-    opacity: 0.5;
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes lotusDivider {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  100% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-}
-
-@keyframes hieroglyphDraw {
-  to {
-    opacity: 1;
-    stroke-dashoffset: 0;
   }
 }
 
@@ -2043,19 +1960,8 @@ h4 {
 }
 
 .hero__details strong {
-  color: var(--color-white);
+    color: var(--color-white);
   font-weight: 700;
-}
-
-@keyframes fadeUpSequence {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* === Section base === */

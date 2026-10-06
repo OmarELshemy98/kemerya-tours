@@ -1,10 +1,14 @@
 import type { ReactNode } from "react";
 import type { CapabilityIcon } from "@/data/capabilities";
 import type { ClientTypeIcon } from "@/data/clientTypes";
+import type { AdvantageIcon } from "@/data/advantages";
+import type { WhyPartnerIcon } from "@/data/whyPartner";
 
-type AdvantageIcon = "client" | "ops" | "expertise" | "commission" | "brand";
-
-export type IconName = CapabilityIcon | ClientTypeIcon | AdvantageIcon;
+export type IconName =
+  | CapabilityIcon
+  | ClientTypeIcon
+  | AdvantageIcon
+  | WhyPartnerIcon;
 
 const iconPaths: Record<IconName, ReactNode> = {
   pyramid: (

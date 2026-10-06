@@ -21,11 +21,11 @@ export function ClientTypes({ copy, items }: ClientTypesProps) {
           <p className="section-intro">{copy.intro}</p>
         </div>
 
-                <div className="feature-grid">
+        <div className="feature-grid">
           {items.map((item) => (
             <article key={item.title} className="feature-card">
               <div className="feature-card__icon">
-                <Icon name={item.icon as "luxury" | "globe" | "users" | "map" | "briefcase" | "pyramid"} />
+                <Icon name={item.icon} />
               </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>

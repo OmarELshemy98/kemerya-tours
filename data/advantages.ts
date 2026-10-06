@@ -5,7 +5,7 @@ export type Advantage = {
   description: string;
 };
 
-type AdvantageIcon = "client" | "ops" | "expertise" | "commission" | "brand";
+export type AdvantageIcon = "client" | "ops" | "expertise" | "commission" | "brand";
 
 export type AdvantageData = {
   title: string;

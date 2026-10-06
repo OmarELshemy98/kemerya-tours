@@ -1,3 +1,4 @@
+import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Container";
 import type { WhyPartnerItem } from "@/data/whyPartner";
 
@@ -23,7 +24,9 @@ export function WhyPartner({ copy, items }: WhyPartnerProps) {
         <div className="feature-grid">
           {items.map((item) => (
             <article key={item.title} className="feature-card">
-              <div className="feature-card__icon">✦</div>
+              <div className="feature-card__icon">
+                <Icon name={item.icon} />
+              </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </article>
