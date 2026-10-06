@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import type { UiTranslations } from "@/lib/i18n";
 
 type B2BContactFormProps = {
@@ -48,7 +49,7 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
   };
 
   return (
-    <section className="section" id="contact">
+    <Section id="contact">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -154,6 +155,6 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
           </form>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

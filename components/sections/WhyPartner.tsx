@@ -1,5 +1,6 @@
-import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import type { WhyPartnerItem } from "@/data/whyPartner";
 
 type WhyPartnerProps = {
@@ -13,7 +14,7 @@ type WhyPartnerProps = {
 
 export function WhyPartner({ copy, items }: WhyPartnerProps) {
   return (
-    <section className="section" id="why-partner">
+    <Section id="why-partner">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -21,18 +22,8 @@ export function WhyPartner({ copy, items }: WhyPartnerProps) {
           <p className="section-intro">{copy.intro}</p>
         </div>
 
-        <div className="feature-grid">
-          {items.map((item) => (
-            <article key={item.title} className="feature-card">
-              <div className="feature-card__icon">
-                <Icon name={item.icon} />
-              </div>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </article>
-          ))}
-        </div>
+        <FeatureGrid items={items} />
       </Container>
-    </section>
+    </Section>
   );
 }

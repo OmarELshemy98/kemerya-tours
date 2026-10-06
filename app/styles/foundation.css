@@ -1,0 +1,96 @@
+:root {
+  /* --- Logo-derived palette (the source of truth) --- */
+  --color-obsidian: #262525; /* logo #262525 — charcoal */
+  --color-obsidian-soft: #363535;
+  --color-obsidian-deep: #1a1919;
+  --color-ivory: #f2ead9; /* warm ivory */
+  --color-limestone: #d9c4a0; /* limestone */
+  --color-limestone-warm: #e1d0b1; /* warm limestone */
+  --color-antique-gold: #c88f2f; /* logo #c88f2f — muted Egyptian gold */
+  --color-gold-soft: rgba(200, 143, 47, 0.18);
+  --color-bronze: #b99854; /* complementary bronze */
+  --color-nile: #054855; /* logo #054855 — deep Nile blue */
+  --color-nile-deep: #032d35;
+  --color-nile-soft: #0a5d6e;
+  --color-stone: #5d544f; /* stone grey */
+  --color-ink: #262525; /* logo #262525 — charcoal */
+  --color-white: #fffdf9;
+  --color-white-soft: rgba(255, 253, 249, 0.92);
+  --soft-border: rgba(200, 143, 47, 0.28);
+  --soft-border-light: rgba(200, 143, 47, 0.14);
+  --shadow: 0 30px 80px rgba(7, 9, 8, 0.18);
+  --shadow-pharaonic: 0 30px 60px rgba(5, 72, 85, 0.22);
+  --max-width: 1280px;
+  --nav-height: 88px;
+
+  /* Pharaonic texture blend */
+  --pharaonic-texture:
+    linear-gradient(rgba(200, 143, 47, 0.024) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 143, 47, 0.018) 1px, transparent 1px);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: scale(1.04) translateY(0);
+  }
+  50% {
+    transform: scale(1.08) translateY(-8px);
+  }
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes revealFrame {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+@keyframes sunGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}

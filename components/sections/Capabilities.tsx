@@ -1,5 +1,6 @@
-import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import type { Capability } from "@/data/capabilities";
 
 type CapabilitiesProps = {
@@ -13,7 +14,7 @@ type CapabilitiesProps = {
 
 export function Capabilities({ copy, items }: CapabilitiesProps) {
   return (
-    <section className="section" id="capabilities">
+    <Section id="capabilities">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -21,18 +22,8 @@ export function Capabilities({ copy, items }: CapabilitiesProps) {
           <p className="section-intro">{copy.intro}</p>
         </div>
 
-        <div className="feature-grid">
-          {items.map((item) => (
-            <article key={item.title} className="feature-card">
-              <div className="feature-card__icon">
-                <Icon name={item.icon} />
-              </div>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </article>
-          ))}
-        </div>
+        <FeatureGrid items={items} />
       </Container>
-    </section>
+    </Section>
   );
 }

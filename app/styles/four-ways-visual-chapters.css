@@ -1,0 +1,133 @@
+
+
+/* === Four Ways (visual chapters) === */
+
+.four-ways {
+  padding: 0;
+}
+
+.four-ways .section__heading {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.four-ways .section__heading h2 {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+}
+
+.chapter {
+  position: relative;
+  padding: 8rem 0;
+  overflow: hidden;
+}
+
+.chapter--featured {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.chapter:nth-child(even) {
+  background: linear-gradient(
+    180deg,
+    rgba(225, 208, 177, 0.06) 0%,
+    rgba(225, 208, 177, 0) 100%
+  );
+}
+
+.chapter__number {
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: var(--color-antique-gold);
+  position: relative;
+  z-index: 2;
+}
+
+.chapter__number::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 0;
+  width: 1px;
+  height: 200%;
+  background: linear-gradient(180deg, var(--color-antique-gold), transparent);
+  opacity: 0.12;
+}
+
+.chapter__content {
+  position: relative;
+  z-index: 3;
+  max-width: 680px;
+  margin-top: 2rem;
+}
+
+.chapter__content h3 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.03em;
+  line-height: 0.92;
+  color: var(--color-ink);
+}
+
+.chapter__description {
+  margin-top: 1.2rem;
+  color: var(--color-stone);
+  font-size: 1.08rem;
+  line-height: 1.8;
+  max-width: 38rem;
+}
+
+.chapter__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.6rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-antique-gold);
+}
+
+.chapter__link-arrow {
+  transition: transform 0.25s ease;
+}
+
+.chapter__link:hover .chapter__link-arrow {
+  transform: translateX(4px);
+}
+
+.chapter__image {
+  position: absolute;
+  inset: 0;
+  width: min(40vw, 520px);
+  height: min(70vh, 720px);
+  margin-inline-start: auto;
+  border-radius: 40px 0 0 40px;
+  overflow: hidden;
+  box-shadow: var(--shadow-pharaonic);
+}
+
+.chapter__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.85) brightness(0.62);
+}
+
+.chapter__ornament {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.chapter__ornament svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import type { UiTranslations } from "@/lib/i18n";
 
 type LocalExpertiseProps = {
@@ -17,7 +18,7 @@ type LocalExpertiseProps = {
 
 export function LocalExpertise({ copy, ui }: LocalExpertiseProps) {
   return (
-    <section className="section" id="about">
+    <Section id="about">
       <Container>
         <div className="story-layout">
           <div className="story-photo">
@@ -48,6 +49,6 @@ export function LocalExpertise({ copy, ui }: LocalExpertiseProps) {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

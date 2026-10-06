@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 
 type Experience = {
   title: string;
@@ -20,7 +21,7 @@ type ChooseYourEgyptProps = {
 
 export function ChooseYourEgypt({ experiences, copy }: ChooseYourEgyptProps) {
   return (
-    <section className="section" id="destinations">
+    <Section id="destinations">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -54,6 +55,6 @@ export function ChooseYourEgypt({ experiences, copy }: ChooseYourEgyptProps) {
           ))}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

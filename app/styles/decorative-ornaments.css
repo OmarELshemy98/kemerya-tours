@@ -1,0 +1,16 @@
+
+
+/* === Decorative ornaments === */
+
+.decorative-ornament {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.decorative-ornament svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

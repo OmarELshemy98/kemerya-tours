@@ -1,5 +1,6 @@
 import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import type { AdvantageData } from "@/data/advantages";
 
 type KemeryaAdvantageProps = {
@@ -13,7 +14,7 @@ type KemeryaAdvantageProps = {
 
 export function KemeryaAdvantage({ copy, items }: KemeryaAdvantageProps) {
   return (
-    <section className="section">
+    <Section>
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -33,6 +34,6 @@ export function KemeryaAdvantage({ copy, items }: KemeryaAdvantageProps) {
           ))}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

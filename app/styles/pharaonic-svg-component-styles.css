@@ -1,0 +1,188 @@
+
+
+/* === Pharaonic SVG component styles === */
+
+.sun-disk__glow {
+  animation: sunPulse 10s ease-in-out infinite;
+}
+.sun-disk__ray {
+  animation: rayBreathe 10s ease-in-out infinite;
+}
+.sun-disk__aura {
+  animation: rayBreathe 12s ease-in-out infinite;
+}
+
+.obelisk__cap {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.2s forwards;
+}
+.obelisk__body {
+  opacity: 0;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawLine 1.2s ease-out 0.4s forwards;
+}
+.obelisk__base {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.8s forwards;
+}
+.obelisk__band {
+  opacity: 0;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: drawLine 0.6s ease-out 1s forwards;
+}
+
+.lotus__petal {
+  opacity: 0;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: drawLine 1s ease-out forwards;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.lotus__centre {
+  animation: centreGlow 8s ease-in-out 2.5s forwards;
+}
+.lotus__stem {
+  opacity: 0;
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation: drawLine 0.6s ease-out 1.8s forwards;
+}
+
+.nile-wave__bg {
+  animation: waveDrift 32s ease-in-out infinite;
+}
+.nile-wave__fg {
+  animation: waveDrift-alt 24s ease-in-out infinite;
+}
+
+.egyptian-bird__one,
+.egyptian-bird__two {
+  animation: birdGlide 28s ease-in-out infinite;
+}
+.egyptian-bird__one {
+  transform-origin: 70px 60px;
+}
+.egyptian-bird__two {
+  transform-origin: 250px 40px;
+  animation-delay: 3s;
+  animation-direction: alternate;
+}
+
+.hieroglyph__motif {
+  opacity: 0;
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: hieroglyphDraw 0.8s ease-out forwards;
+  animation-delay: calc(0.1s + var(--delay, 0s));
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.temple-frame__pylon {
+  opacity: 0;
+  animation: drawFrame 1.4s ease-out 0.3s forwards;
+}
+.temple-frame__doorway {
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.7s forwards;
+}
+.temple-frame__band-top,
+.temple-frame__band-bottom {
+  opacity: 0;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawLine 1.1s ease-out forwards;
+}
+.temple-frame__band-top {
+  animation-delay: 1s;
+}
+.temple-frame__band-bottom {
+  animation-delay: 1.2s;
+}
+.temple-frame__cornice {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 1.4s forwards;
+}
+.temple-frame__obelisk {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 1.6s forwards;
+}
+
+.pharaonic-divider__obelisk {
+  opacity: 0;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: drawLine 0.7s ease-out 0.2s forwards;
+}
+.pharaonic-divider__pyramidion {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out 0.7s forwards;
+}
+.pharaonic-divider__lotus {
+  opacity: 0;
+  animation: lotusDivider 1s ease-out 0.3s forwards;
+}
+.pharaonic-divider__lotus-centre {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.8s forwards;
+}
+.pharaonic-divider__stem {
+  opacity: 0;
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation: drawLine 0.5s ease-out 1s forwards;
+}
+.pharaonic-divider__papyrus {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.3s forwards;
+}
+.pharaonic-divider__wave {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.2s forwards;
+}
+.pharaonic-divider__wave-line {
+  opacity: 0;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: drawLine 0.9s ease-out 0.3s forwards;
+}
+
+@keyframes centreGlow {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  70% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  100% {
+      opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUpSequence {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

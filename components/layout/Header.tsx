@@ -49,7 +49,7 @@ export function Header({ locale, copy, ui }: HeaderProps) {
 
       <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
         <Container>
-          <div className="navbar">
+          <div className="flex min-h-[var(--nav-height)] items-center justify-between gap-5">
             <Link href={`/${locale}`} className="brand" aria-label={ui.kemeryaToursHome}>
               <Image
                 src="/images/kemerya-logo.svg"
@@ -61,8 +61,11 @@ export function Header({ locale, copy, ui }: HeaderProps) {
               />
             </Link>
 
-            <nav aria-label={ui.mainNavigation} className="desktop-nav">
-              <ul className="nav-links">
+            <nav
+              aria-label={ui.mainNavigation}
+              className="block max-[720px]:hidden"
+            >
+              <ul className="flex list-none items-center justify-center gap-6 p-0 text-[0.7rem] uppercase tracking-[0.14em]">
                 {navItems.map((item) => (
                   <li key={item.href}>
                     <Link href={item.href}>{item.label}</Link>
@@ -71,14 +74,20 @@ export function Header({ locale, copy, ui }: HeaderProps) {
               </ul>
             </nav>
 
-            <div className="nav-actions">
+            <div className="flex items-center gap-3">
               <LanguageSwitcher locale={locale} ui={ui} />
-              <Button href={business.partnerCtaUrl} variant="dark" external aria-label={ui.contactKemeryaTours}>
+              <Button
+                href={business.partnerCtaUrl}
+                variant="dark"
+                external
+                aria-label={ui.contactKemeryaTours}
+                className="max-[720px]:hidden"
+              >
                 {copy.contact}
               </Button>
               <button
                 type="button"
-                className="menu-toggle"
+                className="inline-flex h-[2.9rem] w-[2.9rem] cursor-pointer flex-col items-center justify-center gap-[0.28rem] rounded-full border border-[rgba(255,255,255,0.14)] bg-[rgba(255,255,255,0.04)] min-[721px]:hidden"
                 aria-expanded={menuOpen}
                 aria-controls="mobile-menu"
                 aria-label={menuOpen ? ui.closeMainMenu : ui.openMainMenu}

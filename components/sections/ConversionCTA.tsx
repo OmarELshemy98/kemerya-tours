@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import { business } from "@/data/business";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -16,7 +17,7 @@ type ConversionCTAProps = {
 
 export function ConversionCTA({ copy, ui }: ConversionCTAProps) {
   return (
-    <section className="section" id="conversion">
+    <Section id="conversion">
       <Container>
         <div className="cta-panel">
           <div className="cta-panel__content">
@@ -56,6 +57,6 @@ export function ConversionCTA({ copy, ui }: ConversionCTAProps) {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

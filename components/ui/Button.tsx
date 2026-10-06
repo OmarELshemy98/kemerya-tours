@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 type ButtonProps = {
   href: string;
   children: ReactNode;
-    variant?: "primary" | "secondary" | "dark" | "light" | "gold";
+  variant?: "primary" | "secondary" | "dark" | "light" | "gold";
   className?: string;
   external?: boolean;
   "aria-label"?: string;
@@ -18,7 +18,14 @@ export function Button({
   external = false,
   "aria-label": ariaLabel,
 }: ButtonProps) {
-  const classes = `button button--${variant} ${className}`.trim();
+  const classes = [
+    "relative inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-full border border-transparent px-[1.8rem] py-[0.95rem] text-[0.72rem] font-bold uppercase tracking-[0.14em] transition-[transform,box-shadow,background,border-color] duration-[250ms] hover:-translate-y-0.5",
+    "button",
+    `button--${variant}`,
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   if (external) {
     return (

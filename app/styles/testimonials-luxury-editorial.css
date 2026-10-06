@@ -1,0 +1,109 @@
+
+
+/* === Testimonials (luxury editorial) === */
+
+.testimonials .section__heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+}
+
+.testimonial-editorial {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem;
+  border: 1px solid var(--soft-border-light);
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 30px 60px rgba(7, 9, 8, 0.05);
+}
+
+.testimonial-editorial::before {
+  content: '"';
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(6rem, 14vw, 10rem);
+  line-height: 0.6;
+  color: var(--color-antique-gold);
+  opacity: 0.05;
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.testimonial-editorial .quote {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-ink);
+  letter-spacing: -0.01em;
+}
+
+.testimonial-editorial .quote::before {
+  content: '"';
+  color: var(--color-antique-gold);
+  font-size: 1.6em;
+  opacity: 0.3;
+  margin-inline-end: 0.2rem;
+}
+
+.testimonial-editorial .quote::after {
+  content: '"';
+  color: var(--color-antique-gold);
+  font-size: 1.6em;
+  opacity: 0.3;
+  margin-inline-start: 0.2rem;
+}
+
+.testimonial-editorial .person {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonial-editorial .person-name {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.testimonial-editorial .person-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+}
+
+.testimonial-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.testimonial-nav button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--soft-border);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.testimonial-nav button.active {
+  background: var(--color-antique-gold);
+  border-color: var(--color-antique-gold);
+}
+
+.testimonial-nav button:hover {
+  border-color: var(--color-nile);
+}

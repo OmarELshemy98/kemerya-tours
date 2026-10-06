@@ -1,0 +1,19 @@
+
+
+/* === Pharaonic section transition dividers === */
+
+.pharaonic-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.pharaonic-divider svg {
+  width: min(200px, 60vw);
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,18 @@
+
+
+/* === Trust bar (enhanced) === */
+
+.trust-bar__statement {
+  background: var(--color-obsidian);
+  color: var(--color-white);
+  border-radius: 30px;
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow-pharaonic);
+  border: 1px solid var(--soft-border-light);
+}
+
+.trust-bar__statement h3 {
+  color: var(--color-white);
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+  margin-top: 0.8rem;
+}

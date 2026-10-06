@@ -1,0 +1,35 @@
+
+
+/* === Section base === */
+
+.section-surface::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: min(88%, 1180px);
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(200, 143, 47, 0.36),
+    transparent
+  );
+}
+
+.section-surface:nth-of-type(odd) {
+  background: linear-gradient(
+    180deg,
+    rgba(242, 234, 217, 0.4) 0%,
+    rgba(242, 234, 217, 0) 100%
+  );
+}
+
+.section-surface:nth-of-type(even) {
+  background: linear-gradient(
+    180deg,
+    rgba(225, 208, 177, 0.12) 0%,
+    rgba(225, 208, 177, 0) 100%
+  );
+}

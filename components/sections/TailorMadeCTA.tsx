@@ -2,6 +2,7 @@ import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import type { UiTranslations } from "@/lib/i18n";
 
 type TailorMadeCTAProps = {
@@ -17,7 +18,7 @@ type TailorMadeCTAProps = {
 
 export function TailorMadeCTA({ copy, ui }: TailorMadeCTAProps) {
   return (
-    <section className="section">
+    <Section>
       <Container>
         <div className="cta-panel">
           <div className="cta-panel__image">
@@ -50,6 +51,6 @@ export function TailorMadeCTA({ copy, ui }: TailorMadeCTAProps) {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

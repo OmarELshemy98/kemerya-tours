@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import type { PartnershipStep } from "@/data/partnershipSteps";
 
 type KemeryaDifferenceProps = {
@@ -12,7 +13,7 @@ type KemeryaDifferenceProps = {
 
 export function KemeryaDifference({ copy, steps }: KemeryaDifferenceProps) {
   return (
-    <section className="section" id="partnership">
+    <Section id="partnership">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -30,7 +31,7 @@ export function KemeryaDifference({ copy, steps }: KemeryaDifferenceProps) {
           ))}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }
 

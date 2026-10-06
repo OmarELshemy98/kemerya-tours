@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import { business } from "@/data/business";
 import type { CommercialCategory } from "@/data/commercialCategories";
 import type { UiTranslations } from "@/lib/i18n";
@@ -18,7 +19,7 @@ type CommercialCategoriesProps = {
 
 export function CommercialCategories({ copy, items, ui }: CommercialCategoriesProps) {
   return (
-    <section className="section" id="categories">
+    <Section id="categories">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -54,6 +55,6 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
           </Button>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

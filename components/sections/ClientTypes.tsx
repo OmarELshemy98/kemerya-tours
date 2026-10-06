@@ -1,5 +1,6 @@
 import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import type { ClientType } from "@/data/clientTypes";
 
 type ClientTypesProps = {
@@ -13,7 +14,7 @@ type ClientTypesProps = {
 
 export function ClientTypes({ copy, items }: ClientTypesProps) {
   return (
-    <section className="section" id="who-we-work-with">
+    <Section id="who-we-work-with">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -33,6 +34,6 @@ export function ClientTypes({ copy, items }: ClientTypesProps) {
           ))}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 import { business } from "@/data/business";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -17,7 +18,7 @@ type WhoKemeryaProps = {
 
 export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
   return (
-    <section className="section" id="who-kemerya">
+    <Section id="who-kemerya">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -40,6 +41,6 @@ export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

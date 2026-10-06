@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
 
 type Testimonial = {
   name: string;
@@ -16,7 +17,7 @@ type TestimonialsProps = {
 
 export function Testimonials({ items, copy }: TestimonialsProps) {
   return (
-    <section className="section">
+    <Section>
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -38,6 +39,6 @@ export function Testimonials({ items, copy }: TestimonialsProps) {
           ))}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

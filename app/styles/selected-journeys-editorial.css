@@ -1,0 +1,102 @@
+
+
+/* === Selected journeys (editorial) === */
+
+.selected-journeys .section__heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+}
+
+.journey-editorial {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.journey-editorial__number {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--color-antique-gold);
+  letter-spacing: -0.04em;
+}
+
+.journey-editorial__number span {
+  opacity: 0.3;
+}
+
+.number-label {
+  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+}
+
+.journey-editorial__content h3 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--color-ink);
+}
+
+.journey-editorial__description {
+  color: var(--color-stone);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-top: 0.8rem;
+  max-width: 38rem;
+}
+
+.journey-editorial__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.3rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-antique-gold);
+}
+
+.journey-editorial__link-arrow {
+  transition: transform 0.25s ease;
+}
+
+.journey-editorial__link:hover .journey-editorial__link-arrow {
+  transform: translateX(4px);
+}
+
+.journey-editorial__media {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 420px;
+}
+
+.journey-editorial__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.journey-editorial:nth-child(even) {
+  direction: rtl;
+}
+
+.journey-editorial:nth-child(even) .journey-editorial__content,
+.journey-editorial:nth-child(even) .journey-editorial__link {
+  direction: ltr;
+  text-align: right;
+}
+
+.journey-editorial:nth-child(even) .journey-editorial__description {
+  direction: ltr;
+}

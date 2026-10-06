@@ -1,0 +1,222 @@
+
+
+/* === Footer (compact) === */
+
+.site-footer {
+  padding: clamp(3rem, 5vw, 4.5rem) 0 2rem;
+  background: var(--color-obsidian);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.footer-compact {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(140px, 0.8fr) minmax(0, 1.6fr) auto;
+  align-items: start;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand,
+.footer-nav,
+.footer-contact,
+.footer-social {
+  min-width: 0;
+}
+
+.footer-brand {
+  max-width: 260px;
+}
+
+.footer-brand .brand {
+  color: var(--color-white);
+}
+
+.footer-brand .brand-logo {
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.footer-tagline {
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.footer-nav h3,
+.footer-contact h3 {
+  color: var(--color-white);
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-nav__list a,
+.footer-contact__details a,
+.footer-contact__details span {
+  color: rgba(255, 255, 255, 0.72);
+  transition: color 0.25s ease;
+}
+
+.footer-nav__list a:hover,
+.footer-contact__details a:hover {
+  color: var(--color-antique-gold);
+}
+
+.footer-contact__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: auto;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.02);
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.social-link:hover {
+  color: var(--color-antique-gold);
+  border-color: rgba(200, 143, 47, 0.32);
+  transform: translateY(-1px);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.8rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-bottom__links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.footer-bottom__links a {
+  color: rgba(255, 255, 255, 0.72);
+  transition: color 0.25s ease;
+}
+
+.footer-bottom__links a:hover {
+  color: var(--color-antique-gold);
+}
+
+.footer-bottom__separator {
+  opacity: 0.7;
+}
+
+.footer-credit {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .footer-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-social {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-compact {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-brand {
+    max-width: none;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Neon developer credit */
+
+.neon-text {
+  color: var(--color-antique-gold);
+  text-shadow:
+    0 0 5px rgba(200, 143, 47, 0.7),
+    0 0 10px rgba(200, 143, 47, 0.5),
+    0 0 20px rgba(200, 143, 47, 0.3),
+    0 0 40px rgba(200, 143, 47, 0.2);
+  animation: neonPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px rgba(200, 143, 47, 0.7),
+      0 0 10px rgba(200, 143, 47, 0.5),
+      0 0 20px rgba(200, 143, 47, 0.3),
+      0 0 40px rgba(200, 143, 47, 0.2);
+  }
+  50% {
+    text-shadow:
+      0 0 10px rgba(200, 143, 47, 0.9),
+      0 0 20px rgba(200, 143, 47, 0.7),
+      0 0 30px rgba(200, 143, 47, 0.5),
+      0 0 60px rgba(200, 143, 47, 0.3);
+  }
+}
+
+.footer-hieroglyphic {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  opacity: 0.32;
+}
+
+.footer-hieroglyphic svg {
+  width: min(400px, 90vw);
+  height: auto;
+  display: block;
+}
