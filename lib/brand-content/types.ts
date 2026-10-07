@@ -18,12 +18,13 @@ export type BrandContent = {
     statement: string;
     labels: readonly string[];
   };
-  whoKemerya: {
+    whoKemerya: {
     eyebrow: string;
     title: string;
     subtitle: string;
     intro: string;
     paragraphs: readonly string[];
+    principles: readonly string[];
     cta: string;
   };
   clientTypes: {

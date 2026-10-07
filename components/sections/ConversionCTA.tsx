@@ -1,4 +1,3 @@
-﻿import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { NileWave } from "@/components/ui/pharaonic";
@@ -21,13 +20,7 @@ export function ConversionCTA({ copy }: ConversionCTAProps) {
       id="conversion"
       aria-labelledby="conversion-heading"
     >
-      <div className="final-contact__image" aria-hidden="true">
-        <Image
-                    src="https://images.unsplash.com/photo-1k7JC31SRyI?auto=format&fit=crop&w=1200&q=85"
-          alt=""
-          fill
-        />
-      </div>
+      <div className="final-contact__image" aria-hidden="true" />
 
       <Container className="final-contact__content">
         <p className="eyebrow">{copy.eyebrow}</p>
@@ -36,7 +29,7 @@ export function ConversionCTA({ copy }: ConversionCTAProps) {
             <span
               className="line"
               key={index}
-                            style={{ animationDelay: String(0.2 + index * 0.3) + "s" }}
+              style={{ animationDelay: String(0.2 + index * 0.3) + "s" }}
             >
               {line}
             </span>

@@ -1,6 +1,177 @@
 /* === B2B content sections: commercial confidence,
    program capabilities, FAQ, and credibility blocks === */
 
+/* ── Image-free backgrounds for broken remote images ────────── */
+.hero__image,
+.final-contact__image,
+.category-card__media,
+.journey-editorial__media,
+.story-photo,
+.cta-panel__image,
+.destination-card__image {
+  background: linear-gradient(
+    135deg,
+    rgba(5, 72, 85, 0.25) 0%,
+    rgba(5, 41, 51, 0.15) 48%,
+    rgba(13, 19, 18, 0.1) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__image::before,
+.final-contact__image::before,
+.category-card__media::before,
+.journey-editorial__media::before,
+.story-photo::before,
+.cta-panel__image::before,
+.destination-card__image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 72, 85, 0.85) 0%,
+    rgba(5, 72, 85, 0.55) 38%,
+    rgba(13, 19, 18, 0.25) 72%,
+    rgba(8, 10, 10, 0.1) 100%
+  );
+  z-index: 0;
+}
+
+/* ── Kemerya principles (3-item list) ──────────────────────── */
+.kemerya-principles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.principle-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(200, 143, 47, 0.08);
+  border: 1px solid rgba(200, 143, 47, 0.22);
+  border-radius: 8px;
+  padding: 0.55rem 1rem;
+}
+
+.principle-item__number {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  color: var(--color-antique-gold);
+}
+
+.principle-item__label {
+  font-size: clamp(0.85rem, 1.8vw, 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+/* ── FAQ teaser ────────────────────────────────────────────── */
+.faq-teaser {
+  padding: 4rem 0 3rem;
+}
+
+.faq-teaser .section__heading {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 3rem;
+}
+
+.faq-teaser .section__heading h2 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: -0.03em;
+}
+
+.faq-teaser__list {
+  max-width: 820px;
+  margin: 0 auto;
+  border-top: 1px solid var(--soft-border-light);
+}
+
+.faq-teaser__item {
+  border-bottom: 1px solid var(--soft-border-light);
+}
+
+.faq-teaser__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.3rem 0;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--color-ink);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.4;
+}
+
+.faq-teaser__indicator {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-antique-gold);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.faq-teaser__question[aria-expanded="true"] .faq-teaser__indicator {
+  transform: rotate(180deg);
+}
+
+.faq-teaser__answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.faq-teaser__answer.is-open {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.faq-teaser__answer p {
+  padding: 0 0 1.3rem 0;
+  color: var(--color-stone);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.faq-teaser__view-all {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.faq-teaser__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: clamp(0.8rem, 1.8vw, 0.85rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-antique-gold);
+  transition: transform 0.2s ease;
+}
+
+.faq-teaser__link:hover {
+  transform: translateX(3px);
+}
+
+/* ── Existing styles (preserved) ────────── */
+
 /* ── Commercial confidence (numbered editorial) ────────── */
 .commercial-confidence {
   padding: 6rem 0 5rem;

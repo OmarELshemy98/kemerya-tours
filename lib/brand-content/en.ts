@@ -30,12 +30,17 @@ export const en: BrandContent = {
   whoKemerya: {
     eyebrow: "BASED IN GIZA, EGYPT",
     title: "WE KNOW WHAT THE ITINERARY DOESN'T SHOW.",
-    subtitle: "Routes, timing and people on the ground matter.",
+    subtitle: "Routes, timing and people on the ground matter. Kemerya gives travel companies a local team that can coordinate the Egyptian side of the journey while they remain close to their travelers.",
     intro:
       "Kemerya Tours is an Egypt-based travel company working with agencies, tour operators and travel designers who need a local team they can reach.",
     paragraphs: [
       "A program can look right on paper and still depend on the details between its highlights: how long a transfer takes, when a visit works best, and who can adapt when the day shifts. From Giza, we coordinate with the people delivering each part and keep those practical details in view.",
       "We arrange private and tailor-made travel across Egypt, coordinating professional Egyptologist guides, private air-conditioned vehicles, hotels, Nile experiences and support on the ground. You keep the traveler relationship. Our team takes responsibility for the Egyptian side of the trip.",
+    ],
+    principles: [
+      "LOCAL JUDGMENT",
+      "FLEXIBLE COORDINATION",
+      "ON-GROUND ACCOUNTABILITY",
     ],
     cta: "TALK ABOUT A PARTNERSHIP",
   },
@@ -78,8 +83,8 @@ export const en: BrandContent = {
     modelLabel: "PARTNER PROGRAM EXAMPLE",
   },
   partnership: {
-    eyebrow: "HOW WE WORK TOGETHER",
-    title: "A WORKING RELATIONSHIP, BUILT AROUND THE BRIEF.",
+    eyebrow: "FROM BRIEF TO EGYPT",
+    title: "FROM BRIEF TO EGYPT",
     intro:
       "Start with one traveler or a broader program. We work through the details, shape the plan together and stay involved while your travelers are in Egypt.",
   },
@@ -145,8 +150,8 @@ export const en: BrandContent = {
     ],
   },
   programCapabilities: {
-    eyebrow: "WHAT YOUR EGYPT PROGRAM CAN INCLUDE",
-    title: "CAPABILITIES FOR YOUR EGYPT PROGRAM",
+    eyebrow: "WHAT WE CAN HANDLE",
+    title: "PRACTICAL EGYPT CAPABILITIES",
     intro:
       "From private journeys to shore excursions, these are the program shapes we coordinate for travel companies. Each is arranged around the brief you bring, not a fixed product.",
     items: [
@@ -282,7 +287,6 @@ export const en: BrandContent = {
       ["Talk through the details", "We discuss routes, timing, services and the standard your business expects."],
       ["Shape the program together", "We prepare an Egypt plan around the brief, then refine it with your team."],
       ["We coordinate Egypt on the ground", "Our local team arranges the agreed services and stays available during the journey."],
-      ["You stay close to your travelers", "We keep you informed so you remain the traveler’s point of relationship."],
     ],
     commercialCategories: [
       ["Egypt day tours", "City, heritage and private day programs coordinated locally for shorter stays and itinerary extensions."],

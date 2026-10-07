@@ -10,7 +10,7 @@ export type PartnershipStep = {
 export const partnershipSteps = [
   {
     step: "01",
-    title: "Tell us about the traveler",
+    title: "Send the brief",
     description: "",
   },
   {
@@ -26,11 +26,6 @@ export const partnershipSteps = [
   {
     step: "04",
     title: "We coordinate Egypt on the ground",
-    description: "",
-  },
-  {
-    step: "05",
-    title: "You stay close to your client",
     description: "",
   },
 ] as const;

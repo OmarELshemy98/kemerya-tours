@@ -87,7 +87,7 @@ export async function generateMetadata({
       type: "website",
             images: [
         {
-          url: "https://images.unsplash.com/photo-1k7JC31SRyI?auto=format&fit=crop&w=1200&q=80",
+          url: "https://www.kemeryatours.com/images/kemerya-logo.svg",
           width: 1200,
           height: 630,
           alt: uiTranslations[safeLocale].heroImageAlt,
@@ -99,7 +99,7 @@ export async function generateMetadata({
       title: copy.meta.title,
       description: copy.meta.description,
             images: [
-        "https://images.unsplash.com/photo-1k7JC31SRyI?auto=format&fit=crop&w=1200&q=80",
+        "https://www.kemeryatours.com/images/kemerya-logo.svg",
       ],
     },
     other: {

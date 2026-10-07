@@ -37,6 +37,11 @@ export const nl: BrandContent = {
       "Een programma kan er op papier goed uitzien en toch afhangen van de details tussen de hoogtepunten: hoelang een transfer duurt, wanneer een bezoek het beste uitkomt en wie kan bijsturen als de dag anders loopt. Vanuit Gizeh stemmen we af met de mensen die elk onderdeel verzorgen en houden we die praktische details in het oog.",
       "We organiseren privé- en maatwerkreizen door heel Egypte, met professionele egyptologengidsen, privévoertuigen met airconditioning, hotels, ervaringen op de Nijl en ondersteuning ter plaatse. De relatie met de reiziger blijft bij u. Ons team neemt de verantwoordelijkheid voor de Egyptische kant van de reis op zich.",
     ],
+    principles: [
+      "LOKALE BEOORDEELING",
+      "FLEXIBERE COORDINATIE",
+      "LOKALE AANSPRAKELIJKHEID",
+    ],
     cta: "BESPREEK EEN SAMENWERKING",
   },
   clientTypes: {
@@ -78,8 +83,8 @@ export const nl: BrandContent = {
     modelLabel: "VOORBEELD VAN EEN PARTNERPROGRAMMA",
   },
   partnership: {
-    eyebrow: "ZO WERKEN WE SAMEN",
-    title: "EEN SAMENWERKING OP BASIS VAN UW BRIEFING.",
+    eyebrow: "VAN BRIEF NAAR EGYPTEN",
+    title: "VAN BRIEF NAAR EGYPTEN",
     intro:
       "Begin met één reiziger of een uitgebreider programma. We bespreken de details, werken samen het plan uit en blijven betrokken zolang uw klant in Egypte is.",
   },
@@ -145,7 +150,7 @@ export const nl: BrandContent = {
     ],
   },
       programCapabilities: {
-    eyebrow: "WAT UW EGYPTEN-PROGRAMMA KAN BEVATEN",
+    eyebrow: "WAT WIJ KUNNEN AFNEME",
     title: "CAPACITEITEN VOOR UW EGYPTEN-PROGRAMMA",
     intro:
       "Van privéreizen tot landtochten, dit zijn de programmavormen die we coördineren voor reisorganisaties. Elk programma is afgestemd op het briefing dat u ons geeft, niet op een vast product.",
@@ -225,7 +230,6 @@ export const nl: BrandContent = {
       ["Bespreek de details", "We bespreken routes, timing, diensten en de normen die uw bedrijf verwacht."],
       ["Werk samen het programma uit", "We maken op basis van de briefing een plan voor Egypte en verfijnen het met uw team."],
       ["Wij coördineren Egypte ter plaatse", "Ons lokale team regelt de afgesproken diensten en blijft beschikbaar tijdens de reis."],
-      ["Blijf nauw betrokken bij uw klant", "We houden u op de hoogte, zodat u het vaste aanspreekpunt voor de reiziger blijft."],
     ],
     commercialCategories: [
       ["Dagtochten in Egypte", "Stads-, erfgoed- en privéprogramma's voor één dag, lokaal gecoördineerd voor korte verblijven en uitbreidingen van een reisplan."],

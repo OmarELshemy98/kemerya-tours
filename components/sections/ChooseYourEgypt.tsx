@@ -1,11 +1,9 @@
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 
 type Experience = {
   title: string;
   description: string;
-  image: string;
   href: string;
 };
 
@@ -34,10 +32,8 @@ export function ChooseYourEgypt({ experiences, copy }: ChooseYourEgyptProps) {
             <article
               key={experience.title}
               className={`destination-card ${index === 0 ? "destination-card--featured" : ""}`}
-            >
-              <div className="destination-card__image">
-                <Image src={experience.image} alt={experience.title} fill />
-              </div>
+                        >
+              <div className="destination-card__image" />
               <div className="destination-card__content">
                 <h3>{experience.title}</h3>
                 <p>{experience.description}</p>

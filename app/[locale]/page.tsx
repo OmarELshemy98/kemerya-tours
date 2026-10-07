@@ -2,30 +2,19 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
-import { getAdvantages } from "@/data/advantages";
 import { getClientTypes } from "@/data/clientTypes";
-import { getCommercialCategories } from "@/data/commercialCategories";
-import { getJourneys } from "@/data/journeys";
-import { getPartnershipSteps } from "@/data/partnershipSteps";
-import { getWhyPartner } from "@/data/whyPartner";
-import { getCommercialPoints } from "@/data/commercialPoints";
 import { getProgramCapabilities } from "@/data/programCapabilities";
 import { getFaqItems } from "@/data/b2bFaq";
-import { B2BCredibility } from "@/components/sections/B2BCredibility";
-import { B2BFaq } from "@/components/sections/B2BFaq";
+import { getPartnershipSteps } from "@/data/partnershipSteps";
 import { ClientTypes } from "@/components/sections/ClientTypes";
-import { CommercialCategories } from "@/components/sections/CommercialCategories";
-import { CommercialConfidence } from "@/components/sections/CommercialConfidence";
-import { ConversionCTA } from "@/components/sections/ConversionCTA";
+import { FaqTeaser } from "@/components/sections/FaqTeaser";
 import { Hero } from "@/components/sections/Hero";
-import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
 import { ProgramCapabilities } from "@/components/sections/ProgramCapabilities";
-import { SelectedJourneys } from "@/components/sections/SelectedJourneys";
-import { PharaonicDivider } from "@/components/ui/pharaonic";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { WhoKemerya } from "@/components/sections/WhoKemerya";
-import { WhyPartner } from "@/components/sections/WhyPartner";
+import { B2BCredibility } from "@/components/sections/B2BCredibility";
+import { ConversionCTA } from "@/components/sections/ConversionCTA";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
 import { getPageCopy } from "@/lib/brand-content";
 import {
@@ -102,10 +91,10 @@ export default async function LocalePage({
     description: copy.meta.description,
   };
 
-    // Editorial homepage arc: hook → trust → brand story → advantage →
-  // commercial confidence → program capabilities → audiences →
-  // commercial categories → journeys → how-we-work → credibility →
-  // pharaonic divider → conversion CTA → FAQ.
+  // Refined homepage arc:
+  // Hero → Trust → Core Differentiator (merged WhoKemerya) →
+  // Capabilities → Who We Work With → How It Works (4 steps) →
+  // Credibility → Final CTA → FAQ teaser
   return (
     <>
       <script
@@ -127,18 +116,6 @@ export default async function LocalePage({
 
         <WhoKemerya copy={copy.whoKemerya} ui={ui} />
 
-        <KemeryaAdvantage
-          copy={copy.advantages}
-          items={getAdvantages(safeLocale)}
-        />
-
-        <WhyPartner copy={copy.whyPartner} items={getWhyPartner(safeLocale)} />
-
-        <CommercialConfidence
-          copy={copy.commercialConfidence}
-          points={getCommercialPoints(safeLocale)}
-        />
-
         <ProgramCapabilities
           copy={copy.programCapabilities}
           items={getProgramCapabilities(safeLocale)}
@@ -149,17 +126,6 @@ export default async function LocalePage({
           items={getClientTypes(safeLocale)}
         />
 
-        <CommercialCategories
-          copy={copy.categories}
-          items={getCommercialCategories(safeLocale)}
-          ui={ui}
-        />
-
-        <SelectedJourneys
-          journeys={getJourneys(safeLocale).slice(0, 3)}
-          copy={copy.journeys}
-        />
-
         <KemeryaDifference
           copy={copy.partnership}
           steps={getPartnershipSteps(safeLocale)}
@@ -167,15 +133,16 @@ export default async function LocalePage({
 
         <B2BCredibility copy={copy.credibility} ui={ui} />
 
-        <div className="pharaonic-divider" aria-hidden="true">
-          <PharaonicDivider variant="lotus" />
-        </div>
-
         <ConversionCTA copy={copy.conversion} />
 
-        <B2BFaq
-          copy={copy.faq}
+                <FaqTeaser
+          locale={safeLocale}
           items={getFaqItems(safeLocale)}
+          copy={{
+            eyebrow: copy.faq.eyebrow,
+            title: copy.faq.title,
+          }}
+          ui={{ viewAllFaq: ui.viewAllFaq }}
         />
       </LocaleSiteShell>
     </>

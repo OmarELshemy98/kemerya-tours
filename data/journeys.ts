@@ -5,26 +5,18 @@ export const journeys = [
   {
     title: "Cairo and Giza, privately",
     description: "",
-    image:
-      "https://images.unsplash.com/photo-QAPH2rhEMtU?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "A journey shaped around the Nile",
     description: "",
-    image:
-      "https://images.unsplash.com/photo-ycZRsz3aNyE?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "The Red Sea and Sinai",
     description: "",
-    image:
-      "https://images.unsplash.com/photo-8LbpYRX-Nlg?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "Egypt at a family pace",
     description: "",
-    image:
-      "https://images.unsplash.com/photo-esxEOZJu4ug?auto=format&fit=crop&w=900&q=80",
   },
 ] as const;
 

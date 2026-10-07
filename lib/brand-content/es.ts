@@ -37,6 +37,11 @@ export const es: BrandContent = {
       "Un programa puede parecer perfecto sobre el papel y, aun así, depender de los detalles entre sus momentos destacados: cuánto dura realmente un traslado, cuándo conviene hacer una visita y quién puede adaptarse si cambia el día. Desde Guiza coordinamos a las personas que prestan cada servicio y tenemos presentes esos aspectos prácticos.",
       "Organizamos viajes privados y a medida por todo Egipto, coordinando guías egiptólogos profesionales, vehículos privados con aire acondicionado, hoteles, experiencias en el Nilo y asistencia sobre el terreno. La relación con el viajero sigue siendo tuya. Nuestro equipo se ocupa de la parte egipcia del viaje.",
     ],
+    principles: [
+      "JUICIO LOCAL",
+      "COORDINACIÓN FLEXIBLE",
+      "RESPONSABILIDAD EN TIERRA",
+    ],
     cta: "HABLEMOS DE LA COLABORACIÓN",
   },
   clientTypes: {
@@ -78,8 +83,8 @@ export const es: BrandContent = {
     modelLabel: "EJEMPLO DE PROGRAMA PARA SOCIOS",
   },
   partnership: {
-    eyebrow: "CÓMO COLABORAMOS",
-    title: "UNA RELACIÓN DE TRABAJO ADAPTADA A LA PROPUESTA.",
+    eyebrow: "DEL BREVE A EGIPITO",
+    title: "DEL BREVE A EGIPITO",
     intro:
       "Tanto si se trata de un viajero como de un programa más amplio, revisamos los detalles, diseñamos el plan en conjunto y seguimos implicados mientras tu cliente está en Egipto.",
   },
@@ -145,7 +150,7 @@ export const es: BrandContent = {
     ],
   },
       programCapabilities: {
-    eyebrow: "LO QUE TU PROGRAMA EN EGIPTO PUEDE INCLUIR",
+    eyebrow: "LO QUE PODEMOS MANEJAR",
     title: "CAPACIDADES PARA TU PROGRAMA EN EGIPTO",
     intro:
       "Desde viajes privados hasta excursiones en mar, aquí tienes las formas de programa que coordinamos para las empresas de viajes. Cada programa se organiza en torno al brief que nos traes, no alrededor de un producto fijo.",
@@ -225,7 +230,6 @@ export const es: BrandContent = {
       ["Revisemos los detalles", "Hablamos de rutas, tiempos, servicios y del estándar que espera tu empresa."],
       ["Diseñemos el programa juntos", "Preparamos un plan para Egipto a partir de la propuesta y lo ajustamos con tu equipo."],
       ["Coordinamos Egipto sobre el terreno", "Nuestro equipo local organiza los servicios acordados y sigue disponible durante el viaje."],
-      ["Tú mantienes el contacto con tu cliente", "Te mantenemos al tanto para que sigas siendo el interlocutor de referencia del viajero."],
     ],
     commercialCategories: [
       ["Excursiones de un día en Egipto", "Programas urbanos, culturales y privados coordinados localmente para estancias cortas y ampliaciones del itinerario."],

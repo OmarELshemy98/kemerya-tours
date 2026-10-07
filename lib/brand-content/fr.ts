@@ -37,6 +37,11 @@ export const fr: BrandContent = {
       "Un programme peut sembler cohérent sur le papier tout en dépendant de détails entre ses temps forts : la durée réelle d’un transfert, le meilleur moment pour une visite et la personne capable de s’adapter si la journée évolue. Depuis Gizeh, nous coordonnons les équipes qui assurent chaque étape et gardons ces aspects pratiques à l’esprit.",
       "Nous organisons des voyages privés et sur mesure dans toute l’Égypte, en coordonnant des guides égyptologues professionnels, des véhicules privés climatisés, des hôtels, des expériences sur le Nil et l’assistance sur place. Vous gardez la relation avec le voyageur. Notre équipe prend en charge le volet égyptien du voyage.",
     ],
+    principles: [
+      "JUGEMENT LOCAL",
+      "COORDINATION FLEXIBLE",
+      "RESPONDABILITÉ SUR LE TERRAIN",
+    ],
     cta: "PARLER PARTENARIAT",
   },
   clientTypes: {
@@ -78,8 +83,8 @@ export const fr: BrandContent = {
     modelLabel: "EXEMPLE DE PROGRAMME PARTENAIRE",
   },
   partnership: {
-    eyebrow: "NOTRE FAÇON DE COLLABORER",
-    title: "UNE COLLABORATION CONSTRUITE AUTOUR DU BRIEF.",
+    eyebrow: "DE LA DEMANDE À L'ÉGYPTE",
+    title: "DE LA DEMANDE À L'ÉGYPTE",
     intro:
       "Qu’il s’agisse d’un voyageur ou d’un programme plus vaste, nous échangeons sur les détails, élaborons le projet ensemble et restons impliqués pendant le séjour de votre client en Égypte.",
   },
@@ -145,7 +150,7 @@ export const fr: BrandContent = {
     ],
   },
     programCapabilities: {
-    eyebrow: "CE QUE VOTRE PROGRAMME EN ÉGYPTE PEUT INCLURE",
+    eyebrow: "CE QUE NOUS POUVONS GÉRER",
     title: "CAPACITÉS POUR VOTRE PROGRAMME EN ÉGYPTE",
     intro:
       "Des voyages privés aux excursions en mer, voici les formes de programmes que nous coordonnons pour les entreprises de voyage. Chaque programme est organisé autour du brief que vous nous apportez, pas autour d'un produit fixe.",
@@ -282,7 +287,6 @@ export const fr: BrandContent = {
       ["Échangeons sur les détails", "Nous discutons des trajets, du timing, des prestations et du niveau attendu par votre entreprise."],
       ["Élaborons le programme ensemble", "Nous préparons un projet en Égypte à partir du brief, puis l’affinons avec votre équipe."],
       ["Nous coordonnons l’Égypte sur place", "Notre équipe locale organise les prestations convenues et reste disponible pendant le voyage."],
-      ["Vous restez proche de votre client", "Nous vous tenons informé afin que vous restiez l’interlocuteur privilégié du voyageur."],
     ],
     commercialCategories: [
       ["Excursions à la journée en Égypte", "Programmes urbains, patrimoniaux et privés coordonnés localement pour les courts séjours et les extensions d’itinéraire."],

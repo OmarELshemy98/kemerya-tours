@@ -37,6 +37,11 @@ export const de: BrandContent = {
       "Ein Programm kann auf dem Papier stimmig wirken und dennoch von den Details zwischen den Höhepunkten abhängen: Wie lange ein Transfer tatsächlich dauert, wann sich ein Besuch am besten anbietet und wer sich anpassen kann, wenn sich der Tagesablauf ändert. Von Giza aus koordinieren wir die Menschen, die die einzelnen Leistungen erbringen, und behalten die praktischen Details im Blick.",
       "Wir organisieren private und individuell gestaltete Reisen in ganz Ägypten und koordinieren professionelle Ägyptologen als Guides, private klimatisierte Fahrzeuge, Hotels, Erlebnisse auf dem Nil und Betreuung vor Ort. Die Beziehung zu den Reisenden bleibt bei Ihnen. Unser Team kümmert sich um den ägyptischen Teil der Reise.",
     ],
+    principles: [
+      "LOKALE BEURTEILUNG",
+      "FLEXIBLE KOORDINATION",
+      "LOKALE VERANTWORTUNG",
+    ],
     cta: "PARTNERSCHAFT BESPRECHEN",
   },
   clientTypes: {
@@ -78,8 +83,8 @@ export const de: BrandContent = {
     modelLabel: "BEISPIEL FÜR EIN PARTNERPROGRAMM",
   },
   partnership: {
-    eyebrow: "SO ARBEITEN WIR ZUSAMMEN",
-    title: "EINE ZUSAMMENARBEIT NACH MASS DES BRIEFINGS.",
+    eyebrow: "VOM BRIEF ZU ÄGYPTEN",
+    title: "VOM BRIEF ZU ÄGYPTEN",
     intro:
       "Ob für eine einzelne Reise oder ein umfassenderes Programm: Wir besprechen die Details, entwickeln den Plan gemeinsam und bleiben eingebunden, solange Ihre Gäste in Ägypten sind.",
   },
@@ -145,7 +150,7 @@ export const de: BrandContent = {
     ],
   },
     programCapabilities: {
-    eyebrow: "WAS IHR ÄGYPTEN-PROGRAMM UMFASSEN KANN",
+    eyebrow: "WAS WIR KOORDINIEREN KÖNNEN",
     title: "KAPAZITÄTEN FÜR IHR ÄGYPTEN-PROGRAMM",
     intro:
       "Von privaten Reisen bis zu Landausflügen – hier sind die Programmformen, die wir für Reiseunternehmen koordinieren. Jedes Programm wird um das Briefing herumgeplant, das Sie uns bringen, nicht um ein festes Produkt.",
@@ -282,7 +287,6 @@ export const de: BrandContent = {
       ["Besprechen wir die Details", "Wir sprechen über Routen, Zeitplanung, Leistungen und den Standard, den Ihr Unternehmen erwartet."],
       ["Entwickeln wir das Programm gemeinsam", "Wir erstellen auf Grundlage des Briefings einen Ägypten-Plan und stimmen ihn mit Ihrem Team ab."],
       ["Wir koordinieren Ägypten vor Ort", "Unser lokales Team organisiert die vereinbarten Leistungen und bleibt während der Reise erreichbar."],
-      ["Sie bleiben nah an Ihren Gästen", "Wir halten Sie auf dem Laufenden, damit Sie die zentrale Ansprechperson Ihrer Gäste bleiben."],
     ],
     commercialCategories: [
       ["Tagesausflüge in Ägypten", "Lokal koordinierte Stadt-, Kultur- und Privattouren für kurze Aufenthalte und Ergänzungen der Reiseroute."],

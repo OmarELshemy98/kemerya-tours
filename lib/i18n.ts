@@ -11,7 +11,7 @@ export const translations = {
     meta: {
       title: "B2B Egypt Partnership | Kemerya Tours",
       description:
-        "Trusted Egyptian B2B partner for international travel businesses. Private journeys, reliable on-ground operations, and white-label Egypt experiences.",
+        "Trusted Egyptian B2B partner for international travel businesses. Private journeys, reliable on-ground operations, and Egypt experiences for your clients.",
     },
     nav: {
       capabilities: "Capabilities",
@@ -98,13 +98,9 @@ export const translations = {
         "These models reflect what international partners most frequently request: atmosphere, privacy, and deep cultural connection.",
       cta: "VIEW ALL JOURNEYS",
     },
-    testimonials: {
-      eyebrow: "TRAVELER EXPERIENCES",
-      title: "WHAT GUESTS WHO TRUSTED KEMERYA SAY.",
-    },
     partnership: {
       eyebrow: "HOW IT WORKS",
-      title: "A SIMPLE 5-STEP PARTNERSHIP",
+      title: "A SIMPLE 4-STEP PARTNERSHIP",
       intro: "Getting started is straightforward. Here's how we work together.",
     },
     contact: {
@@ -121,7 +117,7 @@ export const translations = {
           "How can we help? Tell us about your ideal Egypt product and target market.",
       },
       submit: "SEND PARTNERSHIP INQUIRY",
-      note: "We respond within 24 business hours. No obligation.",
+      note: "Your inquiry goes directly to the Kemerya team.",
     },
     conversion: {
       eyebrow: "YOUR NEXT EGYPT PARTNER?",
@@ -234,13 +230,9 @@ export const translations = {
         "تعكس هذه النماذج أكثر ما يطلبه الشركاء الدوليون: أجواء مميزة، وخصوصية، وارتباطًا ثقافيًا عميقًا.",
       cta: "عرض جميع الرحلات",
     },
-    testimonials: {
-      eyebrow: "تجارب المسافرين",
-      title: "ماذا يقول الضيوف الذين وضعوا ثقتهم في Kemerya؟",
-    },
     partnership: {
       eyebrow: "كيف يعمل ذلك",
-      title: "شراكة بسيطة من 5 خطوات",
+      title: "شراكة بسيطة من 4 خطوات",
       intro: "البدء سهل. إليك كيف نعمل معا.",
     },
     contact: {
@@ -257,7 +249,7 @@ export const translations = {
           "كيف يمكننا مساعدتك؟ أخبرنا عن منتج مصر المثالي وسوقك المستهدف.",
       },
       submit: "أرسل استفسار الشراكة",
-      note: "نرد خلال 24 ساعة عمل. بدون أي التزام.",
+      note: "يتم إرسال استفسارك مباشرة إلى فريق Kemerya.",
     },
     conversion: {
       eyebrow: "شريكك التالي في مصر؟",
@@ -285,7 +277,7 @@ export const translations = {
     meta: {
       title: "Partenariat B2B Égypte | Kemerya Tours",
       description:
-        "Partenaire égyptien de confiance pour les entreprises internationales du tourisme. Voyages privés, opérations fiables sur place et expériences en Égypte en marque blanche.",
+        "Partenaire égyptien de confiance pour les entreprises internationales du tourisme. Voyages privés, opérations fiables sur place et expériences en Égypte pour vos clients.",
     },
     nav: {
       capabilities: "Capacités",
@@ -373,13 +365,9 @@ export const translations = {
         "Ces modèles reflètent les demandes les plus fréquentes de nos partenaires internationaux : une atmosphère marquante, des séjours privés et un lien culturel profond.",
       cta: "VOIR TOUS LES TRAJETS",
     },
-    testimonials: {
-      eyebrow: "EXPÉRIENCES DE VOYAGEURS",
-      title: "CE QUE DISENT LES VOYAGEURS QUI ONT FAIT CONFIANCE À KEMERYA.",
-    },
     partnership: {
       eyebrow: "COMMENT ÇA FONCTIONNE",
-      title: "UN PARTENARIAT SIMPLE EN 5 ÉTAPES",
+      title: "UN PARTENARIAT SIMPLE EN 4 ÉTAPES",
       intro: "La mise en place est simple. Voici comment nous collaborons.",
     },
     contact: {
@@ -396,7 +384,7 @@ export const translations = {
             "Comment pouvons-nous vous aider ? Décrivez-nous l’offre que vous souhaitez proposer en Égypte ainsi que votre marché cible.",
       },
           submit: "ENVOYER LA DEMANDE DE PARTENARIAT",
-      note: "Nous répondons dans les 24 heures ouvrables. Sans obligation.",
+      note: "Votre demande est transmise directement à l’équipe Kemerya.",
     },
     conversion: {
       eyebrow: "VOTRE PROCHAIN PARTENAIRE EN ÉGYPTE ?",
@@ -512,10 +500,6 @@ export const translations = {
         "Questi modelli riflettono le richieste più frequenti dei partner internazionali: atmosfera, riservatezza e un profondo legame con la cultura locale.",
       cta: "VEDI TUTTI I VIAGGI",
     },
-    testimonials: {
-      eyebrow: "ESPERIENZE DEI VIAGGIATORI",
-      title: "COSA DICONO GLI OSPITI CHE SI SONO AFFIDATI A KEMERYA.",
-    },
     partnership: {
       eyebrow: "COME FUNZIONA",
       title: "UNA PARTNERSHIP SEMPLICE IN 5 PASSI",
@@ -535,7 +519,7 @@ export const translations = {
           "Come possiamo aiutarti? Parlaci del prodotto turistico che immagini per l'Egitto e del tuo mercato di riferimento.",
       },
       submit: "INVIA RICHIESTA DI PARTNERSHIP",
-      note: "Rispondiamo entro 24 ore lavorative. Senza impegno.",
+      note: "La tua richiesta viene inviata direttamente al team Kemerya.",
     },
     conversion: {
       eyebrow: "IL TUO PROSSIMO PARTNER IN EGITTO?",
@@ -564,7 +548,7 @@ export const translations = {
     meta: {
       title: "Partnership B2B en Egipto | Kemerya Tours",
       description:
-        "Socio egipcio de confianza para empresas internacionales del sector turístico. Viajes privados, operaciones locales fiables y experiencias en Egipto con marca blanca.",
+        "Socio egipcio de confianza para empresas internacionales del sector turístico. Viajes privados, operaciones locales fiables y experiencias en Egipto para sus clientes.",
     },
     nav: {
       capabilities: "Serviços",
@@ -650,10 +634,6 @@ export const translations = {
         "Estos modelos reflejan lo que los socios internacionales solicitan con mayor frecuencia: atmósfera, privacidad y conexión cultural profunda.",
       cta: "VER TODOS LOS VIAJES",
     },
-    testimonials: {
-      eyebrow: "EXPERIENCIAS DE VIAJEROS",
-      title: "LO QUE DICEN LOS VIAJEROS QUE CONFIARON EN KEMERYA.",
-    },
     partnership: {
       eyebrow: "CÓMO FUNCIONA",
       title: "UNA COLABORACIÓN SENCILLA EN 5 PASOS",
@@ -673,7 +653,7 @@ export const translations = {
           "¿Cómo podemos ayudarte? Cuéntanos qué producto turístico te gustaría ofrecer en Egipto y cuál es tu mercado objetivo.",
       },
       submit: "ENVIAR SOLICITUD DE COLABORACIÓN",
-      note: "Respondemos en 24 horas laborables. Sin compromiso.",
+      note: "Tu consulta se envía directamente al equipo de Kemerya.",
     },
     conversion: {
       eyebrow: "¿BUSCAS UN SOCIO EN EGIPTO?",
@@ -788,10 +768,6 @@ export const translations = {
         "Diese Modelle spiegeln wider, was internationale Partner am häufigsten verlangen: Atmosphäre, Privatsphäre und tiefe kulturelle Verbindung.",
       cta: "ALLE REISEN ANSEHEN",
     },
-    testimonials: {
-      eyebrow: "REISEERFAHRUNGEN",
-      title: "WAS GÄSTE ÜBER KEMERYA SAGEN.",
-    },
     partnership: {
       eyebrow: "WIE ES FUNKTIONIERT",
       title: "EINE PARTNERSCHAFT IN 5 EINFACHEN SCHRITTEN",
@@ -811,7 +787,7 @@ export const translations = {
           "Wie können wir helfen? Erzählen Sie uns von Ihrem idealen Reiseangebot für Ägypten und Ihrem Zielmarkt.",
       },
       submit: "PARTNERSCHAFTSANFRAGE SENDEN",
-      note: "Wir antworten innerhalb von 24 Arbeitsstunden. Unverbindlich.",
+      note: "Ihre Anfrage wird direkt an das Kemerya-Team weitergeleitet.",
     },
     conversion: {
       eyebrow: "IHR NÄCHSTER PARTNER FÜR ÄGYPTEN?",
@@ -840,7 +816,7 @@ export const translations = {
     meta: {
       title: "Parceria B2B no Egito | Kemerya Tours",
       description:
-        "Parceiro egípcio confiável para empresas de viagens internacionais. Viagens privadas, operações locais confiáveis e experiências no Egito em marca branca.",
+        "Parceiro egípcio confiável para empresas de viagens internacionais. Viagens privadas, operações locais confiáveis e experiências no Egito para seus clientes.",
     },
     nav: {
       capabilities: "Capacidades",
@@ -926,13 +902,9 @@ export const translations = {
         "Esses modelos refletem o que os parceiros internacionais mais pedem: atmosfera, privacidade e conexão cultural profunda.",
       cta: "VER TODOS OS ROTEIROS",
     },
-    testimonials: {
-      eyebrow: "DEPOIMENTOS DE VIAJANTES",
-      title: "O QUE DIZEM OS CLIENTES QUE CONFIARAM NA KEMERYA.",
-    },
     partnership: {
       eyebrow: "COMO FUNCIONA",
-      title: "UMA PARCERIA SIMPLES EM 5 ETAPAS",
+            title: "UMA PARCERIA SIMPLES EM 4 ETAPAS",
       intro: "Começar é simples. Veja como trabalhamos juntos.",
     },
     contact: {
@@ -949,7 +921,7 @@ export const translations = {
           "Como podemos ajudar? Conte-nos qual produto turístico pretende oferecer no Egito e qual é o seu mercado-alvo.",
       },
       submit: "ENVIAR CONSULTA DE PARCERIA",
-      note: "Respondemos em até 24 horas úteis. Sem compromisso.",
+      note: "Sua consulta é enviada diretamente à equipe Kemerya.",
     },
     conversion: {
       eyebrow: "SEU PRÓXIMO PARCEIRO NO EGITO?",
@@ -1064,10 +1036,6 @@ export const translations = {
         "Deze modellen weerspiegelen waar internationale partners het vaakst om vragen: sfeer, privacy en een diepgaande culturele beleving.",
       cta: "ALLE REIZEN BEKIJKEN",
     },
-    testimonials: {
-      eyebrow: "REISERVARINGEN",
-      title: "WAT GASTEN OVER KEMERYA ZEGGEN.",
-    },
     partnership: {
       eyebrow: "HOE HET WERKT",
       title: "EEN EENVOUDIGE 5-STAPPEN PARTNERSCHAP",
@@ -1087,7 +1055,7 @@ export const translations = {
           "Hoe kunnen we helpen? Vertel ons over uw ideale Egyptische product en doelgroep.",
       },
       submit: "VERSTUUR UW PARTNERSCHAPAANVRAAG",
-      note: "Wij reageren binnen 24 werkuren. Vrijblijvend.",
+      note: "Je verzoek wordt direct naar het Kemerya-team gestuurd.",
     },
     conversion: {
       eyebrow: "UW VOLGENDE EGYPTE-PARTNER?",
@@ -1202,10 +1170,6 @@ export const translations = {
         "这些旅程体现了国际合作伙伴最常提出的需求：独特氛围、私密体验与深度文化交流。",
       cta: "查看全部线路",
     },
-    testimonials: {
-      eyebrow: "旅客体验",
-      title: "听听信赖 Kemerya 的旅客怎么说。",
-    },
     partnership: {
       eyebrow: "合作方式",
       title: "一个简单的 5 步合作流程",
@@ -1225,7 +1189,7 @@ export const translations = {
           "我们如何帮助您？告诉我们您理想的埃及产品和目标市场。",
       },
       submit: "发送合作咨询",
-      note: "我们将在 24 个工作小时内回复。提交咨询无需承担任何义务。",
+      note: "您的咨询将直接转发给 Kemerya 团队。",
     },
     conversion: {
       eyebrow: "正在寻找值得信赖的埃及合作伙伴？",
@@ -1284,6 +1248,7 @@ export type UiTranslations = {
   localGuideImageAlt: string;
   nileImageAlt: string;
   partnershipInquirySubject: string;
+  viewAllFaq: string;
 };
 
 export const uiTranslations: Record<Locale, UiTranslations> = {
@@ -1310,7 +1275,8 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     heroImageAlt: "Private Egypt travel experience near the pyramids",
     localGuideImageAlt: "Local guide sharing insights during an Egypt journey",
     nileImageAlt: "Cinematic view of Egypt and the Nile",
-    partnershipInquirySubject: "Partnership Inquiry",
+        partnershipInquirySubject: "Partnership Inquiry",
+    viewAllFaq: "VIEW ALL FAQ",
   },
   ar: {
     skipToMainContent: "انتقل إلى المحتوى الرئيسي",
@@ -1336,6 +1302,7 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "مرشد محلي يشارك معارفه خلال رحلة في مصر",
     nileImageAlt: "مشهد سينمائي لمصر ونهر النيل",
     partnershipInquirySubject: "استفسار عن الشراكة",
+    viewAllFaq: "عرض جميع الأسئلة",
   },
   fr: {
     skipToMainContent: "Aller au contenu principal",
@@ -1361,6 +1328,7 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Un guide local partage ses connaissances pendant un voyage en Égypte",
     nileImageAlt: "Vue cinématographique de l’Égypte et du Nil",
     partnershipInquirySubject: "Demande de partenariat",
+    viewAllFaq: "VOIR TOUTES LES FAQ",
   },
   it: {
     skipToMainContent: "Vai al contenuto principale",
@@ -1386,6 +1354,7 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Una guida locale racconta l’Egitto durante il viaggio",
     nileImageAlt: "Veduta cinematografica dell’Egitto e del Nilo",
     partnershipInquirySubject: "Richiesta di partnership",
+    viewAllFaq: "VEDI TUTTE LE FAQ",
   },
   es: {
     skipToMainContent: "Ir al contenido principal",
@@ -1411,6 +1380,7 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Un guía local comparte sus conocimientos durante un viaje por Egipto",
     nileImageAlt: "Vista cinematográfica de Egipto y el Nilo",
     partnershipInquirySubject: "Consulta de colaboración",
+    viewAllFaq: "VER TODAS LAS FAQ",
   },
   de: {
     skipToMainContent: "Zum Hauptinhalt springen",
@@ -1436,6 +1406,7 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Ein lokaler Guide gibt Einblicke während einer Ägyptenreise",
     nileImageAlt: "Filmischer Blick auf Ägypten und den Nil",
     partnershipInquirySubject: "Partnerschaftsanfrage",
+    viewAllFaq: "ALLE FAQ ANSEHEN",
   },
   pt: {
     skipToMainContent: "Ir para o conteúdo principal",
@@ -1461,6 +1432,7 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Guia local partilha conhecimentos durante uma viagem pelo Egito",
     nileImageAlt: "Vista cinematográfica do Egito e do Nilo",
     partnershipInquirySubject: "Pedido de parceria",
+    viewAllFaq: "VER TODAS AS FAQ",
   },
   nl: {
     skipToMainContent: "Ga naar de hoofdinhoud",
@@ -1486,6 +1458,7 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Een lokale gids deelt inzichten tijdens een reis door Egypte",
     nileImageAlt: "Sfeervol uitzicht op Egypte en de Nijl",
     partnershipInquirySubject: "Aanvraag voor samenwerking",
+    viewAllFaq: "ALLES FAQ BEKIJKEN",
   },
   zh: {
     skipToMainContent: "跳转至主要内容",
@@ -1511,5 +1484,6 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "当地导游在埃及旅途中分享见解",
     nileImageAlt: "埃及与尼罗河的电影般景致",
     partnershipInquirySubject: "合作咨询",
+    viewAllFaq: "查看所有常见问题",
   },
 };

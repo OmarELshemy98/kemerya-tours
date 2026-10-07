@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -21,14 +20,7 @@ export function TailorMadeCTA({ copy, ui }: TailorMadeCTAProps) {
     <Section>
       <Container>
         <div className="cta-panel">
-          <div className="cta-panel__image">
-            <Image
-                    src="https://images.unsplash.com/photo-2bgirUct1MU?auto=format&fit=crop&w=1800&q=80"
-              alt={ui.nileImageAlt}
-              fill
-              sizes="(max-width: 768px) 100vw, 60vw"
-            />
-          </div>
+                    <div className="cta-panel__image" />
 
           <div className="cta-panel__content">
             <p className="eyebrow hero__kicker">{copy.eyebrow}</p>

@@ -12,6 +12,7 @@ type WhoKemeryaProps = {
     subtitle: string;
     intro: string;
     paragraphs: readonly string[];
+    principles: readonly string[];
     cta: string;
   };
 };
@@ -21,21 +22,34 @@ export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
     <Section id="who-kemerya">
       <Container>
         <div className="section__heading">
-                    <p className="eyebrow">{copy.eyebrow}</p>
+          <p className="eyebrow">{copy.eyebrow}</p>
           <h2 className="split-lines">{copy.title}</h2>
           <p className="section-intro">{copy.subtitle}</p>
         </div>
 
         <div className="who-kemerya__content">
-          <div className="who-kemerya__text">
+          <div className="who-kemera__text">
             <p className="lead">{copy.intro}</p>
             {copy.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
+
+            {copy.principles && copy.principles.length > 0 && (
+              <div className="kemerya-principles">
+                {copy.principles.map((principle, index) => (
+                  <div key={index} className="principle-item">
+                    <span className="principle-item__number">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="principle-item__label">{principle}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="who-kemerya__cta">
-                        <Button href={business.partnerCtaUrl} variant="gold" aria-label={ui.partnerWithKemeryaTours}>
+            <Button href={business.partnerCtaUrl} variant="gold" aria-label={ui.partnerWithKemeryaTours}>
               {copy.cta}
             </Button>
           </div>

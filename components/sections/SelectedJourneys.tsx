@@ -1,11 +1,9 @@
-﻿import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 
 type Journey = {
   title: string;
   description: string;
-  image: string;
 };
 
 type SelectedJourneysProps = {
@@ -31,14 +29,7 @@ export function SelectedJourneys({ journeys, copy }: SelectedJourneysProps) {
         <div className="journey-editorials">
           {journeys.map((journey, index) => (
             <article key={journey.title} className="journey-editorial">
-              <div className="journey-editorial__media">
-                <Image
-                  src={journey.image}
-                  alt={journey.title}
-                  fill
-                  sizes="(max-width: 820px) 100vw, 42vw"
-                  loading="lazy"
-                />
+              <div className="journey-editorial__media" aria-hidden="true">
                 <div className="journey-editorial__badge" aria-hidden="true">
                   {String(index + 1).padStart(2, "0")}
                 </div>

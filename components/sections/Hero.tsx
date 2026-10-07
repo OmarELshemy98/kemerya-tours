@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -21,16 +20,8 @@ type HeroProps = {
 export function Hero({ locale, copy, ui }: HeroProps) {
   return (
     <section className="hero" aria-labelledby="hero-heading">
-      <div className="hero__image">
-        <Image
-                src="https://images.unsplash.com/photo-esxEOZJu4ug?auto=format&fit=crop&w=1800&q=80"
-          alt={ui.heroImageAlt}
-          fill
-          priority
-          sizes="100vw"
-        />
-      </div>
-            <div className="hero__sun" aria-hidden="true">
+      <div className="hero__image" aria-hidden="true" />
+      <div className="hero__sun" aria-hidden="true">
         <SunDisk />
       </div>
 
