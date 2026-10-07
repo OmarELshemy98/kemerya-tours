@@ -1,4 +1,5 @@
-import { datasetTranslations, type Locale } from "@/lib/i18n";
+import { brandContent } from "@/lib/brand-content";
+import type { Locale } from "@/lib/i18n";
 
 export type Advantage = {
   title: string;
@@ -15,35 +16,34 @@ export type AdvantageData = {
 
 export const advantages = [
   {
-    title: "CLIENT RELATIONSHIP",
-    description: "Yours to own and nurture. We never contact your clients directly.",
+    title: "A person, not a ticket number",
+    description: "",
     icon: "client" as const,
   },
   {
-    title: "LOGISTICS & OPERATIONS",
-    description: "Ours to execute flawlessly — permits, transport, guides, and every detail on the ground.",
+    title: "Judgment when the day changes",
+    description: "",
     icon: "ops" as const,
   },
   {
-    title: "LOCAL EXPERTISE",
-    description: "Egyptologist guides, Nubian storytellers, and Bedouin hosts available for every itinerary.",
+    title: "Room to adapt, with coordination",
+    description: "",
     icon: "expertise" as const,
   },
   {
-    title: "COMMISSION STRUCTURE",
-    description: "Transparent, competitive FAM rates. You set your own markup and client pricing.",
+    title: "Care for the relationship you own",
+    description: "",
     icon: "commission" as const,
   },
   {
-    title: "BRAND ALIGNMENT",
-    description: "Your brand, your voice, our delivery. White-label operations across the board.",
+    title: "Responsibility beyond the booking",
+    description: "",
     icon: "brand" as const,
   },
 ] as const;
 
 export function getAdvantages(locale: Locale) {
-  if (locale === "en") return advantages;
-  const copy = datasetTranslations[locale].advantages;
+  const copy = brandContent[locale].datasets.advantages;
   if (copy.length !== advantages.length) throw new Error(`Incomplete advantages translation: ${locale}`);
   return advantages.map((item, index) => ({
     ...item,

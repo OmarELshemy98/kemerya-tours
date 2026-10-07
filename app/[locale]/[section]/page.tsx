@@ -9,7 +9,6 @@ import { ConversionCTA } from "@/components/sections/ConversionCTA";
 import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
 import { SelectedJourneys } from "@/components/sections/SelectedJourneys";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { WhoKemerya } from "@/components/sections/WhoKemerya";
 import { WhyPartner } from "@/components/sections/WhyPartner";
 import { getAdvantages } from "@/data/advantages";
@@ -18,9 +17,9 @@ import { getClientTypes } from "@/data/clientTypes";
 import { getCommercialCategories } from "@/data/commercialCategories";
 import { getJourneys } from "@/data/journeys";
 import { getPartnershipSteps } from "@/data/partnershipSteps";
-import { getTestimonials } from "@/data/testimonials";
 import { getWhyPartner } from "@/data/whyPartner";
-import { locales, translations, uiTranslations, type Locale } from "@/lib/i18n";
+import { getPageCopy } from "@/lib/brand-content";
+import { locales, uiTranslations, type Locale } from "@/lib/i18n";
 
 const sections = [
   "capabilities",
@@ -51,7 +50,7 @@ export async function generateMetadata({
   if (!locales.includes(locale as Locale) || !isSection(section)) return {};
 
   const safeLocale = locale as Locale;
-  const copy = translations[safeLocale];
+  const copy = getPageCopy(safeLocale);
   const content = {
     capabilities: [copy.capabilities.title, copy.capabilities.intro],
     categories: [copy.categories.title, copy.categories.intro],
@@ -90,7 +89,7 @@ export default async function LocaleSectionPage({
   if (!locales.includes(locale as Locale) || !isSection(section)) notFound();
 
   const safeLocale = locale as Locale;
-  const copy = translations[safeLocale];
+  const copy = getPageCopy(safeLocale);
   const ui = uiTranslations[safeLocale];
 
   let content;
@@ -109,7 +108,6 @@ export default async function LocaleSectionPage({
           <SelectedJourneys
             journeys={getJourneys(safeLocale)}
             copy={copy.journeys}
-            ui={ui}
           />
         </>
       );
@@ -131,10 +129,6 @@ export default async function LocaleSectionPage({
         <>
           <WhoKemerya copy={copy.whoKemerya} ui={ui} />
           <ClientTypes copy={copy.clientTypes} items={getClientTypes(safeLocale)} />
-          <Testimonials
-            items={getTestimonials(safeLocale)}
-            copy={copy.testimonials}
-          />
         </>
       );
       break;
@@ -142,7 +136,7 @@ export default async function LocaleSectionPage({
       content = (
         <>
           <B2BContactForm copy={copy.contact} ui={ui} />
-          <ConversionCTA copy={copy.conversion} ui={ui} />
+          <ConversionCTA copy={copy.conversion} />
         </>
       );
       break;

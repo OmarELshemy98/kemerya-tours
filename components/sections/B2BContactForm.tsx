@@ -17,6 +17,7 @@ type B2BContactFormProps = {
       company: string;
       role: string;
       phone: string;
+      destination: string;
       message: string;
     };
     submit: string;
@@ -31,6 +32,7 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
     company: "",
     role: "",
     phone: "",
+    destination: "",
     message: "",
   });
 
@@ -43,7 +45,7 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
     // Form submission would integrate with a backend endpoint
     const subject = encodeURIComponent(ui.partnershipInquirySubject);
     const body = encodeURIComponent(
-      `${copy.fields.name}: ${formData.name}\n${copy.fields.email}: ${formData.email}\n${copy.fields.company}: ${formData.company}\n${copy.fields.role}: ${formData.role}\n${copy.fields.phone}: ${formData.phone}\n${ui.messageField}: ${formData.message}`,
+      `${copy.fields.name}: ${formData.name}\n${copy.fields.email}: ${formData.email}\n${copy.fields.company}: ${formData.company}\n${copy.fields.role}: ${formData.role}\n${copy.fields.phone}: ${formData.phone}\n${copy.fields.destination}: ${formData.destination}\n${ui.messageField}: ${formData.message}`,
     );
     window.location.href = `mailto:partners@kemeryatours.com?subject=${subject}&body=${body}`;
   };
@@ -112,6 +114,19 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
                 value={formData.role}
                 onChange={(e) => handleChange("role", e.target.value)}
                 required
+              />
+            </div>
+
+            <div className="b2b-contact__field-group b2b-contact__full">
+              <label className="b2b-contact__label" htmlFor="destination">
+                {copy.fields.destination}
+              </label>
+              <input
+                id="destination"
+                type="text"
+                className="b2b-contact__input"
+                value={formData.destination}
+                onChange={(e) => handleChange("destination", e.target.value)}
               />
             </div>
 

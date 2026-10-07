@@ -1,12 +1,13 @@
 import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import type { Locale, translations, uiTranslations } from "@/lib/i18n";
+import type { getPageCopy } from "@/lib/brand-content";
+import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type LocaleSiteShellProps = {
   locale: Locale;
-  copy: (typeof translations)[Locale];
-  ui: (typeof uiTranslations)[Locale];
+  copy: ReturnType<typeof getPageCopy>;
+  ui: UiTranslations;
   children: ReactNode;
 };
 

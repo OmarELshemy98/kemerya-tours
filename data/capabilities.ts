@@ -1,4 +1,5 @@
-import { datasetTranslations, type Locale } from "@/lib/i18n";
+import { brandContent } from "@/lib/brand-content";
+import type { Locale } from "@/lib/i18n";
 
 export type Capability = {
   title: string;
@@ -22,82 +23,49 @@ export type CapabilityIcon =
 
 export const capabilities = [
   {
-    title: "Private Journeys",
-    description:
-      "Bespoke itineraries created exclusively for your client’s group, with private Egyptologist guides and first-class logistics.",
+    title: "Private and tailor-made journeys",
+    description: "",
     icon: "pyramid" as const,
   },
   {
-    title: "Group Programs",
-    description:
-      "Small-group departures (4–12 guests) designed for travel advisors who want predictable pricing and shared economies.",
+    title: "Egyptologist-guided travel",
+    description: "",
     icon: "users" as const,
   },
   {
-    title: "Tailor-Made Itineraries",
-    description:
-      "Every trip is built around your client’s interests, pace, and season — no fixed group dates.",
+    title: "Nile cruises and stays",
+    description: "",
     icon: "map" as const,
   },
   {
-    title: "Nile Cruises",
-    description:
-      "Five-star dahabiya and cruise experiences with expert-guided land excursions along the river.",
+    title: "Shore excursions",
+    description: "",
     icon: "ship" as const,
   },
   {
-    title: "Shore Excursions",
-    description:
-      "Streamlined port experiences for Mediterranean and Red Sea cruise passengers — on-time, every time.",
+    title: "Desert, Red Sea and Sinai",
+    description: "",
     icon: "calendar" as const,
   },
   {
-    title: "Cultural Immersion",
-    description:
-      "Authentic experiences — cooking classes, craft workshops, Nubian village visits, and local feasts.",
+    title: "Groups, families and honeymoons",
+    description: "",
     icon: "sunset" as const,
   },
   {
-    title: "Luxury Travel",
-    description:
-      "Five-star accommodations, private transfers, and elevated experiences for high-end clientele.",
+    title: "Private air-conditioned vehicles",
+    description: "",
     icon: "luxury" as const,
   },
   {
-    title: "Accessible Travel",
-    description:
-      "Wheels-accessible itineraries and specially trained guides for travelers with mobility needs.",
+    title: "Accessible and multilingual support",
+    description: "",
     icon: "heart" as const,
-  },
-  {
-    title: "Photography Safaris",
-    description:
-      "Professional photographer-led journeys timed for golden hour at Egypt’s most photogenic sites.",
-    icon: "camera" as const,
-  },
-  {
-    title: "Corporate & Incentive",
-    description:
-      "End-to-end incentive travel and corporate events with full project management and reporting.",
-    icon: "briefcase" as const,
-  },
-  {
-    title: "White-Label Services",
-    description:
-      "Full white-label partnership — your brand, your pricing, our Egypt operations under the hood.",
-    icon: "globe" as const,
-  },
-  {
-    title: "Custom Product Design",
-    description:
-      "Co-create unique Egypt products for your portfolio — exclusive access and private contracts.",
-    icon: "puzzle" as const,
   },
 ] as const;
 
 export function getCapabilities(locale: Locale) {
-  if (locale === "en") return capabilities;
-  const copy = datasetTranslations[locale].capabilities;
+  const copy = brandContent[locale].datasets.capabilities;
   if (copy.length !== capabilities.length) throw new Error(`Incomplete capabilities translation: ${locale}`);
   return capabilities.map((item, index) => ({
     ...item,

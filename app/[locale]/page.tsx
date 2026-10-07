@@ -4,9 +4,9 @@ import { socialLinks } from "@/data/social";
 import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
+import { getPageCopy } from "@/lib/brand-content";
 import {
   locales,
-  translations,
   uiTranslations,
   type Locale,
 } from "@/lib/i18n";
@@ -27,7 +27,7 @@ export default async function LocalePage({
   }
 
   const safeLocale = locale as Locale;
-  const copy = translations[safeLocale];
+  const copy = getPageCopy(safeLocale);
   const ui = uiTranslations[safeLocale];
   const schema = {
     "@context": "https://schema.org",
@@ -54,7 +54,7 @@ export default async function LocalePage({
       />
       <LocaleSiteShell locale={safeLocale} copy={copy} ui={ui}>
         <>
-          <Hero copy={copy.hero} ui={ui} />
+          <Hero locale={safeLocale} copy={copy.hero} ui={ui} />
           <TrustBar
             locale={safeLocale}
             items={copy.trust.items}

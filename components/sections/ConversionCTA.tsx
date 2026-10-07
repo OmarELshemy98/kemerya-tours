@@ -2,10 +2,8 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { business } from "@/data/business";
-import type { UiTranslations } from "@/lib/i18n";
 
 type ConversionCTAProps = {
-  ui: UiTranslations;
   copy: {
     eyebrow: string;
     title: readonly string[];
@@ -15,7 +13,7 @@ type ConversionCTAProps = {
   };
 };
 
-export function ConversionCTA({ copy, ui }: ConversionCTAProps) {
+export function ConversionCTA({ copy }: ConversionCTAProps) {
   return (
     <Section id="conversion">
       <Container>
@@ -37,21 +35,12 @@ export function ConversionCTA({ copy, ui }: ConversionCTAProps) {
             <p className="cta-panel__description">{copy.description}</p>
 
             <div className="cta-panel__actions">
-                            <Button
+              <Button
                 href={business.partnerCtaUrl}
                 external
                 variant="gold"
-                aria-label={ui.becomePartnerKemeryaTours}
               >
                 {copy.primary}
-              </Button>
-              <Button
-                href="https://calendly.com/kemerya/partnership"
-                external
-                variant="dark"
-                aria-label={ui.bookPartnershipConsultation}
-              >
-                {copy.secondary}
               </Button>
             </div>
           </div>

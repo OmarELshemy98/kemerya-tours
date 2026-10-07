@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { business } from "@/data/business";
 import type { CommercialCategory } from "@/data/commercialCategories";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -49,11 +47,6 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
           ))}
         </div>
 
-        <div style={{ marginTop: "2rem" }}>
-                    <Button href={business.partnerCtaUrl} external variant="gold">
-            {copy.cta}
-          </Button>
-        </div>
       </Container>
     </Section>
   );

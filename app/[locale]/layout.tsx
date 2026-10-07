@@ -7,11 +7,11 @@ import {
 import "../globals.css";
 import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
+import { brandContent } from "@/lib/brand-content";
 import {
   defaultLocale,
   getDirection,
   locales,
-  translations,
   uiTranslations,
   type Locale,
 } from "@/lib/i18n";
@@ -47,7 +47,7 @@ export async function generateMetadata({
   const safeLocale = locales.includes(locale as Locale)
     ? (locale as Locale)
     : defaultLocale;
-  const copy = translations[safeLocale];
+  const copy = brandContent[safeLocale];
 
   return {
     title: copy.meta.title,

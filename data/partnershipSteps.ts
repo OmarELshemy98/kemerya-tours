@@ -1,4 +1,5 @@
-import { datasetTranslations, type Locale } from "@/lib/i18n";
+import { brandContent } from "@/lib/brand-content";
+import type { Locale } from "@/lib/i18n";
 
 export type PartnershipStep = {
   step: string;
@@ -9,39 +10,33 @@ export type PartnershipStep = {
 export const partnershipSteps = [
   {
     step: "01",
-    title: "Initial Consultation",
-    description:
-      "We learn about your brand, client base, and the Egypt experiences you want to offer.",
+    title: "Tell us about the traveler",
+    description: "",
   },
   {
     step: "02",
-    title: "Custom Proposal",
-    description:
-      "We deliver a tailored partnership package — pricing, commissions, and sample itineraries.",
+    title: "Talk through the details",
+    description: "",
   },
   {
     step: "03",
-    title: "Seamless Operations",
-    description:
-      "Your clients travel while we handle every operational detail on the ground in Egypt.",
+    title: "Shape the program together",
+    description: "",
   },
   {
     step: "04",
-    title: "Active Support",
-    description:
-      "Dedicated B2B support desk available 24/7 during your client's journey.",
+    title: "We coordinate Egypt on the ground",
+    description: "",
   },
   {
     step: "05",
-    title: "Ongoing Partnership",
-    description:
-      "Continuous feedback loop, quarterly reviews, and evolving product development together.",
+    title: "You stay close to your client",
+    description: "",
   },
 ] as const;
 
 export function getPartnershipSteps(locale: Locale) {
-  if (locale === "en") return partnershipSteps;
-  const copy = datasetTranslations[locale].partnershipSteps;
+  const copy = brandContent[locale].datasets.partnershipSteps;
   if (copy.length !== partnershipSteps.length) throw new Error(`Incomplete partnership steps translation: ${locale}`);
   return partnershipSteps.map((item, index) => ({
     ...item,

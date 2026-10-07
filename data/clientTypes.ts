@@ -1,4 +1,5 @@
-import { datasetTranslations, type Locale } from "@/lib/i18n";
+import { brandContent } from "@/lib/brand-content";
+import type { Locale } from "@/lib/i18n";
 
 export type ClientType = {
   title: string;
@@ -12,50 +13,47 @@ export type ClientTypeIcon =
   | "users"
   | "map"
   | "briefcase"
-  | "pyramid";
+  | "pyramid"
+  | "ship";
 
 export const clientTypes = [
   {
-    title: "Luxury Travel Agencies",
-    description:
-      "High-end retailers seeking exclusive, white-glove Egypt experiences for affluent clients.",
+    title: "Travel agencies",
+    description: "",
     icon: "luxury" as const,
   },
   {
-    title: "Tour Operators",
-    description:
-      "Established operators adding Egypt departures to their portfolio with full operational backing.",
+    title: "Tour operators",
+    description: "",
     icon: "globe" as const,
   },
   {
-    title: "Travel Advisors",
-    description:
-      "Independent advisors looking for reliable, commission-friendly Egypt itineraries.",
+    title: "Travel advisors",
+    description: "",
     icon: "users" as const,
   },
   {
-    title: "Destination Management Companies",
-    description:
-      "DMCs expanding into Egypt through a vetted local operating partner.",
+    title: "Destination management companies",
+    description: "",
     icon: "map" as const,
   },
   {
-    title: "Corporate Travel Buyers",
-    description:
-      "MICE and incentive planners designing corporate events and reward trips to Egypt.",
+    title: "Travel wholesalers",
+    description: "",
     icon: "briefcase" as const,
   },
   {
-    title: "Incentive & Rewards Planners",
-    description:
-      "Program designers creating transformative incentive journeys on the Nile and beyond.",
+    title: "Luxury travel designers",
+    description: "",
     icon: "pyramid" as const,
   },
+  { title: "Group travel organizers", description: "", icon: "users" as const },
+  { title: "Corporate and incentive travel", description: "", icon: "briefcase" as const },
+  { title: "Cruise and shore-excursion partners", description: "", icon: "ship" as const },
 ] as const;
 
 export function getClientTypes(locale: Locale) {
-  if (locale === "en") return clientTypes;
-  const copy = datasetTranslations[locale].clientTypes;
+  const copy = brandContent[locale].datasets.clientTypes;
   if (copy.length !== clientTypes.length) throw new Error(`Incomplete client type translation: ${locale}`);
   return clientTypes.map((item, index) => ({
     ...item,

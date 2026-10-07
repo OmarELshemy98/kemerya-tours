@@ -344,6 +344,11 @@ h4 {
     visibility 0.2s ease;
 }
 
+:dir(rtl) .lang-menu {
+  right: auto;
+  left: 0;
+}
+
 .lang-menu.is-open {
   opacity: 1;
   visibility: visible;

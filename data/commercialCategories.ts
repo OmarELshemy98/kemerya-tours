@@ -1,4 +1,5 @@
-import { datasetTranslations, type Locale } from "@/lib/i18n";
+import { brandContent } from "@/lib/brand-content";
+import type { Locale } from "@/lib/i18n";
 
 export type CommercialCategory = {
   title: string;
@@ -9,42 +10,37 @@ export type CommercialCategory = {
 
 export const commercialCategories: readonly CommercialCategory[] = [
   {
-    title: "Urban Discoveries",
-    description:
-      "Curated city experiences in Cairo, Alexandria, and Luxor — heritage sites, bazaars, and cultural immersion for urban travelers.",
+    title: "Egypt Day Tours",
+    description: "",
     image:
       "https://images.unsplash.com/photo-2bgirUct1MU?auto=format&fit=crop&w=900&q=80",
-    href: "https://www.kemeryatours.com/urban",
+    href: "https://www.kemeryatours.com/egypt-day-tours",
   },
   {
-    title: "Immersive Itineraries",
-    description:
-      "Deep cultural journeys with local communities, Egyptologist guides, and authentic experiences across Egypt's historic heartland.",
+    title: "Egypt Travel Packages",
+    description: "",
     image:
       "https://images.unsplash.com/photo-ycZRsz3aNyE?auto=format&fit=crop&w=900&q=80",
-    href: "https://www.kemeryatours.com/immersive",
+    href: "https://www.kemeryatours.com/egypt-travel-packages",
   },
   {
-    title: "Coastal Escapes",
-    description:
-      "Red Sea and Mediterranean coastlines — beach retreats, diving, and seaside relaxation with Egyptian hospitality.",
+    title: "Shore Excursions",
+    description: "",
     image:
       "https://images.unsplash.com/photo-JIRsG1pmA7U?auto=format&fit=crop&w=900&q=80",
-    href: "https://www.kemeryatours.com/coastal",
+    href: "https://www.kemeryatours.com/egypt-shore-excursions",
   },
   {
-    title: "Slow River Journeys",
-    description:
-      "Dahabiya sailing and Nile cruises — a gentler way to experience Egypt's river landscapes and riverside communities.",
+    title: "Nile Cruise",
+    description: "",
     image:
       "https://images.unsplash.com/photo-sdOQl33RPLU?auto=format&fit=crop&w=900&q=80",
-    href: "https://www.kemeryatours.com/nile",
+    href: "https://www.kemeryatours.com/egypt-nile-cruise-tours",
   },
 ] as const;
 
 export function getCommercialCategories(locale: Locale) {
-  if (locale === "en") return commercialCategories;
-  const copy = datasetTranslations[locale].commercialCategories;
+  const copy = brandContent[locale].datasets.commercialCategories;
   if (copy.length !== commercialCategories.length) throw new Error(`Incomplete category translation: ${locale}`);
   return commercialCategories.map((item, index) => ({
     ...item,

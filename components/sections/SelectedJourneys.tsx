@@ -1,28 +1,24 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import type { UiTranslations } from "@/lib/i18n";
 
 type Journey = {
   title: string;
   description: string;
   image: string;
-  href: string;
 };
 
 type SelectedJourneysProps = {
-  ui: UiTranslations;
   journeys: readonly Journey[];
   copy: {
     eyebrow: string;
     title: string;
     intro: string;
-    cta: string;
+    modelLabel: string;
   };
 };
 
-export function SelectedJourneys({ journeys, copy, ui }: SelectedJourneysProps) {
+export function SelectedJourneys({ journeys, copy }: SelectedJourneysProps) {
   return (
     <Section id="journeys">
       <Container>
@@ -42,21 +38,13 @@ export function SelectedJourneys({ journeys, copy, ui }: SelectedJourneysProps) 
                 <h3>{journey.title}</h3>
                 <p>{journey.description}</p>
                 <div className="journey-card__meta">
-                  <span>{ui.private}</span>
-                  <a href={journey.href} className="inline-link" target="_blank" rel="noopener noreferrer">
-                    {ui.explore}
-                  </a>
+                  <span>{copy.modelLabel}</span>
                 </div>
               </div>
             </article>
           ))}
         </div>
 
-        <div style={{ marginTop: "2rem" }}>
-          <Button href="https://www.kemeryatours.com" external variant="dark">
-            {copy.cta}
-          </Button>
-        </div>
       </Container>
     </Section>
   );

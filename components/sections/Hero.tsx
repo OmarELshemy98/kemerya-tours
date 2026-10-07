@@ -2,9 +2,10 @@ import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import type { UiTranslations } from "@/lib/i18n";
+import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type HeroProps = {
+  locale: Locale;
   ui: UiTranslations;
   copy: {
     eyebrow: string;
@@ -16,7 +17,7 @@ type HeroProps = {
   };
 };
 
-export function Hero({ copy, ui }: HeroProps) {
+export function Hero({ locale, copy, ui }: HeroProps) {
   return (
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero__image">
@@ -79,7 +80,7 @@ export function Hero({ copy, ui }: HeroProps) {
             <Button href={business.partnerCtaUrl} external variant="primary" aria-label={ui.becomePartnerKemeryaTours}>
               {copy.primary}
             </Button>
-            <Button href={business.website} external variant="secondary" aria-label={ui.visitKemeryaHomepage}>
+            <Button href={`/${locale}/contact`} variant="secondary" aria-label={ui.contactKemeryaTours}>
               {copy.secondary}
             </Button>
           </div>
