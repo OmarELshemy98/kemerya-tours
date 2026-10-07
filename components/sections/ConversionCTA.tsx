@@ -23,7 +23,7 @@ export function ConversionCTA({ copy }: ConversionCTAProps) {
     >
       <div className="final-contact__image" aria-hidden="true">
         <Image
-          src="https://images.unsplash.com/photo-1k7JC31SRyI?auto=format&fit=crop&w=1800&q=80"
+                    src="https://images.unsplash.com/photo-1k7JC31SRyI?auto=format&fit=crop&w=1200&q=85"
           alt=""
           fill
         />
