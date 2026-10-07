@@ -10,7 +10,7 @@ export const nl: BrandContent = {
     eyebrow: "B2B-REISSAMENWERKING · EGYPTE",
     title: ["UW PARTNER IN EGYPTE,", "TER PLAATSE AANWEZIG."],
     subtitle:
-      "Voor reisorganisaties die reizen naar Egypte samenstellen, coördineert Kemerya de mensen, timing en praktische details achter elke reis.",
+      "Voor reisorganisaties die Egypte plannen: Kemerya combineert lokale expertise, praktische coördinatie en op maat gemaakte reizen in één Egyptisch team.",
     primary: "PARTNER WORDEN",
     secondary: "NEEM CONTACT OP MET ONS B2B-TEAM",
     note: "Gevestigd in Egypte · Meer dan 10 jaar ervaring",
@@ -37,12 +37,20 @@ export const nl: BrandContent = {
       "Een programma kan er op papier goed uitzien en toch afhangen van de details tussen de hoogtepunten: hoelang een transfer duurt, wanneer een bezoek het beste uitkomt en wie kan bijsturen als de dag anders loopt. Vanuit Gizeh stemmen we af met de mensen die elk onderdeel verzorgen en houden we die praktische details in het oog.",
       "We organiseren privé- en maatwerkreizen door heel Egypte, met professionele egyptologengidsen, privévoertuigen met airconditioning, hotels, ervaringen op de Nijl en ondersteuning ter plaatse. De relatie met de reiziger blijft bij u. Ons team neemt de verantwoordelijkheid voor de Egyptische kant van de reis op zich.",
     ],
-    principles: [
-      "LOKALE BEOORDEELING",
-      "FLEXIBERE COORDINATIE",
-      "LOKALE AANSPRAKELIJKHEID",
+    principles: [],
+    cta: "",
+  },
+  whyKemerya: {
+    title: "EEN LOCALE PARTNER, GEEN EXTRA DOORSCHUIFMOMENT.",
+    items: [
+      { title: "LOKALE BEOORDEELING", description: "We begrijpen de praktische kant van verplaatsen in Egypte, niet alleen het reisplan op papier." },
+      { title: "FLEXIBILITEIT", description: "Programma's kunnen afgestemd worden op de reiziger in plaats van elke reis in hetzelfde formaat te dwingen." },
+      { title: "AANSPRAKELIJKHEID", description: "Uw bedrijf blijft dicht bij de reiziger terwijl ons team de verantwoordelijkheid neemt voor de Egyptische kant." },
     ],
-    cta: "BESPREEK EEN SAMENWERKING",
+  },
+  brandPhilosophy: {
+    title: "EGYPTE IS GEEN CONTROLELIJST.",
+    description: "Routes, tijden, mensen en kleine beslissingen vormgeven de ervaring. Onze rol is om die details te begrijpen en ze om te zetten in reizen die werken in het echte Egypte.",
   },
   clientTypes: {
     eyebrow: "MET WIE WE SAMENWERKEN",

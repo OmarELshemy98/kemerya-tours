@@ -5,6 +5,7 @@ const sections = [
   "capabilities",
   "categories",
   "why-partner",
+  "why-kemerya",
   "who-we-work-with",
   "contact",
 ];

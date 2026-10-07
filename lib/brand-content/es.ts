@@ -10,7 +10,7 @@ export const es: BrandContent = {
     eyebrow: "ASOCIACIONES B2B · EGIPTO",
     title: ["TU SOCIO EN EGIPTO,", "SOBRE EL TERRENO."],
     subtitle:
-      "Para las empresas de viajes que diseñan programas en Egipto, Kemerya coordina a las personas, los tiempos y los detalles prácticos de cada viaje.",
+      "Para empresas de viajes que diseñan programas en Egipto, Kemerya reúne conocimiento local, coordinación práctica y viajes a medida a través de un único equipo con base en Egipto.",
     primary: "CONVIÉRTETE EN SOCIO",
     secondary: "HABLA CON EL EQUIPO B2B",
     note: "Con sede en Egipto · Más de 10 años de experiencia",
@@ -37,12 +37,20 @@ export const es: BrandContent = {
       "Un programa puede parecer perfecto sobre el papel y, aun así, depender de los detalles entre sus momentos destacados: cuánto dura realmente un traslado, cuándo conviene hacer una visita y quién puede adaptarse si cambia el día. Desde Guiza coordinamos a las personas que prestan cada servicio y tenemos presentes esos aspectos prácticos.",
       "Organizamos viajes privados y a medida por todo Egipto, coordinando guías egiptólogos profesionales, vehículos privados con aire acondicionado, hoteles, experiencias en el Nilo y asistencia sobre el terreno. La relación con el viajero sigue siendo tuya. Nuestro equipo se ocupa de la parte egipcia del viaje.",
     ],
-    principles: [
-      "JUICIO LOCAL",
-      "COORDINACIÓN FLEXIBLE",
-      "RESPONSABILIDAD EN TIERRA",
+    principles: [],
+    cta: "",
+  },
+  whyKemerya: {
+    title: "UN SOCIO LOCAL, NO OTRO INTERMEDIARIO MÁS.",
+    items: [
+      { title: "JUICIO LOCAL", description: "Entendemos el lado práctico de desplazarse por Egipto, no solo el itinerario en papel." },
+      { title: "FLEXIBILIDAD", description: "Los programas pueden adaptarse al viajero en lugar de forzar cada viaje al mismo formato." },
+      { title: "RESPONSABILIDAD", description: "Tu empresa se mantiene cerca del viajero mientras nuestro equipo asume la responsabilidad del lado egipcio." },
     ],
-    cta: "HABLEMOS DE LA COLABORACIÓN",
+  },
+  brandPhilosophy: {
+    title: "EGIPTO NO ES UNA LISTA DE VERIFICACIÓN.",
+    description: "Las rutas, los horarios, las personas y las pequeñas decisiones dan forma a la experiencia. Nuestro papel es entender esos detalles y convertirlos en viajes que funcionan en el Egipto real.",
   },
   clientTypes: {
     eyebrow: "CON QUIÉN TRABAJAMOS",

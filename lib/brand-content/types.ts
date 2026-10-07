@@ -18,7 +18,7 @@ export type BrandContent = {
     statement: string;
     labels: readonly string[];
   };
-    whoKemerya: {
+  whoKemerya: {
     eyebrow: string;
     title: string;
     subtitle: string;
@@ -26,6 +26,14 @@ export type BrandContent = {
     paragraphs: readonly string[];
     principles: readonly string[];
     cta: string;
+  };
+  whyKemerya: {
+    title: string;
+    items: readonly { title: string; description: string }[];
+  };
+  brandPhilosophy: {
+    title: string;
+    description: string;
   };
   clientTypes: {
     eyebrow: string;
@@ -79,7 +87,7 @@ export type BrandContent = {
     };
     submit: string;
     note: string;
-    };
+  };
   conversion: {
     eyebrow: string;
     title: readonly string[];

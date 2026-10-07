@@ -12,8 +12,8 @@ import { ConversionCTA } from "@/components/sections/ConversionCTA";
 import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
 import { ProgramCapabilities } from "@/components/sections/ProgramCapabilities";
-import { SelectedJourneys } from "@/components/sections/SelectedJourneys";
-import { WhoKemerya } from "@/components/sections/WhoKemerya";
+import { WhyKemerya } from "@/components/sections/WhyKemerya";
+import { BrandPhilosophy } from "@/components/sections/BrandPhilosophy";
 import { WhyPartner } from "@/components/sections/WhyPartner";
 import { getAdvantages } from "@/data/advantages";
 import { getCapabilities } from "@/data/capabilities";
@@ -21,7 +21,6 @@ import { getClientTypes } from "@/data/clientTypes";
 import { getCommercialCategories } from "@/data/commercialCategories";
 import { getCommercialPoints } from "@/data/commercialPoints";
 import { getFaqItems } from "@/data/b2bFaq";
-import { getJourneys } from "@/data/journeys";
 import { getPartnershipSteps } from "@/data/partnershipSteps";
 import { getProgramCapabilities } from "@/data/programCapabilities";
 import { getWhyPartner } from "@/data/whyPartner";
@@ -32,6 +31,7 @@ const sections = [
   "capabilities",
   "categories",
   "why-partner",
+  "why-kemerya",
   "who-we-work-with",
   "commercial-confidence",
   "program-capabilities",
@@ -66,6 +66,7 @@ export async function generateMetadata({
     capabilities: [copy.capabilities.title, copy.capabilities.intro],
     categories: [copy.categories.title, copy.categories.intro],
     "why-partner": [copy.whyPartner.title, copy.whyPartner.intro],
+    "why-kemerya": [copy.whyKemerya.title, ""],
     "who-we-work-with": [copy.clientTypes.title, copy.clientTypes.intro],
     "commercial-confidence": [
       copy.commercialConfidence.title,
@@ -116,7 +117,12 @@ export default async function LocaleSectionPage({
   let content;
   switch (section) {
     case "capabilities":
-      content = <Capabilities copy={copy.capabilities} items={getCapabilities(safeLocale)} />;
+      content = (
+        <>
+          <Capabilities copy={copy.capabilities} items={getCapabilities(safeLocale)} />
+          <ConversionCTA copy={copy.conversion} />
+        </>
+      );
       break;
     case "categories":
       content = (
@@ -126,10 +132,7 @@ export default async function LocaleSectionPage({
             items={getCommercialCategories(safeLocale)}
             ui={ui}
           />
-          <SelectedJourneys
-            journeys={getJourneys(safeLocale)}
-            copy={copy.journeys}
-          />
+          <ConversionCTA copy={copy.conversion} />
         </>
       );
       break;
@@ -142,14 +145,24 @@ export default async function LocaleSectionPage({
             copy={copy.partnership}
             steps={getPartnershipSteps(safeLocale)}
           />
+          <ConversionCTA copy={copy.conversion} />
+        </>
+      );
+      break;
+    case "why-kemerya":
+      content = (
+        <>
+          <WhyKemerya copy={copy.whyKemerya} />
+          <BrandPhilosophy copy={copy.brandPhilosophy} />
+          <ConversionCTA copy={copy.conversion} />
         </>
       );
       break;
     case "who-we-work-with":
       content = (
         <>
-          <WhoKemerya copy={copy.whoKemerya} ui={ui} />
           <ClientTypes copy={copy.clientTypes} items={getClientTypes(safeLocale)} />
+          <ConversionCTA copy={copy.conversion} />
         </>
       );
       break;
@@ -162,26 +175,42 @@ export default async function LocaleSectionPage({
       );
       break;
     case "commercial-confidence":
-      content = (
-        <CommercialConfidence
+            content = (
+        <>
+          <CommercialConfidence
           copy={copy.commercialConfidence}
           points={getCommercialPoints(safeLocale)}
         />
+          <ConversionCTA copy={copy.conversion} />
+        </>
       );
       break;
     case "program-capabilities":
-      content = (
-        <ProgramCapabilities
+            content = (
+        <>
+          <ProgramCapabilities
           copy={copy.programCapabilities}
           items={getProgramCapabilities(safeLocale)}
         />
+          <ConversionCTA copy={copy.conversion} />
+        </>
       );
       break;
     case "credibility":
-      content = <B2BCredibility copy={copy.credibility} ui={ui} />;
+      content = (
+        <>
+          <B2BCredibility copy={copy.credibility} ui={ui} />
+          <ConversionCTA copy={copy.conversion} />
+        </>
+      );
       break;
     case "faq":
-      content = <B2BFaq copy={copy.faq} items={getFaqItems(safeLocale)} />;
+      content = (
+        <>
+          <B2BFaq copy={copy.faq} items={getFaqItems(safeLocale)} />
+          <ConversionCTA copy={copy.conversion} />
+        </>
+      );
       break;
     default:
       notFound();

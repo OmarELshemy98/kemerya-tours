@@ -10,7 +10,7 @@ export const fr: BrandContent = {
     eyebrow: "PARTENARIATS B2B · ÉGYPTE",
     title: ["VOTRE PARTENAIRE EN ÉGYPTE,", "SUR PLACE."],
     subtitle:
-      "Pour les professionnels du voyage qui conçoivent des séjours en Égypte, Kemerya coordonne les équipes, le timing et les aspects pratiques de chaque voyage.",
+      "Pour les professionnels du voyage qui conçoivent des séjours en Égypte, Kemerya combine une connaissance locale, une coordination pratique et des voyages sur mesure au travers d'une seule équipe basée en Égypte.",
     primary: "DEVENIR PARTENAIRE",
     secondary: "CONTACTER L’ÉQUIPE B2B",
     note: "Basé en Égypte · Plus de 10 ans d’expérience",
@@ -37,12 +37,20 @@ export const fr: BrandContent = {
       "Un programme peut sembler cohérent sur le papier tout en dépendant de détails entre ses temps forts : la durée réelle d’un transfert, le meilleur moment pour une visite et la personne capable de s’adapter si la journée évolue. Depuis Gizeh, nous coordonnons les équipes qui assurent chaque étape et gardons ces aspects pratiques à l’esprit.",
       "Nous organisons des voyages privés et sur mesure dans toute l’Égypte, en coordonnant des guides égyptologues professionnels, des véhicules privés climatisés, des hôtels, des expériences sur le Nil et l’assistance sur place. Vous gardez la relation avec le voyageur. Notre équipe prend en charge le volet égyptien du voyage.",
     ],
-    principles: [
-      "JUGEMENT LOCAL",
-      "COORDINATION FLEXIBLE",
-      "RESPONDABILITÉ SUR LE TERRAIN",
+    principles: [],
+    cta: "",
+  },
+  whyKemerya: {
+    title: "UN PARTENAIRE LOCAL, SANS INTERMÉDIAIRE DE PLUS.",
+    items: [
+      { title: "JUGEMENT LOCAL", description: "Nous comprenons le côté pratique de se déplacer en Égypte, pas seulement l'itinéraire sur papier." },
+      { title: "FLEXIBILITÉ", description: "Les programmes peuvent être adaptés au voyageur plutôt que d'imposer le même format à chaque voyage." },
+      { title: "RESPONDABILITÉ", description: "Votre entreprise reste proche du voyageur tandis que notre équipe assume la responsabilité du côté égyptien." },
     ],
-    cta: "PARLER PARTENARIAT",
+  },
+  brandPhilosophy: {
+    title: "L'ÉGYPTE N'EST PAS UNE LISTE DE CONTRÔLE.",
+    description: "Les trajets, les horaires, les personnes et les petites décisions façonnent l'expérience. Notre rôle est de comprendre ces détails et de les transformer en voyages qui fonctionnent dans l'Égypte réelle.",
   },
   clientTypes: {
     eyebrow: "NOS PARTENAIRES",

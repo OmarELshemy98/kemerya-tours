@@ -10,7 +10,7 @@ export const en: BrandContent = {
     eyebrow: "B2B TRAVEL PARTNERSHIPS · EGYPT",
     title: ["YOUR EGYPT PARTNER,", "ON THE GROUND."],
     subtitle:
-      "For travel companies planning Egypt, Kemerya coordinates the people, timing and practical details behind each journey.",
+      "For travel companies planning Egypt, Kemerya brings local knowledge, practical coordination and tailor-made travel together through one Egypt-based team.",
     primary: "BECOME A PARTNER",
     secondary: "TALK TO OUR B2B TEAM",
     note: "Egypt-based · 10+ years of experience",
@@ -37,12 +37,20 @@ export const en: BrandContent = {
       "A program can look right on paper and still depend on the details between its highlights: how long a transfer takes, when a visit works best, and who can adapt when the day shifts. From Giza, we coordinate with the people delivering each part and keep those practical details in view.",
       "We arrange private and tailor-made travel across Egypt, coordinating professional Egyptologist guides, private air-conditioned vehicles, hotels, Nile experiences and support on the ground. You keep the traveler relationship. Our team takes responsibility for the Egyptian side of the trip.",
     ],
-    principles: [
-      "LOCAL JUDGMENT",
-      "FLEXIBLE COORDINATION",
-      "ON-GROUND ACCOUNTABILITY",
+    principles: [],
+    cta: "",
+  },
+  whyKemerya: {
+    title: "A LOCAL PARTNER, NOT ANOTHER HAND-OFF.",
+    items: [
+      { title: "LOCAL JUDGMENT", description: "We understand the practical side of moving through Egypt, not just the itinerary on paper." },
+      { title: "FLEXIBILITY", description: "Programs can be shaped around the traveler rather than forcing every journey into the same format." },
+      { title: "ACCOUNTABILITY", description: "Your business remains close to the traveler while our team takes responsibility for the Egyptian side." },
     ],
-    cta: "TALK ABOUT A PARTNERSHIP",
+  },
+  brandPhilosophy: {
+    title: "EGYPT ISN'T A CHECKLIST.",
+    description: "Routes, timing, people and small decisions shape the experience. Our role is to understand those details and turn them into journeys that work in the real Egypt.",
   },
   clientTypes: {
     eyebrow: "WHO WE WORK WITH",

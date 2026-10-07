@@ -10,7 +10,7 @@ export const de: BrandContent = {
     eyebrow: "B2B-PARTNERSCHAFTEN · ÄGYPTEN",
     title: ["IHR PARTNER IN ÄGYPTEN,", "VOR ORT."],
     subtitle:
-      "Für Reiseunternehmen, die Ägypten planen: Kemerya koordiniert die Menschen, Abläufe und praktischen Details hinter jeder Reise.",
+      "Für Reiseunternehmen, die Ägypten planen: Kemerya verbindet lokale Expertise, praktische Koordination und individuell gestaltete Reisen in einem ägyptischen Team.",
     primary: "PARTNER WERDEN",
     secondary: "B2B-TEAM KONTAKTIEREN",
     note: "In Ägypten ansässig · Über 10 Jahre Erfahrung",
@@ -37,12 +37,20 @@ export const de: BrandContent = {
       "Ein Programm kann auf dem Papier stimmig wirken und dennoch von den Details zwischen den Höhepunkten abhängen: Wie lange ein Transfer tatsächlich dauert, wann sich ein Besuch am besten anbietet und wer sich anpassen kann, wenn sich der Tagesablauf ändert. Von Giza aus koordinieren wir die Menschen, die die einzelnen Leistungen erbringen, und behalten die praktischen Details im Blick.",
       "Wir organisieren private und individuell gestaltete Reisen in ganz Ägypten und koordinieren professionelle Ägyptologen als Guides, private klimatisierte Fahrzeuge, Hotels, Erlebnisse auf dem Nil und Betreuung vor Ort. Die Beziehung zu den Reisenden bleibt bei Ihnen. Unser Team kümmert sich um den ägyptischen Teil der Reise.",
     ],
-    principles: [
-      "LOKALE BEURTEILUNG",
-      "FLEXIBLE KOORDINATION",
-      "LOKALE VERANTWORTUNG",
+    principles: [],
+    cta: "",
+  },
+  whyKemerya: {
+    title: "EIN LOKALER PARTNER, KEINE WEITERE SCHNITTSTELLE.",
+    items: [
+      { title: "LOKALE BEURTEILUNG", description: "Wir verstehen die praktische Seite, sich in Ägypten fortzubewegen, nicht nur den Reiserplan auf dem Papier." },
+      { title: "FLEXIBILITÄT", description: "Programme können an den Reisenden angepasst werden, anstatt jeden Reiseablauf in ein bestimmtes Format zu zwingen." },
+      { title: "VERANTWORTUNG", description: "Ihr Unternehmen bleibt nah am Reisenden, während unser Team die Verantwortung für die ägyptische Seite übernimmt." },
     ],
-    cta: "PARTNERSCHAFT BESPRECHEN",
+  },
+  brandPhilosophy: {
+    title: "ÄGYPTEN IST KEINE CHECKLISTE.",
+    description: "Routen, Abläufe, Menschen und kleine Entscheidungen prägen das Erlebnis. Unsere Rolle ist es, diese Details zu verstehen und sie in Reisen zu verwandten, die im wirklichen Ägypten funktionieren.",
   },
   clientTypes: {
     eyebrow: "MIT WEM WIR ARBEITEN",

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import type { CommercialCategory } from "@/data/commercialCategories";
@@ -27,7 +28,15 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
         <div className="category-grid">
           {items.map((item) => (
             <article key={item.title} className="category-card">
-              <div className="category-card__media" />
+              <div className="category-card__media">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
               <div className="category-card__body">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
@@ -43,7 +52,6 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
             </article>
           ))}
         </div>
-
       </Container>
     </Section>
   );

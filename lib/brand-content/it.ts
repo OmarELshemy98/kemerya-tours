@@ -10,7 +10,7 @@ export const it: BrandContent = {
     eyebrow: "PARTNERSHIP B2B · EGITTO",
     title: ["IL TUO PARTNER IN EGITTO,", "SUL POSTO."],
     subtitle:
-      "Per le aziende turistiche che progettano viaggi in Egitto, Kemerya coordina persone, tempi e aspetti pratici di ogni itinerario.",
+      "Per le aziende turistiche che progettano viaggi in Egitto, Kemerya unisce competenze locali, coordinamento pratico e viaggi su misura attraverso un'unica squadra basata in Egitto.",
     primary: "DIVENTA PARTNER",
     secondary: "PARLA CON IL TEAM B2B",
     note: "Con sede in Egitto · Oltre 10 anni di esperienza",
@@ -37,12 +37,20 @@ export const it: BrandContent = {
       "Un programma può sembrare perfetto sulla carta e dipendere comunque dai dettagli tra una tappa e l’altra: la durata effettiva di un trasferimento, il momento migliore per una visita e chi può adattarsi se la giornata cambia. Da Giza coordiniamo le persone responsabili di ogni servizio e teniamo sotto controllo gli aspetti pratici.",
       "Organizziamo viaggi privati e su misura in tutto l’Egitto, coordinando guide egittologhe professioniste, veicoli privati climatizzati, hotel, esperienze sul Nilo e assistenza sul posto. Il rapporto con il viaggiatore resta tuo. Il nostro team si occupa della parte egiziana del viaggio.",
     ],
-    principles: [
-      "GIUDIZIO LOCALE",
-      "COORDINAMENTO FLESSIBILE",
-      "RESPONDIBILITÀ IN LOCO",
+    principles: [],
+    cta: "",
+  },
+  whyKemerya: {
+    title: "UN PARTNER LOCALE, NON UN'ALTRA INTERMEDIARI.",
+    items: [
+      { title: "GIUDIZIO LOCALE", description: "Comprendiamo il lato pratico di spostarsi in Egitto, non solo l'itinerario su carta." },
+      { title: "FLESSIBILITÀ", description: "I programmi possono essere adattati al viaggiatore invece di forzare ogni viaggio nello stesso formato." },
+      { title: "RESPONDABILITÀ", description: "La tua azienda rimane vicina al viaggiatore mentre il nostro team prende in carico il lato egiziano." },
     ],
-    cta: "PARLIAMO DI PARTNERSHIP",
+  },
+  brandPhilosophy: {
+    title: "L'EGITTO NON È UNA LISTA DI CONTROLLO.",
+    description: "I percorsi, i tempi, le persone e le piccole decisioni modellano l'esperienza. Il nostro ruolo è capire questi dettagli e trasformarli in viaggi che funzionano nell'Egitto reale.",
   },
   clientTypes: {
     eyebrow: "CON CHI LAVORIAMO",

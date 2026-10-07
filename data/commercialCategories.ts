@@ -5,6 +5,7 @@ export type CommercialCategory = {
   title: string;
   description: string;
   href: string;
+  image: string;
 };
 
 export const commercialCategories: readonly CommercialCategory[] = [
@@ -12,21 +13,25 @@ export const commercialCategories: readonly CommercialCategory[] = [
     title: "Egypt Day Tours",
     description: "",
     href: "https://www.kemeryatours.com/egypt-day-tours",
+    image: "/images/areas-we-support-cards/egypt-day-tours.webp",
   },
   {
     title: "Egypt Travel Packages",
     description: "",
     href: "https://www.kemeryatours.com/egypt-travel-packages",
+    image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
   },
   {
     title: "Shore Excursions",
     description: "",
     href: "https://www.kemeryatours.com/egypt-shore-excursions",
+    image: "/images/areas-we-support-cards/shore-excursions.webp",
   },
   {
     title: "Nile Cruise",
     description: "",
     href: "https://www.kemeryatours.com/egypt-nile-cruise-tours",
+    image: "/images/areas-we-support-cards/nile-cruise.webp",
   },
 ] as const;
 

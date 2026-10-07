@@ -12,6 +12,8 @@ import { Hero } from "@/components/sections/Hero";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
 import { ProgramCapabilities } from "@/components/sections/ProgramCapabilities";
 import { TrustBar } from "@/components/sections/TrustBar";
+import { WhyKemerya } from "@/components/sections/WhyKemerya";
+import { BrandPhilosophy } from "@/components/sections/BrandPhilosophy";
 import { WhoKemerya } from "@/components/sections/WhoKemerya";
 import { B2BCredibility } from "@/components/sections/B2BCredibility";
 import { ConversionCTA } from "@/components/sections/ConversionCTA";
@@ -115,6 +117,7 @@ export default async function LocalePage({
         />
 
         <WhoKemerya copy={copy.whoKemerya} ui={ui} />
+        <WhyKemerya copy={copy.whyKemerya} />
 
         <ProgramCapabilities
           copy={copy.programCapabilities}
@@ -126,6 +129,7 @@ export default async function LocalePage({
           items={getClientTypes(safeLocale)}
         />
 
+        <BrandPhilosophy copy={copy.brandPhilosophy} />
         <KemeryaDifference
           copy={copy.partnership}
           steps={getPartnershipSteps(safeLocale)}

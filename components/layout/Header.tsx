@@ -16,6 +16,7 @@ type HeaderProps = {
     capabilities: string;
     categories: string;
     whyPartner: string;
+    whyKemerya: string;
     whoWeWorkWith: string;
     contact: string;
     workWithUs: string;
@@ -38,6 +39,7 @@ export function Header({ locale, copy, ui }: HeaderProps) {
       { label: copy.capabilities, href: `/${locale}/capabilities` },
       { label: copy.categories, href: `/${locale}/categories` },
       { label: copy.whyPartner, href: `/${locale}/why-partner` },
+      { label: copy.whyKemerya, href: `/${locale}/why-kemerya` },
       { label: copy.whoWeWorkWith, href: `/${locale}/who-we-work-with` },
       { label: copy.workWithUs, href: `/${locale}/contact` },
       { label: copy.faq, href: `/${locale}/faq` },
