@@ -35,9 +35,8 @@ export function ConversionCTA({ copy }: ConversionCTAProps) {
             <p className="cta-panel__description">{copy.description}</p>
 
             <div className="cta-panel__actions">
-              <Button
+                            <Button
                 href={business.partnerCtaUrl}
-                external
                 variant="gold"
               >
                 {copy.primary}

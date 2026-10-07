@@ -77,7 +77,7 @@ export function Hero({ locale, copy, ui }: HeroProps) {
           <p className="hero__lead">{copy.subtitle}</p>
 
                     <div className="hero__actions">
-            <Button href={business.partnerCtaUrl} external variant="primary" aria-label={ui.becomePartnerKemeryaTours}>
+                        <Button href={business.partnerCtaUrl} variant="primary" aria-label={ui.becomePartnerKemeryaTours}>
               {copy.primary}
             </Button>
             <Button href={`/${locale}/contact`} variant="secondary" aria-label={ui.contactKemeryaTours}>

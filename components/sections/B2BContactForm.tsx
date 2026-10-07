@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { business } from "@/data/business";
 import type { UiTranslations } from "@/lib/i18n";
 
 type B2BContactFormProps = {
@@ -42,12 +43,12 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission would integrate with a backend endpoint
+        // Open a pre-filled email to Kemerya partnerships (single-source contact)
     const subject = encodeURIComponent(ui.partnershipInquirySubject);
     const body = encodeURIComponent(
       `${copy.fields.name}: ${formData.name}\n${copy.fields.email}: ${formData.email}\n${copy.fields.company}: ${formData.company}\n${copy.fields.role}: ${formData.role}\n${copy.fields.phone}: ${formData.phone}\n${copy.fields.destination}: ${formData.destination}\n${ui.messageField}: ${formData.message}`,
     );
-    window.location.href = `mailto:partners@kemeryatours.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${business.email}?subject=${subject}&body=${body}`;
   };
 
   return (

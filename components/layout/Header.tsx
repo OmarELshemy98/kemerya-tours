@@ -76,10 +76,9 @@ export function Header({ locale, copy, ui }: HeaderProps) {
 
             <div className="flex items-center gap-3">
               <LanguageSwitcher locale={locale} ui={ui} />
-              <Button
+                            <Button
                 href={business.partnerCtaUrl}
                 variant="dark"
-                external
                 aria-label={ui.contactKemeryaTours}
                 className="max-[720px]:hidden"
               >

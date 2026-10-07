@@ -35,7 +35,7 @@ export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
           </div>
 
           <div className="who-kemerya__cta">
-            <Button href={business.partnerCtaUrl} external variant="gold" aria-label={ui.partnerWithKemeryaTours}>
+                        <Button href={business.partnerCtaUrl} variant="gold" aria-label={ui.partnerWithKemeryaTours}>
               {copy.cta}
             </Button>
           </div>

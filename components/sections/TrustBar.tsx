@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import type { Locale } from "@/lib/i18n";
 
@@ -31,20 +31,41 @@ function parseMetric(value: string) {
 }
 
 function AnimatedMetric({ value, locale }: { value: string; locale: Locale }) {
-  const [displayValue, setDisplayValue] = useState(0);
   const { numericValue, prefix, suffix, hasDecimal } = parseMetric(value);
 
+  // Seed at the target value so the very first paint renders the correct
+  // number instead of flashing "0" while the tween ramps up.
+  const [displayValue, setDisplayValue] = useState(numericValue);
+  const previous = useRef(numericValue);
+
   useEffect(() => {
-    let frameId = 0;
+    const from = previous.current;
+    const to = numericValue;
+
+    // No change → the displayed value is already correct; never animate on
+    // mount (this is what eliminated the first-paint 0-flash).
+    if (from === to) return;
+
+    // Respect reduced-motion users: jump straight to the target.
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+    ) {
+      setDisplayValue(to);
+      previous.current = to;
+      return;
+    }
+
+    previous.current = to;
     const duration = 2200;
     const start = performance.now();
+    let frameId = 0;
 
     const update = (timestamp: number) => {
       const elapsed = timestamp - start;
       const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      const nextValue = numericValue * eased;
-      setDisplayValue(nextValue);
+      const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+      setDisplayValue(from + (to - from) * eased);
 
       if (progress < 1) {
         frameId = window.requestAnimationFrame(update);
