@@ -108,6 +108,134 @@ export const de: BrandContent = {
     primary: "PARTNER WERDEN",
     secondary: "",
   },
+    credibility: {
+    eyebrow: "ERSTELLT FÜR DIE, DIE ÄGYPTEN VERKLAUFEN",
+    title: "WARUM REISEUNTERNEHMEN MIT LOKALEN OPERATOREN ARBEITEN",
+    intro:
+      "Ein lokaler Partner in Ägypten bringt ein Urteilsvermögen, das eine Buchung nicht erfassen kann: Wie ein Tag wirklich verläuft, welcher Ort zum Rhythmus eines Reisenden passt und wen man konsultieren sollte, wenn sich der Plan ändert. Dies sind die Stärken, die die von uns koordinierten Reiserouten unterstützen.",
+    note:
+      "Über 10 Jahre Erfahrung in der Koordination von Ägypten-Programmen, mit über 2.000 begleiteten Reisenden und einer durchschnittlichen Bewertung von 4,9.",
+  },
+  commercialConfidence: {
+    eyebrow: "DIE PRAKTISCHE SEITE DER PARTNERSCHAFT",
+    title: "GUTE ÄGYPTEN-PROGRAMME HANGEN VON MEHR ALS NUR DER REISEROUTE AB",
+    intro:
+      "Gute Ägypten-Programme hängen von mehr ab als nur von der Reiseroute. Sie hängen von Kommunikation, Timing, Koordination und jemandem ab, der Entscheidungen treffen kann, wenn sich der Tag ändert.",
+    points: [
+      [
+        "Ein lokales Team",
+        "Ihr Ägypten-Programm wird durch ein lokales Team koordiniert statdurch eine Kette von nicht miteinander verbundenen Lieferanten.",
+      ],
+      [
+        "Auf das Briefing zugeschnitten",
+        "Programme können umgestaltet werden, um Ihre Reisenden, Route, Timing und Prioritäten zu berücksichtigen, anstatt ein festes Reiseprogramm aufzuzwingen.",
+      ],
+      [
+        "Koordination vor Ort",
+        "Transfere, Guides, Besuche, Unterkünfte und Erlebnisse müssen zusammenarbeiten. Unsere Rolle ist es, die ägyptische Seite miteinander zu verbinden.",
+      ],
+      [
+        "Flexibilität bei Planänderungen",
+        "Der Reiseverlauf folgt nicht immer dem ursprünglichen Zeitplan. Der Wert eines lokalen Partners ist die Fähigkeit zu reagieren, wenn sich der Tag ändert.",
+      ],
+      [
+        "Ihre Beziehung bleibt Ihre",
+        "Sie kennen Ihren Reisenden. Wir kümmern uns um die ägyptische Seite, während Sie die vertrauenswürdige Beziehung auf der anderen Seite behalten.",
+      ],
+    ],
+  },
+    programCapabilities: {
+    eyebrow: "WAS IHR ÄGYPTEN-PROGRAMM UMFASSEN KANN",
+    title: "KAPAZITÄTEN FÜR IHR ÄGYPTEN-PROGRAMM",
+    intro:
+      "Von privaten Reisen bis zu Landausflügen – hier sind die Programmformen, die wir für Reiseunternehmen koordinieren. Jedes Programm wird um das Briefing herumgeplant, das Sie uns bringen, nicht um ein festes Produkt.",
+    items: [
+      [
+        "Private Reisen",
+        "Private Tagestouren, privater Tourismus und individuelle Reisen in ganz Ägypten.",
+      ],
+      [
+        "Mehrtagesprogramme",
+        "Individuell gestaltete Ägypten-Reiseprogramme, die Ziele und Erlebnisse verbinden.",
+      ],
+      [
+        "Nilaras",
+        "Nile-Cruise- und Dahabiya-Erlebnisse, wo angemessen.",
+      ],
+      [
+        "Landausflüge",
+        "Ägypten-Programme für Kreuzfahrt- und Hafenreisende.",
+      ],
+      [
+        "Gruppenreisen",
+        "Programme für Gruppen, Familien und organisierten Reisen.",
+      ],
+      [
+        "Luxusreisen",
+        "Exklusive private Erlebnisse, Premium-Unterkünfte und personalisierte Programme.",
+      ],
+      [
+        "Wüste, Roter Meer und Sinai",
+        "Kulturelle, Wüsten-, Küsten- und Sinai-Erlebnisse.",
+      ],
+      [
+        "Zugängliche Reisen",
+        "Behindertengerechte Reisemöglichkeiten in Ägypten, wo angemessen.",
+      ],
+    ],
+  },
+  faq: {
+    eyebrow: "FRAGEN, DIE PARTNER NORMALERWEISE STELLEN",
+    title: "FRAGEN, DIE PARTNER NORMALERWEISE STELLEN",
+    intro:
+      "Klare Antworten auf die praktischen Fragen, die Reiseunternehmen stellen, bevor sie mit einem lokalen Ägypten-Operator zusammenarbeiten.",
+    items: [
+      [
+        "Mit welchen Reiseunternehmen arbeitet Kemerya zusammen?",
+        "Wir arbeiten mit Reisebüros, Touroperatoren, Travel Advisors, DMCs, Reisewholesalern, Luxusreise-Designern, Gruppenreise-Organisatoren, Unternehmens- und Incentive-Travel sowie Kreuzfahrt- und Landausflugspartnern zusammen.",
+      ],
+      [
+        "Können Sie maßgeschneiderte Ägypten-Programme erstellen?",
+        "Ja. Programme werden um Ihre Reisenden, Route, Timing und Prioritäten gestaltet, anstatt ein festes Itinerär aufzuzwingen.",
+      ],
+      [
+        "Können Sie private Reisende und Gruppen unterstützen?",
+        "Ja. Wir koordinieren sowohl private Reisende als auch Gruppenprogramme in ganz Ägypten und passen Tempo und Arrangements an jedes Briefing an.",
+      ],
+      [
+        "Können Sie Landausflüge abwickeln?",
+        "Ja. Landausflüge werden um Ankunft, Abfahrt, den Hafenplan und die verfügbare Zeit an Land geplant.",
+      ],
+      [
+        "Können Sie Nile-Cruise-Erlebnisse arrangieren?",
+        "Ja. Nile-Cruise- und Dahabiya-Erlebnisse können als Teil eines umfassenderen Ägypten-Programms koordiniert werden, mit angebundenen Guides und Hafenlogistik.",
+      ],
+      [
+        "Können Programme an verschiedene Reiseansprüche angepasst werden?",
+        "Ja. Interessen, Tempo und Zugänglichkeitsbedürfnisse bestimmen den Plan. Jedes Programm wird um den Reisenden herumgestaltet, nicht um ein festes Template.",
+      ],
+      [
+        "Können Sie behindertengereisten Reisen unterstützen?",
+        "Ja. Behindertengerechte Reisemöglichkeiten sind wo angemessen verfügbar und werden um die spezifischen Bedürfnisse jedes Reisenden herum arrangiert.",
+      ],
+      [
+        "Wen kontaktiere ich bezüglich eines Ägypten-Programms?",
+        "Ihre Anfrage geht direkt an das Kemerya-Team über die Kontaktdaten auf dieser Website.",
+      ],
+      [
+        "Welche Informationen sollte ich in meine erste Anfrage enthalten?",
+        "Nennen Sie den Typ des Reiseunternehmens, das Sie vertreten, Ihre Reisenden, Daten, interessante Ziele und die Art des Erlebnisses, das Sie anbieten möchten.",
+      ],
+      [
+        "Was passiert, nachdem ich mein Briefing gesendet habe?",
+        "Wir prüfen die praktische Seite des Reiseverlaufs und klären, was vor Ort funktionieren muss, dann bauen wir die ägyptische Seite um Ihre Anforderungen herum.",
+      ],
+      [
+        "Werden meine Reisenden zu Kemerya-Kunden?",
+        "Die Beziehung zu Ihrem Reisenden bleibt bei Ihnen. Die Rolle von Kemerya ist es, die ägyptische Seite des Reiseverlaufs zu unterstützen und zu koordinieren, während Sie die Firma bleiben, mit der Ihr Reisender zusammenarbeitet.",
+      ],
+    ],
+  },
   footer: {
     blurb: "Koordination in Ägypten für Reiseunternehmen und ihre Gäste.",
     headline: "Ein lokales Team für den ägyptischen Teil der Reise.",

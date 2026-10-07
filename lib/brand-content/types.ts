@@ -78,13 +78,37 @@ export type BrandContent = {
     };
     submit: string;
     note: string;
-  };
+    };
   conversion: {
     eyebrow: string;
     title: readonly string[];
     description: string;
     primary: string;
     secondary: string;
+  };
+  credibility: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    note: string;
+  };
+  commercialConfidence: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    points: readonly CopyPair[];
+  };
+  programCapabilities: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    items: readonly CopyPair[];
+  };
+  faq: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    items: readonly FaqItem[];
   };
   footer: {
     blurb: string;
@@ -100,3 +124,5 @@ export type BrandContent = {
     journeys: readonly CopyPair[];
   };
 };
+
+export type FaqItem = readonly [question: string, answer: string];

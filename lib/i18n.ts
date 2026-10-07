@@ -19,7 +19,8 @@ export const translations = {
       whyPartner: "Why Partner",
       whoWeWorkWith: "Who We Work With",
       contact: "CONTACT",
-      workWithUs: "Work With Us",
+            workWithUs: "Work With Us",
+      faq: "FAQ",
     },
     hero: {
       eyebrow: "YOUR EGYPT PARTNER",
@@ -157,7 +158,8 @@ export const translations = {
       whyPartner: "لماذا تختارنا كشريك؟",
       whoWeWorkWith: "مع من نعمل",
       contact: "اتصل بنا",
-      workWithUs: "اعمل معنا",
+            workWithUs: "اعمل معنا",
+      faq: "الأسئلة الشائعة",
     },
     hero: {
       eyebrow: "شريكك في مصر",
@@ -291,7 +293,8 @@ export const translations = {
       whyPartner: "Pourquoi Nous Choisir",
       whoWeWorkWith: "Avec Qui Nous Travaillons",
       contact: "CONTACT",
-      workWithUs: "Travaillez Avec Nous",
+            workWithUs: "Travaillez Avec Nous",
+      faq: "FAQ",
     },
     hero: {
       eyebrow: "VOTRE PARTENAIRE EN ÉGYPTE",
@@ -431,7 +434,8 @@ export const translations = {
       whyPartner: "Perché Partner",
       whoWeWorkWith: "Con Chi Lavoriamo",
       contact: "CONTATTI",
-      workWithUs: "Collabora con noi",
+            workWithUs: "Collabora con noi",
+      faq: "FAQ",
     },
     hero: {
       eyebrow: "IL TUO PARTNER IN EGITTO",
@@ -568,7 +572,8 @@ export const translations = {
       whyPartner: "Por Qué Asociarse",
       whoWeWorkWith: "Con Quiénes Trabajamos",
       contact: "CONTACTO",
-      workWithUs: "Colabora con nosotros",
+            workWithUs: "Colabora con nosotros",
+      faq: "Preguntas frecuentes",
     },
     hero: {
       eyebrow: "TU SOCIO EN EGIPTO",
@@ -705,7 +710,8 @@ export const translations = {
       whyPartner: "Warum Partner",
       whoWeWorkWith: "Mit wem wir arbeiten",
       contact: "KONTAKT",
-      workWithUs: "Mit uns arbeiten",
+            workWithUs: "Mit uns arbeiten",
+      faq: "FAQ",
     },
     hero: {
       eyebrow: "IHR ÄGYPTEN-PARTNER",
@@ -842,7 +848,8 @@ export const translations = {
       whyPartner: "Por que ser parceiro",
       whoWeWorkWith: "Com quem trabalhamos",
       contact: "CONTATO",
-      workWithUs: "Trabalhe conosco",
+            workWithUs: "Trabalhe conosco",
+      faq: "Perguntas frequentes",
     },
     hero: {
       eyebrow: "SEU PARCEIRO NO EGITO",
@@ -979,7 +986,8 @@ export const translations = {
       whyPartner: "Waarom partner",
       whoWeWorkWith: "Met wie werken we samen",
       contact: "CONTACT",
-      workWithUs: "Werk met ons",
+            workWithUs: "Werk met ons",
+      faq: "Veelgestelde vragen",
     },
     hero: {
       eyebrow: "UW EGYPTE-PARTNER",
@@ -1116,7 +1124,8 @@ export const translations = {
       whyPartner: "为何合作",
       whoWeWorkWith: "合作对象",
       contact: "联系",
-      workWithUs: "与我们合作",
+            workWithUs: "与我们合作",
+      faq: "常见问题",
     },
     hero: {
       eyebrow: "您的埃及合作伙伴",

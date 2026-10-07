@@ -108,6 +108,77 @@ export const es: BrandContent = {
     primary: "CONVIÉRTETE EN SOCIO",
     secondary: "",
   },
+    credibility: {
+    eyebrow: "CREADO PARA QUIENES VENDEN EGIPTO",
+    title: "POR QUÉ LAS EMPRESAS DE VIAJES COLLABORAN CON OPERADORES LOCALES",
+    intro:
+      "Un socio local en Egipto aporta un juicio que una simple reserva no puede capturar: cómo transcurre realmente un día, qué sitio se adapta al ritmo de un viajero y a quién contactar cuando el programa cambia. Estas son las fortalezas que respaldan los itinerarios que coordinamos.",
+    note:
+      "Más de 10 años coordinando programas en Egipto, con más de 2.000 viajeros atendidos y una valoración media de 4,9.",
+  },
+  commercialConfidence: {
+    eyebrow: "EL ASPECTO PRÁCTICO DE LA COLABORACIÓN",
+    title: "LOS BUENOS PROGRAMAS EN EGIPTO DEPENDEN DE MÁS QUE DEL ITINERARIO",
+    intro:
+      "Los buenos programas en Egipto dependen de más que del itinerario. Dependen de la comunicación, del timing, de la coordinación y de alguien que pueda tomar decisiones cuando el día cambia.",
+    points: [
+      [
+        "Un equipo local",
+        "Tu programa en Egipto se coordina a través de un único equipo local en lugar de una cadena de proveedores desconectados.",
+      ],
+      [
+        "Creado alrededor del brief",
+        "Los programas pueden diseñarse en torno a tus viajeros, ruta, timing y prioridades en lugar de imponer un itinerario fijo.",
+      ],
+      [
+        "Coordinación sobre el terreno",
+        "Las transferencias, guías, visitas, alojamientos y experiencias deben funcionar juntos. Nuestro papel es mantener conectado el lado egipcio.",
+      ],
+      [
+        "Flexibilidad cuando los planes cambian",
+        "El viaje no siempre sigue el horario original. El valor de un socio local es poder responder cuando el día cambia.",
+      ],
+      [
+        "Tu relación sigue siendo tuya",
+        "Conoces a tu viajero. Nosotros gestionamos el lado egipcio mientras tú mantienes la relación de confianza del otro lado.",
+      ],
+    ],
+  },
+      programCapabilities: {
+    eyebrow: "LO QUE TU PROGRAMA EN EGIPTO PUEDE INCLUIR",
+    title: "CAPACIDADES PARA TU PROGRAMA EN EGIPTO",
+    intro:
+      "Desde viajes privados hasta excursiones en mar, aquí tienes las formas de programa que coordinamos para las empresas de viajes. Cada programa se organiza en torno al brief que nos traes, no alrededor de un producto fijo.",
+    items: [
+      ["Viajes privados", "Tours privados de un día, turismo privado y viajes personalizados por toda Egipto."],
+      ["Programas multi-día", "Programas de viaje en Egipto a medida que combinan destinos y experiencias."],
+      ["Experiencias en el Nilo", "Experiencias de crucero en el Nilo y Dahabiya donde sea apropiado."],
+      ["Excursiones en mar", "Programas en Egipto para viajeros en crucero y basados en puertos."],
+      ["Viaje de grupo", "Programas para grupos, familias y viajes organizados."],
+      ["Viaje de lujo", "Experiencias privadas de alta gama, alojamientos premium y programas personalizados."],
+      ["Desierto, mar Rojo y Sinaí", "Experiencias culturales, desérticas, costeras y en el Sinaí."],
+      ["Viaje accesible", "Opciones de viaje en silla de ruedas en Egipto donde sea apropiado."],
+    ],
+  },
+  faq: {
+    eyebrow: "PREGUNTAS QUE LOS PARTNERES SUelen HACER",
+    title: "PREGUNTAS QUE LOS PARTNERES SUelen HACER",
+    intro:
+      "Respuestas claras a las preguntas prácticas que las empresas de viajes hacen antes de asociarse con un operador local en Egipto.",
+    items: [
+      ["¿Qué tipo de empresas de viajes trabaja Kemerya?", "Trabajamos con agencias de viajes, tour operadores, asesores de viajes, DMC, mayoristas, diseñadores de viajes de lujo, organizadores de viajes de grupo, viajes corporativos e incentivos, y socios de cruceros y excursiones en mar."],
+      ["¿Pueden crear programas de Egipto a medida?", "Sí. Los programas se modelan en torno a tus viajeros, ruta, timing y prioridades en lugar de imponer un itinerario fijo."],
+      ["¿Pueden apoyar viajeros privados y grupos?", "Sí. Coordinamos tanto viajeros privados como programas de grupo en toda Egipto, ajustando el ritmo y los detalles a cada brief."],
+      ["¿Pueden manejar excursiones en mar?", "Sí. Las excursiones en mar se planean alrededor de la llegada, la salida, el horario del puerto y el tiempo disponible en tierra."],
+      ["¿Pueden organizar experiencias de crucero por el Nilo?", "Sí. Las experiencias de crucero por el Nilo y Dahabiya pueden coordinarse como parte de un programa más amplio en Egipto, con guías y logística portuaria conectadas."],
+      ["¿Los programas pueden adaptarse a diferentes necesidades de viajeros?", "Sí. Los intereses, el ritmo y las necesidades de accesibilidad guían el plan. Cada programa se diseña alrededor del viajero, no alrededor de una plantilla fija."],
+      ["¿Pueden apoyar el viaje accesible?", "Sí. Las opciones de viaje en silla de ruedas están disponibles donde sea apropiado, organizadas alrededor de las necesidades específicas de cada viajero."],
+      ["¿A quién contacto sobre un programa en Egipto?", "Tu consulta va directamente al equipo Kemerya a través de los contactos en este sitio."],
+      ["¿Qué información debo incluir en mi primera consulta?", "Comparte el tipo de empresa de viajes que representas, tus viajeros, fechas, destinos de interés y el tipo de experiencia que deseas ofrecer."],
+      ["¿Qué sucede después de que envío mi brief?", "Revisamos el aspecto práctico del viaje y aclaramos qué debe funcionar en el terreno, luego construimos el lado egipcio alrededor de tus requisitos."],
+      ["¿Mis viajeros se convierten en clientes de Kemerya?", "La relación con tu viajero sigue siendo tuya. El papel de Kemerya es apoyar y coordinar el lado egipcio del viaje mientras tú sigues siendo la empresa con la que trabaja tu viajero."],
+    ],
+  },
   footer: {
     blurb: "Coordinación en Egipto para empresas de viajes y sus clientes.",
     headline: "Un equipo local para la parte egipcia del viaje.",

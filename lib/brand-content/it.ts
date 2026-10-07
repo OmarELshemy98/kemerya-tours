@@ -108,6 +108,77 @@ export const it: BrandContent = {
     primary: "DIVENTA PARTNER",
     secondary: "",
   },
+    credibility: {
+    eyebrow: "CREATO PER CHI VENDE L'EGITTO",
+    title: "PERCHÉ LE AZIENDE DI VIAGGIO COLLABORANO CON OPERATORI LOCALI",
+    intro:
+      "Un partner locale in Egitto offre un giudizio che una semplice prenotazione non può cattare: come si svolge realmente una giornata, quale sito si addice al ritmo di un viaggiatore e a chi rivolgersi quando il programma cambia. Queste sono le qualità che sostengono gli itinerari che coordiniamo.",
+    note:
+      "Oltre 10 anni di coordinamento di programmi in Egitto, con oltre 2.000 viaggiatori accompagnati e una valutazione media di 4,9.",
+  },
+  commercialConfidence: {
+    eyebrow: "L'ASPECT PRATICO DELLA PARTNERSHIP",
+    title: "I BUONI PROGRAMMI IN EGITTO DIPENDONO DA PIÙ DELL'ITINERARIO",
+    intro:
+      "I buoni programmi in Egitto dipendono da più dell'itinerario. Dipendono dalla comunicazione, dal timing, dalla coordinazione e da qualcuno che può prendere decisioni quando la giornata cambia.",
+    points: [
+      [
+        "Un team locale",
+        "Il tuo programma in Egitto è coordinato da un'unica squadra locale invece che da una catena di fornitori non collegati.",
+      ],
+      [
+        "Creato attorno al brief",
+        "I programmi possono essere modellati intorno ai tuoi viaggiatori, al percorso, alla tempistica e alle priorità invece di imporre un itinerario fisso.",
+      ],
+      [
+        "Coordinazione sul posto",
+        "Trasferimenti, guide, visite, soggiorni e esperienze devono funzionare insieme. Il nostro ruolo è mantenere il lato egiziano connesso.",
+      ],
+      [
+        "Flessibilità quando i piani cambiano",
+        "Il viaggio non segue sempre il calendario originale. Il valore di un partner locale è la capacità di rispondere quando la giornata cambia.",
+      ],
+      [
+        "La tua relazione rimane tua",
+        "Conosci il tuo viaggiatore. Ci occupiamo del lato egiziano mentre tu mantieni la relazione di fiducia dall'altro lato.",
+      ],
+    ],
+  },
+      programCapabilities: {
+    eyebrow: "COSA PUÒ INCLUDERE IL TUO PROGRAMMA IN EGITTO",
+    title: "CAPACITÀ PER IL TUO PROGRAMMA IN EGITTO",
+    intro:
+      "Dai viaggi privati alle escursioni in mare, queste sono le forme di programma che coordiniamo per le aziende di viaggio. Ogni programma è organizzato attorno al brief che ci fornisci, non attorno a un prodotto fisso.",
+    items: [
+      ["Viaggi privati", "Tours privati di una giornata, turismo privato e viaggi personalizzati in tutta l'Egitto."],
+      ["Programmi multi-giorno", "Programmi di viaggio in Egitto su misura che combinano destinazioni e esperienze."],
+      ["Esperienze sul Nilo", "Esperienze di crociera sul Nilo e Dahabiya dove opportuno."],
+      ["Escursioni in mare", "Programmi in Egitto per viaggiatori in crociera e basati nei porti."],
+      ["Viaggi di gruppo", "Programmi per gruppi, famiglie e viaggi organizzati."],
+      ["Viaggi di lusso", "Esperienze private di alta gamma, soggiorni premium e programmi personalizzati."],
+      ["Deserto, mare Rosso e Sinai", "Esperienze culturali, desertiche, costiere e nel Sinai."],
+      ["Viaggi accessibili", "Opzioni di viaggio in sedia a rotelle in Egitto dove opportuno."],
+    ],
+  },
+  faq: {
+    eyebrow: "DOMANDE CHE I PARTNER DI SOLITO CHIEDONO",
+    title: "DOMANDE CHE I PARTNER DI SOLITO CHIEDONO",
+    intro:
+      "Risposte chiare alle domande pratiche che le aziende di viaggio fanno prima di associarsi a un operatore locale in Egitto.",
+    items: [
+      ["Che tipo di aziende di viaggio Kemerya collabora?", "Collaboriamo con agenzie di viaggio, tour operator, travel advisor, DMC, grossisti, designer di viaggi di lusso, organizzatori di viaggi di gruppo, viaggi d'affari e incentivi, e partner crociera ed escursioni in mare."],
+      ["Potete creare programmi in Egitto su misura?", "Sì. I programmi vengono modellati intorno ai vostri viaggiatori, al percorso, alla tempistica e alle priorità invece di imporre un itinerario fisso."],
+      ["Potete supportare viaggiatori privati e gruppi?", "Sì. Coordiniamo sia viaggiatori privati che programmi di gruppo in tutta l'Egitto, adattando il ritmo e gli aspetti pratici a ogni brief."],
+      ["Potete gestire escursioni in mare?", "Sì. Le escursioni in mare vengono pianificate intorno all'arrivo, al parto, al calendario della scalo e al tempo disponibile a terra."],
+      ["Potete organizzare esperienze di crociera sul Nilo?", "Sì. Esperienze di crociera sul Nilo e Dahabiya possono essere coordinate come parte di un programma più ampio in Egitto, con guide e logistica portuale collegate."],
+      ["I programmi possono essere adattati a diversi requisiti dei viaggiatori?", "Sì. Interessi, ritmo e esigenze di accessibilità guidano il piano. Ogni programma viene modellato intorno al viaggiatore, non a un modello fisso."],
+      ["Potete supportare il viaggio accessibile?", "Sì. Opzioni di viaggio in sedia a rotelle sono disponibili dove opportuno, organizzate intorno alle esigenze specifiche di ogni viaggiatore."],
+      ["Chi devo contattare per un programma in Egitto?", "La tua richiesta va direttamente al team Kemerya tramite i contatti su questo sito."],
+      ["Quelle informazioni devo includere nella mia prima richiesta?", "Indica il tipo di azienda di viaggio che rappresenti, i tuoi viaggiatori, le date, le destinazioni di interesse e il tipo di esperienza che desideri offrire."],
+      ["Cosa succede dopo che ho inviato il mio brief?", "Esaminiamo il lato pratico del viaggio e chiariamo cosa deve funzionare sul posto, quindi costruiamo il lato egiziano intorno alle tue esigenze."],
+      ["I miei viaggiatori diventano clienti di Kemerya?", "La relazione con il tuo viaggiatore rimane tua. Il ruolo di Kemerya è supportare e coordinare il lato egiziano del viaggio mentre tu rimieni l'azienda con cui il tuo viaggiatore lavora."],
+    ],
+  },
   footer: {
     blurb: "Coordinamento in Egitto per le aziende turistiche e i loro clienti.",
     headline: "Un team locale per la parte egiziana del viaggio.",

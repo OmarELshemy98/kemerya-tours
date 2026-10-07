@@ -19,6 +19,7 @@ type HeaderProps = {
     whoWeWorkWith: string;
     contact: string;
     workWithUs: string;
+    faq: string;
   };
 };
 
@@ -33,13 +34,14 @@ export function Header({ locale, copy, ui }: HeaderProps) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-    const navItems = [
+  const navItems = [
       { label: copy.capabilities, href: `/${locale}/capabilities` },
       { label: copy.categories, href: `/${locale}/categories` },
       { label: copy.whyPartner, href: `/${locale}/why-partner` },
       { label: copy.whoWeWorkWith, href: `/${locale}/who-we-work-with` },
       { label: copy.workWithUs, href: `/${locale}/contact` },
-  ];
+      { label: copy.faq, href: `/${locale}/faq` },
+    ];
 
   return (
     <>

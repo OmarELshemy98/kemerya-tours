@@ -108,6 +108,134 @@ export const fr: BrandContent = {
     primary: "DEVENIR PARTENAIRE",
     secondary: "",
   },
+    credibility: {
+    eyebrow: "CONÇU POUR CEUX QUI VENDENT L'ÉGYPTE",
+    title: "POURQUOI LES ENTREPRISES DE VOYAGE COLLABORERAIENT AVEC DES OPÉRATEURS LOCAUX",
+    intro:
+      "Un partenaire local en Égypte apporte un discernement qu'une simple réservation ne peut capter : comment une journée s'écoule réellement, quel site convient au rythme d'un voyageur, et à qui s'adresser quand le programme change. Ce sont ces forces qui sous-tendent les itinéraires que nous coordonnons.",
+    note:
+      "Plus de 10 ans de coordination de programmes en Égypte, avec plus de 2 000 voyageurs servis et une note moyenne de 4,9.",
+  },
+  commercialConfidence: {
+    eyebrow: "L'ASPECT PRATIQUE DU PARTENARIAT",
+    title: "BONS PROGRAMMES EN ÉGYPTE, PLUS QUE L'ITINÉRAIRE",
+    intro:
+      "Les bons programmes en Égypte dépendent de plus que l'itinéraire. Ils dépendent de la communication, du timing, de la coordination et de quelqu'un qui peut prendre des décisions quand la journée change.",
+    points: [
+      [
+        "Une équipe locale",
+        "Votre programme en Égypte est coordonné par une seule équipe locale au lieu d'un ensemble de fournisseurs non connectés.",
+      ],
+      [
+        "Construit autour du brief",
+        "Les programmes peuvent être adaptés à vos voyageurs, à votre itinéraire, à votre timing et à vos priorités plutôt que d'imposer un itinéraire fixe.",
+      ],
+      [
+        "Coordination sur le terrain",
+        "Les transferts, les guides, les visites, les hébergements et les expériences doivent fonctionner ensemble. Notre rôle est de maintenir le côté égyptien connecté.",
+      ],
+      [
+        "Flexibilité quand les plans changent",
+        "Le voyage ne suit pas toujours le calendrier initial. La valeur d'un partenaire local est la capacité à réagir quand la journée change.",
+      ],
+      [
+        "Votre relation reste la vôtre",
+        "Vous connaissez votre voyageur. Nous gérons le côté égyptien tout en restant la relation de confiance de l'autre côté.",
+      ],
+    ],
+  },
+    programCapabilities: {
+    eyebrow: "CE QUE VOTRE PROGRAMME EN ÉGYPTE PEUT INCLURE",
+    title: "CAPACITÉS POUR VOTRE PROGRAMME EN ÉGYPTE",
+    intro:
+      "Des voyages privés aux excursions en mer, voici les formes de programmes que nous coordonnons pour les entreprises de voyage. Chaque programme est organisé autour du brief que vous nous apportez, pas autour d'un produit fixe.",
+    items: [
+      [
+        "Voyages privés",
+        "Tours privés d'une journée, tourisme privé et voyages personnalisés dans toute l'Égypte.",
+      ],
+      [
+        "Programmes multi-jours",
+        "Programmes de voyage en Égypte sur mesure combinant destinations et expériences.",
+      ],
+      [
+        "Expériences sur le Nil",
+        "Expériences de croisière sur le Nil et de Dahabiya selon les besoins.",
+      ],
+      [
+        "Excursions en mer",
+        "Programmes en Égypte pour les voyageurs en croisière et basés dans les ports.",
+      ],
+      [
+        "Voyage de groupe",
+        "Programmes pour les groupes, les familles et le voyage organisé.",
+      ],
+      [
+        "Voyage de luxe",
+        "Expériences privées haut de gamme, hébergements premium et programmes personnalisés.",
+      ],
+      [
+        "Désert, mer Rouge et Sinaï",
+        "Expériences culturelles, désertiques, côtières et dans le Sinaï.",
+      ],
+      [
+        "Voyage accessible",
+        "Options de voyage en fauteuil roulant en Égypte selon les besoins.",
+      ],
+    ],
+  },
+  faq: {
+    eyebrow: "QUESTIONS FRÉQUENTES DES PARTENAIRES",
+    title: "QUESTIONS FRÉQUENTES DES PARTENAIRES",
+    intro:
+      "Des réponses claires aux questions pratiques que les entreprises de voyage se posent avant de s'associer à un opérateur local en Égypte.",
+    items: [
+      [
+        "Quel type d'entreprises de voyage Kemerya travaille-t-il avec ?",
+        "Nous travaillons avec des agences de voyage, des tour-opérateurs, des conseillers en voyage, des DMC, des grossistes, des designers de voyages de luxe, des organisateurs de voyages de groupe, du voyage d'entreprise et des incitations, et des partenaires croisières et d'excursions en mer.",
+      ],
+      [
+        "Pouvez-vous créer des programmes en Égypte sur mesure ?",
+        "Oui. Les programmes sont adaptés à vos voyageurs, à votre itinéraire, à votre timing et à vos priorités plutôt que d'imposer un itinéraire fixe.",
+      ],
+      [
+        "Pouvez-vous soutenir des voyageurs privés et des groupes ?",
+        "Oui. Nous coordonnons à la fois des voyageurs privés et des programmes de groupe dans toute l'Égypte, en ajustant le rythme et les arrangements à chaque brief.",
+      ],
+      [
+        "Pouvez-vous gérer les excursions en mer ?",
+        "Oui. Les excursions en mer sont planifiées autour de l'arrivée, du départ, du horaire du port et du temps disponible à terre.",
+      ],
+      [
+        "Pouvez-vous organiser des expériences de croisière sur le Nil ?",
+        "Oui. Les expériences de croisière sur le Nil et de Dahabiya peuvent être coordonnées dans le cadre d'un programme plus large en Égypte, avec une logistique de guidage et de bord connectée.",
+      ],
+      [
+        "Les programmes peuvent-ils être adaptés à différents besoins de voyageurs ?",
+        "Oui. Les centres d'intérêt, le rythme et les besoins d'accessibilité guident le plan. Chaque programme est conçu autour du voyageur, pas autour d'un modèle fixe.",
+      ],
+      [
+        "Pouvez-vous soutenir le voyage accessible ?",
+        "Oui. Des options de voyage en fauteuil roulant sont disponibles selon les besoins, organisées autour des besoins spécifiques de chaque voyageur.",
+      ],
+      [
+        "Qui dois-je contacter pour un programme en Égypte ?",
+        "Votre demande va directement à l'équipe Kemerya via les coordonnées sur ce site.",
+      ],
+      [
+        "Quelles informations inclure dans ma première demande ?",
+        "Partagez le type d'entreprise de voyage que vous représentez, vos voyageurs, les dates, les destinations d'intérêt et le type d'expérience que vous souhaitez offrir.",
+      ],
+      [
+        "Que se passe-t-il après que j'ai envoyé mon brief ?",
+        "Nous examinons le côté pratique du voyage et clarifions ce qui doit fonctionner sur le terrain, puis construisons le côté égyptien autour de vos exigences.",
+      ],
+      [
+        "Mes voyageurs deviennent-ils des clients de Kemerya ?",
+        "La relation avec votre voyageur reste la vôtre. Le rôle de Kemerya est de soutenir et de coordonner le côté égyptien du voyage pendant que vous restez l'entreprise avec laquelle voyage votre client.",
+      ],
+    ],
+  },
   footer: {
     blurb: "Coordination en Égypte pour les professionnels du voyage et leurs clients.",
     headline: "Une équipe locale pour le volet égyptien du voyage.",

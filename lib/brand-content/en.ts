@@ -108,6 +108,134 @@ export const en: BrandContent = {
     primary: "BECOME A PARTNER",
     secondary: "",
   },
+  credibility: {
+    eyebrow: "BUILT FOR THE PEOPLE WHO SELL EGYPT",
+    title: "WHY TRAVEL COMPANIES WORK WITH LOCAL OPERATORS",
+    intro:
+      "A local partner in Egypt brings judgment that a booking cannot capture: how a day actually flows, which site suits a traveler's pace, and who to call when the plan shifts. These are the strengths that back the itineraries we coordinate.",
+    note:
+      "10+ years coordinating Egypt programs, with 2,000+ travelers served and a 4.9 average review rating.",
+  },
+  commercialConfidence: {
+    eyebrow: "THE PRACTICAL SIDE OF PARTNERSHIP",
+    title: "GOOD EGYPT PROGRAMS DEPEND ON MORE THAN THE ITINERARY",
+    intro:
+      "Good Egypt programs depend on more than the itinerary. They depend on communication, timing, coordination and someone who can make decisions when the day changes.",
+    points: [
+      [
+        "One local team",
+        "Your Egypt program is coordinated through one local team instead of a chain of disconnected suppliers.",
+      ],
+      [
+        "Built around the brief",
+        "Programs can be shaped around your travelers, route, timing and priorities rather than forcing a fixed itinerary.",
+      ],
+      [
+        "Coordination on the ground",
+        "Transfers, guides, visits, stays and experiences need to work together. Our role is to keep the Egyptian side connected.",
+      ],
+      [
+        "Flexibility when plans change",
+        "Travel does not always follow the original schedule. The value of a local partner is being able to respond when the day changes.",
+      ],
+      [
+        "Your relationship stays yours",
+        "You know your traveler. We handle the Egyptian side while you remain the trusted relationship on the other side.",
+      ],
+    ],
+  },
+  programCapabilities: {
+    eyebrow: "WHAT YOUR EGYPT PROGRAM CAN INCLUDE",
+    title: "CAPABILITIES FOR YOUR EGYPT PROGRAM",
+    intro:
+      "From private journeys to shore excursions, these are the program shapes we coordinate for travel companies. Each is arranged around the brief you bring, not a fixed product.",
+    items: [
+      [
+        "Private journeys",
+        "Private day tours, private touring and customized travel across Egypt.",
+      ],
+      [
+        "Multi-day programs",
+        "Tailor-made Egypt travel programs combining destinations and experiences.",
+      ],
+      [
+        "Nile experiences",
+        "Nile cruise and Dahabiya experiences where appropriate.",
+      ],
+      [
+        "Shore excursions",
+        "Egypt programs for cruise and port-based travelers.",
+      ],
+      [
+        "Group travel",
+        "Programs for groups, families and organized travel.",
+      ],
+      [
+        "Luxury travel",
+        "Higher-touch private experiences, premium stays and personalized programs.",
+      ],
+      [
+        "Desert, Red Sea and Sinai",
+        "Cultural, desert, coastal and Sinai experiences.",
+      ],
+      [
+        "Accessible travel",
+        "Wheelchair-accessible Egypt travel options where appropriate.",
+      ],
+    ],
+  },
+  faq: {
+    eyebrow: "QUESTIONS PARTNERS USUALLY ASK",
+    title: "QUESTIONS PARTNERS USUALLY ASK",
+    intro:
+      "Clear answers to the practical questions travel companies ask before partnering with a local Egypt operator.",
+    items: [
+      [
+        "What type of travel companies does Kemerya work with?",
+        "We work with travel agencies, tour operators, travel advisors, DMCs, travel wholesalers, luxury travel designers, group travel organizers, corporate and incentive travel, and cruise and shore-excursion partners.",
+      ],
+      [
+        "Can you build tailor-made Egypt programs?",
+        "Yes. Programs are shaped around your travelers, route, timing and priorities rather than forcing a fixed itinerary.",
+      ],
+      [
+        "Can you support private travelers and groups?",
+        "Yes. We coordinate both private travelers and group programs across Egypt, adjusting pace and arrangements to each brief.",
+      ],
+      [
+        "Can you handle shore excursions?",
+        "Yes. Shore excursions are planned around arrival, departure, the port schedule and the time available ashore.",
+      ],
+      [
+        "Can you arrange Nile cruise experiences?",
+        "Yes. Nile cruise and Dahabiya experiences can be coordinated as part of a broader Egypt program, with guiding and shore logistics connected.",
+      ],
+      [
+        "Can programs be adapted to different traveler requirements?",
+        "Yes. Interests, pace and access needs guide the plan. Each program is shaped around the traveler, not a fixed template.",
+      ],
+      [
+        "Can you support accessible travel?",
+        "Yes. Wheelchair-accessible travel options are available where appropriate, arranged around each traveler's specific needs.",
+      ],
+      [
+        "Who do I contact about an Egypt program?",
+        "Your inquiry goes directly to the Kemerya team through the contact details on this website.",
+      ],
+      [
+        "What information should I include in my first inquiry?",
+        "Share the type of travel business you represent, your travelers, dates, destinations of interest and the kind of experience you want to offer.",
+      ],
+      [
+        "What happens after I send my brief?",
+        "We review the practical side of the journey and clarify what needs to work on the ground, then build the Egypt side around your requirements.",
+      ],
+      [
+        "Do my travelers become Kemerya customers?",
+        "Your traveler relationship remains yours. Kemerya's role is to support and coordinate the Egypt side of the journey while you remain the company your traveler works with.",
+      ],
+    ],
+  },
   footer: {
     blurb: "Egypt-based coordination for travel businesses and their travelers.",
     headline: "A local team for the Egyptian side of the journey.",

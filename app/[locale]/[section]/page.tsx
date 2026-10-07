@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
+import { B2BCredibility } from "@/components/sections/B2BCredibility";
+import { B2BFaq } from "@/components/sections/B2BFaq";
 import { B2BContactForm } from "@/components/sections/B2BContactForm";
 import { Capabilities } from "@/components/sections/Capabilities";
 import { ClientTypes } from "@/components/sections/ClientTypes";
 import { CommercialCategories } from "@/components/sections/CommercialCategories";
+import { CommercialConfidence } from "@/components/sections/CommercialConfidence";
 import { ConversionCTA } from "@/components/sections/ConversionCTA";
 import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
+import { ProgramCapabilities } from "@/components/sections/ProgramCapabilities";
 import { SelectedJourneys } from "@/components/sections/SelectedJourneys";
 import { WhoKemerya } from "@/components/sections/WhoKemerya";
 import { WhyPartner } from "@/components/sections/WhyPartner";
@@ -15,8 +19,11 @@ import { getAdvantages } from "@/data/advantages";
 import { getCapabilities } from "@/data/capabilities";
 import { getClientTypes } from "@/data/clientTypes";
 import { getCommercialCategories } from "@/data/commercialCategories";
+import { getCommercialPoints } from "@/data/commercialPoints";
+import { getFaqItems } from "@/data/b2bFaq";
 import { getJourneys } from "@/data/journeys";
 import { getPartnershipSteps } from "@/data/partnershipSteps";
+import { getProgramCapabilities } from "@/data/programCapabilities";
 import { getWhyPartner } from "@/data/whyPartner";
 import { getPageCopy } from "@/lib/brand-content";
 import { locales, uiTranslations, type Locale } from "@/lib/i18n";
@@ -26,6 +33,10 @@ const sections = [
   "categories",
   "why-partner",
   "who-we-work-with",
+  "commercial-confidence",
+  "program-capabilities",
+  "credibility",
+  "faq",
   "contact",
 ] as const;
 
@@ -51,11 +62,21 @@ export async function generateMetadata({
 
   const safeLocale = locale as Locale;
   const copy = getPageCopy(safeLocale);
-  const content = {
+    const content = {
     capabilities: [copy.capabilities.title, copy.capabilities.intro],
     categories: [copy.categories.title, copy.categories.intro],
     "why-partner": [copy.whyPartner.title, copy.whyPartner.intro],
     "who-we-work-with": [copy.clientTypes.title, copy.clientTypes.intro],
+    "commercial-confidence": [
+      copy.commercialConfidence.title,
+      copy.commercialConfidence.intro,
+    ],
+    "program-capabilities": [
+      copy.programCapabilities.title,
+      copy.programCapabilities.intro,
+    ],
+    credibility: [copy.credibility.title, copy.credibility.intro],
+    faq: [copy.faq.title, copy.faq.intro],
     contact: [copy.contact.title, copy.contact.subtitle],
   }[section];
 
@@ -132,7 +153,7 @@ export default async function LocaleSectionPage({
         </>
       );
       break;
-    case "contact":
+        case "contact":
       content = (
         <>
           <B2BContactForm copy={copy.contact} ui={ui} />
@@ -140,6 +161,30 @@ export default async function LocaleSectionPage({
         </>
       );
       break;
+    case "commercial-confidence":
+      content = (
+        <CommercialConfidence
+          copy={copy.commercialConfidence}
+          points={getCommercialPoints(safeLocale)}
+        />
+      );
+      break;
+    case "program-capabilities":
+      content = (
+        <ProgramCapabilities
+          copy={copy.programCapabilities}
+          items={getProgramCapabilities(safeLocale)}
+        />
+      );
+      break;
+    case "credibility":
+      content = <B2BCredibility copy={copy.credibility} ui={ui} />;
+      break;
+    case "faq":
+      content = <B2BFaq copy={copy.faq} items={getFaqItems(safeLocale)} />;
+      break;
+    default:
+      notFound();
   }
 
   return (

@@ -108,6 +108,77 @@ export const nl: BrandContent = {
     primary: "PARTNER WORDEN",
     secondary: "",
   },
+    credibility: {
+    eyebrow: "GEBOUW VOOR DE MENSEN DIE EGYPTÉ VERKOOPEN",
+    title: "WAAROM REISBEDRIJVEN SAMENWERKEN MET LOCALE OPERATOREN",
+    intro:
+      "Een lokale partner in Egypte biedt inzicht dat een simpele boeking niet kan vangen: hoe een dag werkelijk verloopt, welke locatie past bij de ritmes van een reiziger en wie men kan bereiken als het plan verandert. Dit zijn de sterke punten die de van ons gecoördineerde reisplannen ondersteunen.",
+    note:
+      "Meer dan 10 jaar ervaring in het coördineren van Egyptische programma's, met meer dan 2.000 ontvangen reizigers en een gemiddelde beoordeling van 4,9.",
+  },
+  commercialConfidence: {
+    eyebrow: "DE PRAKTISCHE KANT VAN SAMENWERKING",
+    title: "GOEDE EGYPTEN-PROGRAMMA'S HANGEN AF VAN MEER DAN ALLEEN DE REISROUTE",
+    intro:
+      "Goede Egypten-programma's hangen af van meer dan alleen de reisroute. Ze hangen af van communicatie, timing, coördinatie en iemand die beslissingen kan nemen als de dag verandert.",
+    points: [
+      [
+        "Één lokaal team",
+        "Uw Egypte-programma wordt gecoördineerd door één lokaal team in plaats van een koppeling van niet-verbonden leveranciers.",
+      ],
+      [
+        "Gebaseerd op het briefing",
+        "Programma's kunnen worden aangepast aan uw reizigers, route, timing en prioriteiten in plaats van een vast reisplan op te leggen.",
+      ],
+      [
+        "Coördinatie ter plaatse",
+        "Transfertjes, gidsen, bezoeken, verblijven en ervaringen moeten samenwerken. Onze rol is om de Egyptische kant verbonden te houden.",
+      ],
+      [
+        "Flexibiliteit bij plaatsingsveranderingen",
+        "De reis volgt niet altijd het oorspronkelijke schema. De waarde van een lokale partner is de mogelijkheid om te reageren als de dag verandert.",
+      ],
+      [
+        "Uw relatie blijft uw relatie",
+        "U kent uw reiziger. Wij verwerken de Egyptische kant terwijl u de vertrouwensrelatie aan de andere kant behoudt.",
+      ],
+    ],
+  },
+      programCapabilities: {
+    eyebrow: "WAT UW EGYPTEN-PROGRAMMA KAN BEVATEN",
+    title: "CAPACITEITEN VOOR UW EGYPTEN-PROGRAMMA",
+    intro:
+      "Van privéreizen tot landtochten, dit zijn de programmavormen die we coördineren voor reisorganisaties. Elk programma is afgestemd op het briefing dat u ons geeft, niet op een vast product.",
+    items: [
+      ["Privéreizen", "Privédagtours, privétoerisme en op maat gemaakte reizen door Egypte."],
+      ["Meerdagenprogramma's", "Op maat gemaakte Egyptische reisprogramma's die bestemmingen en ervaringen combineren."],
+      ["Nielservaringen", "Nijlcruises en Dahabiya-ervaringen waar passend."],
+      ["Landtochten", "Egyptische programma's voor cruisereizigers en havenverhuisden."],
+      ["Groepsreizen", "Programma's voor groepen, gezinnen en georganiseerde reizen."],
+      ["Luxurreizen", "Exclusieve privéervaringen, premiumverblijven en gepersonaliseerde programma's."],
+      ["Woestijn, Rode Zee en Sinai", "Culturele, woestijn-, kust- en Sinai-ervaringen."],
+      ["Toegankelijke reizen", "Toegankelijke reisopties in Egypte waar passend."],
+    ],
+  },
+  faq: {
+    eyebrow: "VRAGEN DIE PARTNERS MEESTAL STELLEN",
+    title: "VRAGEN DIE PARTNERS MEESTAL STELLEN",
+    intro:
+      "Duidelijke antwoorden op de praktische vragen die reisorganisaties stellen voordat ze samenwerken met een lokale Egyptische operator.",
+    items: [
+      ["Met welke reisorganisaties werkt Kemerya samen?", "We werken samen met reisbureaus, touroperators, reisadviseurs, DMC's, reisgroothandels, luxurreisdesigners, groepsreisorganisatoren, zakelijke en incentivereizen, en cruise- en landtochtpartners."],
+      ["Kunt u maatwerkreizen voor Egypte maken?", "Ja. Programma's worden afgestemd op uw reizigers, route, timing en prioriteiten in plaats van een vast reisplan op te leggen."],
+      ["Kunt u particuliere reizigers en groepen ondersteunen?", "Ja. We coördineren zowel particuliere reizigers als groepsprogramma's in heel Egypte en passen het tempo en de afspraken aan elk brief aan."],
+      ["Kunt u landtochten afhanden?", "Ja. Landtochten worden gepland rondom aankomst, vertrek, havenrooster en beschikbare tijd aan land."],
+      ["Kunt u Nijlcruise-ervaringen regelen?", "Ja. Nijlcruise- en Dahabiya-ervaringen kunnen worden gecoördineerd als onderdeel van een breders Egyptisch programma, met aangesloten gidsen en havenlogistiek."],
+      ["Kunnen programma's worden aangepast aan verschillende reisvereisten?", "Ja. Interesses, tempo en toegankelijkheidsbehoeften bepalen het plan. Elk programma wordt afgestemd op de reiziger, niet op een vast sjabloon."],
+      ["Kunt u toegankelijke reizen ondersteunen?", "Ja. Toegankelijke reisopties zijn beschikbaar waar passend, afgestemd op de specifieke behoeften van elke reiziger."],
+      ["Wie neem ik contact op over een Egypte-programma?", "Uw aanvraag gaat direct naar het Kemerya-team via de contactgegevens op deze site."],
+      ["Welke informatie moet ik in mijn eerste aanvraag opnemen?", "Geef het type reisbedrijf dat u vertegenwoordigt, uw reizigers, data, interessante bestemmingen en het type ervaring dat u wilt aanbieden."],
+      ["Wat gebeurt er na dat ik mijn briefing heb verzonden?", "We bekijken de praktische kant van de reis en verduidelijken wat op de grond moet werken, daarna bouwen we de Egyptische kant rond uw eisen."],
+      ["Worden mijn reizigers klanten van Kemerya?", "Uw relatie met de reiziger blijft van u. De rol van Kemerya is om de Egyptische kant van de reis te ondersteunen en te coördineren terwijl u blijft de onderneming waarmee de reiziger werkt."],
+    ],
+  },
   footer: {
     blurb: "Coördinatie vanuit Egypte voor reisorganisaties en hun klanten.",
     headline: "Een lokaal team voor de Egyptische kant van de reis.",
