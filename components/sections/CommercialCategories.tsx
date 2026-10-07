@@ -20,8 +20,8 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
     <Section id="categories">
       <Container>
         <div className="section__heading">
-          <p className="eyebrow">{copy.eyebrow}</p>
-          <h1 className="split-lines">{copy.title}</h1>
+                    <p className="eyebrow">{copy.eyebrow}</p>
+          <h2 className="split-lines">{copy.title}</h2>
           <p className="section-intro">{copy.intro}</p>
         </div>
 

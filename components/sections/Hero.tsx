@@ -2,6 +2,7 @@ import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { SunDisk } from "@/components/ui/pharaonic";
 import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type HeroProps = {
@@ -29,24 +30,10 @@ export function Hero({ locale, copy, ui }: HeroProps) {
           sizes="100vw"
         />
       </div>
-      <div className="hero__overlay" />
-
-      <div className="hero__sun" aria-hidden="true">
-        <svg viewBox="0 0 200 200" role="presentation">
-          <circle cx="100" cy="100" r="56" fill="rgba(200,143,47,0.9)" />
-          <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(255,255,255,0.32)" strokeWidth="1.4" />
-          <g stroke="rgba(255,255,255,0.28)" strokeWidth="1.2" fill="none">
-            <line x1="100" y1="20" x2="100" y2="6" />
-            <line x1="100" y1="194" x2="100" y2="180" />
-            <line x1="20" y1="100" x2="6" y2="100" />
-            <line x1="194" y1="100" x2="180" y2="100" />
-            <line x1="42" y1="42" x2="32" y2="32" />
-            <line x1="158" y1="158" x2="168" y2="168" />
-            <line x1="42" y1="158" x2="32" y2="168" />
-            <line x1="158" y1="42" x2="168" y2="32" />
-          </g>
-        </svg>
+            <div className="hero__sun" aria-hidden="true">
+        <SunDisk />
       </div>
+
 
       <div className="hero__ornament hero__ornament--left" aria-hidden="true">
         <svg viewBox="0 0 180 180" role="presentation">

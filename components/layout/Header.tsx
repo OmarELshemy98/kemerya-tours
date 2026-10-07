@@ -65,7 +65,7 @@ export function Header({ locale, copy, ui }: HeaderProps) {
               aria-label={ui.mainNavigation}
               className="block max-[720px]:hidden"
             >
-              <ul className="flex list-none items-center justify-center gap-6 p-0 text-[0.7rem] uppercase tracking-[0.14em]">
+                            <ul className="nav-links flex list-none items-center justify-center gap-6 p-0 text-[0.7rem] uppercase tracking-[0.14em] max-[720px]:hidden">
                 {navItems.map((item) => (
                   <li key={item.href}>
                     <Link href={item.href}>{item.label}</Link>
@@ -76,17 +76,17 @@ export function Header({ locale, copy, ui }: HeaderProps) {
 
             <div className="flex items-center gap-3">
               <LanguageSwitcher locale={locale} ui={ui} />
-                            <Button
+                                            <Button
                 href={business.partnerCtaUrl}
-                variant="dark"
-                aria-label={ui.contactKemeryaTours}
+                variant="gold"
                 className="max-[720px]:hidden"
+                aria-label={ui.contactKemeryaTours}
               >
                 {copy.contact}
               </Button>
-              <button
+                            <button
                 type="button"
-                className="inline-flex h-[2.9rem] w-[2.9rem] cursor-pointer flex-col items-center justify-center gap-[0.28rem] rounded-full border border-[rgba(255,255,255,0.14)] bg-[rgba(255,255,255,0.04)] min-[721px]:hidden"
+                className="menu-toggle inline-flex h-[2.9rem] w-[2.9rem] cursor-pointer flex-col items-center justify-center gap-[0.28rem] rounded-full border border-[rgba(200,143,47,0.28)] bg-[rgba(200,143,47,0.08)] min-[721px]:hidden"
                 aria-expanded={menuOpen}
                 aria-controls="mobile-menu"
                 aria-label={menuOpen ? ui.closeMainMenu : ui.openMainMenu}

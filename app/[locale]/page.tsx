@@ -19,6 +19,7 @@ import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
 import { SelectedJourneys } from "@/components/sections/SelectedJourneys";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { PharaonicDivider } from "@/components/ui/pharaonic";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { WhoKemerya } from "@/components/sections/WhoKemerya";
 import { WhyPartner } from "@/components/sections/WhyPartner";
@@ -150,10 +151,14 @@ export default async function LocalePage({
           copy={copy.journeys}
         />
 
-        <Testimonials
+                <Testimonials
           items={getTestimonials(safeLocale)}
           copy={getTestimonialsCopy(safeLocale)}
         />
+
+        <div className="pharaonic-divider" aria-hidden="true">
+          <PharaonicDivider variant="lotus" />
+        </div>
 
         <ConversionCTA copy={copy.conversion} />
 
