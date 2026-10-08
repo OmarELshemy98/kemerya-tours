@@ -27,9 +27,48 @@ export type BrandContent = {
     principles: readonly string[];
     cta: string;
   };
-  whyKemerya: {
+        whyKemerya: {
     title: string;
     items: readonly { title: string; description: string }[];
+  };
+  brandStatement?: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    intro: string;
+    paragraphs: readonly string[];
+    image: string;
+    cta: string;
+  };
+  kemeryaApproach?: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    items: readonly { title: string; description: string }[];
+  };
+  capTeaser?: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    cta: string;
+  };
+  whoWeWorkWithGroups?: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    groups: readonly {
+      label: string;
+      title: string;
+      description: string;
+      clients: readonly string[];
+      image: string;
+    }[];
+  };
+  whyPartnerTeaser?: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    reasons: readonly { title: string; description: string }[];
   };
   brandPhilosophy: {
     title: string;

@@ -1,7 +1,16 @@
-/* === Premium visual refinements ===
+/* === Premium visual refinements — VISUAL RESET ===
    Loaded LAST in globals.css, so these rules are authoritative.
-   Scope: navbar polish, editorial rhythm, Egyptian restraint,
-   mobile intent, quiet-luxury details. No architecture changes. */
+   Implements the premium Egyptian editorial aesthetic.
+
+   CORE PRINCIPLE: Pharaonic elements are the SIXTH layer.
+   Hierarchy: Photography -> Typography -> Content -> Layout -> Motion -> Egyptian details.
+
+   1. Kills ALL infinite animations (no floating, pulsing, drifting)
+   2. Reduces pharaonic decorative elements to barely-visible accents
+   3. Removes golden frame borders and decorative ornament borders
+   4. Transforms card grids into editorial lists
+   5. Establishes typography rhythm
+   6. Tames body texture overlay */
 
 /* ── Navbar: quiet luxury ────────────────────────────── */
 /* Gold hamburger bars (overrides the white default in rtl-ltr-01) */
@@ -466,5 +475,848 @@
 .feature-card {
   position: relative;
   isolation: isolate;
+}
+
+
+/* ================================================================ */
+/* VISUAL RESET — Kill decoration, establish editorial aesthetic    */
+/* ================================================================ */
+
+/* ── 1. KILL ALL INFINITE ANIMATIONS ────────────────────────────── */
+/* Site-wide: no element animates endlessly. Motion is one-shot. */
+.sun-disk__glow,
+.sun-disk__ray,
+.sun-disk__aura,
+.nile-wave__bg,
+.nile-wave__fg,
+.egyptian-bird__one,
+.egyptian-bird__two,
+.hero__ornament--left,
+.hero__ornament--right,
+.hero__ornament svg,
+.hero__bird svg,
+.final-contact__nile-wave svg,
+.destination-card__image img,
+.category-card__media img {
+  animation: none !important;
+}
+
+/* No infinite hover animations — restrained transforms only */
+.feature-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 28px rgba(12, 13, 15, 0.05) !important;
+  animation: none !important;
+}
+.advantage-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 28px rgba(12, 13, 15, 0.05) !important;
+  animation: none !important;
+}
+.category-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 28px rgba(12, 13, 15, 0.05) !important;
+  animation: none !important;
+}
+.destination-card:hover,
+.journey-card:hover {
+  animation: none !important;
+}
+.destination-card:hover .destination-card__image img,
+.journey-card:hover .journey-card__image img {
+  transform: scale(1.02) !important;
+  animation: none !important;
+}
+
+/* Kill icon glow animations */
+.feature-card:hover .feature-card__icon,
+.advantage-card:hover .advantage-card__icon {
+  animation: none !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 0 6px rgba(200, 143, 47, 0.12) !important;
+}
+.feature-card:hover .feature-card__icon svg,
+.advantage-card:hover .advantage-card__icon svg {
+  animation: none !important;
+  filter: none !important;
+}
+
+/* Body texture: reduce to barely perceptible */
+body::before {
+  opacity: 0.12 !important;
+}
+
+/* ── 2. REDUCE DECORATIVE ELEMENTS ─────────────────────────────── */
+/* Pharaonic elements: barely-visible architectural accents only */
+
+/* Hero: keep ONE element (sun disk, subtle), hide ornaments and bird */
+.hero__ornament--left,
+.hero__ornament--right {
+  display: none !important;
+}
+.hero__bird {
+  opacity: 0.06 !important;
+}
+.hero__sun {
+  opacity: 0.22 !important;
+  width: min(14vw, 180px) !important;
+  height: min(14vw, 180px) !important;
+}
+
+/* Hero golden frame border — remove entirely */
+.hero::before {
+  display: none !important;
+}
+
+/* TrustBar divider (obelisk) — remove */
+.trust-bar__divider {
+  display: none !important;
+}
+
+/* WhoKemerya obelisk — reduce to near-invisible */
+.who-kemerya__obelisk {
+  opacity: 0.04 !important;
+}
+
+/* ConversionCTA (Final contact) — remove decorative elements */
+.final-contact__nile-wave {
+  display: none !important;
+}
+.final-contact::before {
+  display: none !important;
+}
+
+/* WhyPartner hieroglyphic borders — remove */
+.why-partner__frame {
+  display: none !important;
+}
+
+/* B2BContactForm hieroglyphic border — remove */
+.b2b-contact__border {
+  display: none !important;
+}
+
+/* FeatureCard hieroglyphic accent — remove */
+.feature-card__accent {
+  display: none !important;
+}
+
+/* Footer hieroglyphic — remove */
+.footer-hieroglyphic {
+  display: none !important;
+}
+
+/* ── 3. REMOVE CARD-GRID DECORATION ──────────────────────────── */
+/* Transform cards from "service catalog" to editorial elements */
+
+/* Feature cards: flat, editorial */
+.feature-card {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 1px solid rgba(20, 23, 22, 0.04) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 16px rgba(12, 13, 15, 0.03) !important;
+  padding: 2rem !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.feature-card__icon {
+  width: 2.6rem !important;
+  height: 2.6rem !important;
+  border-radius: 10px !important;
+  background: rgba(200, 143, 47, 0.08) !important;
+  color: var(--color-antique-gold) !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Advantage cards: flat, editorial */
+.advantage-card {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 1px solid rgba(20, 23, 22, 0.04) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 16px rgba(12, 13, 15, 0.03) !important;
+  padding: 2rem !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.advantage-card__icon {
+  width: 3.2rem !important;
+  height: 3.2rem !important;
+  border-radius: 12px !important;
+  background: rgba(200, 143, 47, 0.08) !important;
+  color: var(--color-antique-gold) !important;
+}
+
+/* Category cards: simplify to editorial chapters */
+.category-card {
+  border-radius: 24px !important;
+  border: 1px solid rgba(20, 23, 22, 0.06) !important;
+  box-shadow: 0 12px 24px rgba(12, 13, 15, 0.04) !important;
+  overflow: hidden !important;
+  display: grid !important;
+  grid-template-columns: 1.2fr 0.8fr !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.category-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 18px 36px rgba(12, 13, 15, 0.06) !important;
+}
+@media (max-width: 720px) {
+  .category-card {
+    grid-template-columns: 1fr !important;
+  }
+}
+.category-card__media {
+  height: 280px !important;
+  position: relative !important;
+}
+.category-card__media img {
+  object-position: center !important;
+  transform: scale(1.03) !important;
+  transition: transform 0.5s ease !important;
+}
+.category-card:hover .category-card__media img {
+  transform: scale(1.05) !important;
+}
+.category-card__body {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 0 !important;
+  padding: 2.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.category-card__body h3 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem) !important;
+  font-family: var(--font-display), Georgia, serif !important;
+  letter-spacing: -0.03em !important;
+  color: var(--color-nile-deep) !important;
+  margin-bottom: 0.8rem !important;
+}
+.category-card__body p {
+  color: var(--color-stone) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  flex-grow: 1;
+}
+
+/* Step cards: flat */
+.step-card {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 1px solid rgba(20, 23, 22, 0.04) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 16px rgba(12, 13, 15, 0.03) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  animation: none !important;
+}
+.step-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 28px rgba(12, 13, 15, 0.05) !important;
+}
+
+/* ── 4. TYPOGRAPHY HIERARCHY ───────────────────────────────────── */
+/* Editorial rhythm: label -> headline -> paragraph -> visual -> CTA */
+
+.hero h1 {
+  font-size: clamp(3.2rem, 8vw, 6.4rem) !important;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  color: var(--color-white);
+  text-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+}
+.hero h1 .line {
+  display: block;
+  opacity: 1;
+  animation: none !important;
+}
+
+/* Eyebrow — refined, gold as accent only */
+.eyebrow {
+  font-size: 0.7rem !important;
+  letter-spacing: 0.16em !important;
+  color: var(--color-antique-gold) !important;
+}
+.eyebrow::before {
+  width: 2rem !important;
+  height: 1px !important;
+  background: rgba(185, 152, 98, 0.5) !important;
+}
+
+/* Section intro — readable body */
+.section-intro {
+  margin-top: 1.2rem;
+  color: var(--color-stone);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 42rem;
+}
+
+/* WhoKemerya — editorial, asymmetric, no floating obelisk */
+.who-kemerya__content {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 3rem !important;
+  margin-top: 2.5rem !important;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .who-kemerya__content {
+    grid-template-columns: 1.1fr 0.9fr !important;
+    gap: 4rem !important;
+    align-items: start !important;
+  }
+  .who-kemerya__text {
+    position: relative;
+    z-index: 1;
+  }
+  .who-kemerya__image {
+    position: relative;
+    z-index: 1;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    min-height: 500px;
+    background: linear-gradient(135deg, var(--color-nile-deep), var(--color-obsidian-deep));
+  }
+}
+.who-kemerya__text p {
+  margin-bottom: 1.3rem;
+  color: var(--color-stone);
+  max-width: 46rem;
+}
+.who-kemerya__cta {
+  margin-top: 2.5rem;
+}
+
+/* Hero tamed — single visual composition, no animation sequence */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 9rem 1.5rem 5rem;
+  color: var(--color-white);
+}
+.hero__inner {
+  max-width: 680px;
+  opacity: 1;
+  animation: none !important;
+}
+.hero__kicker,
+.hero__lead,
+.hero__actions .button--primary,
+.hero__actions .button--secondary {
+  opacity: 1 !important;
+  animation: none !important;
+}
+
+/* Trust bar — clean, no decorative divider */
+.trust-bar {
+  padding: 5rem 0;
+}
+.trust-bar__statement {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(20, 23, 22, 0.05);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(12, 13, 15, 0.03);
+  margin-bottom: 3rem;
+}
+.trust-bar__statement h3 {
+  color: var(--color-nile-deep);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: clamp(1.5rem, 2.2vw, 1.9rem);
+}
+
+/* ── 5. EDITORIAL LAYOUT CLASSES ──────────────────────────────── */
+
+/* Kemerya Approach — numbered editorial sequence */
+.kemerya-approach__list {
+  display: grid;
+  gap: clamp(4rem, 8vw, 6rem);
+  margin-top: 3rem;
+}
+.kemerya-approach__item {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+.kemerya-approach__number {
+  font-size: clamp(4rem, 10vw, 6.5rem);
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: var(--color-antique-gold);
+  opacity: 1;
+  animation: none !important;
+}
+.kemerya-approach__number::after {
+  content: "";
+  display: block;
+  width: clamp(40px, 12vw, 70px);
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-antique-gold), transparent);
+  margin-top: 0.5rem;
+}
+.kemerya-approach__title {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--color-ink);
+  margin-bottom: 0.6rem;
+  animation: none !important;
+}
+.kemerya-approach__description {
+  color: var(--color-stone);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Editorial chapter — alternating layout */
+.editorial-chapter {
+  position: relative;
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  overflow: hidden;
+}
+.editorial-chapter:nth-child(even) {
+  background: rgba(225, 208, 177, 0.02);
+}
+.editorial-chapter__number {
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: var(--color-antique-gold);
+  margin-bottom: 1rem;
+  animation: none !important;
+}
+.editorial-chapter__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.03em;
+  line-height: 0.92;
+  color: var(--color-ink);
+  margin-bottom: 0.8rem;
+}
+.editorial-chapter__description {
+  color: var(--color-stone);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 38rem;
+  margin-top: 0.8rem;
+}
+
+/* CapTeaser — editorial list */
+.caps-teaser__list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.caps-teaser__item {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(20, 23, 22, 0.05);
+}
+.caps-teaser__item:last-child {
+  border-bottom: none;
+}
+.caps-teaser__number {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  line-height: 0.85;
+  color: var(--color-antique-gold);
+  animation: none !important;
+}
+
+/* Editorial blocks — 3 large chapters */
+.editorial-blocks {
+  display: grid;
+  gap: clamp(5rem, 8vw, 7rem);
+  margin-top: 3rem;
+}
+.editorial-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+.editorial-block__label {
+  font-size: clamp(0.8rem, 1.5vw, 0.85rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.editorial-block__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.03em;
+  line-height: 1.0;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+}
+.editorial-block__description {
+  color: var(--color-stone);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 38rem;
+}
+.editorial-block__clients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--color-nile-deep);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.editorial-block--image {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 320px;
+  box-shadow: var(--shadow);
+  background: linear-gradient(135deg, var(--color-nile-deep), var(--color-obsidian-deep));
+}
+.editorial-block--image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(5,72,85,0.3) 0%, rgba(8,10,10,0.1) 100%);
+}
+
+/* Why Partner teaser — image-led, 3 reasons */
+.why-partner-teaser {
+  background: var(--color-ivory);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+}
+.why-partner-teaser__statement {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+}
+.why-partner-teaser__reasons {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.why-partner-teaser__reason {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.why-partner-teaser__reason-number {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  line-height: 0.85;
+  color: var(--color-antique-gold);
+  flex-shrink: 0;
+}
+.why-partner-teaser__reason-title {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--color-ink);
+  margin-bottom: 0.4rem;
+}
+.why-partner-teaser__reason-desc {
+  color: var(--color-stone);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Final CTA — minimal, powerful */
+.final-contact__content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 7rem 1.5rem;
+  color: var(--color-white);
+}
+.final-contact h2 {
+  margin-top: 1rem;
+  font-size: clamp(2.6rem, 6vw, 4.2rem) !important;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: var(--color-white);
+  text-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+}
+.final-contact h2 .line {
+  display: block;
+  opacity: 1 !important;
+  animation: none !important;
+}
+.final-contact__description {
+  margin-top: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 40rem;
+}
+.final-contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.final-contact__actions .button--gold {
+  opacity: 1 !important;
+  animation: none !important;
+}
+
+/* ── 6. INTERNAL PAGE EDITORIAL OVERRIDES ──────────────────────── */
+
+/* Capabilities page: replace card grid with editorial list */
+.capabilities .feature-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 1.5rem !important;
+}
+.capabilities .feature-card {
+  display: grid !important;
+  grid-template-columns: 0.3fr 1fr !important;
+  gap: 1.5rem !important;
+  align-items: start !important;
+  padding: 1.5rem !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 1px solid rgba(20, 23, 22, 0.05) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 16px rgba(12, 13, 15, 0.03) !important;
+  animation: none !important;
+}
+.capabilities .feature-card__icon {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+  margin-bottom: 0 !important;
+  align-self: center;
+  justify-self: start;
+}
+.capabilities .feature-card h3 {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem) !important;
+  font-family: var(--font-display), Georgia, serif !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 0.6rem !important;
+  color: var(--color-nile-deep) !important;
+  grid-column: 2 !important;
+}
+.capabilities .feature-card p {
+  color: var(--color-stone) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  grid-column: 2 !important;
+}
+
+/* Why Partner page: editorial argument format */
+.why-kemerya {
+  padding: clamp(5rem, 8vw, 7rem) 0 !important;
+}
+.why-kemerya .why-item {
+  padding: 3rem 0 !important;
+  border-top: 1px solid rgba(20, 23, 22, 0.05) !important;
+  animation: none !important;
+}
+.why-item__number {
+  opacity: 1 !important;
+  animation: none !important;
+}
+.why-item__title {
+  opacity: 1 !important;
+  animation: none !important;
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem) !important;
+  color: var(--color-nile-deep) !important;
+}
+.why-item__description {
+  color: var(--color-stone) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  max-width: 42rem !important;
+}
+
+/* WhyKemerya page: lotus art reduced to near-invisible */
+.why-kemerya__art {
+  opacity: 0.04 !important;
+}
+
+/* Who We Work With: 3 editorial blocks instead of 9 cards */
+.who-we-work-with .feature-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: clamp(4rem, 8vw, 6rem) !important;
+}
+.who-we-work-with .feature-card {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 1rem !important;
+  padding: 1.5rem !important;
+  background: rgba(255, 255, 255, 0.82) !important;
+  border: 1px solid rgba(20, 23, 22, 0.05) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 16px rgba(12, 13, 15, 0.03) !important;
+  animation: none !important;
+}
+.who-we-work-with .feature-card__icon {
+  width: 2.6rem !important;
+  height: 2.6rem !important;
+  align-self: start !important;
+  margin-bottom: 0 !important;
+}
+.who-we-work-with .feature-card__icon svg {
+  animation: none !important;
+  filter: none !important;
+}
+.who-we-work-with .feature-card h3 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem) !important;
+  font-family: var(--font-display), Georgia, serif !important;
+  letter-spacing: -0.02em !important;
+  color: var(--color-nile-deep) !important;
+}
+.who-we-work-with .feature-card p {
+  color: var(--color-stone) !important;
+  font-size: 1.05rem !important;
+  max-width: 40rem !important;
+}
+
+/* B2B Contact form: restructure to editorial */
+.b2b-contact {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-radius: 28px !important;
+  padding: 3rem 2rem !important;
+  box-shadow: 0 12px 30px rgba(12, 13, 15, 0.04) !important;
+  border: 1px solid rgba(20, 23, 22, 0.05) !important;
+}
+.b2b-contact__grid {
+  grid-template-columns: 1fr !important;
+  gap: 1.5rem !important;
+}
+.b2b-contact__field-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+}
+.b2b-contact__label {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--color-stone) !important;
+  font-weight: 600 !important;
+}
+.b2b-contact__input,
+.b2b-contact__textarea {
+  width: 100% !important;
+  padding: 0.9rem 1.1rem !important;
+  border: 1px solid rgba(20, 23, 22, 0.12) !important;
+  border-radius: 12px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: var(--color-ink) !important;
+  font-family: var(--font-sans), Arial, sans-serif !important;
+  font-size: 0.9rem !important;
+  transition: border-color 0.2s ease, background 0.2s ease !important;
+}
+.b2b-contact__input:focus,
+.b2b-contact__textarea:focus {
+  outline: none !important;
+  border-color: var(--color-antique-gold) !important;
+  background: var(--color-white) !important;
+}
+.b2b-contact__textarea {
+  min-height: 140px !important;
+  resize: vertical !important;
+}
+.b2b-contact__actions {
+  grid-column: 1 / -1 !important;
+  margin-top: 1rem !important;
+}
+.b2b-contact__note {
+  grid-column: 1 / -1 !important;
+  color: var(--color-stone) !important;
+  font-size: 0.85rem !important;
+  font-style: italic !important;
+}
+.b2b-contact__full {
+  grid-column: 1 / -1 !important;
+}
+
+/* Credibility section: clean, editorial */
+.credibility-section {
+  padding: clamp(4rem, 7vw, 6rem) 0 !important;
+  text-align: center !important;
+  max-width: 720px !important;
+  margin: 0 auto !important;
+}
+.credibility-section .button {
+  margin-top: 2rem !important;
+}
+
+/* ── 7. MOBILE INTENTIONAL ────────────────────────────────────── */
+@media (max-width: 720px) {
+  .hero__content {
+    padding: 6rem 1rem 3rem !important;
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 9vw, 4.2rem) !important;
+  }
+  .hero__actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.8rem !important;
+  }
+  .kemerya-approach__item,
+  .editorial-chapter,
+  .editorial-block {
+    grid-template-columns: 1fr !important;
+  }
+  .editorial-block__label {
+    margin-bottom: 0.5rem !important;
+  }
+  .caps-teaser__item {
+    grid-template-columns: 1fr !important;
+  }
+  .caps-teaser__number {
+    display: block !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .why-partner-teaser__reason {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  .why-partner-teaser__reason-number {
+    font-size: 2.2rem !important;
+  }
+  .final-contact__content {
+    padding: 5rem 1rem !important;
+  }
+  .trust-bar__inner {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── 8. REDUCED MOTION ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .trust-item__value--counting {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 

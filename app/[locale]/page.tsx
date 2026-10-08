@@ -5,9 +5,22 @@ import { socialLinks } from "@/data/social";
 import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { WhoKemerya } from "@/components/sections/WhoKemerya";
+import { WhyKemerya } from "@/components/sections/WhyKemerya";
 import { ConversionCTA } from "@/components/sections/ConversionCTA";
+import { BrandStatement } from "@/components/sections/BrandStatement";
+import { KemeryaApproach } from "@/components/sections/KemeryaApproach";
+import { CapsTeaser } from "@/components/sections/CapsTeaser";
+import { ClientTypes } from "@/components/sections/ClientTypes";
+import { WhoWeWorkWithEditorial } from "@/components/sections/WhoWeWorkWithEditorial";
+import { WhyPartner } from "@/components/sections/WhyPartner";
+import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
+import { WhyPartnerTeaser } from "@/components/sections/WhyPartnerTeaser";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
 import { getPageCopy } from "@/lib/brand-content";
+import { getCapabilities } from "@/data/capabilities";
+import { getClientTypes } from "@/data/clientTypes";
+import { getWhyPartner } from "@/data/whyPartner";
+import { getAdvantages } from "@/data/advantages";
 import {
   locales,
   uiTranslations,
@@ -82,10 +95,15 @@ export default async function LocalePage({
     description: copy.meta.description,
   };
 
-  // Concise homepage arc:
-  // Hero → Trust → Core Differentiator (WhoKemerya) → Final CTA
-  // All other content lives on dedicated internal pages (/why-kemerya,
-  // /capabilities, /who-we-work-with, /credibility, /faq, etc.)
+    // Premium Egyptian editorial homepage:
+  // Hero -> Trust -> Brand Statement -> Kemerya Approach ->
+  // Capabilities -> Who We Work With -> Why Partner teaser -> Final CTA
+  // Falls back to legacy components for locales without new content yet.
+  const capabilitiesItems = getCapabilities(safeLocale);
+  const clientTypeItems = getClientTypes(safeLocale);
+  const whyPartnerItems = getWhyPartner(safeLocale);
+  const advantageItems = getAdvantages(safeLocale);
+
   return (
     <>
       <script
@@ -105,7 +123,39 @@ export default async function LocalePage({
           }}
         />
 
-        <WhoKemerya copy={copy.whoKemerya} ui={ui} />
+        {copy.brandStatement ? (
+          <BrandStatement copy={copy.brandStatement} ui={ui} />
+        ) : (
+          <WhoKemerya copy={copy.whoKemerya} ui={ui} />
+        )}
+
+        {copy.kemeryaApproach ? (
+          <KemeryaApproach copy={copy.kemeryaApproach} />
+        ) : (
+          <WhyKemerya copy={copy.whyKemerya} />
+        )}
+
+        {copy.capTeaser ? (
+          <CapsTeaser copy={copy.capTeaser} items={capabilitiesItems} />
+        ) : null}
+
+        {copy.whoWeWorkWithGroups ? (
+          <WhoWeWorkWithEditorial
+            copy={copy.whoWeWorkWithGroups}
+            ui={ui}
+          />
+        ) : (
+          <ClientTypes copy={copy.clientTypes} items={clientTypeItems} />
+        )}
+
+        {copy.whyPartnerTeaser ? (
+          <WhyPartnerTeaser copy={copy.whyPartnerTeaser} />
+        ) : (
+          <>
+            <WhyPartner copy={copy.whyPartner} items={whyPartnerItems} />
+            <KemeryaAdvantage copy={copy.advantages} items={advantageItems} />
+          </>
+        )}
 
         <ConversionCTA copy={copy.conversion} />
       </LocaleSiteShell>

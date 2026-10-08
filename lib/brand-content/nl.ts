@@ -45,7 +45,82 @@ export const nl: BrandContent = {
     items: [
       { title: "PLAATS EERST", description: "We zijn gevestigd in Giza en werken elke dag in Egypte, waardoor routes en tijden weerspiegelen hoe het land werkelijk beweegt." },
       { title: "DE DETAILS DIE TEGAAN", description: "Wat telt, is niet de bekende bezienswaardigheden maar hoe de reis daarheen komt en wie zich aanpast als de dag verandert." },
-      { title: "JOUW REIZIGER, JOUW KEUZE", description: "We nemen het Egyptische deel van het plan op zodat jouw bedrijf dicht bij de reiziger blijft." }
+      { title: "JOUW REIZIGER, JOUW RELATIE", description: "We nemen het Egyptische deel van het plan op zodat jouw bedrijf dicht bij de reiziger blijft." },
+      { title: "VERANTWOORDELIJKHEID OP DE GROND", description: "We blijven terug op de grond met het programma terwijl reizigers in Egypte zijn, coördineren bij aankomst en blijven beschikbaar voor aanpassingen." }
+    ],
+  },
+  brandStatement: {
+    eyebrow: "GEVESTIGD IN GIZEH, EGYPTE",
+    title: "WIJ KENNEN WAT HET REISSCHEMA NIET LAAT ZIEN.",
+    subtitle: "Routes, timing en mensen ter plaatse maken het verschil.",
+    intro:
+      "Kemerya Tours is een in Egypte gevestigd reisbedrijf dat samenwerkt met reisbureaus, touroperators en reisadviseurs die een bereikbaar lokaal team nodig hebben.",
+    paragraphs: [
+      "Een programma kan er op papier goed uitzien en toch afhangen van de details tussen de hoogtepunten: hoelang een transfer duurt, wanneer een bezoek het beste uitkomt en wie kan bijsturen als de dag anders loopt. Vanuit Gizeh stemmen we af met de mensen die elk onderdeel verzorgen en houden we die praktische details in het oog.",
+      "We organiseren privé- en maatwerkreizen door heel Egypte, met professionele egyptologengidsen, privévoertuigen met airconditioning, hotels, ervaringen op de Nijl en ondersteuning ter plaatse. De relatie met de reiziger blijft bij u. Ons team neemt de verantwoordelijkheid voor de Egyptische kant van de reis op zich.",
+    ],
+    image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
+    cta: "",
+  },
+  kemeryaApproach: {
+    eyebrow: "Onze aanpak",
+    title: "DE KEMERA-AANPAK",
+    intro: "Vier principes die elk programma in Egypte vormgeven.",
+    items: [
+      { title: "PLAATS EERST", description: "We zijn gevestigd in Giza en werken elke dag in Egypte, waardoor routes en tijden weerspiegelen hoe het land werkelijk beweegt." },
+      { title: "DE DETAILS DIE TEGAAN", description: "Wat telt, is niet de bekende bezienswaardigheden maar hoe de reis daarheen komt en wie zich aanpast als de dag verandert." },
+      { title: "JOUW REIZIGER, JOUW RELATIE", description: "We nemen het Egyptische deel van het plan op zodat jouw bedrijf dicht bij de reiziger blijft." },
+      { title: "VERANTWOORDELIJKHEID OP DE GROND", description: "We blijven terug op de grond met het programma terwijl reizigers in Egypte zijn, coördineren bij aankomst en blijven beschikbaar voor aanpassingen." }
+    ],
+  },
+  capTeaser: {
+    eyebrow: "Wat we kunnen afhanden",
+    title: "PRACTISCHE ONDERSTEUNING VOOR REIZEN IN EGYPTEN.",
+    intro:
+      "Van een privéitinerary tot een multi-stop-programma, ons team coördineert de dienstverleging en lokale details die uw brief vereist.",
+    cta: "ALLE CAPACITEITEN BEKIJKEN",
+  },
+  whoWeWorkWithGroups: {
+    eyebrow: "MET WIE WE SAMENWERKEN",
+    title: "ER BESTAAT IEMAND AAN DE EGYPTISCHE ZIJ.",
+    intro:
+      "Verschillende reisorganisaties verwachten iets anders van een lokale operator. We vormgeven de samenwerking aan uw reizigers, normen en verkoopwijze.",
+    groups: [
+      {
+        label: "VERKOOP EGYPTEN",
+        title: "Reisbureaus, touroperators en reisadviseurs",
+        description:
+          "U houdt de klantrelatie. Wij leveren Egypte-kennis: professionele Egyptoloog-gidsen, privévoertuigen, Nijl-ervaringen en coördinatie ter plaatse. Elk programma is ontworpen om door u vlotte te verkopen.",
+        clients: ["Reisbureaus", "Touroperators", "Reisadviseurs"],
+        image: "/images/areas-we-support-cards/egypt-day-tours.webp",
+      },
+      {
+        label: "BREID UW BESTEMMING UIT",
+        title: "Destination Management Companies, Travel Wholesalers en Luxury Travel Designers",
+        description:
+          "Voeg Egypte toe aan uw portfolio met een lokale partner die uw normen begrijpt en het reisdeel kan coördineren. Wij werken achter uw merk terwijl u de klantrelatie behoudt.",
+        clients: ["Destination Management Companies", "Travel Wholesalers", "Luxury Travel Designers"],
+        image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
+      },
+      {
+        label: "Beweeg mensen",
+        title: "Groepsreizen, zakelijke en incentivreizen, cruise- en excursiepartners",
+        description:
+          "We coördineren timing, transport, begeleiding en logistiek voor groepsreizen in heel Egypte. We passen het tempo en de afspraken aan elk onderdeel aan terwijl we het bredere schema houdbaar houden.",
+        clients: ["Groepsreizen", "Zakelijke en incentivereizen", "Cruise- en excursiepartners"],
+        image: "/images/areas-we-support-cards/nile-cruise.webp",
+      },
+    ],
+  },
+  whyPartnerTeaser: {
+    eyebrow: "WAAROM PARTNERS KEMERYA KIEZEN",
+    title: "EEN LOCALE PARTNER, GEEN EXTRA DOORSCHUIFMOMENT.",
+    intro:
+      "Een programma in Egypte vraagt om meer dan alleen diensten boeken. Het vraagt om een team dat de bestemming, uw normen en de veranderlijke details ter plaatse begrijpt.",
+    reasons: [
+      { title: "Lokaal gevoel voor de zaak, voordat het schema is vastliggen", description: "We zijn elke dag in Egypte. Routes, timing en praktische overwegingen spiegelen hoe het land echt beweegt, niet alleen een patroon." },
+      { title: "Uw reiziger blijft uw reiziger", description: "We coördineren de Egyptische kant terwijl u de klantrelatie en inkomsten behoudt. Wij werken achter uw merk." },
+      { title: "Flexibiliteit zonder chaos", description: "Plannen passen zich aan reishulp aan zonder het bredere schema uit het oog te verliezen. Iemand ter plaatse is bereikbaar wanneer details veranderen." },
     ],
   },
   brandPhilosophy: {

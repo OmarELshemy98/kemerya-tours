@@ -45,7 +45,82 @@ export const en: BrandContent = {
     items: [
       { title: "PLACE FIRST", description: "We are based in Giza and work in Egypt every day, so routes and timing reflect how the country actually moves." },
       { title: "DETAILS THAT MATTER", description: "What matters is not the headline sight but how the journey gets there, and who adapts when the day shifts." },
-      { title: "YOUR TRAVELER, YOUR CALL", description: "We carry the Egyptian side of the plan so your business stays close to the traveler." }
+      { title: "YOUR TRAVELER, YOUR RELATIONSHIP", description: "We carry the Egyptian side of the plan so your business stays close to the traveler." },
+      { title: "ACCOUNTABILITY ON THE GROUND", description: "We stay with the plan while travelers are in Egypt, coordinating on arrival and staying reachable for adjustments." }
+    ],
+  },
+  brandStatement: {
+    eyebrow: "BASED IN GIZA, EGYPT",
+    title: "WE KNOW WHAT THE ITINERARY DOESN'T SHOW.",
+    subtitle: "Routes, timing and people on the ground matter.",
+    intro:
+      "Kemerya Tours is an Egypt-based travel company working with agencies, tour operators and travel designers who need a local team they can reach.",
+    paragraphs: [
+      "A program can look right on paper and still depend on the details between its highlights: how long a transfer takes, when a visit works best, and who can adapt when the day shifts. From Giza, we coordinate with the people delivering each part and keep those practical details in view.",
+      "We arrange private and tailor-made travel across Egypt, coordinating professional Egyptologist guides, private air-conditioned vehicles, hotels, Nile experiences and support on the ground. You keep the traveler relationship. Our team takes responsibility for the Egyptian side of the trip.",
+    ],
+    image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
+    cta: "",
+  },
+  kemeryaApproach: {
+    eyebrow: "OUR APPROACH",
+    title: "THE KEMERA APPROACH",
+    intro: "Four principles that shape every program we coordinate in Egypt.",
+    items: [
+      { title: "PLACE FIRST", description: "We are based in Giza and work in Egypt every day, so routes and timing reflect how the country actually moves." },
+      { title: "DETAILS THAT MATTER", description: "What matters is not the headline sight but how the journey gets there, and who adapts when the day shifts." },
+      { title: "YOUR TRAVELER, YOUR RELATIONSHIP", description: "We carry the Egyptian side of the plan so your business stays close to the traveler." },
+      { title: "ACCOUNTABILITY ON THE GROUND", description: "We stay with the plan while travelers are in Egypt, coordinating on arrival and staying reachable for adjustments." },
+    ],
+  },
+  capTeaser: {
+    eyebrow: "WHAT WE CAN HANDLE",
+    title: "PRACTICAL SUPPORT FOR TRAVEL IN EGYPT.",
+    intro:
+      "From a private itinerary to a multi-stop program, our team coordinates the services and local details your brief calls for.",
+    cta: "VIEW ALL CAPABILITIES",
+  },
+  whoWeWorkWithGroups: {
+    eyebrow: "WHO WE WORK WITH",
+    title: "THERE IS SOMEONE ON EGYPT'S SIDE.",
+    intro:
+      "Different travel businesses need different things from a local partner. We shape the working relationship around your travelers, your standards and how you sell.",
+    groups: [
+      {
+        label: "SELL EGYPT",
+        title: "Travel agencies, tour operators and travel advisors",
+        description:
+          "You bring the client relationship. We provide the Egypt expertise: Egyptologist guides, private vehicles, Nile experiences and on-ground coordination. Every program is designed to be sold by you seamlessly.",
+        clients: ["Travel Agencies", "Tour Operators", "Travel Advisors"],
+        image: "/images/areas-we-support-cards/egypt-day-tours.webp",
+      },
+      {
+        label: "EXTEND YOUR DESTINATION",
+        title: "DMCs, travel wholesalers and luxury travel designers",
+        description:
+          "Add Egypt to your portfolio with a local partner that understands your standards and can coordinate the destination side of the journey. We work behind your brand while you own the client relationship.",
+        clients: ["Destination Management Companies", "Travel Wholesalers", "Luxury Travel Designers"],
+        image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
+      },
+      {
+        label: "MOVE PEOPLE",
+        title: "Groups, corporate/incentive and cruise/shore excursion partners",
+        description:
+          "Coordinate timing, transport, guiding and logistics for group travel across Egypt. We adapt pace and arrangements to each brief while keeping the broader itinerary workable for everyone.",
+        clients: ["Group Travel", "Corporate & Incentive", "Cruise & Shore Excursions"],
+        image: "/images/areas-we-support-cards/nile-cruise.webp",
+      },
+    ],
+  },
+  whyPartnerTeaser: {
+    eyebrow: "WHY PARTNERS CHOOSE KEMERYA",
+    title: "A LOCAL PARTNER, NOT ANOTHER HAND-OFF.",
+    intro:
+      "An Egypt program asks for more than a supplier booking. It needs a team that understands the place, your standards and the details that change on the ground.",
+    reasons: [
+      { title: "Local judgment, before the itinerary is set", description: "We are in Egypt every day. Routes, timing and practical considerations reflect how the country actually moves, not a template." },
+      { title: "Your traveler stays your traveler", description: "We coordinate the Egypt side while you keep the client relationship and the revenue. We work behind your brand." },
+      { title: "Flexibility without chaos", description: "Plans adapt to traveler needs without losing sight of the broader itinerary. Someone on the ground stays reachable when details change." },
     ],
   },
   brandPhilosophy: {

@@ -45,7 +45,82 @@ export const fr: BrandContent = {
     items: [
       { title: "LE LIEU D ABORD", description: "Basée à Gizeh, nous travaillons en Égypte tous les jours, donc les itinéraires et les horaires reflètent comment le pays se déplace vraiment." },
       { title: "LES DETAILS QUI COMPTENT", description: "Ce qui compte, c est la liste des sites mais comment le voyage s y rend et qui s adapte quand la journée change." },
-      { title: "TON VOYAGEUR, TON APPEL", description: "Nous gérons le côté égyptien du plan pour que ton entreprise reste proche du voyageur." }
+      { title: "TON VOYAGEUR, TA RELATION", description: "Nous gérons le côté égyptien du plan pour que ton entreprise reste proche du voyageur." },
+      { title: "RESPONSABILITÉ SUR LE TERRAIN", description: "Nous restons sur le terrain avec le programme pendant que les voyageurs sont en Égypte, coordonnons à l'arrivée et restons disponibles pour les ajustements." }
+    ],
+  },
+  brandStatement: {
+    eyebrow: "BASÉE À GIZEH, EN ÉGYPTE",
+    title: "NOUS CONNAISSONS CE QUE L'ITINÉRAIRE NE MONTRE PAS.",
+    subtitle: "Les trajets, le timing et les équipes sur place comptent.",
+    intro:
+      "Kemerya Tours est une entreprise de voyages basée en Égypte. Nous travaillons avec des agences, des tour-opérateurs et des concepteurs de voyages qui ont besoin d'une équipe locale joignable.",
+    paragraphs: [
+      "Un programme peut sembler cohérent sur le papier et dépendre de détails entre ses temps forts : la durée réelle d'un transfert, le meilleur moment pour une visite et la personne capable de s'adapter si la journée évolue. Depuis Gizeh, nous coordonnons les équipes qui assurent chaque étape et gardons ces aspects pratiques à l'esprit.",
+      "Nous organisons des voyages privés et sur mesure dans toute l'Égypte, en coordonnant des guides égyptologues professionnels, des véhicules privés climatisés, des hôtels, des expériences sur le Nil et l'assistance sur place. Vous gardez la relation avec le voyageur. Notre équipe prend en charge le volet égyptien du voyage.",
+    ],
+    image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
+    cta: "",
+  },
+  kemeryaApproach: {
+    eyebrow: "Notre méthode",
+    title: "L'APPROCHE KEMERA",
+    intro: "Quatre principes qui guident chaque programme que nous coordonnons en Égypte.",
+    items: [
+      { title: "LE LIEU D'ABORD", description: "Basée à Gizeh, nous travaillons en Égypte tous les jours, donc les itinéraires et les horaires reflètent comment le pays se déplace vraiment." },
+      { title: "LES DÉTAILS QUI COMPTENT", description: "Ce qui compte, c'est la liste des sites principaux mais comment le voyage s'y rend et qui s'adapte quand la journée change." },
+      { title: "TON VOYAGEUR, TA RELATION", description: "Nous gérons le côté égyptien du plan pour que ton entreprise reste proche du voyageur." },
+      { title: "RESPONSABILITÉ SUR LE TERRAIN", description: "Nous restons sur le terrain avec le programme pendant que les voyageurs sont en Égypte, coordonnons à l'arrivée et restons disponibles pour les ajustements." }
+    ],
+  },
+  capTeaser: {
+    eyebrow: "Ce que nous pouvons gérer",
+    title: "SOUTIEN PRATIQUE POUR LES VOYAGES EN ÉGYPTE.",
+    intro:
+      "D'un itinéraire privé à un programme multi-étapes, notre équipe coordonne les services et les détails locaux que votre brief exige.",
+    cta: "VOIR TOUTES LES CAPACITÉS",
+  },
+  whoWeWorkWithGroups: {
+    eyebrow: "AVEC QUI NOUS TRAVAILLONS",
+    title: "IL Y A QUELQU'UN DU CÔTÉ ÉGYPTE.",
+    intro:
+      "Les besoins des entreprises de voyage envers un partenaire local diffèrent. Nous façonnons la relation de travail autour de vos voyageurs, vos normes et de la façon dont vous vendez.",
+    groups: [
+      {
+        label: "VENDRE L'ÉGYPTE",
+        title: "Agences de voyage, tour-opérateurs et conseillers voyage",
+        description:
+          "Vous conservez la relation client. Nous fournissons l'expertise Égypte : guides égyptologues professionnels, véhicules privés, expériences sur le Nil et coordination sur place. Chaque programme est conçu pour être vendu par vous de manière fluide.",
+        clients: ["Agences de voyage", "Tour-opérateurs", "Conseillers voyage"],
+        image: "/images/areas-we-support-cards/egypt-day-tours.webp",
+      },
+      {
+        label: "ÉTENDEZ VOTRE DESTINATION",
+        title: "Sociétés de gestion de destination, grossistes voyage et concepteurs de voyage de luxe",
+        description:
+          "Ajoutez l'Égypte à votre portefeuille avec un partenaire local qui comprend vos normes et peut coordonner le côté destination du voyage. Nous travaillons derrière votre marque pendant que vous gardez la relation client.",
+        clients: ["Sociétés de gestion de destination", "Grossistes voyage", "Concepteurs de voyage de luxe"],
+        image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
+      },
+      {
+        label: "DÉPLACEZ DES PERSONNES",
+        title: "Voyages de groupe, voyages d'entreprise et d'incentive, partenaires croisières et d'excursion côtière",
+        description:
+          "Nous coordonnons le timing, le transport, l'escortisation et la logistique pour les voyages de groupe dans toute l'Égypte. Nous adaptons le rythme et les arrangements à chaque brief tout en maintenant l'itinéraire plus large réalisable.",
+        clients: ["Voyages de groupe", "Voyages d'entreprise et d'incentive", "Croisières et excursions côtières"],
+        image: "/images/areas-we-support-cards/nile-cruise.webp",
+      },
+    ],
+  },
+  whyPartnerTeaser: {
+    eyebrow: "POURQUOI LES PARTENAIRES CHOISISSENT KEMERYA",
+    title: "UN PARTENAIRE LOCAL, PAS UNE AUTRE TRANSFERT.",
+    intro:
+      "Un programme en Égypte demande plus qu'une simple réservation de fournisseur. Il faut une équipe qui comprend l'endroit, vos normes et les détails qui changent sur le terrain.",
+    reasons: [
+      { title: "Un jugement local avant de bloquer l'itinéraire", description: "Nous sommes en Égypte tous les jours. Les itinéraires, les horaires et les considérations pratiques reflètent comment le pays se déplace réellement, pas un modèle." },
+      { title: "Votre voyageur reste votre voyageur", description: "Nous coordonnons le côté Égypte pendant que vous conservez la relation client et les revenus. Nous travaillons derrière votre marque." },
+      { title: "Flexibilité sans chaos", description: "Les plans s'adaptent aux besoins du voyageur sans perdre de vue l'itinéraire plus large. Une personne sur le terrain est joignable quand les détails changent." },
     ],
   },
   brandPhilosophy: {

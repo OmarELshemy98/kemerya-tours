@@ -45,7 +45,82 @@ export const de: BrandContent = {
     items: [
       { title: "DER OERLICHKEIT ZUERST", description: "Wir sind in Giza ansässig und arbeiten jeden Tag in Ägypten, daher spiegeln Routen und Zeiten wider, wie das Land wirklich funktioniert." },
       { title: "DIE DETAILS, DIE ZAHLEN", description: "Es geht nicht um die wichtigsten Sehenswürdigkeiten, sondern um wie eine Reise dorthin kommt und wer sich anpasst, wenn sich der Tag ändert." },
-      { title: "DEIN REISENDER, DEIN SCHRITT", description: "Wir übernehmen die ägyptische Seite des Plans, damit dein Unternehmen nah am Reisenden bleibt." }
+      { title: "DEIN REISENDER, DEINE BEZIEHUNG", description: "Wir übernehmen die ägyptische Seite des Plans, damit dein Unternehmen nah am Reisenden bleibt." },
+      { title: "VERANTWORTUNG VOR ORT", description: "Wir bleiben vor Ort mit dem Programm während die Reisenden in Ägypten sind, koordinieren beim Ankommen und bleiben für Anpassungen erreichbar." }
+    ],
+  },
+  brandStatement: {
+    eyebrow: "IN GIZA, ÄGYPTEN, ANSÄSSIG",
+    title: "WIR KENNEN DAS, WAS DER REISEPLAN NICHT ZEIGT.",
+    subtitle: "Routen, Zeitplanung und Menschen vor Ort machen den Unterschied.",
+    intro:
+      "Kemerya Tours ist ein in Ägypten ansässiges Reiseunternehmen, das mit Reisebüros, Reiseveranstaltern und Reisegestaltern zusammenarbeitet, die ein erreichbares lokales Team benötigen.",
+    paragraphs: [
+      "Ein Programm kann auf dem Papier stimmig wirken und dennoch von den Details zwischen den Höhepunkten abhängen: Wie lange ein Transfer tatsächlich dauert, wann sich ein Besuch am besten anbietet und wer sich anpassen kann, wenn sich der Tagesablauf ändert. Von Giza aus koordinieren wir die Menschen, die die einzelnen Leistungen erbringen, und behalten die praktischen Details im Blick.",
+      "Wir organisieren private und individuell gestaltete Reisen in ganz Ägypten und koordinieren professionelle Ägyptologe als Guides, private klimatisierte Fahrzeuge, Hotels, Erlebnisse auf dem Nil und Betreuung vor Ort. Die Beziehung zu den Reisenden bleibt bei Ihnen. Unser Team kümmert sich um den ägyptischen Teil der Reise.",
+    ],
+    image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
+    cta: "",
+  },
+  kemeryaApproach: {
+    eyebrow: "Unsere Methode",
+    title: "DER KEMERA-ANSATZ",
+    intro: "Vier Prinzipien, die jedes Programm in Ägypten prägen.",
+    items: [
+      { title: "DER OERLICHKEIT ZUERST", description: "Wir sind in Giza ansässig und arbeiten jeden Tag in Ägypten, daher spiegeln Routen und Zeiten wider, wie das Land wirklich funktioniert." },
+      { title: "DIE DETAILS, DIE ZAHLEN", description: "Es geht nicht um die wichtigsten Sehenswürdigkeiten, sondern um wie eine Reise dorthin kommt und wer sich anpasst, wenn sich der Tag ändert." },
+      { title: "DEIN REISENDER, DEINE BEZIEHUNG", description: "Wir übernehmen die ägyptische Seite des Plans, damit dein Unternehmen nah am Reisenden bleibt." },
+      { title: "VERANTWORTUNG VOR ORT", description: "Wir bleiben vor Ort mit dem Programm während die Reisenden in Ägypten sind, koordinieren beim Ankommen und bleiben für Anpassungen erreichbar." }
+    ],
+  },
+  capTeaser: {
+    eyebrow: "Was wir übernehmen können",
+    title: "Praktische Unterstützung für Reisen in Ägypten.",
+    intro:
+      "Von einer privaten Reiseroute bis zu einem Multi-Stop-Programm koordiniert unser Team die Dienstleistungen und lokalen Details, die Ihr Brief erfordert.",
+    cta: "ALLE KAPAZITÄTEN ANZEIGEN",
+  },
+  whoWeWorkWithGroups: {
+    eyebrow: "MIT WEM WIR ZUSAMMARBEITEN",
+    title: "ES GIBT JEMANDEN AUF ÄGYPTENS SEITE.",
+    intro:
+      "Unterschiedliche Reiseunternehmen benötigen unterschiedliches von einem lokalen Partner. Wir gestalten die Zusammenarbeit um Ihre Reisenden, Ihre Standards und Ihre Verkaufsmethode.",
+    groups: [
+      {
+        label: "VERKAUFEN SIE ÄGYPTEN",
+        title: "Reisebüros, Tour-Operatoren und Reiseberater",
+        description:
+          "Sie behalten die Kundenbeziehung. Wir stellen Ägypten-Know-how bereit: professionelle Ägyptologe-Führer, private Fahrzeuge, Nil-Erlebnisse und vor-Ort-Koordination. Jedes Programm ist so gestaltet, dass Sie es nahtlos verkaufen können.",
+        clients: ["Reisebüros", "Tour-Operatoren", "Reiseberater"],
+        image: "/images/areas-we-support-cards/egypt-day-tours.webp",
+      },
+      {
+        label: "ERWEITERN SIE IHRE DESTINATION",
+        title: "Destination-Management-Gesellschaften, Reise-Großhändler und Luxus-Reisedesigner",
+        description:
+          "Fügen Sie Ägypten zu Ihrem Portfolio mit einem lokalen Partner hinzu, der Ihre Standards versteht und die Zieleseite der Reise koordinieren kann. Wir arbeiten hinter Ihrer Marke während Sie die Kundenbeziehung halten.",
+        clients: ["Destination-Management-Gesellschaften", "Reise-Großhändler", "Luxus-Reisedesigner"],
+        image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
+      },
+      {
+        label: "BEWEGEN SIE MENSCHEN",
+        title: "Gruppenreisen, Unternehmens- und Anreize, Kreuzfahrt- und Landausflüge",
+        description:
+          "Wir koordinieren Timing, Transport, Begleitung und Logistik für Gruppenreisen in ganz Ägypten. Wir passen Rhythmus und Abläufe an jedes Projekt an, während wir den größeren Reiseplan realisierbar halten.",
+        clients: ["Gruppenreisen", "Unternehmens- und Anreize", "Kreuzfahrt- und Landausflüge"],
+        image: "/images/areas-we-support-cards/nile-cruise.webp",
+      },
+    ],
+  },
+  whyPartnerTeaser: {
+    eyebrow: "WARUM PARTNER KEMERYA WÄHLEN",
+    title: "EIN LOKALER PARTNER, NICHT NOCH EINER ZWISCHENDRING.",
+    intro:
+      "Ein Ägypten-Programm erfordert mehr als eine einfache Buchung. Es braucht ein Team, das den Ort, Ihre Standards und die Details versteht, die vor Ort ändern.",
+    reasons: [
+      { title: "Lokales Geschick, bevor der Plan fixiert ist", description: "Wir sind jeden Tag in Ägypten. Routen, Zeiteinteilung und praktische Überlegungen spiegeln wider, wie das Land wirklich funktioniert, nicht nur ein Muster." },
+      { title: "Ihr Reisender bleibt Ihr Reisender", description: "Wir koordinieren die ägyptische Seite während Sie die Kundenbeziehung und Einnahmen halten. Wir arbeiten hinter Ihrer Marke." },
+      { title: "Flexibilität ohne Chaos", description: "Pläne passen sich an Reiseinteressen an, ohne den Überblick über den größeren Reiseplan zu verlieren. Jemand vor Ort ist erreichbar, wenn Details ändern." },
     ],
   },
   brandPhilosophy: {
