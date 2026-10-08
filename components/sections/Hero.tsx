@@ -1,7 +1,7 @@
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { SunDisk } from "@/components/ui/pharaonic";
+import { EgyptianBird, SunDisk } from "@/components/ui/pharaonic";
 import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type HeroProps = {
@@ -39,6 +39,10 @@ export function Hero({ locale, copy, ui }: HeroProps) {
           <path d="M10 110C35 90 52 88 75 98C95 106 103 104 124 86C132 79 140 75 150 74" fill="none" stroke="rgba(200,143,47,0.7)" strokeWidth="2" strokeLinecap="round" />
           <path d="M20 130C42 115 61 115 80 125C100 135 116 133 142 118" fill="none" stroke="rgba(255,255,255,0.25)" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
+            </div>
+
+      <div className="hero__bird" aria-hidden="true">
+        <EgyptianBird />
       </div>
 
       <Container className="hero__content">
@@ -46,7 +50,7 @@ export function Hero({ locale, copy, ui }: HeroProps) {
           <p className="eyebrow hero__kicker">{copy.eyebrow}</p>
           <h1 id="hero-heading">
             {copy.title.map((line) => (
-              <span className="line" key={line}>
+                          <span className="line" key={line}>
                 {line}
               </span>
             ))}
@@ -54,8 +58,8 @@ export function Hero({ locale, copy, ui }: HeroProps) {
 
           <p className="hero__lead">{copy.subtitle}</p>
 
-                    <div className="hero__actions">
-                        <Button href={business.partnerCtaUrl} variant="primary" aria-label={ui.becomePartnerKemeryaTours}>
+                              <div className="hero__actions">
+            <Button href={business.partnerCtaUrl} variant="primary" aria-label={ui.becomePartnerKemeryaTours}>
               {copy.primary}
             </Button>
             <Button href={`/${locale}/contact`} variant="secondary" aria-label={ui.contactKemeryaTours}>

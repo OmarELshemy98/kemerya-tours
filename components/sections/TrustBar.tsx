@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import type { Locale } from "@/lib/i18n";
+import { PharaonicDivider } from "@/components/ui/pharaonic";
 
 type TrustBarProps = {
   locale: Locale;
@@ -102,9 +103,13 @@ export function TrustBar({ locale, items, copy }: TrustBarProps) {
     <section className="trust-bar" aria-label={copy.sectionLabel}>
       <Container>
         <div className="trust-bar__wrap">
-              <div className="trust-bar__statement">
+          <div className="trust-bar__statement">
             <p className="eyebrow">{copy.eyebrow}</p>
             <h3>{copy.statement}</h3>
+          </div>
+
+          <div className="trust-bar__divider" aria-hidden="true">
+            <PharaonicDivider variant="obelisk" />
           </div>
 
           <div className="trust-bar__inner">

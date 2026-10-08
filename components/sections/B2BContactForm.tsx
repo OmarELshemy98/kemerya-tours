@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { HieroglyphicBorder } from "@/components/ui/pharaonic";
 import { business } from "@/data/business";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -61,7 +62,10 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
         </div>
 
         <div className="b2b-contact">
-          <form className="b2b-contact__grid" onSubmit={handleSubmit}>
+        <div className="b2b-contact__border" aria-hidden="true">
+          <HieroglyphicBorder variant="horizontal" />
+        </div>
+        <form className="b2b-contact__grid" onSubmit={handleSubmit}>
             <div className="b2b-contact__field-group">
               <label className="b2b-contact__label" htmlFor="name">
                 {copy.fields.name}

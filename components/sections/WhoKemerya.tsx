@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { Obelisk } from "@/components/ui/pharaonic";
 import { business } from "@/data/business";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -28,7 +29,7 @@ export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
         </div>
 
         <div className="who-kemerya__content">
-          <div className="who-kemera__text">
+          <div className="who-kemerya__text">
             <p className="lead">{copy.intro}</p>
             {copy.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
@@ -48,7 +49,10 @@ export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
             )}
           </div>
 
-                    {copy.cta && copy.cta.length > 0 && (
+          <div className="who-kemerya__obelisk" aria-hidden="true">
+            <Obelisk />
+          </div>
+          {copy.cta && copy.cta.length > 0 && (
             <div className="who-kemerya__cta">
               <Button href={business.partnerCtaUrl} variant="gold" aria-label={ui.partnerWithKemeryaTours}>
                 {copy.cta}

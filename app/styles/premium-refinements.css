@@ -304,3 +304,167 @@
 .why-kemerya .why-item:last-child {
   margin-bottom: 0;
 }
+
+/* ────────────────────────────────────────────────────────── */
+/* Bilingual decorative element positioning (RTL / LTR)      */
+/* ────────────────────────────────────────────────────────── */
+
+/* Hero: swap ornament / bird positions in RTL */
+[dir="rtl"] .hero__ornament--left,
+[dir="rtl"] .hero__ornament--right {
+  animation-name: waveMove-rtl;
+}
+
+[dir="rtl"] .hero__ornament--left {
+  left: auto;
+  right: 5%;
+}
+
+[dir="rtl"] .hero__ornament--right {
+  right: auto;
+  left: 6%;
+}
+
+[dir="rtl"] .hero__bird {
+  left: auto;
+  right: 5%;
+}
+
+[dir="rtl"] .hero__sun {
+  right: auto;
+  left: 8%;
+}
+
+@keyframes waveMove-rtl {
+  0% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+/* Trustbar divider centered — no flip needed, but ensure alignment */
+.trust-bar__divider {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 1.5rem;
+}
+
+/* WhyPartner: hieroglyphic border flips text direction */
+[dir="rtl"] .why-partner__frame {
+  transform: scaleX(-1);
+}
+
+.why-partner__frame svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* B2B contact: hieroglyphic border positioning */
+.b2b-contact__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18px;
+  opacity: 0.28;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.b2b-contact__border svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Feature card: hieroglyphic accent on hover */
+[dir="ltr"] .feature-card__accent {
+  left: 1.2rem;
+  top: 1.2rem;
+}
+
+[dir="rtl"] .feature-card__accent {
+  right: 1.2rem;
+  top: 1.2rem;
+}
+
+.feature-card__accent {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.feature-card__accent svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer hieroglyphic centered */
+.footer-hieroglyphic {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  opacity: 0.28;
+}
+
+.footer-hieroglyphic svg {
+  width: min(400px, 90vw);
+  height: auto;
+  display: block;
+}
+
+/* WhoKemerya: obelisk decorative element */
+[dir="ltr"] .who-kemerya__obelisk {
+  right: 2%;
+}
+
+[dir="rtl"] .who-kemerya__obelisk {
+  right: auto;
+  left: 2%;
+}
+
+.who-kemerya__obelisk {
+  position: absolute;
+  top: 42%;
+  width: min(14vw, 140px);
+  height: auto;
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.who-kemerya__obelisk svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* WhyKemerya page: lotus art for each editorial item */
+[dir="ltr"] .why-kemerya__item .why-kemerya__art {
+  right: -2rem;
+}
+
+[dir="rtl"] .why-kemerya__item .why-kemerya__art {
+  right: auto;
+  left: -2rem;
+}
+
+/* ── Positioning context for absolutely-placed decorative elements ── */
+
+.b2b-contact {
+  position: relative;
+  isolation: isolate;
+}
+
+.who-kemerya__content {
+  position: relative;
+  isolation: isolate;
+}
+
+.feature-card {
+  position: relative;
+  isolation: isolate;
+}
+

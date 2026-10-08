@@ -1,6 +1,7 @@
 import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { HieroglyphicBorder } from "@/components/ui/pharaonic";
 import type { ClientType } from "@/data/clientTypes";
 
 type ClientTypesProps = {
@@ -27,6 +28,9 @@ export function ClientTypes({ copy, items }: ClientTypesProps) {
             <article key={item.title} className="feature-card">
               <div className="feature-card__icon">
                 <Icon name={item.icon} />
+              </div>
+              <div className="feature-card__accent" aria-hidden="true">
+                <HieroglyphicBorder variant="horizontal" />
               </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>

@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { LotusFlower } from "@/components/ui/pharaonic";
 
 type WhyKemeryaItem = {
   title: string;
@@ -29,6 +30,9 @@ export function WhyKemerya({ copy }: WhyKemeryaProps) {
               </span>
               <h3 className="why-kemerya__title">{item.title}</h3>
               <p className="why-kemerya__description">{item.description}</p>
+              <div className="why-kemerya__art" aria-hidden="true">
+                <LotusFlower />
+              </div>
             </div>
           ))}
         </div>
