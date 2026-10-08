@@ -18,6 +18,13 @@ const faqItems = [
   { question: "", answer: "" },
   { question: "", answer: "" },
   { question: "", answer: "" },
+  { question: "", answer: "" },
+  { question: "", answer: "" },
+  { question: "", answer: "" },
+  { question: "", answer: "" },
+  { question: "", answer: "" },
+  { question: "", answer: "" },
+  { question: "", answer: "" },
 ] as const;
 
 export function getFaqItems(locale: Locale): FaqItem[] {

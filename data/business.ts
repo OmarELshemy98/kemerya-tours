@@ -1,11 +1,12 @@
-export const business = {
+﻿export const business = {
   name: "Kemerya Tours",
   website: "https://www.kemeryatours.com",
     ctaUrl: "mailto:kemeryatours@gmail.com?subject=B2B%20Partnership%20Inquiry%20-%20Kemerya%20Tours",
   partnerCtaUrl: "mailto:kemeryatours@gmail.com?subject=B2B%20Partnership%20Inquiry%20-%20Kemerya%20Tours",
   email: "kemeryatours@gmail.com",
   phone: "+20 127 505 0450",
-  tel: "+201275050450",
+    tel: "+201275050450",
+  whatsapp: "+201275050450",
   address: "250 Aboul Houl Street, Haram, Giza, Egypt",
   experience: "10+",
   travelers: "2,000+",
@@ -14,3 +15,4 @@ export const business = {
   support: "24/7",
   headline: "Your trusted Egyptian partner for private journeys.",
 } as const;
+

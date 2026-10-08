@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import type { Locale } from "@/lib/i18n";
-import { PharaonicDivider } from "@/components/ui/pharaonic";
 
 type TrustBarProps = {
   locale: Locale;
@@ -52,7 +51,7 @@ function AnimatedMetric({ value, locale }: { value: string; locale: Locale }) {
       typeof window !== "undefined" &&
       window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
     ) {
-      setDisplayValue(to);
+      requestAnimationFrame(() => setDisplayValue(to));
       previous.current = to;
       return;
     }
@@ -108,9 +107,9 @@ export function TrustBar({ locale, items, copy }: TrustBarProps) {
             <h3>{copy.statement}</h3>
           </div>
 
-          <div className="trust-bar__divider" aria-hidden="true">
-            <PharaonicDivider variant="obelisk" />
-          </div>
+                   <div className="trust-bar__divider" aria-hidden="true" />
+
+
 
           <div className="trust-bar__inner">
             {items.map((item) => (

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
 import { B2BCredibility } from "@/components/sections/B2BCredibility";
@@ -24,6 +24,7 @@ import { getFaqItems } from "@/data/b2bFaq";
 import { getPartnershipSteps } from "@/data/partnershipSteps";
 import { getProgramCapabilities } from "@/data/programCapabilities";
 import { getWhyPartner } from "@/data/whyPartner";
+import { Knowledge } from "@/components/sections/Knowledge";
 import { getPageCopy } from "@/lib/brand-content";
 import { locales, uiTranslations, type Locale } from "@/lib/i18n";
 
@@ -31,12 +32,13 @@ const sections = [
   "capabilities",
   "categories",
   "why-partner",
-  "why-kemerya",
+  "about-us",
   "who-we-work-with",
   "commercial-confidence",
   "program-capabilities",
   "credibility",
   "faq",
+  "knowledge",
   "contact",
 ] as const;
 
@@ -62,11 +64,11 @@ export async function generateMetadata({
 
   const safeLocale = locale as Locale;
   const copy = getPageCopy(safeLocale);
-    const content = {
+  const content = {
     capabilities: [copy.capabilities.title, copy.capabilities.intro],
     categories: [copy.categories.title, copy.categories.intro],
-    "why-partner": [copy.whyPartner.title, copy.whyPartner.intro],
-    "why-kemerya": [copy.whyKemerya.title, ""],
+"why-partner": [copy.whyPartner.title, copy.whyPartner.intro],
+    "about-us": [copy.whyKemerya.title, ""],
     "who-we-work-with": [copy.clientTypes.title, copy.clientTypes.intro],
     "commercial-confidence": [
       copy.commercialConfidence.title,
@@ -78,6 +80,7 @@ export async function generateMetadata({
     ],
     credibility: [copy.credibility.title, copy.credibility.intro],
     faq: [copy.faq.title, copy.faq.intro],
+    knowledge: [copy.knowledge.title, copy.knowledge.intro],
     contact: [copy.contact.title, copy.contact.subtitle],
   }[section];
 
@@ -149,7 +152,7 @@ export default async function LocaleSectionPage({
         </>
       );
       break;
-    case "why-kemerya":
+    case "about-us":
       content = (
         <>
           <WhyKemerya copy={copy.whyKemerya} />
@@ -166,7 +169,7 @@ export default async function LocaleSectionPage({
         </>
       );
       break;
-        case "contact":
+    case "contact":
       content = (
         <>
           <B2BContactForm copy={copy.contact} ui={ui} />
@@ -175,23 +178,23 @@ export default async function LocaleSectionPage({
       );
       break;
     case "commercial-confidence":
-            content = (
+      content = (
         <>
           <CommercialConfidence
-          copy={copy.commercialConfidence}
-          points={getCommercialPoints(safeLocale)}
-        />
+            copy={copy.commercialConfidence}
+            points={getCommercialPoints(safeLocale)}
+          />
           <ConversionCTA copy={copy.conversion} />
         </>
       );
       break;
     case "program-capabilities":
-            content = (
+      content = (
         <>
           <ProgramCapabilities
-          copy={copy.programCapabilities}
-          items={getProgramCapabilities(safeLocale)}
-        />
+            copy={copy.programCapabilities}
+            items={getProgramCapabilities(safeLocale)}
+          />
           <ConversionCTA copy={copy.conversion} />
         </>
       );
@@ -208,6 +211,14 @@ export default async function LocaleSectionPage({
       content = (
         <>
           <B2BFaq copy={copy.faq} items={getFaqItems(safeLocale)} />
+          <ConversionCTA copy={copy.conversion} />
+        </>
+      );
+      break;
+    case "knowledge":
+      content = (
+        <>
+          <Knowledge copy={copy.knowledge} />
           <ConversionCTA copy={copy.conversion} />
         </>
       );

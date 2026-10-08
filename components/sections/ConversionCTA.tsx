@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/Button";
+﻿import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { NileWave } from "@/components/ui/pharaonic";
 import { business } from "@/data/business";
 
 type ConversionCTAProps = {
@@ -20,8 +19,6 @@ export function ConversionCTA({ copy }: ConversionCTAProps) {
       id="conversion"
       aria-labelledby="conversion-heading"
     >
-      <div className="final-contact__image" aria-hidden="true" />
-
       <Container className="final-contact__content">
         <p className="eyebrow">{copy.eyebrow}</p>
         <h2 id="conversion-heading">
@@ -57,10 +54,6 @@ export function ConversionCTA({ copy }: ConversionCTAProps) {
           ) : null}
         </div>
       </Container>
-
-      <div className="final-contact__nile-wave" aria-hidden="true">
-        <NileWave />
-      </div>
     </section>
   );
 }

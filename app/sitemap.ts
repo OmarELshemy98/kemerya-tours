@@ -5,8 +5,13 @@ const sections = [
   "capabilities",
   "categories",
   "why-partner",
-  "why-kemerya",
+  "about-us",
   "who-we-work-with",
+  "commercial-confidence",
+  "program-capabilities",
+  "credibility",
+  "faq",
+  "knowledge",
   "contact",
 ];
 

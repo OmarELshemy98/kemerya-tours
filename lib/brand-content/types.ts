@@ -152,11 +152,17 @@ export type BrandContent = {
     intro: string;
     items: readonly CopyPair[];
   };
-  faq: {
+    faq: {
     eyebrow: string;
     title: string;
     intro: string;
     items: readonly FaqItem[];
+  };
+  knowledge: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    articles: readonly ArticleItem[];
   };
       footer: {
     blurb: string;
@@ -201,3 +207,11 @@ export type LegalPageContent = {
 };
 
 export type FaqItem = readonly [question: string, answer: string];
+
+export type ArticleItem = {
+  title: string;
+  excerpt: string;
+  category: string;
+  readTime: string;
+  href: string;
+};

@@ -123,8 +123,8 @@ export default async function LocalePage({
           }}
         />
 
-        {copy.brandStatement ? (
-          <BrandStatement copy={copy.brandStatement} ui={ui} />
+                {copy.brandStatement ? (
+          <BrandStatement copy={copy.brandStatement} ui={ui} cta={copy.conversion.primary} />
         ) : (
           <WhoKemerya copy={copy.whoKemerya} ui={ui} />
         )}
@@ -140,9 +140,10 @@ export default async function LocalePage({
         ) : null}
 
         {copy.whoWeWorkWithGroups ? (
-          <WhoWeWorkWithEditorial
+                    <WhoWeWorkWithEditorial
             copy={copy.whoWeWorkWithGroups}
             ui={ui}
+            cta={copy.conversion.primary}
           />
         ) : (
           <ClientTypes copy={copy.clientTypes} items={clientTypeItems} />

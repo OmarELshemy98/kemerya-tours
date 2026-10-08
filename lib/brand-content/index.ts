@@ -9,6 +9,7 @@ import { pt } from "@/lib/brand-content/pt";
 import { zh } from "@/lib/brand-content/zh";
 import type { BrandContent } from "@/lib/brand-content/types";
 import { translations, type Locale } from "@/lib/i18n";
+import { commercialCategories } from "@/data/commercialCategories";
 
 export const brandContent: Record<Locale, BrandContent> = {
   en,
@@ -45,6 +46,11 @@ export function getPageCopy(locale: Locale) {
         ...current.footer.business,
         headline: brand.footer.headline,
       },
+      capabilities: brand.datasets.capabilities.map(([title]) => title),
+      categories: brand.datasets.commercialCategories.map(([title], index) => ({
+        label: title,
+        href: commercialCategories[index].href,
+      })),
     },
   };
 }

@@ -322,6 +322,90 @@ export const en: BrandContent = {
         "Do my travelers become Kemerya customers?",
         "Your traveler relationship remains yours. Kemerya's role is to support and coordinate the Egypt side of the journey while you remain the company your traveler works with.",
       ],
+      [
+        "Do you work with agencies outside Egypt?",
+        "Partnership is remote-first. We coordinate the Egypt side from Giza while you keep the relationship with your traveler.",
+      ],
+      [
+        "What makes Kemerya different from other Egypt operators?",
+        "We focus on day-to-day coordination from Giza, not just bookings. Local judgment and reachable support set us apart.",
+      ],
+      [
+        "Can you arrange special interest programs?",
+        "Yes. We can include photography, archaeology, wellness, or cultural workshops, coordinated locally around each brief.",
+      ],
+      [
+        "How far in advance should we start planning?",
+        "Start 30-60 days ahead for most programs. We can also support shorter lead times where ground conditions allow.",
+      ],
+      [
+        "What if a traveler cancels or changes plans?",
+        "We work with you to adjust within practical constraints. Our local team stays available during the journey.",
+      ],
+      [
+        "Do you provide on-ground support during the journey?",
+        "Yes. Our team remains available from arrival to departure, coordinating any adjustments while travelers are in Egypt.",
+      ],
+      [
+        "Can you provide references or case studies?",
+        "We can share anonymized case studies and references from partners we have supported across Egypt.",
+      ],
+    ],
+  },
+  knowledge: {
+    eyebrow: "TRAVEL EXPERTISE YOU CAN USE",
+    title: "INSIGHTS FOR TRAVEL PARTNERS",
+    intro:
+      "Practical guidance for travel companies planning Egypt, written by our local team.",
+    articles: [
+      {
+        title: "Choosing an Egypt Partner: The Questions That Matter",
+        excerpt:
+          "A checklist for travel companies evaluating DMCs and local operators in Egypt, based on what sets Kemerya apart.",
+        category: "Partnership",
+        readTime: "4 min read",
+        href: "/en/knowledge/choosing-an-egypt-partner",
+      },
+      {
+        title: "Commercial Confidence in Egypt Travel",
+        excerpt:
+          "How local on-the-ground coordination reduces risk and keeps your business in control while travelers are in Egypt.",
+        category: "Trust",
+        readTime: "5 min read",
+        href: "/en/knowledge/commercial-confidence-in-egypt-travel",
+      },
+      {
+        title: "Program Design: Balancing Itineraries Across Egypt",
+        excerpt:
+          "Practical considerations for multi-stop Egypt programs, from Cairo to the Nile to the Red Sea.",
+        category: "Program Design",
+        readTime: "6 min read",
+        href: "/en/knowledge/program-design-balancing-egypt-itineraries",
+      },
+      {
+        title: "The Reality of Travel Logistics in Egypt",
+        excerpt:
+          "What to expect on the ground: timing, transfers, and how local knowledge makes or breaks an itinerary.",
+        category: "Operations",
+        readTime: "5 min read",
+        href: "/en/knowledge/the-reality-of-travel-logistics-in-egypt",
+      },
+      {
+        title: "Why Local Judgment Matters for Egypt Itineraries",
+        excerpt:
+          "The difference between tourist-facing information and practical, operational knowledge that comes from working in Egypt every day.",
+        category: "Expertise",
+        readTime: "4 min read",
+        href: "/en/knowledge/why-local-judgment-matters",
+      },
+      {
+        title: "Group Coordination in Egypt: A Field Guide",
+        excerpt:
+          "Managing large traveler groups across Egypt with practical advice on timing, transport, and on-ground support.",
+        category: "Groups",
+        readTime: "6 min read",
+        href: "/en/knowledge/group-coordination-in-egypt",
+      },
     ],
   },
   footer: {

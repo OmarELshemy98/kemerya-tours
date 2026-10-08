@@ -322,6 +322,90 @@ export const fr: BrandContent = {
         "Mes voyageurs deviennent-ils des clients de Kemerya ?",
         "La relation avec votre voyageur reste la vôtre. Le rôle de Kemerya est de soutenir et de coordonner le côté égyptien du voyage pendant que vous restez l'entreprise avec laquelle voyage votre client.",
       ],
+      [
+        "Travaillez-vous avec des agences en dehors de l'Egypte?",
+        "La collaboration est prioritairement a distance. Nous coordonnons le cote Egyptien du voyage depuis Le Caire.",
+      ],
+      [
+        "Qu'est-ce qui fait la difference entre Kemerya et les autres operateurs en Egypte?",
+        "Nous nous concentrons sur la coordination quotidienne depuis Le Caire, pas seulement sur les reservations.",
+      ],
+      [
+        "Pouvez-vous organiser des programmes specialises?",
+        "Oui. Nous pouvons inclure de la photographie, de l'archeologie, du bien-etre ou des ateliers culturels.",
+      ],
+      [
+        "Combien a l'avance devrions-nous commencer a planifier?",
+        "Commencez 30-60 jours a l'avance pour la plupart des programmes.",
+      ],
+      [
+        "Que se passe-t-il si un voyageur annule ou modifie ses plans?",
+        "Nous travaillons avec vous pour ajuster selon les contraintes pratiques.",
+      ],
+      [
+        "Fournissez-vous un soutien sur place pendant le voyage?",
+        "Oui. Notre equipe reste disponible de l'arrivee au depart.",
+      ],
+      [
+        "Pouvez-vous fournir des references ou des etudes de cas?",
+        "Nous pouvons partager des etudes de cas anonymisees et des references.",
+      ],
+    ],
+  },
+  knowledge: {
+    eyebrow: "EXPERIENCE DE VOYAGE UTILISABLE",
+    title: "PERSPECTIVES POUR LES PARTENAIRES COMMERCIAUX",
+    intro:
+      "Des conseils pratiques pour les entreprises de voyage planifiant l'Egypte.",
+    articles: [
+      {
+        title: "Choisir un partenaire en Egypte : les questions qui comptent",
+        excerpt:
+          "Une liste de controle pour les entreprises de voyage.",
+        category: "Partenariat",
+        readTime: "4 min de lecture",
+        href: "/fr/knowledge/choosing-an-egypt-partner",
+      },
+      {
+        title: "Confiance commerciale dans le voyage en Egypte",
+        excerpt:
+          "Comment la coordination locale reduit les risques.",
+        category: "Confiance",
+        readTime: "5 min de lecture",
+        href: "/fr/knowledge/commercial-confidence-in-egypt-travel",
+      },
+      {
+        title: "Conception de programme : equilibrer les itineraires en Egypte",
+        excerpt:
+          "Considerations pratiques pour des programes multi-etapes.",
+        category: "Conception",
+        readTime: "6 min de lecture",
+        href: "/fr/knowledge/program-design-balancing-egypt-itineraries",
+      },
+      {
+        title: "La realite de la logistique voyage en Egypte",
+        excerpt:
+          "Ce qu'il faut attendre sur le terrain.",
+        category: "Operations",
+        readTime: "5 min de lecture",
+        href: "/fr/knowledge/the-reality-of-travel-logistics-in-egypt",
+      },
+      {
+        title: "Pourquoi le bon sens local compte pour les itineraires en Egypte",
+        excerpt:
+          "La difference entre les informations touristiques.",
+        category: "Expertise",
+        readTime: "4 min de lecture",
+        href: "/fr/knowledge/why-local-judgment-matters",
+      },
+      {
+        title: "Coordination de groupes en Egypte : guide de terrain",
+        excerpt:
+          "Gerer de grands groupes de voyageurs en Egypte.",
+        category: "Groupes",
+        readTime: "6 min de lecture",
+        href: "/fr/knowledge/group-coordination-in-egypt",
+      },
     ],
   },
   footer: {

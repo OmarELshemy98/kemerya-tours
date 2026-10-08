@@ -20,9 +20,10 @@ type WhoWeWorkWithEditorialProps = {
     intro: string;
     groups: readonly TeamGroup[];
   };
+  cta: string;
 };
 
-export function WhoWeWorkWithEditorial({ copy, ui }: WhoWeWorkWithEditorialProps) {
+export function WhoWeWorkWithEditorial({ copy, ui, cta }: WhoWeWorkWithEditorialProps) {
   return (
     <Section id="who-we-work-with" className="who-we-work-with-editorial">
       <Container>
@@ -55,8 +56,8 @@ export function WhoWeWorkWithEditorial({ copy, ui }: WhoWeWorkWithEditorialProps
         </div>
 
         <div className="editorial-blocks__cta" style={{ marginTop: "3rem" }}>
-          <Button href={business.partnerCtaUrl} variant="gold" aria-label={ui.partnerWithKemeryaTours}>
-            BECOME A PARTNER
+                    <Button href={business.partnerCtaUrl} variant="gold" aria-label={ui.partnerWithKemeryaTours}>
+            {cta}
           </Button>
         </div>
       </Container>

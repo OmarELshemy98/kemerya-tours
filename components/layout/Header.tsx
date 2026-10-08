@@ -12,11 +12,11 @@ import type { Locale, UiTranslations } from "@/lib/i18n";
 type HeaderProps = {
   locale: Locale;
   ui: UiTranslations;
-  copy: {
+    copy: {
     capabilities: string;
     categories: string;
     whyPartner: string;
-    whyKemerya: string;
+    aboutUs: string;
     whoWeWorkWith: string;
     contact: string;
     workWithUs: string;
@@ -35,14 +35,12 @@ export function Header({ locale, copy, ui }: HeaderProps) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navItems = [
-      { label: copy.capabilities, href: `/${locale}/capabilities` },
-      { label: copy.categories, href: `/${locale}/categories` },
-      { label: copy.whyPartner, href: `/${locale}/why-partner` },
-      { label: copy.whyKemerya, href: `/${locale}/why-kemerya` },
-      { label: copy.whoWeWorkWith, href: `/${locale}/who-we-work-with` },
-      { label: copy.workWithUs, href: `/${locale}/contact` },
-      { label: copy.faq, href: `/${locale}/faq` },
+  const navItems = [    { label: copy.capabilities, href: `/${locale}/capabilities` },
+    { label: copy.categories, href: `/${locale}/categories` },
+    { label: copy.whyPartner, href: `/${locale}/why-partner` },    { label: copy.aboutUs, href: `/${locale}/about-us` },
+    { label: copy.whoWeWorkWith, href: `/${locale}/who-we-work-with` },
+    { label: copy.workWithUs, href: `/${locale}/contact` },
+    { label: copy.faq, href: `/${locale}/faq` },
     ];
 
   return (

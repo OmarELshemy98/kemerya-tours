@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+﻿import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { business } from "@/data/business";
@@ -15,9 +15,10 @@ type BrandStatementProps = {
     image: string;
     cta: string;
   };
+  cta?: string;
 };
 
-export function BrandStatement({ copy, ui }: BrandStatementProps) {
+export function BrandStatement({ copy, ui, cta }: BrandStatementProps) {
   return (
     <Section id="brand-statement" className="brand-statement">
       <Container>
@@ -33,10 +34,10 @@ export function BrandStatement({ copy, ui }: BrandStatementProps) {
               <p key={index}>{paragraph}</p>
             ))}
 
-            {copy.cta && copy.cta.length > 0 && (
+            {cta && cta.length > 0 && (
               <div className="brand-statement__cta">
                 <Button href={business.partnerCtaUrl} variant="gold" aria-label={ui.partnerWithKemeryaTours}>
-                  {copy.cta}
+                  {cta}
                 </Button>
               </div>
             )}
@@ -50,3 +51,4 @@ export function BrandStatement({ copy, ui }: BrandStatementProps) {
     </Section>
   );
 }
+

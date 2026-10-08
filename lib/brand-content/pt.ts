@@ -265,6 +265,90 @@ export const pt: BrandContent = {
       ["Que informações devo incluir em minha primeira consulta?", "Compartilhe o tipo de empresa de viagens que você representa, seus viajantes, datas, destinos de interesse e o tipo de experiência que deseja oferecer."],
       ["O que acontece após eu enviar meu brief?", "Revisamos o aspecto prático da viagem e esclarecemos o que deve funcionar no terreno, então construímos o lado egípcio em torno de seus requisitos."],
       ["Meus viajantes se tornam clientes da Kemerya?", "A relação com seu viajante permanece sua. O papel da Kemerya é apoiar e coordenar o lado egípcio da viagem enquanto você permanece a empresa com a qual seu viajante trabalha."],
+      [
+        "Trabalha com agências fora do Egito?",
+        "Parceria é principalmente remoto. Nós coordenamos o lado egípcio da viagem de Giza.",
+      ],
+      [
+        "O que faz Kemerya diferente de outros operadores no Egito?",
+        "Focamos na coordenação diária de Giza, não apenas em reservas.",
+      ],
+      [
+        "Você pode organizar programas de interesse especiais?",
+        "Sim. Podemos incluir fotografia, arqueologia, bem-estar ou oficinas culturais.",
+      ],
+      [
+        "Com quanto antecedência devemos começar a planejar?",
+        "Comece 30-60 dias antes para a maioria dos programas.",
+      ],
+      [
+        "O que acontece se um viajante cancelar ou mudar os planos?",
+        "Trabalhamos com você para ajustar dentro das limitações práticas.",
+      ],
+      [
+        "Você fornece suporte no local durante a viagem?",
+        "Sim. Nossa equipe permanece disponível da chegada à partida.",
+      ],
+      [
+        "Você pode fornecer referências ou estudos de caso?",
+        "Podemos compartilhar estudos de caso anonimizados e referências.",
+      ],
+    ],
+  },
+  knowledge: {
+    eyebrow: "EXPERIÊNCIA DE VIAGEM QUE VOCÊ PODE USAR",
+    title: "INSIGHTS PARA PARCEIROS COMERCIAIS",
+    intro:
+      "Diretrizes práticas para empresas de viagens que planejam o Egito.",
+    articles: [
+      {
+        title: "Escolher um parceiro no Egito: as perguntas que importam",
+        excerpt:
+          "Uma lista para empresas de viagens que avaliam DMCs.",
+        category: "Parceria",
+        readTime: "4 min de leitura",
+        href: "/pt/knowledge/choosing-an-egypt-partner",
+      },
+      {
+        title: "Confiança comercial na viagem pelo Egito",
+        excerpt:
+          "Como a coordenação local reduz riscos.",
+        category: "Confiança",
+        readTime: "5 min de leitura",
+        href: "/pt/knowledge/commercial-confidence-in-egypt-travel",
+      },
+      {
+        title: "Design de programa: equilibrar itinerários no Egito",
+        excerpt:
+          "Considerações práticas para programas multi-destino.",
+        category: "Design",
+        readTime: "6 min de leitura",
+        href: "/pt/knowledge/program-design-balancing-egypt-itineraries",
+      },
+      {
+        title: "A realidade da logística de viagens no Egito",
+        excerpt:
+          "O que esperar no terreno: timing, transferências.",
+        category: "Operações",
+        readTime: "5 min de leitura",
+        href: "/pt/knowledge/the-reality-of-travel-logistics-in-egypt",
+      },
+      {
+        title: "Por que o bom senso local importa",
+        excerpt:
+          "A diferença entre informações turísticas.",
+        category: "Especialidade",
+        readTime: "4 min de leitura",
+        href: "/pt/knowledge/why-local-judgment-matters",
+      },
+      {
+        title: "Coordenação de grupos no Egito: guia de campo",
+        excerpt:
+          "Gerenciar grandes grupos de viajantes no Egito.",
+        category: "Grupos",
+        readTime: "6 min de leitura",
+        href: "/pt/knowledge/group-coordination-in-egypt",
+      },
     ],
   },
   footer: {

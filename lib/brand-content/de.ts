@@ -322,6 +322,90 @@ export const de: BrandContent = {
         "Werden meine Reisenden zu Kemerya-Kunden?",
         "Die Beziehung zu Ihrem Reisenden bleibt bei Ihnen. Die Rolle von Kemerya ist es, die ägyptische Seite des Reiseverlaufs zu unterstützen und zu koordinieren, während Sie die Firma bleiben, mit der Ihr Reisender zusammenarbeitet.",
       ],
+      [
+        "Arbeiten Sie mit Agenturen außerhalb Ägyptens?",
+        "Partnerschaft ist remote-first. Wir koordinieren die ägyptische Seite der Reise aus Giza.",
+      ],
+      [
+        "Was unterscheidet Kemerya von anderen ägyptischen Reiseveranstaltern?",
+        "Wir konzentrieren uns auf die tägliche Koordination aus Giza, nicht nur auf Buchungen.",
+      ],
+      [
+        "Können Sie spezielle Interessenprogramme anbieten?",
+        "Ja. Wir können Fotografie, Archäologie, Wellness oder kulturelle Workshops einbeziehen.",
+      ],
+      [
+        "Wie weit im Voraus sollten wir mit der Planung beginnen?",
+        "Beginnen Sie 30–60 Tage im Voraus für die meisten Programme.",
+      ],
+      [
+        "Was passiert, wenn ein Reisender storniert oder seine Pläne ändert?",
+        "Wir arbeiten mit Ihnen zusammen, um innerhalb praktischer Grenzen anzupassen.",
+      ],
+      [
+        "Stellen Sie On-Ground-Support während der Reise zur Verfügung?",
+        "Ja. Unser Team ist von Ankunft bis Abreit verfügbar in Ägypten.",
+      ],
+      [
+        "Können Sie Referenzen oder Fallstudien bereitstellen?",
+        "Wir können anonymisierte Fallstudien und Referenzen von Partnern teilen.",
+      ],
+    ],
+  },
+  knowledge: {
+    eyebrow: "REISE-ERFAHRUNG, DIE SIE NUTZEN KÖNNEN",
+    title: "ERKENNTNISSE FÜR GESCHÄFTSPARTNER",
+    intro:
+      "Praktische Leitlinien für Reiseunternehmen, die Ägypten planen.",
+    articles: [
+      {
+        title: "Die richtigen Fragen beim Partnern in Ägypten",
+        excerpt:
+          "eine Checkliste für Reiseunternehmen in Ägypten.",
+        category: "Partnerschaft",
+        readTime: "4 Minuten Lesedauer",
+        href: "/de/knowledge/choosing-an-egypt-partner",
+      },
+      {
+        title: "Geschäftliches Vertrauen im Reiseverkehr in Ägypten",
+        excerpt:
+          "Wie lokale Koordination Risiken verringert.",
+        category: "Vertrauen",
+        readTime: "5 Minuten Lesedauer",
+        href: "/de/knowledge/commercial-confidence-in-egypt-travel",
+      },
+      {
+        title: "Programmgestaltung: Itineraries in Ägypten balancieren",
+        excerpt:
+          "Praktische Überlegungen für Mehrorts-Programme.",
+        category: "Programmdesign",
+        readTime: "6 Minuten Lesedauer",
+        href: "/de/knowledge/program-design-balancing-egypt-itineraries",
+      },
+      {
+        title: "Die Realität der Reiselogistik in Ägypten",
+        excerpt:
+          "Was Sie auf dem Boden erwarten können: Timing, Transfers.",
+        category: "Operationen",
+        readTime: "5 Minuten Lesedauer",
+        href: "/de/knowledge/the-reality-of-travel-logistics-in-egypt",
+      },
+      {
+        title: "Warum lokales Fachwissen wichtig ist",
+        excerpt:
+          "Der Unterschied zwischen touristischen Informationen.",
+        category: "Expertise",
+        readTime: "4 Minuten Lesedauer",
+        href: "/de/knowledge/why-local-judgment-matters",
+      },
+      {
+        title: "Gruppenkoordination in Ägypten: Ein Feldführer",
+        excerpt:
+          "Große Reisegruppen in Ägypten koordinieren.",
+        category: "Gruppen",
+        readTime: "6 Minuten Lesedauer",
+        href: "/de/knowledge/group-coordination-in-egypt",
+      },
     ],
   },
   footer: {

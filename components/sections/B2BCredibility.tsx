@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+﻿import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { business } from "@/data/business";
@@ -29,7 +29,7 @@ export function B2BCredibility({ copy, ui }: B2BCredibilityProps) {
             variant="gold"
             aria-label={ui.partnerWithKemeryaTours}
           >
-            BECOME A PARTNER
+            {ui.becomePartnerKemeryaTours}
           </Button>
         </div>
       </Container>

@@ -19,7 +19,7 @@ export function LocaleSiteShell({ locale, copy, ui, children }: LocaleSiteShellP
     >
       <Header locale={locale} copy={copy.nav} ui={ui} />
       <main id="main-content">{children}</main>
-      <Footer locale={locale} copy={copy.footer} ui={ui} />
+            <Footer locale={locale} copy={copy.footer} ui={ui} nav={copy.nav} />
     </div>
   );
 }

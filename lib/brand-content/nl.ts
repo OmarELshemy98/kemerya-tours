@@ -265,6 +265,90 @@ export const nl: BrandContent = {
       ["Welke informatie moet ik in mijn eerste aanvraag opnemen?", "Geef het type reisbedrijf dat u vertegenwoordigt, uw reizigers, data, interessante bestemmingen en het type ervaring dat u wilt aanbieden."],
       ["Wat gebeurt er na dat ik mijn briefing heb verzonden?", "We bekijken de praktische kant van de reis en verduidelijken wat op de grond moet werken, daarna bouwen we de Egyptische kant rond uw eisen."],
       ["Worden mijn reizigers klanten van Kemerya?", "Uw relatie met de reiziger blijft van u. De rol van Kemerya is om de Egyptische kant van de reis te ondersteunen en te coördineren terwijl u blijft de onderneming waarmee de reiziger werkt."],
+      [
+        "Werk je met reisbureaus buiten Egypte?",
+        "Partnerschap is remote-first. We coördineren de Egyptische kant van de reis van Giza.",
+      ],
+      [
+        "Wat maakt Kemerya anders dan andere Egyptische operateurs?",
+        "We richten ons op dagelijkse coördinatie vanuit Giza.",
+      ],
+      [
+        "Kunt u speciale belangenprogramma's regelen?",
+        "Ja. We kunnen fotografie, archeologie, wellness of workshops opnemen.",
+      ],
+      [
+        "Hoe ver van tevoren moet ik beginnen met plannen?",
+        "Begin 30-60 dagen van tevoren voor de meeste programma's.",
+      ],
+      [
+        "Wat als een reiziger annuleert of zijn plannen wijzigt?",
+        "We werken met u samen om binnen praktische beperkingen aan te passen.",
+      ],
+      [
+        "Biedt u ondersteuning ter plaatse tijdens de reis?",
+        "Ja. Ons team blijft beschikbaar van aankomst tot vertrek.",
+      ],
+      [
+        "Kunt u referenties of casestudy's verstrekken?",
+        "We kunnen geanonimiseerde casestudy's en referenties delen.",
+      ],
+    ],
+  },
+  knowledge: {
+    eyebrow: "REISERVARING DIE U KUNT GEBRUIKEN",
+    title: "INZICHTEN VOOR COMMERCIEELE PARTNERS",
+    intro:
+      "Praktische richtlijnen voor reisbedrijven die Egypte plannen.",
+    articles: [
+      {
+        title: "Een Egyptische partner kiezen",
+        excerpt:
+          "Checklist voor reisbedrijven die DMC's en lokale operateurs evalueren.",
+        category: "Partnerschap",
+        readTime: "4 min leestijd",
+        href: "/nl/knowledge/choosing-an-egypt-partner",
+      },
+      {
+        title: "Commerciële zekerheid bij reizen",
+        excerpt:
+          "Hoe lokale coördinatie risico's vermindert.",
+        category: "Vertrouwen",
+        readTime: "5 min leestijd",
+        href: "/nl/knowledge/commercial-confidence-in-egypt-travel",
+      },
+      {
+        title: "Programmadesign",
+        excerpt:
+          "Praktische overwegingen voor meerdere bestemmingen.",
+        category: "Programmadesign",
+        readTime: "6 min leestijd",
+        href: "/nl/knowledge/program-design-balancing-egypt-itineraries",
+      },
+      {
+        title: "De realiteit van reislogistiek",
+        excerpt:
+          "Wat u op de grond kunt verwachten.",
+        category: "Operaties",
+        readTime: "5 min leestijd",
+        href: "/nl/knowledge/the-reality-of-travel-logistics-in-egypt",
+      },
+      {
+        title: "Waarom lokale kennis telt",
+        excerpt:
+          "Het verschil tussen toeristische informatie.",
+        category: "Expertise",
+        readTime: "4 min leestijd",
+        href: "/nl/knowledge/why-local-judgment-matters",
+      },
+      {
+        title: "Groepscoördinatie in Egypte",
+        excerpt:
+          "Grote reizendengroepen in Egypte coördineren.",
+        category: "Groepen",
+        readTime: "6 min leestijd",
+        href: "/nl/knowledge/group-coordination-in-egypt",
+      },
     ],
   },
   footer: {

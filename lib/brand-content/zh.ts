@@ -264,6 +264,90 @@ export const zh: BrandContent = {
       ["我在第一次询问中应该包含哪些信息?", "分享您代表的旅行公司类型、您的旅行者、日期、感兴趣的目的地以及您希望提供的体验类型。"],
       ["我发送要求后会发生什么?", "我们将审查旅程的实际方面，并澄清需要在现场工作的事项，然后围绕您的要求构建埃及这边的内容。"],
       ["我的旅行者会成为 Kemerya 的客户吗?", "您与旅行者的关系依然属于您。Kemerya的角色是支持和协调旅程中埃及这边的内容，同时您仍然是您的旅行者所属的公司。"],
+      [
+        "您是否与埃及以外的旅行社合作?",
+        "合作主要远程进行。我们协调从吉萨处理埃及之旅的各个方面。",
+      ],
+      [
+        "什么使Kemerya与其他埃及旅行运营商不同?",
+        "我们专注于从吉萨进行日常协调，而不仅仅是预订。",
+      ],
+      [
+        "您可以安排特殊兴趣项目吗?",
+        "是的。我们可以根据每个要求本地协调摄影、考古体验等。",
+      ],
+      [
+        "我们应该提前多久开始计划?",
+        "大多数项目请提前30-60天开始。",
+      ],
+      [
+        "如果旅行者取消或改变计划怎么办?",
+        "我们与您一起在实际限制范围内进行调整。",
+      ],
+      [
+        "您在旅行期间提供现场支持吗?",
+        "是的。我们的团队从到达到离开一直可用。",
+      ],
+      [
+        "您能提供参考或案例研究吗?",
+        "我们可以分享经过匿名处理的案例研究和参考。",
+      ],
+    ],
+  },
+  knowledge: {
+    eyebrow: "您可以使用的旅行经验",
+    title: "旅行合作伙伴的见解",
+    intro:
+      "给予旅行公司的实用指南，他们正在计划埃及。",
+    articles: [
+      {
+        title: "选择埃及合作伙伴",
+        excerpt:
+          "旅行公司评估埃及DMCs的检查清单。",
+        category: "合作伙伴关系",
+        readTime: "4分钟阅读",
+        href: "/zh/knowledge/choosing-an-egypt-partner",
+      },
+      {
+        title: "埃及旅行的商业信心",
+        excerpt:
+          "本地协调如何降低风险。",
+        category: "信任",
+        readTime: "5分钟阅读",
+        href: "/zh/knowledge/commercial-confidence-in-egypt-travel",
+      },
+      {
+        title: "埃及行程设计",
+        excerpt:
+          "从开罗到尼罗河到红海的实用考虑。",
+        category: "设计",
+        readTime: "6分钟阅读",
+        href: "/zh/knowledge/program-design-balancing-egypt-itineraries",
+      },
+      {
+        title: "埃及旅行物流的现实",
+        excerpt:
+          "在现场期待什么。",
+        category: "运营",
+        readTime: "5分钟阅读",
+        href: "/zh/knowledge/the-reality-of-travel-logistics-in-egypt",
+      },
+      {
+        title: "为什么本地判断重要",
+        excerpt:
+          "旅游信息与实用操作知识的区别。",
+        category: "专业知识",
+        readTime: "4分钟阅读",
+        href: "/zh/knowledge/why-local-judgment-matters",
+      },
+      {
+        title: "埃及团队协调",
+        excerpt:
+          "在埃及协调大型游客团队的实用建议。",
+        category: "团队",
+        readTime: "6分钟阅读",
+        href: "/zh/knowledge/group-coordination-in-egypt",
+      },
     ],
   },
   footer: {

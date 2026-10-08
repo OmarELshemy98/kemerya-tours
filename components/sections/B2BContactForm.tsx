@@ -1,9 +1,8 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { HieroglyphicBorder } from "@/components/ui/pharaonic";
 import { business } from "@/data/business";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -44,7 +43,6 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-        // Open a pre-filled email to Kemerya partnerships (single-source contact)
     const subject = encodeURIComponent(ui.partnershipInquirySubject);
     const body = encodeURIComponent(
       `${copy.fields.name}: ${formData.name}\n${copy.fields.email}: ${formData.email}\n${copy.fields.company}: ${formData.company}\n${copy.fields.role}: ${formData.role}\n${copy.fields.phone}: ${formData.phone}\n${copy.fields.destination}: ${formData.destination}\n${ui.messageField}: ${formData.message}`,
@@ -62,9 +60,6 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
         </div>
 
         <div className="b2b-contact">
-        <div className="b2b-contact__border" aria-hidden="true">
-          <HieroglyphicBorder variant="horizontal" />
-        </div>
         <form className="b2b-contact__grid" onSubmit={handleSubmit}>
             <div className="b2b-contact__field-group">
               <label className="b2b-contact__label" htmlFor="name">
@@ -161,7 +156,7 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
               />
             </div>
 
-                        <div className="b2b-contact__actions">
+            <div className="b2b-contact__actions">
               <button
                 type="submit"
                 className="button button--gold"
