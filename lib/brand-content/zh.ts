@@ -40,11 +40,11 @@ export const zh: BrandContent = {
     cta: "",
   },
   whyKemerya: {
-    title: "一位本地合作伙伴，而非又一次转手交接。",
+    title: "KEMERA的方法论",
     items: [
-      { title: "本地判断", description: "我们理解在埃及出行的实践方面，而不仅仅是纸面上的行程。" },
-      { title: "灵活性", description: "计划可以围绕旅行者塑造，而不是把每段旅程都固定为相同格式。" },
-      { title: "负责任", description: "您的公司始终贴近旅行者，而我们的团队负责埃及方面的责任。" },
+      { title: "本地第一", description: "我们位于吉萨，每个日子都在埃及工作，所以路线和时间反映了这个国家实际的行动方式。" },
+      { title: "重要的细节", description: "重要的不是著名景点清单，而是旅程如何到达那里，谁在旅程改变时进行调整。" },
+      { title: "你的出行者，你的决定", description: "我们承担埃及部分的计划，以便您的业务保持与出行者的紧密联系。" }
     ],
   },
   brandPhilosophy: {

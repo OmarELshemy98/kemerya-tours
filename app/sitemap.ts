@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: locale === "en" ? 1 : 0.9,
     })),
-    ...locales.flatMap((locale) =>
+        ...locales.flatMap((locale) =>
       sections.map((section) => ({
         url: `https://www.kemeryatours.com/${locale}/${section}`,
         lastModified: new Date(),
@@ -26,5 +26,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
       })),
     ),
+    ...locales.map((locale) => ({
+      url: `https://www.kemeryatours.com/${locale}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...locales.map((locale) => ({
+      url: `https://www.kemeryatours.com/${locale}/terms`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
   ];
 }

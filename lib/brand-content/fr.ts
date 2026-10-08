@@ -41,11 +41,11 @@ export const fr: BrandContent = {
     cta: "",
   },
   whyKemerya: {
-    title: "UN PARTENAIRE LOCAL, SANS INTERMÉDIAIRE DE PLUS.",
+    title: "L APPROCHE KEMERA",
     items: [
-      { title: "JUGEMENT LOCAL", description: "Nous comprenons le côté pratique de se déplacer en Égypte, pas seulement l'itinéraire sur papier." },
-      { title: "FLEXIBILITÉ", description: "Les programmes peuvent être adaptés au voyageur plutôt que d'imposer le même format à chaque voyage." },
-      { title: "RESPONDABILITÉ", description: "Votre entreprise reste proche du voyageur tandis que notre équipe assume la responsabilité du côté égyptien." },
+      { title: "LE LIEU D ABORD", description: "Basée à Gizeh, nous travaillons en Égypte tous les jours, donc les itinéraires et les horaires reflètent comment le pays se déplace vraiment." },
+      { title: "LES DETAILS QUI COMPTENT", description: "Ce qui compte, c est la liste des sites mais comment le voyage s y rend et qui s adapte quand la journée change." },
+      { title: "TON VOYAGEUR, TON APPEL", description: "Nous gérons le côté égyptien du plan pour que ton entreprise reste proche du voyageur." }
     ],
   },
   brandPhilosophy: {

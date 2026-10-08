@@ -41,11 +41,11 @@ export const es: BrandContent = {
     cta: "",
   },
   whyKemerya: {
-    title: "UN SOCIO LOCAL, NO OTRO INTERMEDIARIO MÁS.",
+    title: "EL ENFOQUE KEMERYA",
     items: [
-      { title: "JUICIO LOCAL", description: "Entendemos el lado práctico de desplazarse por Egipto, no solo el itinerario en papel." },
-      { title: "FLEXIBILIDAD", description: "Los programas pueden adaptarse al viajero en lugar de forzar cada viaje al mismo formato." },
-      { title: "RESPONSABILIDAD", description: "Tu empresa se mantiene cerca del viajero mientras nuestro equipo asume la responsabilidad del lado egipcio." },
+      { title: "EL LUGAR EN PRIMERA", description: "Estamos basados en Giza y trabajamos en Egipto todos los días, por lo que las rutas y los horarios reflejan cómo se mueve realmente el país." },
+      { title: "LOS DETALLES QUE IMPORTAN", description: "Lo que importa no es la lista de sitios principales sino cómo llega el viaje allí y quién se adapta cuando el día cambia." },
+      { title: "TU VIAJERO, TU DECISION", description: "Gestionamos el lado egipcio del plan para que tu empresa se mantenga cerca del viajero." }
     ],
   },
   brandPhilosophy: {

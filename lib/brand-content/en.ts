@@ -41,11 +41,11 @@ export const en: BrandContent = {
     cta: "",
   },
   whyKemerya: {
-    title: "A LOCAL PARTNER, NOT ANOTHER HAND-OFF.",
+    title: "THE KEMERA APPROACH",
     items: [
-      { title: "LOCAL JUDGMENT", description: "We understand the practical side of moving through Egypt, not just the itinerary on paper." },
-      { title: "FLEXIBILITY", description: "Programs can be shaped around the traveler rather than forcing every journey into the same format." },
-      { title: "ACCOUNTABILITY", description: "Your business remains close to the traveler while our team takes responsibility for the Egyptian side." },
+      { title: "PLACE FIRST", description: "We are based in Giza and work in Egypt every day, so routes and timing reflect how the country actually moves." },
+      { title: "DETAILS THAT MATTER", description: "What matters is not the headline sight but how the journey gets there, and who adapts when the day shifts." },
+      { title: "YOUR TRAVELER, YOUR CALL", description: "We carry the Egyptian side of the plan so your business stays close to the traveler." }
     ],
   },
   brandPhilosophy: {

@@ -5,6 +5,7 @@ import {
   Noto_Sans_Arabic,
 } from "next/font/google";
 import "../globals.css";
+import "../styles/legal-pages.css";
 import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
 import { brandContent } from "@/lib/brand-content";

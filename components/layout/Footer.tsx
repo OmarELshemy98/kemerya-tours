@@ -86,16 +86,22 @@ export function Footer({ locale, copy, ui }: FooterProps) {
         </div>
 
         <div className="footer-bottom">
-          <div className="footer-bottom__links" aria-label={ui.legalLinks}>
-            <a href={`${business.website}/privacy`} target="_blank" rel="noreferrer noopener">
+                    <div className="footer-bottom__links" aria-label={ui.legalLinks}>
+            <Link
+              href={`/${locale}/privacy`}
+              className="footer-bottom__link"
+            >
               {copy.policy}
-            </a>
+            </Link>
             <span className="footer-bottom__separator" aria-hidden="true">
               ·
             </span>
-            <a href={`${business.website}/terms`} target="_blank" rel="noreferrer noopener">
+            <Link
+              href={`/${locale}/terms`}
+              className="footer-bottom__link"
+            >
               {copy.terms}
-            </a>
+            </Link>
           </div>
 
           <p className="footer-credit neon-text">

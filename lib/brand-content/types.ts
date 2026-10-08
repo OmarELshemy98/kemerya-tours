@@ -119,7 +119,7 @@ export type BrandContent = {
     intro: string;
     items: readonly FaqItem[];
   };
-  footer: {
+      footer: {
     blurb: string;
     headline: string;
   };
@@ -132,6 +132,33 @@ export type BrandContent = {
     commercialCategories: readonly CopyPair[];
     journeys: readonly CopyPair[];
   };
+};
+
+export type LegalLinkTarget = "privacy" | "terms" | "contact";
+
+export type LegalBlock =
+  | { type: "paragraph"; text: string }
+  | { type: "subheading"; text: string }
+  | { type: "list"; items: readonly string[] }
+  | { type: "link"; prefix: string; label: string; target: LegalLinkTarget };
+
+export type LegalSection = {
+  title: string;
+  blocks: readonly LegalBlock[];
+};
+
+export type LegalContactInfo = {
+  intro: string;
+  ctaTitle: string;
+  ctaLabel: string;
+};
+
+export type LegalPageContent = {
+  eyeliner: string;
+  title: string;
+  intro: string;
+  sections: readonly LegalSection[];
+  contact: LegalContactInfo;
 };
 
 export type FaqItem = readonly [question: string, answer: string];

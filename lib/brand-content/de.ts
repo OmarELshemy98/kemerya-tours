@@ -41,11 +41,11 @@ export const de: BrandContent = {
     cta: "",
   },
   whyKemerya: {
-    title: "EIN LOKALER PARTNER, KEINE WEITERE SCHNITTSTELLE.",
+    title: "DER KEMERA-ANSATZ",
     items: [
-      { title: "LOKALE BEURTEILUNG", description: "Wir verstehen die praktische Seite, sich in Ägypten fortzubewegen, nicht nur den Reiserplan auf dem Papier." },
-      { title: "FLEXIBILITÄT", description: "Programme können an den Reisenden angepasst werden, anstatt jeden Reiseablauf in ein bestimmtes Format zu zwingen." },
-      { title: "VERANTWORTUNG", description: "Ihr Unternehmen bleibt nah am Reisenden, während unser Team die Verantwortung für die ägyptische Seite übernimmt." },
+      { title: "DER OERLICHKEIT ZUERST", description: "Wir sind in Giza ansässig und arbeiten jeden Tag in Ägypten, daher spiegeln Routen und Zeiten wider, wie das Land wirklich funktioniert." },
+      { title: "DIE DETAILS, DIE ZAHLEN", description: "Es geht nicht um die wichtigsten Sehenswürdigkeiten, sondern um wie eine Reise dorthin kommt und wer sich anpasst, wenn sich der Tag ändert." },
+      { title: "DEIN REISENDER, DEIN SCHRITT", description: "Wir übernehmen die ägyptische Seite des Plans, damit dein Unternehmen nah am Reisenden bleibt." }
     ],
   },
   brandPhilosophy: {

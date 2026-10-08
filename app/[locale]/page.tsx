@@ -2,20 +2,9 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
-import { getClientTypes } from "@/data/clientTypes";
-import { getProgramCapabilities } from "@/data/programCapabilities";
-import { getFaqItems } from "@/data/b2bFaq";
-import { getPartnershipSteps } from "@/data/partnershipSteps";
-import { ClientTypes } from "@/components/sections/ClientTypes";
-import { FaqTeaser } from "@/components/sections/FaqTeaser";
 import { Hero } from "@/components/sections/Hero";
-import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
-import { ProgramCapabilities } from "@/components/sections/ProgramCapabilities";
 import { TrustBar } from "@/components/sections/TrustBar";
-import { WhyKemerya } from "@/components/sections/WhyKemerya";
-import { BrandPhilosophy } from "@/components/sections/BrandPhilosophy";
 import { WhoKemerya } from "@/components/sections/WhoKemerya";
-import { B2BCredibility } from "@/components/sections/B2BCredibility";
 import { ConversionCTA } from "@/components/sections/ConversionCTA";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
 import { getPageCopy } from "@/lib/brand-content";
@@ -93,10 +82,10 @@ export default async function LocalePage({
     description: copy.meta.description,
   };
 
-  // Refined homepage arc:
-  // Hero → Trust → Core Differentiator (merged WhoKemerya) →
-  // Capabilities → Who We Work With → How It Works (4 steps) →
-  // Credibility → Final CTA → FAQ teaser
+  // Concise homepage arc:
+  // Hero → Trust → Core Differentiator (WhoKemerya) → Final CTA
+  // All other content lives on dedicated internal pages (/why-kemerya,
+  // /capabilities, /who-we-work-with, /credibility, /faq, etc.)
   return (
     <>
       <script
@@ -117,37 +106,8 @@ export default async function LocalePage({
         />
 
         <WhoKemerya copy={copy.whoKemerya} ui={ui} />
-        <WhyKemerya copy={copy.whyKemerya} />
-
-        <ProgramCapabilities
-          copy={copy.programCapabilities}
-          items={getProgramCapabilities(safeLocale)}
-        />
-
-        <ClientTypes
-          copy={copy.clientTypes}
-          items={getClientTypes(safeLocale)}
-        />
-
-        <BrandPhilosophy copy={copy.brandPhilosophy} />
-        <KemeryaDifference
-          copy={copy.partnership}
-          steps={getPartnershipSteps(safeLocale)}
-        />
-
-        <B2BCredibility copy={copy.credibility} ui={ui} />
 
         <ConversionCTA copy={copy.conversion} />
-
-                <FaqTeaser
-          locale={safeLocale}
-          items={getFaqItems(safeLocale)}
-          copy={{
-            eyebrow: copy.faq.eyebrow,
-            title: copy.faq.title,
-          }}
-          ui={{ viewAllFaq: ui.viewAllFaq }}
-        />
       </LocaleSiteShell>
     </>
   );

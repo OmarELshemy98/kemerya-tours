@@ -41,11 +41,11 @@ export const nl: BrandContent = {
     cta: "",
   },
   whyKemerya: {
-    title: "EEN LOCALE PARTNER, GEEN EXTRA DOORSCHUIFMOMENT.",
+    title: "DE KEMERA-AANPAK",
     items: [
-      { title: "LOKALE BEOORDEELING", description: "We begrijpen de praktische kant van verplaatsen in Egypte, niet alleen het reisplan op papier." },
-      { title: "FLEXIBILITEIT", description: "Programma's kunnen afgestemd worden op de reiziger in plaats van elke reis in hetzelfde formaat te dwingen." },
-      { title: "AANSPRAKELIJKHEID", description: "Uw bedrijf blijft dicht bij de reiziger terwijl ons team de verantwoordelijkheid neemt voor de Egyptische kant." },
+      { title: "PLAATS EERST", description: "We zijn gevestigd in Giza en werken elke dag in Egypte, waardoor routes en tijden weerspiegelen hoe het land werkelijk beweegt." },
+      { title: "DE DETAILS DIE TEGAAN", description: "Wat telt, is niet de bekende bezienswaardigheden maar hoe de reis daarheen komt en wie zich aanpast als de dag verandert." },
+      { title: "JOUW REIZIGER, JOUW KEUZE", description: "We nemen het Egyptische deel van het plan op zodat jouw bedrijf dicht bij de reiziger blijft." }
     ],
   },
   brandPhilosophy: {
