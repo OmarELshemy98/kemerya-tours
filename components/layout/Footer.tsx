@@ -1,9 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
 import { Container } from "@/components/ui/Container";
 import { SocialIcon } from "@/components/ui/SocialIcon";
+import { useRevealOnScroll } from "@/lib/hooks/useRevealOnScroll";
 import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type FooterProps = {
@@ -44,12 +47,13 @@ type FooterProps = {
 export function Footer({ locale, copy, ui, nav }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const whatsappHref = `https://wa.me/${business.whatsapp}`;
+  const [ctaRef, ctaRevealed] = useRevealOnScroll<HTMLDivElement>();
 
   return (
     <footer className="site-footer" role="contentinfo">
       <Container>
         {/* Closing CTA — premium architectural centerpiece */}
-        <div className="footer-closing-cta">
+                <div className={`footer-closing-cta closing-cta ${ctaRevealed ? "revealed" : ""}`} ref={ctaRef}>
           <h2 className="closing-cta__headline">{copy.closingCta.headline}</h2>
           <p className="closing-cta__description">{copy.closingCta.description}</p>
           <Link href={`/${locale}/contact`} className="button button--primary closing-cta__primary">

@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { useRevealOnScroll } from "@/lib/hooks/useRevealOnScroll";
 import type { CommercialCategory } from "@/data/commercialCategories";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -17,6 +20,8 @@ type CommercialCategoriesProps = {
 };
 
 export function CommercialCategories({ copy, items, ui }: CommercialCategoriesProps) {
+  const [sectionRef, sectionRevealed] = useRevealOnScroll<HTMLDivElement>();
+
   return (
     <Section id="categories" className="editorial-chapters">
       <Container>
@@ -26,11 +31,19 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
           <p className="section-intro">{copy.intro}</p>
         </div>
 
-        <div className="chapters">
+        <div
+          ref={sectionRef}
+          className={`chapters ${sectionRevealed ? "revealed" : ""}`}
+        >
           {items.map((item) => (
-            <article key={item.title} className="editorial-chapter">
+            <article
+              key={item.title}
+              className="editorial-chapter"
+            >
               <div className="editorial-chapter__media">
-                <div className="chapter-number">{item.number}</div>
+                <div className="chapter-number" aria-hidden="true">
+                  <span className="chapter-number__digit">{item.number}</span>
+                </div>
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -48,14 +61,25 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
                 {item.subcategories.length > 0 && (
                   <div className="subcategory-tags">
                     {item.subcategories.map((sub) => (
-                      <a key={sub.label} href={sub.href} className="subcategory-tag" target="_blank" rel="noopener noreferrer">
+                      <a
+                        key={sub.label}
+                        href={sub.href}
+                        className="subcategory-tag"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {sub.label}
                       </a>
                     ))}
                   </div>
                 )}
-                <Link href={item.href} className="chapter-link" target="_blank" rel="noopener noreferrer">
-                  {ui.explore} →
+                                <Link
+                  href={item.href}
+                  className="chapter-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {ui.explore} <span className="chapter-link__arrow">→</span>
                 </Link>
               </div>
             </article>
