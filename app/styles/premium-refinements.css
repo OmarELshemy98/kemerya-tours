@@ -524,14 +524,8 @@
   margin-bottom: 0.9rem;
 }
 
-/* ── Footer: quiet neon (no harsh glow) ────────────────── */
-.neon-text {
-  color: var(--color-antique-gold);
-  text-shadow:
-    0 0 4px rgba(200, 143, 47, 0.22),
-    0 0 7px rgba(200, 143, 47, 0.12);
-  animation: none;
-}
+/* ── Footer: neon developer credit (animated) ──────────── */
+/* .neon-text is defined once in footer-compact.css (animated neonPulse) */
 
 /* ── Why-partner numbered list: final title stagger ─────── */
 .why-kemerya .why-item:nth-child(6) .why-item__title {
@@ -1150,6 +1144,25 @@ body::before {
   line-height: 1.8;
   max-width: 38rem;
   margin-top: 0.8rem;
+}
+
+/* ── Editorial chapter media: render <Image fill> ── */
+.editorial-chapter__media,
+.editorial-chapter__media.chapter-image {
+  position: relative;
+  height: 480px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .editorial-chapter__media {
+    height: 260px;
+  }
+}
+@media (max-width: 480px) {
+  .editorial-chapter__media {
+    height: 200px;
+  }
 }
 
 /* CapTeaser — editorial list */

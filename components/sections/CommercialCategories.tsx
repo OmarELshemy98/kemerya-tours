@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -47,7 +47,7 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
               >
                 <ObeliskSilhouette decorative size="sm" />
               </div>
-              <div className="editorial-chapter__media">
+              <div className="editorial-chapter__media chapter-image">
                 <div className="chapter-number" aria-hidden="true">
                   <span className="chapter-number__digit">{item.number}</span>
                 </div>

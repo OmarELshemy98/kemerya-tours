@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -127,7 +127,7 @@ export function Footer({ locale, copy, ui, nav }: FooterProps) {
             <Link href={`/${locale}/terms`} className="footer-bottom__link">{copy.terms}</Link>
           </div>
 
-          <p className="footer-credit">
+          <p className="footer-credit neon-text">
             © {currentYear} {business.name}. {copy.developer}
           </p>
         </div>

@@ -6,7 +6,6 @@ import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { WhoKemerya } from "@/components/sections/WhoKemerya";
 import { WhyKemerya } from "@/components/sections/WhyKemerya";
-import { ConversionCTA } from "@/components/sections/ConversionCTA";
 import { LotusDivider } from "@/components/ui/egyptian-svg";
 import { BrandStatement } from "@/components/sections/BrandStatement";
 import { KemeryaApproach } from "@/components/sections/KemeryaApproach";
@@ -163,8 +162,7 @@ export default async function LocalePage({
           </>
         )}
 
-        <ConversionCTA copy={copy.conversion} />
-      </LocaleSiteShell>
+              </LocaleSiteShell>
     </>
   );
 }

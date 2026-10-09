@@ -8,7 +8,6 @@ import { Capabilities } from "@/components/sections/Capabilities";
 import { ClientTypes } from "@/components/sections/ClientTypes";
 import { CommercialCategories } from "@/components/sections/CommercialCategories";
 import { CommercialConfidence } from "@/components/sections/CommercialConfidence";
-import { ConversionCTA } from "@/components/sections/ConversionCTA";
 import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
 import { ProgramCapabilities } from "@/components/sections/ProgramCapabilities";
@@ -123,8 +122,7 @@ export default async function LocaleSectionPage({
       content = (
         <>
           <Capabilities copy={copy.capabilities} items={getCapabilities(safeLocale)} />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "categories":
@@ -135,8 +133,7 @@ export default async function LocaleSectionPage({
             items={getCommercialCategories(safeLocale)}
             ui={ui}
           />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "why-partner":
@@ -148,8 +145,7 @@ export default async function LocaleSectionPage({
             copy={copy.partnership}
             steps={getPartnershipSteps(safeLocale)}
           />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "about-us":
@@ -157,24 +153,21 @@ export default async function LocaleSectionPage({
         <>
           <WhyKemerya copy={copy.whyKemerya} />
           <BrandPhilosophy copy={copy.brandPhilosophy} />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "who-we-work-with":
       content = (
         <>
           <ClientTypes copy={copy.clientTypes} items={getClientTypes(safeLocale)} />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "contact":
       content = (
         <>
           <B2BContactForm copy={copy.contact} ui={ui} />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "commercial-confidence":
@@ -184,8 +177,7 @@ export default async function LocaleSectionPage({
             copy={copy.commercialConfidence}
             points={getCommercialPoints(safeLocale)}
           />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "program-capabilities":
@@ -195,32 +187,28 @@ export default async function LocaleSectionPage({
             copy={copy.programCapabilities}
             items={getProgramCapabilities(safeLocale)}
           />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "credibility":
       content = (
         <>
           <B2BCredibility copy={copy.credibility} ui={ui} />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "faq":
       content = (
         <>
           <B2BFaq copy={copy.faq} items={getFaqItems(safeLocale)} />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     case "knowledge":
       content = (
         <>
           <Knowledge copy={copy.knowledge} />
-          <ConversionCTA copy={copy.conversion} />
-        </>
+                  </>
       );
       break;
     default:
