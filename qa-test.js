@@ -5,9 +5,10 @@ const SCREENSHOTS_DIR = path.join(__dirname, 'qa-screenshots');
 if (!fs.existsSync(SCREENSHOTS_DIR)) fs.mkdirSync(SCREENSHOTS_DIR, { recursive: true });
 
 (async () => {
-  const browser = await chromium.launch({ headless: false, slowMo: 100 });
+    const HEADFULLY = process.env.HEADFULLY === '1'; // HEADFULLY=1 => headed; default headless so this runs in CI/this environment
+  const browser = await chromium.launch({ headless: !HEADFULLY, slowMo: HEADFULLY ? 100 : 0 });
   const context = await browser.newContext({ viewport: { width: 375, height: 667 }, deviceScaleFactor: 2, locale: 'en-US' });
-  const results = { burgerMenu: {}, animations: {}, visualIdentity: {}, consoleErrors: [], accessibility: {}, localeTests: [] };
+      const results = { burgerMenu: {}, animations: {}, visualIdentity: {}, consoleErrors: [], accessibility: {}, localeTests: [], popupTests: [], popupAllOk: false, seoTests: [], seoAllOk: false };
 
   async function navigateTo(page, locale) {
     const url = locale ? `http://localhost:3100/${locale}` : 'http://localhost:3100/';
@@ -244,8 +245,12 @@ if (!fs.existsSync(SCREENSHOTS_DIR)) fs.mkdirSync(SCREENSHOTS_DIR, { recursive: 
   console.log('Footer grid children:', footerCols); results.visualIdentity.footerGridCols = footerCols;
   const heroExists = await p8.$('.hero') !== null;
   console.log('Hero present:', heroExists); results.visualIdentity.heroPresent = heroExists;
-  const heroImgEl = await p8.$('.hero img') !== null;
-  console.log('Hero has image element:', heroImgEl); results.visualIdentity.heroImgEl = heroImgEl;
+    const heroImgEl = await p8.$('.hero img') !== null;
+  console.log('Hero has <img> element:', heroImgEl); results.visualIdentity.heroImgEl = heroImgEl;
+  const heroBg = await p8.$eval('.hero', el => window.getComputedStyle(el).backgroundImage).catch(() => '');
+  const heroHasBgImage = typeof heroBg === 'string' && heroBg.includes('url(');
+  console.log('Hero background-image present:', heroHasBgImage, '(' + heroBg.slice(0, 60) + ')');
+    results.visualIdentity.heroHasBackgroundImage = heroHasBgImage;
   await p8.screenshot({ path: path.join(SCREENSHOTS_DIR, '15_visual_identity_en.png'), fullPage: true });
   await p8.close();
 
@@ -274,6 +279,127 @@ if (!fs.existsSync(SCREENSHOTS_DIR)) fs.mkdirSync(SCREENSHOTS_DIR, { recursive: 
     await p.close();
   }
 
+    // TEST 10: Confirmed no auto-popup/modal/cookie/banner/iframe overlay on load (desktop + mobile)
+  console.log('\n=== TEST 10: No Auto-Popup on Load (desktop + mobile) ===');
+  results.popupTests = [];
+  const popupPaths = ['/', '/en', '/en/contact', '/ar', '/ar/contact'];
+  const popupDevices = [
+    { name: 'desktop', opts: { viewport: { width: 1366, height: 768 } }, locale: 'en-US' },
+    { name: 'mobile', opts: { viewport: { width: 375, height: 667 }, deviceScaleFactor: 2 }, locale: 'ar-EG' },
+  ];
+  for (const pd of popupDevices) {
+    const pctx = await browser.newContext({ ...pd.opts, locale: pd.locale });
+    for (const u of popupPaths) {
+      const pp = await pctx.newPage();
+      collectConsole(pp, 'popup-' + pd.name);
+      try {
+        await pp.goto('http://localhost:3100' + u, { waitUntil: 'networkidle', timeout: 12000 });
+        await pp.waitForTimeout(1500);
+        const check = await pp.evaluate(() => {
+          const vw = window.innerWidth, vh = window.innerHeight;
+          const iframes = document.querySelectorAll('iframe, dialog, noscript').length;
+          const overlays = [];
+          document.querySelectorAll('*').forEach(el => {
+            try {
+              const r = el.getBoundingClientRect();
+              const cs = getComputedStyle(el);
+              if (!r.width && !r.height) return;
+              const visible = parseFloat(cs.opacity) > 0 && cs.visibility !== 'hidden' && cs.display !== 'none';
+              const fixed = cs.position === 'fixed' || cs.position === 'absolute';
+              const highZ = parseInt(cs.zIndex || '0') >= 1000;
+              const covers = r.left <= vw / 2 && r.right >= vw / 2 && r.top <= vh / 2 && r.bottom >= vh / 2;
+              if (visible && fixed && highZ && covers) {
+                overlays.push({ tag: el.tagName, id: el.id, class: el.className, zIndex: cs.zIndex });
+              }
+            } catch {}
+          });
+          return { iframes, overlays };
+        });
+        const ok = check.iframes === 0 && check.overlays.length === 0;
+        console.log('[' + pd.name + '] ' + u + ' -> no-popup=' + ok + ' (iframes=' + check.iframes + ', overlays=' + JSON.stringify(check.overlays) + ')');
+        results.popupTests.push({ device: pd.name, path: u, ok, iframes: check.iframes, overlays: check.overlays });
+        await pp.screenshot({ path: path.join(SCREENSHOTS_DIR, '16_nopop_' + pd.name + '_' + u.replace(/\//g, '_') + '.png') });
+      } catch (e) {
+        results.popupTests.push({ device: pd.name, path: u, ok: false, error: e.message });
+        console.log('[' + pd.name + '] ' + u + ' -> ERROR ' + e.message);
+      }
+      await pp.close();
+    }
+    await pctx.close();
+  }
+  results.popupAllOk = results.popupTests.every(t => t.ok === true);
+  console.log('No-popup regression ALL PASS:', results.popupAllOk);
+
+  // TEST 11: Accessibility basics (no duplicate IDs, landmarks, html lang/dir)
+  console.log('\n=== TEST 11: Accessibility Basics ===');
+  const accCtx = await browser.newContext({ viewport: { width: 1200, height: 800 } });
+  const pAcc = await accCtx.newPage();
+  collectConsole(pAcc, 'a11y-en');
+  await pAcc.goto('http://localhost:3100/en', { waitUntil: 'networkidle' });
+  await pAcc.waitForTimeout(800);
+  const a11y = await pAcc.evaluate(() => {
+    const ids = {};
+    document.querySelectorAll('[id]').forEach(el => { const id = el.getAttribute('id'); ids[id] = (ids[id] || 0) + 1; });
+    const dupIds = Object.entries(ids).filter(([, c]) => c > 1).map(([k]) => k);
+    const landmarks = [...document.querySelectorAll('main, header, footer, nav, [role]')].map(e => e.tagName + (e.getAttribute('id') ? '#' + e.getAttribute('id') : ''));
+    const html = document.documentElement;
+    return { dupIds, landmarksCount: landmarks.length, landmarks: landmarks.slice(0, 12), lang: html.lang, dir: html.dir };
+  });
+  results.accessibility = { duplicateIds: a11y.dupIds, landmarksCount: a11y.landmarksCount, htmlLang: a11y.lang, htmlDir: a11y.dir };
+  console.log('Duplicate IDs:', a11y.dupIds.length ? a11y.dupIds : 'none');
+  console.log('Landmarks:', a11y.landmarksCount, JSON.stringify(a11y.landmarks));
+  console.log('html lang/dir:', a11y.lang, a11y.dir);
+  await pAcc.close();
+    await accCtx.close();
+
+  // TEST 12: SEO meta tags on section + home pages (EN + AR)
+  console.log('\n=== TEST 12: SEO Meta Tags (no lost og:image/hreflang) ===');
+  results.seoTests = [];
+  const seoChecks = [
+    { label: 'en-contact', url: 'http://localhost:3100/en/contact', locale: 'en', expectUrl: 'https://www.kemeryatours.com/en/contact' },
+    { label: 'ar-contact', url: 'http://localhost:3100/ar/contact', locale: 'ar', expectUrl: 'https://www.kemeryatours.com/ar/contact' },
+    { label: 'en-home', url: 'http://localhost:3100/en', locale: 'en', expectUrl: 'https://www.kemeryatours.com/en' },
+    { label: 'ar-home', url: 'http://localhost:3100/ar', locale: 'ar', expectUrl: 'https://www.kemeryatours.com/ar' },
+  ];
+  const seoCtx = await browser.newContext({ viewport: { width: 1200, height: 800 } });
+  for (const sc of seoChecks) {
+    const sp = await seoCtx.newPage();
+    collectConsole(sp, 'seo-' + sc.label);
+    try {
+      await sp.goto(sc.url, { waitUntil: 'networkidle', timeout: 12000 });
+      await sp.waitForTimeout(800);
+      const m = await sp.evaluate(() => {
+        const meta = {};
+        document.querySelectorAll('meta[property], meta[name], link[rel="canonical"], link[rel="alternate"]').forEach(el => {
+          const key = el.getAttribute('property') || el.getAttribute('name') || el.getAttribute('rel');
+          if (key) meta[key] = el.getAttribute('content') || el.getAttribute('href') || '';
+        });
+        const hreflangs = [...document.querySelectorAll('link[rel="alternate"]')].map(l => l.getAttribute('hreflang'));
+        const ld = [...document.querySelectorAll('script[type="application/ld+json"]')].map(s => (s.textContent || '').slice(0, 50));
+        return { meta, hreflangs, ld, htmlLang: document.documentElement.lang, htmlDir: document.documentElement.dir };
+      });
+      const ogUrl = (m.meta['og:url'] || '').toLowerCase();
+      const ok =
+        ogUrl === sc.expectUrl.toLowerCase() &&
+        !!m.meta['og:image'] &&
+        !!m.meta['twitter:card'] &&
+        !!m.meta['canonical'] &&
+        m.hreflangs.length >= 10 &&
+        m.ld.length > 0 &&
+        m.htmlLang === sc.locale &&
+        (sc.locale === 'ar' ? m.htmlDir === 'rtl' : m.htmlDir === 'ltr');
+      console.log('[' + sc.label + '] seo-ok=' + ok + ' | og:url=' + ogUrl + ' | og:image=' + (!!m.meta['og:image'] ? 'present' : 'MISSING') + ' | hreflangs=' + m.hreflangs.length + ' | ld=' + m.ld.length + ' | lang/dir=' + m.htmlLang + '/' + m.htmlDir);
+      results.seoTests.push({ label: sc.label, ok, ogUrl, ogImage: !!m.meta['og:image'], hreflangs: m.hreflangs.length, ldScripts: m.ld.length, htmlLang: m.htmlLang, htmlDir: m.htmlDir, canonical: m.meta['canonical'] });
+    } catch (e) {
+      results.seoTests.push({ label: sc.label, ok: false, error: e.message });
+      console.log('[' + sc.label + '] ERROR ' + e.message);
+    }
+    await sp.close();
+  }
+  await seoCtx.close();
+  results.seoAllOk = results.seoTests.every(t => t.ok === true);
+  console.log('SEO tests ALL PASS:', results.seoAllOk);
+
   // Summary
   fs.writeFileSync(path.join(SCREENSHOTS_DIR, 'qa-results.json'), JSON.stringify(results, null, 2));
   console.log('\n========== QA RESULTS SUMMARY ==========');
@@ -281,7 +407,12 @@ if (!fs.existsSync(SCREENSHOTS_DIR)) fs.mkdirSync(SCREENSHOTS_DIR, { recursive: 
   console.log('Animations:', JSON.stringify(results.animations, null, 2));
   console.log('Console Errors:', results.consoleErrors);
   console.log('Locale Tests:', JSON.stringify(results.localeTests, null, 2));
-  console.log('Visual Identity:', JSON.stringify(results.visualIdentity, null, 2));
+    console.log('Visual Identity:', JSON.stringify(results.visualIdentity, null, 2));
+  console.log('No-Popup Tests:', JSON.stringify(results.popupTests, null, 2));
+  console.log('No-Popup ALL PASS:', results.popupAllOk);
+    console.log('Accessibility:', JSON.stringify(results.accessibility, null, 2));
+  console.log('SEO Tests:', JSON.stringify(results.seoTests, null, 2));
+  console.log('SEO ALL PASS:', results.seoAllOk);
     await browser.close();
   console.log('\nQA Complete.');
 })().catch(e => { console.error('QA FAILED:', e); process.exit(1); });

@@ -25,6 +25,7 @@ import { getProgramCapabilities } from "@/data/programCapabilities";
 import { getWhyPartner } from "@/data/whyPartner";
 import { Knowledge } from "@/components/sections/Knowledge";
 import { getPageCopy } from "@/lib/brand-content";
+import { business } from "@/data/business";
 import { locales, uiTranslations, type Locale } from "@/lib/i18n";
 
 const sections = [
@@ -98,8 +99,40 @@ export async function generateMetadata({
         pt: `/pt/${section}`,
         nl: `/nl/${section}`,
         zh: `/zh/${section}`,
-        "x-default": `/en/${section}`,
+                "x-default": `/en/${section}`,
       },
+    },
+        openGraph: {
+      title: `${content[0]} | Kemerya Tours`,
+      description: content[1],
+      url: `${business.website}/${safeLocale}/${section}`,
+      siteName: business.name,
+      locale: {
+        en: "en_US",
+        ar: "ar_EG",
+        fr: "fr_FR",
+        it: "it_IT",
+        es: "es_ES",
+                de: "de_DE",
+        pt: "pt_PT",
+        nl: "nl_NL",
+        zh: "zh_CN",
+      }[safeLocale],
+      type: "website",
+      images: [
+        {
+          url: `${business.website}/images/kemerya-logo.svg`,
+          width: 1200,
+          height: 630,
+          alt: uiTranslations[safeLocale].heroImageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${content[0]} | Kemerya Tours`,
+      description: content[1],
+      images: [`${business.website}/images/kemerya-logo.svg`],
     },
   };
 }

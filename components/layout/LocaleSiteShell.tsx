@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { SiteSchema } from "@/components/seo/SiteSchema";
 import type { getPageCopy } from "@/lib/brand-content";
 import type { Locale, UiTranslations } from "@/lib/i18n";
 
@@ -15,8 +16,9 @@ export function LocaleSiteShell({ locale, copy, ui, children }: LocaleSiteShellP
   return (
     <div
       className="min-h-screen bg-[var(--color-ivory)]"
-      dir={locale === "ar" ? "rtl" : "ltr"}
+            dir={locale === "ar" ? "rtl" : "ltr"}
     >
+      <SiteSchema locale={locale} />
       <Header locale={locale} copy={copy.nav} ui={ui} />
       <main id="main-content">{children}</main>
             <Footer locale={locale} copy={copy.footer} ui={ui} nav={copy.nav} />
