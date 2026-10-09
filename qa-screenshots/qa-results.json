@@ -1,0 +1,117 @@
+{
+  "burgerMenu": {
+    "burgerVisible375": true,
+    "menuOpens": true,
+    "bodyScrollLock": true,
+    "overlayVisible": true,
+    "xButtonExists": true,
+    "langInMenu": true,
+    "escapeCloses": true,
+    "overlayClickCloses": true,
+    "navLinkCloses": true,
+    "bodyScrollRestored": true,
+    "ariaExpanded": "false",
+    "noOverflow375": false,
+    "isOpen720": true,
+    "barCount720": 3,
+    "barTransform720": true,
+    "noOverflow720": true,
+    "desktopNavAt768": true,
+    "desktopHidden": true,
+    "desktopNavPresent": true
+  },
+  "animations": {
+    "heroLines": 0,
+    "chaptersCount": 1,
+    "ctaCount": 1,
+    "staggerCount": 7,
+    "revealedAfterScroll": 1,
+    "reducedMotionOpacity": 1,
+    "reducedMotionTransition": "1e-05s"
+  },
+  "visualIdentity": {
+    "bodyBg": "rgb(242, 234, 217)",
+    "goldColors": [
+      "rgb(26, 25, 25)"
+    ],
+    "categoryImages": 0,
+    "decorativeComponents": 0,
+    "footerCta": true,
+    "footerGridCols": 3,
+    "heroPresent": true,
+    "heroImgEl": false
+  },
+  "consoleErrors": [],
+  "accessibility": {},
+  "localeTests": [
+    {
+      "locale": "ar",
+      "dir": true
+    },
+    {
+      "locale": "ar-menu",
+      "opens": true
+    },
+    {
+      "locale": "ar-langInMenu",
+      "langInMenu": true
+    },
+    {
+      "locale": "ar-arrow",
+      "arrowText": "→"
+    },
+    {
+      "locale": "fr",
+      "loaded": true
+    },
+    {
+      "locale": "en",
+      "loaded": true,
+      "errors": 0
+    },
+    {
+      "locale": "es",
+      "loaded": true,
+      "errors": 0
+    },
+    {
+      "locale": "de",
+      "loaded": true,
+      "errors": 0
+    },
+    {
+      "locale": "it",
+      "loaded": true,
+      "errors": 0
+    },
+    {
+      "locale": "pt",
+      "loaded": true,
+      "errors": 0
+    },
+    {
+      "locale": "nl",
+      "loaded": true,
+      "errors": 0
+    },
+    {
+      "locale": "zh",
+      "loaded": true,
+      "errors": 0
+    },
+    {
+      "locale": "ar",
+      "loaded": true,
+      "errors": 0
+    },
+    {
+      "locale": "ar-dir",
+      "dir": "rtl"
+    },
+    {
+      "locale": "fr",
+      "loaded": true,
+      "errors": 0
+    }
+  ]
+}
