@@ -1,0 +1,117 @@
+{
+  "innerWidth": 375,
+  "candidates": [
+    {
+      "tag": "DIV",
+      "cls": "lang-menu ",
+      "width": 260,
+      "x": 241,
+      "right": 501,
+      "top": 124
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option ",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 133
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option is-active",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 196
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option ",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 260
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option ",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 324
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option ",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 388
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option ",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 452
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option ",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 516
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option ",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 580
+    },
+    {
+      "tag": "A",
+      "cls": "lang-option ",
+      "width": 244,
+      "x": 249,
+      "right": 492,
+      "top": 644
+    },
+    {
+      "tag": "svg",
+      "cls": "[object SVGAnimatedString]",
+      "width": 23,
+      "x": 456,
+      "right": 479,
+      "top": 151
+    },
+    {
+      "tag": "rect",
+      "cls": "[object SVGAnimatedString]",
+      "width": 23,
+      "x": 456,
+      "right": 479,
+      "top": 151
+    },
+    {
+      "tag": "path",
+      "cls": "[object SVGAnimatedString]",
+      "width": 23,
+      "x": 456,
+      "right": 479,
+      "top": 151
+    },
+    {
+      "tag": "path",
+      "cls": "[object SVGAnimatedString]",
+      "width": 23,
+      "x": 456,
+      "right": 479,
+      "top": 151
+    }
+  ]
+}

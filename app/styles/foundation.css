@@ -20,8 +20,13 @@
   --soft-border-light: rgba(200, 143, 47, 0.14);
   --shadow: 0 30px 80px rgba(7, 9, 8, 0.18);
   --shadow-pharaonic: 0 30px 60px rgba(5, 72, 85, 0.22);
-  --max-width: 1280px;
+    --max-width: 1280px;
   --nav-height: 88px;
+
+  /* Nile-night theme (navbar + footer base) — tunable in one place */
+  --nav-bg: rgba(3, 45, 53, 0.85);
+  --nav-bg-solid: #032d35;
+  --footer-bg: #032d35;
 
   /* Pharaonic texture blend */
   --pharaonic-texture:

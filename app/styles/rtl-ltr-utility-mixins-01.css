@@ -146,12 +146,19 @@ h4 {
     rgba(255, 255, 255, 0.14) 50%,
     transparent 100%
   );
-  transform: translateX(-120%);
-  transition: transform 0.6s ease;
+      /* Animate the shine via background-position instead of transform.
+   * A transformed ::before (translateX) defeats .button's overflow:hidden
+   * and escapes the scroll canvas — this caused the Arabic homepage
+   * horizontal overflow (body.scrollWidth ≈ 2.8× viewport). Sweeping the
+   * background keeps the pseudo inside the button box (inset:0) and never
+   * inflates the scroll canvas. */
+  background-size: 220% 100%;
+  background-position: 110% 0;
+  transition: background-position 0.7s ease;
 }
 
 .button:hover::before {
-  transform: translateX(120%);
+  background-position: -20% 0;
 }
 
 .button--primary {
@@ -203,7 +210,7 @@ h4 {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(11, 14, 14, 0.64);
+  background: var(--nav-bg);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   opacity: 0.98;
@@ -215,11 +222,11 @@ h4 {
 }
 
 .site-header.scrolled {
-  background: rgba(26, 25, 25, 0.92);
-  box-shadow: 0 4px 24px rgba(5, 72, 85, 0.22);
+  background: var(--nav-bg-solid);
+  box-shadow: 0 4px 24px rgba(5, 72, 85, 0.32);
   opacity: 0.95;
   transform: translateY(-2px);
-  border-color: rgba(200, 143, 47, 0.18);
+  border-color: rgba(200, 143, 47, 0.22);
 }
 
 .brand {
@@ -330,7 +337,16 @@ h4 {
   transition:
     opacity 0.2s ease,
     transform 0.2s ease,
-    visibility 0.2s ease;
+        visibility 0.2s ease;
+}
+
+/* Closed dropdown must not occupy scroll/layout space.
+   visibility:hidden + opacity:0 do NOT remove a positioned (absolute)
+   element from the scroll canvas — in RTL `left:0` extends it past the
+   viewport and produces horizontal scroll. display:none on the closed
+   state fixes that while `.is-open` keeps the fade-in via opacity. */
+.lang-menu:not(.is-open) {
+  display: none;
 }
 
 :dir(rtl) .lang-menu {
