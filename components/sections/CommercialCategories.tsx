@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import type { CommercialCategory } from "@/data/commercialCategories";
@@ -17,7 +18,7 @@ type CommercialCategoriesProps = {
 
 export function CommercialCategories({ copy, items, ui }: CommercialCategoriesProps) {
   return (
-    <Section id="categories">
+    <Section id="categories" className="editorial-chapters">
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -25,29 +26,37 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
           <p className="section-intro">{copy.intro}</p>
         </div>
 
-        <div className="category-grid">
+        <div className="chapters">
           {items.map((item) => (
-            <article key={item.title} className="category-card">
-              <div className="category-card__media">
+            <article key={item.title} className="editorial-chapter">
+              <div className="editorial-chapter__media">
+                <div className="chapter-number">{item.number}</div>
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: "cover" }}
                 />
               </div>
-              <div className="category-card__body">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <a
-                  href={item.href}
-                  className="category-card__link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <div className="editorial-chapter__body">
+                <h3 className="editorial-chapter__title">{item.title}</h3>
+                <p className="editorial-chapter__description">{item.description}</p>
+                {item.b2bBlurb && (
+                  <p className="editorial-chapter__blurb">{item.b2bBlurb}</p>
+                )}
+                {item.subcategories.length > 0 && (
+                  <div className="subcategory-tags">
+                    {item.subcategories.map((sub) => (
+                      <a key={sub.label} href={sub.href} className="subcategory-tag" target="_blank" rel="noopener noreferrer">
+                        {sub.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
+                <Link href={item.href} className="chapter-link" target="_blank" rel="noopener noreferrer">
                   {ui.explore} →
-                </a>
+                </Link>
               </div>
             </article>
           ))}

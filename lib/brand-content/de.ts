@@ -456,10 +456,16 @@ export const de: BrandContent = {
       ["Wir koordinieren Ägypten vor Ort", "Unser lokales Team organisiert die vereinbarten Leistungen und bleibt während der Reise erreichbar."],
     ],
     commercialCategories: [
-      ["Tagesausflüge in Ägypten", "Lokal koordinierte Stadt-, Kultur- und Privattouren für kurze Aufenthalte und Ergänzungen der Reiseroute."],
-      ["Ägypten-Rundreisen", "Programme mit mehreren Stationen, abgestimmt auf die Interessen der Reisenden und das gewünschte Reisetempo."],
-      ["Landausflüge", "Koordination von Hafentagen nach Ankunft, Abfahrt und verfügbarer Zeit an Land."],
-      ["Nilkreuzfahrten", "Organisation von Dahabiyya- und Nilkreuzfahrten, mit Guides und Landausflugslogistik abgestimmt auf das Gesamtprogramm."],
+      ["Tagesausflüge in Ägypten", "Lokal koordinierte Stadt-, Kultur- und Privattouren für kurze Aufenthalte und Ergänzungen der Reiseroute.","Partner können fokussierte Tageserlebnisse um Kairo, Luxor, Assuan und das Rote Meer planen, ohne ein komplettes Mehrtagesprogramm."],
+      ["Ägypten-Rundreisen", "Programme mit mehreren Stationen, abgestimmt auf die Interessen der Reisenden und das gewünschte Reisetempo.","Jedes Paket unterstützt unterschiedliche Reisende und Reiserstrukturen — von klassischer Kultur bis Abenteuer, Familie, Luxus, Budget und Themenreisen."],
+      ["Landausflüge", "Koordination von Hafentagen nach Ankunft, Abfahrt und verfügbarer Zeit an Land.","Hafenbasierte Erlebnisse für Kreuzfahrt- und Fährreisende, geplant um Hafenplan und verfügbare Zeit an Land."],
+      ["Nilkreuzfahrten", "Organisation von Dahabiyya- und Nilkreuzfahrten, mit Guides und Landausflugslogistik abgestimmt auf das Gesamtprogramm.","Nil-Kreuzfahrten passen in Kairo-Luxor-Assuan-Programme als Verbindungsstrecke zwischen oberägyptischen Sehenswürdigkeiten."],
+    ],
+    commercialCategoriesSubcategories: [
+      ["Kairo Tagestouren", "Luxor Tagestouren", "Assuan Tagestouren", "Hurghada Tagestouren", "Sharm El Sheikh Tagestouren", "Dahab Tagestouren", "Taba Tagestouren", "Marsa Alam Tagestouren", "Alexandrien Tagestouren", "Nuweiba Tagestouren", "Barrierefreie Tagestouren"],
+      ["Klassische Ägypten-Touren", "Luxus-Touren Ägypten", "Familien-Touren Ägypten", "Safari-Touren Ägypten", "Hochzeitsreisen Ägypten", "Kurztrip-Touren Ägypten", "Barrierefreie Touren", "Budget-Touren Ägypten", "Weihnachts-Touren Ägypten", "Oster-Touren Ägypten", "Gruppen-Touren Ägypten", "Urlaub in Ägypten"],
+      ["Landausflüge Alexandria", "Landausflüge Safaga", "Landausflüge Port Said", "Exkursionen Suez"],
+      ["Dahabiya-Kreuzfahrt", "Luxor & Assuan-Kreuzfahrt"],
     ],
     journeys: [
       ["Kairo und Giza ganz privat", "Ein stadtorientiertes Programm mit Zeit für historische Stätten und die Details dazwischen."],

@@ -399,10 +399,16 @@ export const es: BrandContent = {
       ["Coordinamos Egipto sobre el terreno", "Nuestro equipo local organiza los servicios acordados y sigue disponible durante el viaje."],
     ],
     commercialCategories: [
-      ["Excursiones de un día en Egipto", "Programas urbanos, culturales y privados coordinados localmente para estancias cortas y ampliaciones del itinerario."],
-      ["Circuitos por Egipto", "Programas con varias paradas diseñados según los intereses del viajero y el ritmo que requiere el itinerario."],
-      ["Excursiones en tierra", "Coordinación de jornadas de puerto en función de la llegada, la salida y el tiempo disponible en tierra."],
-      ["Cruceros por el Nilo", "Organización de dahabiyas y cruceros por el Nilo, con visitas guiadas y logística en tierra conectadas con el programa general."],
+      ["Excursiones de un día en Egipto", "Programas urbanos, culturales y privados coordinados localmente para estancias cortas y ampliaciones del itinerario.","Los socios pueden crear experiencias de un día en El Cairo, Luxor, Asuán y el Mar Rojo sin un programa multi-día completo."],
+      ["Circuitos por Egipto", "Programas con varias paradas diseñados según los intereses del viajero y el ritmo que requiere el itinerario.","Cada paquete soporta diferentes perfiles de viajero y estructuras — de cultura clásica a aventura, familia, lujo, presupuesto y salidas temáticas."],
+      ["Excursiones en tierra", "Coordinación de jornadas de puerto en función de la llegada, la salida y el tiempo disponible en tierra.","Experiencias basadas en puertos para viajeros en crucero y ferry, planificadas alrededor del horario del puerto y el tiempo en tierra."],
+      ["Cruceros por el Nilo", "Organización de dahabiyas y cruceros por el Nilo, con visitas guiadas y logística en tierra conectadas con el programa general.","Los cruceros por el Nilo encajan en programas del Cairo-Luxor-Asuán como etapa de conexión entre los sitios del Alto Egipto."],
+    ],
+    commercialCategoriesSubcategories: [
+      ["Excursiones de un día en El Cairo", "Excursiones de un día en Luxor", "Excursiones de un día en Asuán", "Excursiones de un día en Hurghada", "Excursiones de un día en Sharm El Sheikh", "Excursiones de un día en Dahab", "Excursiones de un día en Taba", "Excursiones de un día en Marsa Alam", "Excursiones de un día en Alejandría", "Excursiones de un día en Nuweiba", "Excursiones accesibles"],
+      ["Tours clásicos en Egipto", "Tours de lujo en Egipto", "Tours familiares en Egipto", "Tours safari en Egipto", "Tours de luna de miel en Egipto", "Tours de fin de semana en Egipto", "Viajes accesibles", "Tours económicos en Egipto", "Tours de Navidad en Egipto", "Tours de Semana Santa en Egipto", "Tours de grupo en Egipto", "Vacaciones en Egipto"],
+      ["Excursiones en tierra en Alejandría", "Excursiones en tierra en Safaga", "Excursiones en tierra en Puerto Said", "Excursiones en tierra en Suez"],
+      ["Crucero Dahabiya", "Crucero Luxor & Asuán"],
     ],
     journeys: [
       ["El Cairo y Guiza en privado", "Un programa centrado en la ciudad, con tiempo para sus lugares históricos y los detalles entre visita y visita."],

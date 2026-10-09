@@ -456,10 +456,16 @@ export const fr: BrandContent = {
       ["Nous coordonnons l’Égypte sur place", "Notre équipe locale organise les prestations convenues et reste disponible pendant le voyage."],
     ],
     commercialCategories: [
-      ["Excursions à la journée en Égypte", "Programmes urbains, patrimoniaux et privés coordonnés localement pour les courts séjours et les extensions d’itinéraire."],
-      ["Circuits en Égypte", "Programmes en plusieurs étapes conçus selon les centres d’intérêt du voyageur et le rythme souhaité pour l’itinéraire."],
-      ["Excursions à terre", "Coordination des journées d’escale selon les horaires d’arrivée et de départ et le temps disponible à terre."],
-      ["Croisières sur le Nil", "Organisation de croisières sur dahabieh et sur le Nil, avec visites guidées et logistique à terre intégrées au programme global."],
+      ["Excursions à la journée en Égypte", "Programmes urbains, patrimoniaux et privés coordonnés localement pour les courts séjours et les extensions d’itinéraire.","Les partenaires peuvent créer des expériences d'une journée autour du Caire, Louxor, Assouan et la mer Rouge, sans nécessiter un programme pluridictional complet."],
+      ["Circuits en Égypte", "Programmes en plusieurs étapes conçus selon les centres d’intérêt du voyageur et le rythme souhaité pour l’itinéraire.","Chaque forfait soutient différents profils de voyageurs et structures — du classique culturel à l'aventure, en passant par la famille, le luxe, le budget et les départs thématiques."],
+      ["Excursions à terre", "Coordination des journées d’escale selon les horaires d’arrivée et de départ et le temps disponible à terre.","Expériences basées sur les ports pour les voyageurs en croisière et en ferry, planifiées autour de l'horaire du port et du temps disponible sur terre."],
+      ["Croisières sur le Nil", "Organisation de croisières sur dahabieh et sur le Nil, avec visites guidées et logistique à terre intégrées au programme global.","La croisière sur le Nil s'inscrit dans les programmes Caire-Louxor-Assouan comme un lien entre les sites d'Égypte du Sud, avec guidage et logistique côtière coordonnés."],
+    ],
+    commercialCategoriesSubcategories: [
+      ["Visites du Caire", "Visites de Louxor", "Visites d'Assouan", "Visites d'Hurghada", "Visites de Sharm El Sheikh", "Visites de Dahab", "Visites de Taba", "Visites de Marsa Alam", "Visites d'Alexandrie", "Visites de Nuweiba", "Visites accessibles en fauteuil roulant"],
+      ["Tours classiques en Égypte", "Tours de luxe en Égypte", "Tours familiaux en Égypte", "Tours safari en Égypte", "Tours lune de miel en Égypte", "Tours courts séjours en Égypte", "Voyages accessibles", "Tours budgétistes en Égypte", "Tours Noël en Égypte", "Tours Pâques en Égypte", "Tours de groupe en Égypte", "Vacances en Égypte"],
+      ["Excursions à Alexandrie", "Excursions à Safaga", "Excursions à Port-Saïd", "Excursions de Suez"],
+      ["Croisière Dahabiya", "Croisière Louxor & Assouan"],
     ],
     journeys: [
       ["Le Caire et Gizeh en privé", "Un programme axé sur la ville, avec du temps pour les sites historiques et les détails entre chaque visite."],

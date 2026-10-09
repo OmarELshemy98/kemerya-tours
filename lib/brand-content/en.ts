@@ -455,11 +455,17 @@ export const en: BrandContent = {
       ["Shape the program together", "We prepare an Egypt plan around the brief, then refine it with your team."],
       ["We coordinate Egypt on the ground", "Our local team arranges the agreed services and stays available during the journey."],
     ],
-    commercialCategories: [
-      ["Egypt day tours", "City, heritage and private day programs coordinated locally for shorter stays and itinerary extensions."],
-      ["Egypt travel packages", "Multi-stop programs shaped around traveler interests and the pace your itinerary needs."],
-      ["Shore excursions", "Port-day coordination built around arrival, departure and the time available ashore."],
-      ["Nile cruise", "Dahabiya and Nile cruise arrangements, with guiding and shore logistics connected to the wider program."],
+        commercialCategories: [
+      ["Egypt Day Tours", "Focused day experiences across Egypt's cities and sites, coordinated locally for shorter stays and program extensions.", "Partners can build focused day experiences around Cairo, Luxor, Aswan and Red Sea destinations without requiring a full multi-day program."],
+      ["Egypt Travel Packages", "Multi-stop programs shaped around traveler interests and the pace your itinerary needs.", "Each package supports different traveler profiles and trip structures — from classic culture to adventure, family, luxury, budget and themed departures."],
+      ["Egypt Shore Excursions", "Port-day coordination built around arrival, departure and the time available ashore.", "Port-based experiences and destination handling for cruise and ferry travelers, planned around the port schedule and time available on land."],
+      ["Egypt Nile Cruise Tours", "Dahabiya and Nile cruise arrangements, with guiding and shore logistics connected to the wider program.", "Nile cruising fits into Cairo–Luxor–Aswan programs as a connecting leg between Upper Egypt sites, with guiding and shore logistics coordinated alongside the wider itinerary."],
+    ],
+    commercialCategoriesSubcategories: [
+      ["Cairo Day Tours", "Luxor Day Tours", "Aswan Day Tours", "Hurghada Day Tours", "Sharm El Sheikh Day Tours", "Dahab Day Tours", "Taba Day Tours", "Marsa Alam Day Tours", "Alexandria Day Tours", "Nuweiba Day Tours", "Accessible Day Tours"],
+      ["Egypt Classic Tours", "Egypt Luxury Tours", "Egypt Family Tours", "Egypt Safari Tours", "Egypt Honeymoon Tours", "Egypt Short Break Tours", "Accessible Trips", "Egypt Budget Tours", "Egypt Christmas Tours", "Egypt Easter Tours", "Egypt Group Tour Packages", "Egypt Vacations"],
+      ["Alexandria Shore Excursions", "Safaga Shore Excursions", "Port Said Shore Excursions", "Sokhna Excursions"],
+      ["Dahabiya Nile Cruise", "Luxor & Aswan Nile Cruise"],
     ],
     journeys: [
       ["Cairo and Giza, privately", "A city-led program with time for its historic sites and the details between them."],

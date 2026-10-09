@@ -399,10 +399,16 @@ export const it: BrandContent = {
       ["Coordiniamo l’Egitto sul posto", "Il nostro team locale organizza i servizi concordati e resta disponibile durante il viaggio."],
     ],
     commercialCategories: [
-      ["Tour giornalieri in Egitto", "Programmi urbani, culturali e privati coordinati localmente per soggiorni brevi ed estensioni dell’itinerario."],
-      ["Viaggi organizzati in Egitto", "Programmi con più tappe, costruiti sugli interessi del viaggiatore e sul ritmo richiesto dall’itinerario."],
-      ["Escursioni a terra", "Coordinamento delle giornate in porto in base all’arrivo, alla partenza e al tempo disponibile a terra."],
-      ["Crociere sul Nilo", "Organizzazione di dahabiyya e crociere sul Nilo, con visite guidate e logistica a terra integrate nel programma complessivo."],
+      ["Tour giornalieri in Egitto", "Programmi urbani, culturali e privati coordinati localmente per soggiorni brevi ed estensioni dell’itinerario.","I partner possono creare esperienze giornaliere su Caio, Luxor, Assuan e il Mar Rosso senza un programma multi-giorno completo."],
+      ["Viaggi organizzati in Egitto", "Programmi con più tappe, costruiti sugli interessi del viaggiatore e sul ritmo richiesto dall’itinerario.","Ogni pacchetto supporta profili di viaggiatori e strutture diversi — dalla cultura classica all'avventura, alla famiglia, al lusso, al budget e partenze tematiche."],
+      ["Escursioni a terra", "Coordinamento delle giornate in porto in base all’arrivo, alla partenza e al tempo disponibile a terra.","Esperienze portuali per viaggiatori in crociera e traghetti, pianificate intorno all'orario della stazione e al tempo a terra."],
+      ["Crociere sul Nilo", "Organizzazione di dahabiyya e crociere sul Nilo, con visite guidate e logistica a terra integrate nel programma complessivo.","La crociera sul Nilo si inserisce nei programmi Cairo-Luxor-Assuan come tratto di collegamento tra i siti dell'Alto Egitto."],
+    ],
+    commercialCategoriesSubcategories: [
+      ["Tour di un giorno al Cairo", "Tour di un giorno a Luxor", "Tour di un giorno ad Assuan", "Tour di un giorno a Hurghada", "Tour di un giorno a Sharm El Sheikh", "Tour di un giorno a Dahab", "Tour di un giorno a Taba", "Tour di un giorno a Marsa Alam", "Tour di un giorno ad Alessandria", "Tour di un giorno a Nuweiba", "Tour accessibili"],
+      ["Tour classico in Egitto", "Tour di lusso in Egitto", "Tour familiare in Egitto", "Tour safari in Egitto", "Tour luna di miele in Egitto", "Tour weekend in Egitto", "Viaggi accessibili", "Tour economico in Egitto", "Tour Natale in Egitto", "Tour Pasqua in Egitto", "Tour di gruppo in Egitto", "Vacanze in Egitto"],
+      ["Escursioni ad Alessandria", "Escursioni a Safaga", "Escursioni a Port Said", "Escursioni a Suez"],
+      ["Crociera Dahabiya", "Crociera Luxor & Assuan"],
     ],
     journeys: [
       ["Il Cairo e Giza in privato", "Un programma incentrato sulla città, con tempo per i siti storici e per i dettagli tra una visita e l’altra."],

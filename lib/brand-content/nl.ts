@@ -399,10 +399,16 @@ export const nl: BrandContent = {
       ["Wij coördineren Egypte ter plaatse", "Ons lokale team regelt de afgesproken diensten en blijft beschikbaar tijdens de reis."],
     ],
     commercialCategories: [
-      ["Dagtochten in Egypte", "Stads-, erfgoed- en privéprogramma's voor één dag, lokaal gecoördineerd voor korte verblijven en uitbreidingen van een reisplan."],
-      ["Reispakketten voor Egypte", "Programma's met meerdere stops, afgestemd op de interesses van de reiziger en het gewenste reistempo."],
-      ["Excursies aan wal", "Coördinatie van een dag in de haven, afgestemd op aankomst, vertrek en de beschikbare tijd aan wal."],
-      ["Nijlcruises", "Afspraken voor dahabiya- en Nijlcruises, met gidsen en logistiek aan wal afgestemd op het bredere programma."],
+      ["Dagtochten in Egypte", "Stads-, erfgoed- en privéprogramma's voor één dag, lokaal gecoördineerd voor korte verblijven en uitbreidingen van een reisplan.","Partners kunnen gefocuste dagervaringen creëren rondom Cairo, Luxor, Assuan en de Rode Zee zonder een compleet meerdagenprogramma."],
+      ["Reispakketten voor Egypte", "Programma's met meerdere stops, afgestemd op de interesses van de reiziger en het gewenste reistempo.","Elk pakket ondersteunt verschillende reizigersprofielen en reisstructuren — van klassieke cultuur tot avontuur, familie, luxe, budget en thema-vertrekkingen."],
+      ["Excursies aan wal", "Coördinatie van een dag in de haven, afgestemd op aankomst, vertrek en de beschikbare tijd aan wal.","Haven-gebaseerde ervaringen voor cruisereizigers en veerbootreizigers, gepland rondom het havenrooster en beschikbare tijd aan land."],
+      ["Nijlcruises", "Afspraken voor dahabiya- en Nijlcruises, met gidsen en logistiek aan wal afgestemd op het bredere programma.","Nijl-cruises vormen een onderdeel van Cairo-Luxor-Assuan-programma's als verbindingsstuk tussen Hoog-Egypte-locaties."],
+    ],
+    commercialCategoriesSubcategories: [
+      ["Dagtochten Cairo", "Dagtochten Luxor", "Dagtochten Assuan", "Dagtochten Hurghada", "Dagtochten Sharm El Sheikh", "Dagtochten Dahab", "Dagtochten Taba", "Dagtochten Marsa Alam", "Dagtochten Alexandrië", "Dagtochten Nuweiba", "Toegankelijke dagtochten"],
+      ["Klassieke tours Egypte", "Luxe tours Egypte", "Familietours Egypte", "Safari tours Egypte", "Huwelijksreizen Egypte", "Kort verblijf Egypte", "Toegankelijke reizen", "Budget tours Egypte", "Kerst tours Egypte", "Paas tours Egypte", "Groepsreizen Egypte", "Vakantie in Egypte"],
+      ["Excursies ter zijde in Alexandrië", "Excursies ter zijde in Safaga", "Excursies ter zijde in Port Said", "Excursies in Suez"],
+      ["Dahabiya cruises", "Luxor & Assuan cruises"],
     ],
     journeys: [
       ["Caïro en Gizeh, privé", "Een programma rond de stad, met tijd voor historische locaties en de details daartussen."],

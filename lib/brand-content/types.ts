@@ -1,4 +1,5 @@
 export type CopyPair = readonly [title: string, description: string];
+export type CategoryCopyTriple = readonly [title: string, description: string, b2bBlurb: string];
 
 export type BrandContent = {
   meta: {
@@ -174,7 +175,8 @@ export type BrandContent = {
     whyPartner: readonly CopyPair[];
     advantages: readonly CopyPair[];
     partnershipSteps: readonly CopyPair[];
-    commercialCategories: readonly CopyPair[];
+            commercialCategories: readonly CategoryCopyTriple[];
+    commercialCategoriesSubcategories: readonly (readonly string[])[];
     journeys: readonly CopyPair[];
   };
 };

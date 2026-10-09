@@ -399,10 +399,16 @@ export const pt: BrandContent = {
       ["Coordenamos o Egito no destino", "A nossa equipa local organiza os serviços acordados e mantém-se disponível durante a viagem."],
     ],
     commercialCategories: [
-      ["Excursões de um dia no Egito", "Programas urbanos, patrimoniais e privados de um dia, coordenados localmente para estadias curtas e extensões de itinerário."],
-      ["Pacotes de viagem no Egito", "Programas com várias paragens, pensados de acordo com os interesses do viajante e o ritmo necessário ao itinerário."],
-      ["Excursões em terra", "Coordenação do dia no porto, tendo em conta a chegada, a partida e o tempo disponível em terra."],
-      ["Cruzeiros no Nilo", "Organização de cruzeiros em dahabiya e no Nilo, com visitas guiadas e logística em terra ligadas ao programa mais amplo."],
+      ["Excursões de um dia no Egito", "Programas urbanos, patrimoniais e privados de um dia, coordenados localmente para estadias curtas e extensões de itinerário.","Parceiros podem criar experiências de um dia no Cairo, Luxor, Assuã e Mar Vermelho sem um programa multi-dias completo."],
+      ["Pacotes de viagem no Egito", "Programas com várias paragens, pensados de acordo com os interesses do viajante e o ritmo necessário ao itinerário.","Cada pacote suporta diferentes perfis de viajante e estruturas — da cultura clássica à aventura, família, luxo, orçamento e saídas temáticas."],
+      ["Excursões em terra", "Coordenação do dia no porto, tendo em conta a chegada, a partida e o tempo disponível em terra.","Experiências baseadas em portos para viajantes em cruzeiro e ferry, planejadas em torno do horário do porto e tempo em terra."],
+      ["Cruzeiros no Nilo", "Organização de cruzeiros em dahabiya e no Nilo, com visitas guiadas e logística em terra ligadas ao programa mais amplo.","Cruzeiros pelo Nilo se encaixam em programas do Cairo-Luxor-Assuan como etapa de conexão entre sítios do Alto Egito."],
+    ],
+    commercialCategoriesSubcategories: [
+      ["Excursões de um dia no Cairo", "Excursões de um dia em Luxor", "Excursões de um dia em Assuã", "Excursões de um dia em Hurghada", "Excursões de um dia em Sharm El Sheikh", "Excursões de um dia em Dahab", "Excursões de um dia em Taba", "Excursões de um dia em Marsa Alam", "Excursões de um dia em Alexandria", "Excursões de um dia em Nuweiba", "Excursões acessíveis"],
+      ["Tours clássicos no Egito", "Tours de luxo no Egito", "Tours familiares no Egito", "Tours safári no Egito", "Tours de lua de mel no Egito", "Tours de fim de semana no Egito", "Viagens acessíveis", "Tours econômicos no Egito", "Tours de Natal no Egito", "Tours da Páscoa no Egito", "Tours de grupo no Egito", "Férias no Egito"],
+      ["Excursões em terra em Alexandria", "Excursões em terra em Safaga", "Excursões em terra em Port Said", "Excursões em terra em Suez"],
+      ["Cruzeiro Dahabiya", "Cruzeiro Luxor & Assuã"],
     ],
     journeys: [
       ["Cairo e Gizé em privado", "Um programa centrado na cidade, com tempo para os locais históricos e os detalhes entre eles."],
