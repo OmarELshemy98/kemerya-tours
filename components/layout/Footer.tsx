@@ -6,6 +6,7 @@ import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
 import { Container } from "@/components/ui/Container";
 import { SocialIcon } from "@/components/ui/SocialIcon";
+import { LotusCornerOrnament } from "@/components/ui/egyptian-svg";
 import { useRevealOnScroll } from "@/lib/hooks/useRevealOnScroll";
 import type { Locale, UiTranslations } from "@/lib/i18n";
 
@@ -50,7 +51,10 @@ export function Footer({ locale, copy, ui, nav }: FooterProps) {
   const [ctaRef, ctaRevealed] = useRevealOnScroll<HTMLDivElement>();
 
   return (
-    <footer className="site-footer" role="contentinfo">
+        <footer className="site-footer" role="contentinfo">
+      <div className="footer__lotus-corner" aria-hidden="true">
+        <LotusCornerOrnament decorative size="sm" />
+      </div>
       <Container>
         {/* Closing CTA — premium architectural centerpiece */}
                 <div className={`footer-closing-cta closing-cta ${ctaRevealed ? "revealed" : ""}`} ref={ctaRef}>

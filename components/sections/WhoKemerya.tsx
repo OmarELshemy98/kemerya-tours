@@ -1,6 +1,7 @@
 ﻿import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { TempleColumnPair } from "@/components/ui/egyptian-svg";
 import { business } from "@/data/business";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -19,7 +20,10 @@ type WhoKemeryaProps = {
 
 export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
   return (
-    <Section id="who-kemerya">
+    <Section id="who-kemerya" className="who-kemerya">
+      <div className="editorial__column-pair" aria-hidden="true">
+        <TempleColumnPair decorative size={140} />
+      </div>
       <Container>
         <div className="section__heading">
           <p className="eyebrow">{copy.eyebrow}</p>

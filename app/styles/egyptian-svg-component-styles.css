@@ -1,0 +1,185 @@
+/* === Egyptian SVG component styles === */
+/*
+   Premium Egyptian visual system — the SIXTH layer.
+   Hierarchy: Photography -> Typography -> Content -> Layout -> Motion -> Egyptian details.
+
+   All Egyptian SVGs use currentColor inherited from parent,
+   so they adapt automatically to light/dark and RTL contexts.
+*/
+
+/* Base: ensure SVGs render as blocks and scale cleanly */
+.egyptian-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Inline variant: doesn't stretch to fill */
+.egyptian-svg--inline {
+  width: auto;
+  height: auto;
+}
+
+/* Colour tokens for explicit gold / nile usage on Egyptian SVGs */
+.egyptian-svg--gold {
+  color: var(--color-antique-gold, #c88f2f);
+}
+
+.egyptian-svg--nile {
+  color: var(--color-nile, #054855);
+}
+
+.egyptian-svg--stone {
+  color: var(--color-stone, #5d544f);
+}
+
+.egyptian-svg--ivory {
+  color: var(--color-ivory, #f2ead9);
+}
+
+/* ── Semantic placement helpers ────────────────────────── */
+
+/* Hero: subtle architectural silhouette as background layer */
+.hero__egyptian-gateway {
+  position: absolute;
+  inset: 0;
+  width: min(70vw, 800px);
+  height: min(60vh, 640px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(2deg);
+  color: var(--color-white);
+  opacity: 0.05;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Section divider between TrustBar and editorial content */
+.section-divider {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 2rem;
+  color: var(--color-antique-gold, #c88f2f);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.section-divider svg {
+  width: min(200px, 60vw);
+  height: auto;
+}
+
+/* Category chapter: small obelisk accent */
+.editorial-chapter__accent {
+  position: absolute;
+  top: 2rem;
+  inset-inline-start: 2rem;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  opacity: 0.1;
+  pointer-events: none;
+  color: var(--color-antique-gold, #c88f2f);
+}
+[dir="rtl"] .editorial-chapter__accent {
+  inset-inline-start: auto;
+  inset-inline-end: 2rem;
+}
+
+/* Footer: small corner ornament */
+.footer__lotus-corner {
+  position: absolute;
+  bottom: 2rem;
+  inset-inline-end: 2rem;
+  z-index: 0;
+  width: 32px;
+  height: 32px;
+  opacity: 0.12;
+  pointer-events: none;
+  color: var(--color-stone, #5d544f);
+}
+
+/* BrandStatement image: subtle column capital accent */
+.brand-statement__image {
+  position: relative;
+}
+
+.brand-statement__capital {
+  position: absolute;
+  z-index: 1;
+  top: 1.5rem;
+  inset-inline-end: 1.5rem;
+  width: 20px;
+  height: 20px;
+  opacity: 0.08;
+  pointer-events: none;
+  color: var(--color-antique-gold, #c88f2f);
+}
+
+/* Editorial corner: temple column pair as a quiet compositional element */
+.who-kemerya .editorial__column-pair {
+  position: absolute;
+  top: 10rem;
+  inset-inline-end: 4rem;
+  z-index: 0;
+  width: 140px;
+  height: auto;
+  opacity: 0.04;
+  pointer-events: none;
+  color: var(--color-nile, #054855);
+}
+[dir="rtl"] .who-kemerya .editorial__column-pair {
+  inset-inline-end: auto;
+  inset-inline-start: 4rem;
+}
+
+/* ── Reduced motion: ensure SVGs always render ─────────── */
+@media (prefers-reduced-motion: reduce) {
+  .egyptian-svg {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* RTL: ensure decorative SVGs don't flip unintentionally */
+[dir="rtl"] .egyptian-svg {
+  /* currentColor and geometry handle themselves;
+     no transform scaleX needed for symmetrical motifs */
+}
+
+/* ── Mobile overrides ───────────────────────────────────── */
+@media (max-width: 720px) {
+  /* Reduce or remove decorative SVGs on mobile */
+  .hero__egyptian-gateway {
+    opacity: 0.03;
+    width: min(60vw, 480px);
+    height: min(40vh, 400px);
+  }
+
+  .editorial-chapter__accent {
+    width: 20px;
+    height: 20px;
+    top: 1.5rem;
+    inset-inline-start: 1.5rem;
+  }
+
+  .footer__lotus-corner {
+    width: 24px;
+    height: 24px;
+    bottom: 1.5rem;
+    inset-inline-end: 1.5rem;
+  }
+
+    /* Hide column pair on mobile to preserve content priority */
+  .who-kemerya .editorial__column-pair {
+    display: none;
+  }
+
+  /* Reduce accent opacity on mobile */
+  .brand-statement__capital,
+  .footer__lotus-corner,
+  .editorial-chapter__accent {
+    opacity: 0.06;
+  }
+}

@@ -1,6 +1,7 @@
 ﻿import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { ColumnCapital } from "@/components/ui/egyptian-svg";
 import { business } from "@/data/business";
 import type { UiTranslations } from "@/lib/i18n";
 
@@ -43,7 +44,10 @@ export function BrandStatement({ copy, ui, cta }: BrandStatementProps) {
             )}
           </div>
 
-          <div className="brand-statement__image" aria-hidden="true">
+                    <div className="brand-statement__image" aria-hidden="true">
+            <div className="brand-statement__capital" aria-hidden="true">
+              <ColumnCapital decorative size="sm" />
+            </div>
             <div className="brand-statement__image-bg" style={{ backgroundImage: `url(${copy.image})` }} />
           </div>
         </div>

@@ -172,9 +172,15 @@
     max-width: none;
   }
 
-  .footer-bottom {
+    .footer-bottom {
     align-items: flex-start;
     flex-direction: column;
+  }
+  /* Stack social label above icons to prevent overflow at narrow widths */
+  .footer-social {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
 

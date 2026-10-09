@@ -78,7 +78,8 @@ if (!fs.existsSync(SCREENSHOTS_DIR)) fs.mkdirSync(SCREENSHOTS_DIR, { recursive: 
     }
     return null;
   });
-  console.log('Overflow element:', overflowEl);
+    console.log('Overflow element:', overflowEl);
+  results.burgerMenu.noOverflow375 = overflowEl === null;
   await p1.close();
 
     // TEST 2: 720px — just below the 721px breakpoint (burger still visible)
@@ -143,8 +144,16 @@ if (!fs.existsSync(SCREENSHOTS_DIR)) fs.mkdirSync(SCREENSHOTS_DIR, { recursive: 
   try {
     const arrowEl = await p4.$('.chapter-link__arrow');
     if (arrowEl) {
-      arrowText = await p4.textContent('.chapter-link__arrow');
+         arrowText = await p4.textContent('.chapter-link__arrow');
       console.log('Arabic arrow text:', arrowText);
+      // Check CSS transform flips the arrow visually
+      const arrowTransform = await p4.evaluate(() => {
+        const el = document.querySelector('.chapter-link__arrow');
+        if (!el) return null;
+        return window.getComputedStyle(el).transform;
+      });
+      console.log('Arabic arrow computed transform:', arrowTransform);
+      results.localeTests.push({ locale: 'ar-arrow-transform', transform: arrowTransform });
     } else {
       console.log('Arabic chapter-link__arrow not found on categories page');
     }
@@ -209,23 +218,25 @@ if (!fs.existsSync(SCREENSHOTS_DIR)) fs.mkdirSync(SCREENSHOTS_DIR, { recursive: 
   await navigateTo(p8, '');
   const bodyBg = await p8.$eval('body', el => window.getComputedStyle(el).backgroundColor);
   console.log('Body background:', bodyBg); results.visualIdentity.bodyBg = bodyBg;
-  // Debug gold colors — find elements with 'gold' class and their actual colors
+  // Gold elements: buttons have gold background (#c88f2f) with obsidian text
   const goldDebug = await p8.evaluate(() => {
     const els = document.querySelectorAll('[class*="gold"], [class*="Gold"], .text-gold, .color-gold');
-    return Array.from(els).map(el => ({ cls: el.className, color: window.getComputedStyle(el).color, bg: window.getComputedStyle(el).backgroundColor }));
+    return Array.from(els).map(el => {
+      const c = window.getComputedStyle(el);
+      return { cls: el.className, color: c.color, bg: c.backgroundColor };
+    });
   });
-  console.log('Gold elements debug:', JSON.stringify(goldDebug));
-  results.visualIdentity.goldDebug = goldDebug;
-  const goldEls = await p8.$$eval('[class*="gold"], [class*="Gold"], .text-gold, .color-gold', els => Array.from(els).map(el => window.getComputedStyle(el).color).filter(c => c));
-  console.log('Gold colors found:', goldEls); results.visualIdentity.goldColors = [...new Set(goldEls)];
+  // Gold buttons have gold background (#c88f2f) with obsidian text — check bg
+  const goldUniqueBgs = [...new Set(goldDebug.filter(e => e.bg !== 'rgba(0, 0, 0, 0)' && e.bg !== 'transparent').map(e => e.bg))];
+  console.log('Gold background colors:', goldUniqueBgs); results.visualIdentity.goldColors = goldUniqueBgs;
   const catImgs = await p8.$$eval('.chapter-image img', els => els.length);
   console.log('Category images:', catImgs); results.visualIdentity.categoryImages = catImgs;
   const decorative = await p8.$$eval('.sun-disk, .egyptian-bird, .lotus-flower, .obelisk, .nile-wave, .temple-frame', els => els.length).catch(() => 0);
   console.log('Decorative components (should be 0 or minimal):', decorative); results.visualIdentity.decorativeComponents = decorative;
-    // Check hero lines on home page
-  const heroLines = await p8.$$eval('.hero h1 .line', els => els.length);
-  console.log('Hero title lines on home:', heroLines);
-  results.animations.heroLinesHome = heroLines;
+      // Check hero lines on home page
+  const heroLinesHome = await p8.$$eval('.hero h1 .line', els => els.length);
+  console.log('Hero title lines on home:', heroLinesHome);
+  results.animations.heroLinesHome = heroLinesHome;
 
   const footerCta = await p8.$('.closing-cta') !== null;
   console.log('Footer closing CTA:', footerCta); results.visualIdentity.footerCta = footerCta;

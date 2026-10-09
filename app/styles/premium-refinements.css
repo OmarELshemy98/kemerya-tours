@@ -139,6 +139,7 @@
 /* ── Navbar: quiet luxury ────────────────────────────── */
 /* Gold hamburger bars (overrides the white default in rtl-ltr-01) */
 .menu-toggle .bar {
+  display: block;
   width: 1.4rem;
   height: 2px;
   background: var(--color-antique-gold);
@@ -210,11 +211,18 @@
   transform: translateX(0);
 }
 
+/* Hide mobile menu on desktop — burger toggle is also hidden above 720px */
+@media (min-width: 721px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
 .mobile-menu__close {
   position: absolute;
   top: 1.5rem;
-  right: 1rem;
-  z-index: 2;
+  inset-inline-end: 1rem;
+  z-index: 5;
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
@@ -224,13 +232,9 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 1;
   transition: background 0.25s ease, border-color 0.25s ease;
 }
-[dir="rtl"] .mobile-menu__close {
-  right: auto;
-  left: 1rem;
-}
+/* RTL: close button moves to the start edge automatically via inset-inline-end */
 .mobile-menu__close:hover,
 .mobile-menu__close:focus-visible {
   border-color: rgba(200, 143, 47, 0.5);
@@ -1680,6 +1684,7 @@ body::before {
   padding: clamp(3rem, 8vw, 5rem) 0 2.5rem;
   font-size: 0.9rem;
   line-height: 1.6;
+  position: relative;
 }
 .footer-closing-cta {
   text-align: center;

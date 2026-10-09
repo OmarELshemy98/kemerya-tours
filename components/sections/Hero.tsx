@@ -1,6 +1,7 @@
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { TempleGateway } from "@/components/ui/egyptian-svg";
 import type { Locale, UiTranslations } from "@/lib/i18n";
 
 type HeroProps = {
@@ -29,7 +30,14 @@ export function Hero({ locale, copy, ui }: HeroProps) {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="hero__image" aria-hidden="true" />
+            <div className="hero__image" aria-hidden="true" />
+      <div
+        className="hero__egyptian-gateway"
+        aria-hidden="true"
+        role="presentation"
+      >
+        <TempleGateway decorative size="100%" />
+      </div>
       <Container className="hero__content">
         <div className="hero__inner">
           <p className="eyebrow hero__kicker">{copy.eyebrow}</p>

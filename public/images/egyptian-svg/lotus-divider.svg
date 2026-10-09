@@ -1,0 +1,29 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 240 28"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  preserveAspectRatio="xMidYMid meet"
+  aria-hidden="true"
+>
+  <!-- Top rail -->
+  <line x1="8" y1="6" x2="232" y2="6" />
+  <!-- Bottom rail -->
+  <line x1="8" y1="22" x2="232" y2="22" />
+  <!-- Central lotus bloom -->
+  <circle cx="120" cy="14" r="5" fill="currentColor" />
+  <!-- Lotus petals (8 around center) -->
+  <path d="M120 9 L120 3" />
+  <path d="M120 21 L120 25" />
+  <path d="M115 14 L109 14" />
+  <path d="M125 14 L131 14" />
+  <path d="M116 10 L112 7" />
+  <path d="M124 18 L128 21" />
+  <path d="M116 18 L112 21" />
+  <path d="M124 10 L128 7" />
+  <!-- Stem connector -->
+  <path d="M118 22 L118 25 M122 22 L122 25" stroke-width="1" />
+</svg>

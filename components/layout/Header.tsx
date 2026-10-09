@@ -139,15 +139,16 @@ export function Header({ locale, copy, ui }: HeaderProps) {
             </div>
           </div>
         </Container>
+      </header>
 
-                        {/* Clickable overlay + mobile menu inside header */}
-        <div
+      {/* Mobile menu OUTSIDE header — avoids transform containing block from .site-header.scrolled */}
+      <div
           id="mobile-menu"
           className={`mobile-menu ${open}`}
           aria-label={ui.mobileNavigation}
           aria-hidden={!menuOpen}
         >
-                    {/* Clickable overlay — absolute inside menu, behind content, in front of page */}
+      {/* Clickable overlay — absolute inside menu, behind content, in front of page */}
           <div
             className={`mobile-menu-overlay ${open}`}
             onClick={closeMenu}
@@ -181,9 +182,8 @@ export function Header({ locale, copy, ui }: HeaderProps) {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
-      </header>
+      </div>
+      </div>
     </>
   );
 }

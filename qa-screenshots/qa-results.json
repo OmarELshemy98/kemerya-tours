@@ -11,7 +11,7 @@
     "navLinkCloses": true,
     "bodyScrollRestored": true,
     "ariaExpanded": "false",
-    "noOverflow375": false,
+    "noOverflow375": true,
     "isOpen720": true,
     "barCount720": 3,
     "barTransform720": true,
@@ -27,12 +27,13 @@
     "staggerCount": 7,
     "revealedAfterScroll": 1,
     "reducedMotionOpacity": 1,
-    "reducedMotionTransition": "1e-05s"
+    "reducedMotionTransition": "1e-05s",
+    "heroLinesHome": 2
   },
   "visualIdentity": {
     "bodyBg": "rgb(242, 234, 217)",
     "goldColors": [
-      "rgb(26, 25, 25)"
+      "rgb(200, 143, 47)"
     ],
     "categoryImages": 0,
     "decorativeComponents": 0,
@@ -51,6 +52,10 @@
     {
       "locale": "ar-menu",
       "opens": true
+    },
+    {
+      "locale": "ar-arrow-transform",
+      "transform": "matrix(-1, 0, 0, 1, 0, 0)"
     },
     {
       "locale": "ar-langInMenu",

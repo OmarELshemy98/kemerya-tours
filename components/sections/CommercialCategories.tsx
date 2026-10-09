@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { ObeliskSilhouette } from "@/components/ui/egyptian-svg";
 import { useRevealOnScroll } from "@/lib/hooks/useRevealOnScroll";
 import type { CommercialCategory } from "@/data/commercialCategories";
 import type { UiTranslations } from "@/lib/i18n";
@@ -36,10 +37,16 @@ export function CommercialCategories({ copy, items, ui }: CommercialCategoriesPr
           className={`chapters ${sectionRevealed ? "revealed" : ""}`}
         >
           {items.map((item) => (
-            <article
+                        <article
               key={item.title}
               className="editorial-chapter"
             >
+              <div
+                className="editorial-chapter__accent"
+                aria-hidden="true"
+              >
+                <ObeliskSilhouette decorative size="sm" />
+              </div>
               <div className="editorial-chapter__media">
                 <div className="chapter-number" aria-hidden="true">
                   <span className="chapter-number__digit">{item.number}</span>

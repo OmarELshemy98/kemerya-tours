@@ -1,0 +1,25 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 48 48"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+>
+  <!-- Corner lines (architectural) -->
+  <line x1="2" y1="2" x2="16" y2="2" />
+  <line x1="2" y1="2" x2="2" y2="16" />
+  <!-- Small lotus bloom at corner -->
+  <circle cx="12" cy="12" r="4" fill="none" />
+  <!-- Lotus petals (4 directions) -->
+  <line x1="12" y1="4" x2="12" y2="8" stroke-width="1" />
+  <line x1="12" y1="16" x2="12" y2="20" stroke-width="1" />
+  <line x1="4" y1="12" x2="8" y2="12" stroke-width="1" />
+  <line x1="16" y1="12" x2="20" y2="12" stroke-width="1" />
+  <!-- Stem -->
+  <line x1="12" y1="20" x2="12" y2="28" stroke-width="0.8" />
+  <!-- Base leaf -->
+  <path d="M8 28 C10 26, 14 26, 16 28" stroke-width="0.8" />
+</svg>
