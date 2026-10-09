@@ -1,0 +1,22 @@
+[
+  {
+    "label": "m_ar_home",
+    "url": "https://kemerya-tours.vercel.app/ar",
+    "initialOverlays": "{\"viewport\":{\"vw\":375,\"vh\":667},\"visibleOverlays\":[],\"frames\":[]}",
+    "initialErrors": [],
+    "burgerClick": {
+      "errors": [],
+      "overlays": "{\"viewport\":{\"vw\":375,\"vh\":667},\"visibleOverlays\":[],\"frames\":[]}"
+    }
+  },
+  {
+    "label": "m_ar_contact",
+    "url": "https://kemerya-tours.vercel.app/ar/contact",
+    "initialOverlays": "{\"viewport\":{\"vw\":375,\"vh\":667},\"visibleOverlays\":[],\"frames\":[]}",
+    "initialErrors": []
+  },
+  {
+    "label": "m_ar_contact_7s",
+    "overlays": "{\"viewport\":{\"vw\":375,\"vh\":667},\"visibleOverlays\":[],\"frames\":[]}"
+  }
+]

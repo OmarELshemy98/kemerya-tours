@@ -1,0 +1,889 @@
+{
+  "1366|https://kemerya-tours.vercel.app/": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "title": "Egypt DMC & Local Travel Partner | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/28fkf9f9btak4.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/43b7srioamhzr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/14hixo8lqikjs.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/turbopack-2-_awutgeozia.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0tok2wnooz_xr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/2w2xarjzdu6p3.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/1o06f56dl57ji.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/3wyp-fs5rl5j9.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "hasInline": true,
+        "inline": "{\"@context\":\"https://schema.org\",\"@type\":\"TravelAgency\",\"name\":\"Kemerya Tours\",\"url\":\"https://www.ke"
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/17tuxysuvqwd2.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "(self.__next_f=self.__next_f||[]).push([0])"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/immutable/chunks/0tok2wnoo"
+      }
+    ],
+    "frames": [],
+    "overlays": []
+  },
+  "1366|https://kemerya-tours.vercel.app/ar": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "title": "شركة إدارة وجهات في مصر وشريك سفر محلي | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/28fkf9f9btak4.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/43b7srioamhzr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/14hixo8lqikjs.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/turbopack-2-_awutgeozia.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0tok2wnooz_xr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/2w2xarjzdu6p3.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/1o06f56dl57ji.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/3wyp-fs5rl5j9.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "hasInline": true,
+        "inline": "{\"@context\":\"https://schema.org\",\"@type\":\"TravelAgency\",\"name\":\"Kemerya Tours\",\"url\":\"https://www.ke"
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/17tuxysuvqwd2.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "(self.__next_f=self.__next_f||[]).push([0])"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/immutable/chunks/0tok2wnoo"
+      }
+    ],
+    "frames": [],
+    "overlays": []
+  },
+  "1366|https://kemerya-tours.vercel.app/ar/contact": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "title": "أخبرونا بما تخططون له في مصر. | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/28fkf9f9btak4.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/43b7srioamhzr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/14hixo8lqikjs.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/turbopack-2-_awutgeozia.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0tok2wnooz_xr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/3wyp-fs5rl5j9.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/1o06f56dl57ji.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/2w2xarjzdu6p3.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/17tuxysuvqwd2.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "(self.__next_f=self.__next_f||[]).push([0])"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/immutable/chunks/0tok2wnoo"
+      }
+    ],
+    "frames": [],
+    "overlays": []
+  },
+  "1366|https://kemerya-tours.vercel.app/en/contact": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "title": "TELL US WHAT YOU'RE BUILDING IN EGYPT. | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/28fkf9f9btak4.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/43b7srioamhzr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/14hixo8lqikjs.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/turbopack-2-_awutgeozia.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0tok2wnooz_xr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/3wyp-fs5rl5j9.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/1o06f56dl57ji.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/2w2xarjzdu6p3.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/17tuxysuvqwd2.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "(self.__next_f=self.__next_f||[]).push([0])"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/immutable/chunks/0tok2wnoo"
+      }
+    ],
+    "frames": [],
+    "overlays": []
+  },
+  "1366|https://www.kemeryatours.com/": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "title": "Egypt Tours & Private Travel Packages | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-T7C7VV4B&is_td=1&v=3&t=t&pid=173873084&gtm=45He6a72v9262681328za200zd9262681328xf1&seq=1&exp=115616986~115938466~115938469~118897920~118897930~120385423~120469145~120469153~121046263~121046271~121246026~121246034&dl=www.kemeryatours.com%2F&tdp=GTM-T7C7VV4B;262681328;0;0;0&frm=0&rtg=262681328&slo=2&hlo=2&lst=1&bt=0&ct=3&mde=G-2M0RYLHCFF;0_1&z=0",
+        "type": "text/javascript",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-2M0RYLHCFF&cx=c&gtm=4e6a72",
+        "type": "text/javascript",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-T7C7VV4B",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "hasInline": true,
+        "inline": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.kemeryatours.c"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "\n        (function(w, d, s, l, i) {\n            w[l] = w[l] || [];\n            w[l].push({\n         "
+      },
+      {
+        "src": "https://www.kemeryatours.com/assets/vendor/swiper-bundle.min.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://www.kemeryatours.com/assets/js/app.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n\n    // 1. Hero Swiper\n    const heroEl = doc"
+      },
+      {
+        "src": "",
+        "type": "text/javascript",
+        "hasInline": true,
+        "inline": "\n        document.addEventListener('DOMContentLoaded', function() {\n            var currencySelect ="
+      }
+    ],
+    "frames": [
+      {
+        "tag": "NOSCRIPT",
+        "src": ""
+      },
+      {
+        "tag": "NOSCRIPT",
+        "src": ""
+      },
+      {
+        "tag": "NOSCRIPT",
+        "src": ""
+      }
+    ],
+    "overlays": []
+  },
+  "1366|https://www.kemeryatours.com/ar": {
+    "status": 404,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "title": "Not Found",
+    "bodyClass": "antialiased",
+    "scripts": [],
+    "frames": [],
+    "overlays": []
+  },
+  "1366|https://www.kemeryatours.com/ar/contact": {
+    "status": 404,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "title": "Not Found",
+    "bodyClass": "antialiased",
+    "scripts": [],
+    "frames": [],
+    "overlays": []
+  },
+  "1366|https://www.kemeryatours.com/en/contact": {
+    "status": 404,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "title": "Not Found",
+    "bodyClass": "antialiased",
+    "scripts": [],
+    "frames": [],
+    "overlays": []
+  },
+  "375|https://kemerya-tours.vercel.app/": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 375,
+      "vh": 667
+    },
+    "title": "Egypt DMC & Local Travel Partner | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/28fkf9f9btak4.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/43b7srioamhzr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/14hixo8lqikjs.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/turbopack-2-_awutgeozia.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0tok2wnooz_xr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/2w2xarjzdu6p3.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/1o06f56dl57ji.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/3wyp-fs5rl5j9.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "hasInline": true,
+        "inline": "{\"@context\":\"https://schema.org\",\"@type\":\"TravelAgency\",\"name\":\"Kemerya Tours\",\"url\":\"https://www.ke"
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/17tuxysuvqwd2.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "(self.__next_f=self.__next_f||[]).push([0])"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/immutable/chunks/0tok2wnoo"
+      }
+    ],
+    "frames": [],
+    "overlays": []
+  },
+  "375|https://kemerya-tours.vercel.app/ar": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 375,
+      "vh": 667
+    },
+    "title": "شركة إدارة وجهات في مصر وشريك سفر محلي | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/28fkf9f9btak4.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/43b7srioamhzr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/14hixo8lqikjs.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/turbopack-2-_awutgeozia.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0tok2wnooz_xr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/2w2xarjzdu6p3.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/1o06f56dl57ji.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/3wyp-fs5rl5j9.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "hasInline": true,
+        "inline": "{\"@context\":\"https://schema.org\",\"@type\":\"TravelAgency\",\"name\":\"Kemerya Tours\",\"url\":\"https://www.ke"
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/17tuxysuvqwd2.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "(self.__next_f=self.__next_f||[]).push([0])"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/immutable/chunks/0tok2wnoo"
+      }
+    ],
+    "frames": [],
+    "overlays": []
+  },
+  "375|https://kemerya-tours.vercel.app/ar/contact": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 375,
+      "vh": 667
+    },
+    "title": "أخبرونا بما تخططون له في مصر. | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/28fkf9f9btak4.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/43b7srioamhzr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/14hixo8lqikjs.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/turbopack-2-_awutgeozia.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0tok2wnooz_xr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/3wyp-fs5rl5j9.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/1o06f56dl57ji.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/2w2xarjzdu6p3.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/17tuxysuvqwd2.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "(self.__next_f=self.__next_f||[]).push([0])"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/immutable/chunks/0tok2wnoo"
+      }
+    ],
+    "frames": [],
+    "overlays": []
+  },
+  "375|https://kemerya-tours.vercel.app/en/contact": {
+    "status": 200,
+    "errors": [],
+    "viewport": {
+      "vw": 375,
+      "vh": 667
+    },
+    "title": "TELL US WHAT YOU'RE BUILDING IN EGYPT. | Kemerya Tours",
+    "bodyClass": "",
+    "scripts": [
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/28fkf9f9btak4.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/43b7srioamhzr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/14hixo8lqikjs.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/turbopack-2-_awutgeozia.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0tok2wnooz_xr.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/3wyp-fs5rl5j9.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/1o06f56dl57ji.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/2w2xarjzdu6p3.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "https://kemerya-tours.vercel.app/_next/static/immutable/chunks/17tuxysuvqwd2.js",
+        "type": "",
+        "hasInline": false,
+        "inline": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "(self.__next_f=self.__next_f||[]).push([0])"
+      },
+      {
+        "src": "",
+        "type": "",
+        "hasInline": true,
+        "inline": "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/immutable/chunks/0tok2wnoo"
+      }
+    ],
+    "frames": [],
+    "overlays": []
+  },
+  "375|https://www.kemeryatours.com/": {
+    "status": "ERR:page.goto: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://ww",
+    "errors": []
+  },
+  "375|https://www.kemeryatours.com/ar": {
+    "status": 404,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "viewport": {
+      "vw": 375,
+      "vh": 667
+    },
+    "title": "Not Found",
+    "bodyClass": "antialiased",
+    "scripts": [],
+    "frames": [],
+    "overlays": []
+  },
+  "375|https://www.kemeryatours.com/ar/contact": {
+    "status": 404,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "viewport": {
+      "vw": 375,
+      "vh": 667
+    },
+    "title": "Not Found",
+    "bodyClass": "antialiased",
+    "scripts": [],
+    "frames": [],
+    "overlays": []
+  },
+  "375|https://www.kemeryatours.com/en/contact": {
+    "status": 404,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "viewport": {
+      "vw": 375,
+      "vh": 667
+    },
+    "title": "Not Found",
+    "bodyClass": "antialiased",
+    "scripts": [],
+    "frames": [],
+    "overlays": []
+  }
+}
