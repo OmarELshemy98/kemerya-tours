@@ -42,14 +42,14 @@ export const en: BrandContent = {
   },
   aboutUs: {
     eyebrow: "ABOUT KEMERYA TOURS",
-    title: "A CAIRO-BASED TEAM THAT COORDINATES EGYPT FOR YOUR TRAVELERS.",
-    subtitle: "We are an Egypt-based DMC rooted in Giza, serving travel partners with local coordination across the country.",
+    title: "AN EGYPT DESTINATION PARTNER FROM GIZA",
+    subtitle: "A destination management company coordinated from Giza, serving B2B travel partners across Egypt.",
     intro:
-      "Kemerya Tours coordinates the Egyptian side of private travel programs for travel agencies, tour operators, travel advisors, DMCs, and wholesalers. Based in Giza, we handle the practical side of Egyptian itineraries — guides, transport, stays, and logistics — so your client relationship stays intact.",
+      "Kemerya Tours is a destination management company based in Giza, Egypt, coordinating Egyptian-side services for private travel programs. We handle the local arrangements on your behalf while you keep your relationship with the traveler.",
     paragraphs: [
-      "Our team works from Giza and across Egypt daily. That means the routes, timing, and access we coordinate reflect how the country moves between its sites — not a template pulled from a distant office.",
-      "We exist for partners who need a Cairo-based team on the ground. We work behind your brand on every interaction, keeping traveler communication in your hands and the revenue with you.",
-      "Our services include professional Egyptologist guides, private air-conditioned vehicles, hotel and Nile experience arrangements, and on-site support throughout the stay. Each journey is coordinated as a single connected plan, with a named contact who stays reachable when details change.",
+      "Kemerya Tours was founded to bring a Cairo-based perspective to the Egyptian side of private travel. Our team operates from Giza and works across Egypt's main destinations — the Nile Valley, Red Sea resorts, desert regions, and Mediterranean ports — coordinating the services that turn an itinerary into a working travel program.",
+      "We coordinate the full range of Egyptian travel services, from professional Egyptologist guides and private air-conditioned transport to hotel and Nile cruise reservations, desert excursions, Red Sea diving, and port-based shore experiences. Each arrangement is made as part of a single connected plan, with a named team member who tracks the program from the initial brief through departure.",
+      "We operate exclusively for travel professionals — our contracts are with agencies, operators, and advisors, never with end travelers. This means the client relationship stays between you and your customers, with us handling only the Egyptian-side services.",
     ],
     principles: [],
     cta: "DISCUSS A PARTNERSHIP",

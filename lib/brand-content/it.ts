@@ -42,14 +42,14 @@ export const it: BrandContent = {
   },
   aboutUs: {
     eyebrow: "SU KEMERYA TOURS",
-    title: "UN'EQUIPE BASATA AL CAIRO CHE COORDINA L'EGIZTO PER I TUOI VIAGGIATORI.",
-    subtitle: "Siamo una DMC con sede in Egitto, con sede al Cairo, al servizio dei partner del viaggio con coordinamento locale in tutto il paese.",
+    title: "UN PARTNER DI VIAGGIO PER L'EGITTO DA GIZA",
+    subtitle: "Un'azienda di gestione destinazione con sede al Cairo, al servizio dei partner viaggio B2B in tutta l'Egitto.",
     intro:
-      "Kemerya Tours coordina il lato egiziano dei programmi di viaggio privati per agenzie di viaggio, tour operator, consulenti di viaggio, DMC e grossisti. Con sede al Cairo, gestiamo il lato pratico degli itinerari egiziani — guide, trasporti, alloggi e logistica — in modo che la tua relazione con il cliente rimanga intatta.",
+      "Kemerya Tours è un'azienda di gestione destinazione con sede al Cairo, in Egitto, che coordina i servizi legati all'Egitto per programmi di viaggio privati. Gestiamo gli accordi locali per voi, mantenendo intatta la vostra relazione con il viaggiatore.",
     paragraphs: [
-      "Il nostro team lavora da Il Cairo e attraverso l'Egitto ogni giorno. Questo significa che i percorsi, gli orari e gli accessi che coordinamo riflettono come il paese si muove tra i suoi siti — non un modello da un ufficio distante.",
-      "Esistiamo per partner che hanno bisogno di un team locale sul campo. Lavoriamo dietro il tuo marchio per ogni interazione, mantenendo la comunicazione con i viaggiatori tra le tue mani e i ricavi con te.",
-      "I nostri servizi includono guide egiziotte professioniste, veicoli privati con aria condizionata, disposte di hotel e crociere sul Nilo, e supporto in loco durante tutta la permanenza. Ogni viaggio viene coordinato come un piano connesso, con un contatto dedicato sempre raggiungibile quando i dettagli cambiano.",
+      "Kemerya Tours è stata fondata per portare una prospettiva del Cairo al lato egiziano del viaggio privato. Il nostro team opera da Il Cairo e copre le destinazioni principali d'Egitto — la valle del Nilo, le località costiere del Mar Rosso, le aree desertiche e i porti del Mediterraneo — coordinando i servizi che trasformano un itinerario in un programma di viaggio funzionale.",
+      "Coordiniamo l'intera gamma di servizi di viaggio in Egitto, dalle guide egiziotte professioniste e ai veicoli privati con aria condizionata alle prenotazioni di hotel e crociere sul Nilo, alle escursioni nel deserto, all'immersione subacquea e allo snorkeling nel Mar Rosso, alle esperienze portuali. Ogni servizio è organizzato come parte di un piano connesso, con un membro del team designato che segue il programma dal primo briefing fino al viaggio.",
+      "Lavoriamo esclusivamente per professionisti del viaggio — i nostri contratti sono con agenzie, operatori e consulenti, mai con viaggiatori finali. Questo significa che la relazione con il cliente rimane tra voi e i vostri clienti, mentre ci occupiamo solo dei servizi legati all'Egitto.",
     ],
     principles: [],
     cta: "DISCUTI UNA PARTNERSHIP",

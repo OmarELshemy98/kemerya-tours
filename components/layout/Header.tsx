@@ -76,8 +76,6 @@ export function Header({ locale, copy, ui }: HeaderProps) {
     { label: copy.whyPartner, href: `/${locale}/why-partner` },
     { label: copy.aboutUs, href: `/${locale}/about-us` },
     { label: copy.whoWeWorkWith, href: `/${locale}/who-we-work-with` },
-    { label: copy.workWithUs, href: `/${locale}/contact` },
-    { label: copy.faq, href: `/${locale}/faq` },
     ];
 
   const open = menuOpen ? "is-open" : "";

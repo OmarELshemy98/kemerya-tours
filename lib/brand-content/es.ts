@@ -42,17 +42,17 @@ export const es: BrandContent = {
   },
   aboutUs: {
     eyebrow: "SOBRE KEMERYA TOURS",
-    title: "UN EQUIPO CON BASE EN EL CAIRO QUE COORDINA EGIPTO PARA TUS VIAJEROS.",
-    subtitle: "Somos una DMC con sede en Egipto, desde el Cairo, que ofrece coordinación local a empresas de viajes en todo el país.",
+    title: "UN SOCIO DE VIAJE EGIPCIO DESDE EL CAIRO",
+    subtitle: "Una empresa de gestión de destino con sede en El Cairo, que atiende a socios de viaje B2B en toda Egipto.",
     intro:
-      "Kemerya Tours coordina el lado egipcio de los programas de viaje privados para agencias de viajes, operadores turísticos, asesores de viajes, DMCs y mayoristas. Desde el Cairo, gestionamos la parte práctica de los itinerarios egipcios — guías, transporte, alojamiento y logística — para que tu relación con el cliente permanezca intacta.",
+      "Kemerya Tours es una empresa de gestión de destino con sede en El Cairo, Egipto, que coordina los servicios del lado egipcio para programas de viaje privados. Gestionamos los detalles locales por ti mientras mantienes tu relación con el viajero.",
     paragraphs: [
-      "Nuestro equipo trabaja desde el Cairo y a través de Egipto día a día. Esto significa que las rutas, los horarios y el acceso que coordinamos reflejan cómo se mueve el país entre sus sitios — no un patrón sacado de una oficina distante.",
-      "Existimos para socios que necesitan un equipo local en el terreno. Trabajamos detrás de tu marca en cada interacción, manteniendo la comunicación con los viajeros en tus manos y los ingresos contigo.",
-      "Nuestros servicios incluyen guías egipciólogos profesionales, vehículos privados con aire acondicionado, reservas de hoteles y cruceros por el Nilo, y soporte en el lugar durante toda la estancia. Cada viaje se coordina como un plan conectado, con un contacto dedicado siempre disponible cuando cambian los detalles.",
+      "Kemerya Tours nació para aportar una perspectiva del Cairo al lado egipcio del viaje privado. Nuestro equipo opera desde El Cairo y trabaja en los destinos principales de Egipto — el valle del Nilo, los resorts del Mar Rojo, zonas desérticas y puertos del Mediterráneo — coordinando los servicios que convierten un itinerario en un programa de viaje funcional.",
+      "Coordinamos la gama completa de servicios de viaje en Egipto, desde guías egipciólogos profesionales y transporte privado con aire acondicionado hasta reservas de hoteles y cruceros por el Nilo, excursiones desérticas, buceo en el Mar Rojo y experiencias portuarias. Cada servicio se organiza como parte de un plan conectado, con un contacto dedicado que sigue el programa desde el primer briefing hasta el viaje.",
+      "Trabajamos exclusivamente para profesionales de viajes — nuestros contratos son con agencias, operadores y asesores, nunca con viajeros finales. Esto significa que la relación con el cliente se mantiene entre tú y tus clientes, mientras nos encargamos solo de los servicios del lado egipcio.",
     ],
     principles: [],
-    cta: "DISCUSIONAR UNA PARTNERSHIP",
+    cta: "DISCUSIÓN UNA ASOCIACIÓN",
   },
   whyKemerya: {
     title: "EL ENFOQUE KEMERYA",

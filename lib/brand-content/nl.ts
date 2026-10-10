@@ -42,17 +42,17 @@ export const nl: BrandContent = {
   },
   aboutUs: {
     eyebrow: "OVER KEMERYA TOURS",
-    title: "EEN CAIRO-GEBASISD TIMMER DAT EGYPTEN COÖRDINET VOOR UW REIZIGERS.",
-    subtitle: "Wij zijn een DMC met zetel in Egypte, gevestigd in Giza, en ondersteunen reispartners met lokale coördinatie in het hele land.",
+    title: "EEN REISPARTNER VOOR EGYPTEN IN GIZA",
+    subtitle: "Een destination management company gevestigd in Giza, voor B2B-reispartners in heel Egypte.",
     intro:
-      "Kemerya Tours coördineert de Egyptische kant van privaatreisprogramma's voor reisagenties, toeroperateerders, reisadviseurs, DMC's en grossiers. Vanuit Giza regelen we de praktische kant van Egyptische reisplannen — gidsen, transport, accommodatie en logistiek — zodat uw relatie met de klant onaangeroerd blijft.",
+      "Kemerya Tours is een destination management company gevestigd in Giza, Egypte, die de Egyptische kant van privereislprogramma's coördineren. Wij regelen de lokale arragementen voor u terwijl u uw relatie met de reiziger behoudt.",
     paragraphs: [
-      "Ons team werkt vanuit Giza en door heel Egypte elke dag. Dat betekent dat de routes, tijden en toegang die we coördineren hoe het land zich beweegt tussen zijn bezienswaardigheden — niet een sjabloon van een verre kantoor.",
-      "Wij bestaan voor partners die een lokaal team nodig hebben op de grond. We werken achter uw merk bij elke interactie, met de reizigerscommunicatie in uw handen en de opbrengsten bij u.",
-      "Onze dienstverleging omvat professionele Egyptologen als gidsen, particuliere airconditionede voertuigen, hotel- en Nileritetoeristiek en ondersteuning ter plekken gedurende de gehele verblijf. Elke reis wordt gecoördineerd als één verbonden plan, met een aangewezen contact dat bereikbaar blijft als details veranderen.",
+      "Kemerya Tours is opgericht om een perspectief vanuit het Cairo-omgewikte gebied naar de Egyptische kant van privaatreizen te brengen. Ons team werkt vanuit Giza en is actief in Egyptens belangrijkste bestemmingen — de Nilslei, Rode Zee-resorts, woestijngebieden en Middellandse Zeehavens — en coördineert de diensten die een reisprogramma levendig maken.",
+      "Wij coördineren de volledige reikwijdte van Egyptische reisdiensten, van professionele Egyptolooggidsen en privé airconditioning tot hotel- en Niltournee-reservaties, woestijnexcursies, duiken in de Rode Zee en haven-ervaringen. Elke regeling maakt onderdeel van één verbonden plan, met een aangewezen teamlid dat het programma volgt van eerste briefing tot vertrek.",
+      "Wij werken uitsluitend voor reisprofessionals — onze contracten zijn met agenties, toeristische exploitanten en reisadviseurs, nooit met eindreizigers. Dit betekent dat de klantrelatie tussen u en uw klanten blijft, terwijl wij ons beperken tot de Egyptische kant van de diensten.",
     ],
     principles: [],
-    cta: "SPreek EEN PARTNERSHIP",
+    cta: "SPREKEN OVER EEN PARTNERSHIP",
   },
   whyKemerya: {
     title: "DE KEMERYA-AANPAK",

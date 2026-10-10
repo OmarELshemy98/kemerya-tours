@@ -42,14 +42,14 @@ export const fr: BrandContent = {
   },
   aboutUs: {
     eyebrow: "À PROPOS DE KEMERYA TOURS",
-    title: "UNE ÉQUIPE BASÉE À LE CAIRE COORDONNANT L'ÉGYPTE POUR VOS VOYAGEURS.",
-    subtitle: "Nous sommes un DMC basé en Égypte, installé au Caire, au service des partenaires du voyage avec une coordination locale dans tout le pays.",
+    title: "UN PARTENAIRE VOYAGE POUR L'ÉGYPTE DE GIZA",
+    subtitle: "Une entreprise de gestion de destination basée au Caire, au service des partenaires B2B en Égypte.",
     intro:
-      "Kemerya Tours coordonne le côté égyptien des programmes de voyage privés pour les agences de voyage, les tour-opérateurs, les conseillers voyage, les DMC et les grossistes. Basés au Caire, nous gérons la partie opérationnelle des itinéraires égyptiens — guides, transport, hébergement et logistique — afin que votre relation client reste intacte.",
+      "Kemerya Tours est une entreprise de gestion de destination basée au Caire, en Égypte, qui coordonne les services côté-Égypte pour des programmes de voyage privés. Nous gérons les arrangements locaux pour vous, tandis que vous conservez votre relation avec le voyageur.",
     paragraphs: [
-      "Notre équipe travaille depuis Le Caire et à travers l'Égypte chaque jour. Cela signifie que les itinéraires, les horaires et les accès que nous coordonnons reflètent comment le pays se déplace entre ses sites — pas un modèle sorti d'un bureau distant.",
-      "Nous existons pour les partenaires qui ont besoin d'une équipe disponible localement. Nous travaillons derrière votre marque pour chaque interaction, en gardant la communication avec les voyageurs entre vos mains et le revenu à vous.",
-      "Nos services comprennent des guides égyptologues professionnels, des véhicules privés climatisés, des arrangements d'hôtels et de croisières sur le Nil, et un support local pendant toute la durée du séjour. Chaque voyage est coordonné comme un plan connecté, avec un contact dédié toujours joignable quand les détails changent.",
+      "Kemerya Tours a été créée pour apporter une perspective du Caire au côté-Égypte du voyage privé. Notre équipe opère depuis Le Caire et couvre les destinations principales d'Égypte — la vallée du Nil, les stations balnéaires de la Mer Rouge, les zones désertiques et les ports méditerranéens — en coordonnant les services qui transforment un itinéraire en programme de voyage fonctionnel.",
+      "Nous coordonnons l'ensemble des services de voyage en Égypte, des guides égyptologues professionnels et des véhicules privés climatisés aux réservations d'hôtels et de croisières sur le Nil, en passant par des excursions dans le désert, du plongeon dans la Mer Rouge et des expériences côtières. Chaque service est organisé dans le cadre d'un plan connecté, avec un membre d'équipe nommé qui suit le programme du premier briefing jusqu'au départ.",
+      "Nous travaillons exclusivement pour des professionnels du voyage — nos contrats sont avec des agences, des tour-opérateurs et des conseillers, jamais avec des voyageurs finaux. Cela signifie que la relation client reste entre vous et vos clients, tandis que nous nous chargeons que des services côté-Égypte.",
     ],
     principles: [],
     cta: "DISCUTER D'UN PARTENARIAT",

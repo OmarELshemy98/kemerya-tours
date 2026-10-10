@@ -42,17 +42,17 @@ export const de: BrandContent = {
   },
   aboutUs: {
     eyebrow: "ÜBER KEMERYA TOURS",
-    title: "EIN CAIRO-BASIERTER TEAM, DAS ÄGYPTEN FÜR IHRE REISENDE KOORDINIERT.",
-    subtitle: "Wir sind ein DMC mit Sitz in Ägypten, verwurzelt in Giza, und unterstützen Reisevertraute mit lokaler Koordination im ganzen Land.",
+    title: "EIN ÄGYPTEN-REISEPARTNER IN GIZA",
+    subtitle: "Eine Destination Management Company in Giza, die B2B-Reisepartner in Ägypten unterstützt.",
     intro:
-      "Kemerya Tours koordiniert die ägyptische Seite von Privatreiseprogrammen für Reiseagenturen, Touroperatoren, Reiseberater, DMCs und Großhandler. In Giza kümmern wir uns um die praktische Seite ägyptischer Itineraries — Guides, Transport, Unterkünfte und Logistik — damit Ihre Kundenbeziehung intakt bleibt.",
+      "Kemerya Tours ist eine Destination Management Company mit Sitz in Giza, Ägypten, die die ägyptische Seite von Privatreiseprogrammen koordiniert. Wir übernehmen die lokalen Arrangements für Sie, während Sie Ihre Beziehung zum Reisenden behalten.",
     paragraphs: [
-      "Unser Team arbeitet von Giza und quer durch Ägypten täglich. Das bedeutet, dass die Routen, Zeitpläne und Zugänge, die wir koordinieren, wie das Land wirklich zwischen seinen Sehenswürdigkeiten bewegt — nicht nach einem Template aus einem fernen Büro.",
-      "Wir existieren für Partner, die ein lokales Team auf dem Boden brauchen. Wir arbeiten hinter Ihrer Marke bei jeder Interaktion und halten die Reisendenkommunikation in Ihren Händen und das Einkommen bei Ihnen.",
-      "Unsere Dienstleistungen umfassen professionelle Ägyptologen als Guides, private Klimaanlagen, Hotel- und Nils-Cruise-Arrangements sowie lokalen Support während des gesamten Aufenthalts. Jede Reise wird als ein zusammenhängender Plan koordiniert, mit einem namhaften Kontakt, der erreichbar bleibt, wenn sich Details ändern.",
+      "Kemerya Tours wurde gegründet, um eine Perspektive vom Kairoer Umland für die ägyptische Seite des privaten Reisens mitzubringen. Unser Team operiert aus Giza und arbeitet in Ägyptens wichtigsten Zielen — dem Niltal, Rotmeer-Resorts, Wüstenregionen und Mittelmeerhäfen — und koordiniert die Dienstleistungen, die ein Reiseprogramm lebendig machen.",
+      "Wir koordinieren die volle Palette ägyptischer Reisedienstleistungen, von professionellen Ägyptologen als Guides und privaten Klimaanlagen über Hotel- und Nilkreuzfahrtreservierungen bis zu Wüstenexkursionen, Rotmeer-Tauchen und Hafen-Erlebnisse. Jede Anordnung ist Teil eines einzigen, verbundenen Plans mit einem benannten Teammitglied, der das Programm vom ersten Gespräch bis zum Abflug verfolgt.",
+      "Wir arbeiten ausschließlich für Reiseprofis — unsere Verträge sind mit Agenturen, Tour-Operatoren und Reisevermittlern, nie mit Endreisenden. Das bedeutet, dass die Kundenbeziehung bei Ihnen bleibt, während wir uns auf die ägyptische Seite der Dienstleistungen konzentrieren.",
     ],
     principles: [],
-    cta: "PARTNERSCHAFT BESPROCHEN",
+    cta: "PARTNERSHIP BESPROCHEN",
   },
   whyKemerya: {
     title: "DER KEMERYA-ANSATZ",
