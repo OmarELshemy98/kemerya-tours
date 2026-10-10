@@ -40,6 +40,20 @@ export const nl: BrandContent = {
     principles: [],
     cta: "",
   },
+  aboutUs: {
+    eyebrow: "OVER KEMERYA TOURS",
+    title: "EEN CAIRO-GEBASISD TIMMER DAT EGYPTEN COÖRDINET VOOR UW REIZIGERS.",
+    subtitle: "Wij zijn een DMC met zetel in Egypte, gevestigd in Giza, en ondersteunen reispartners met lokale coördinatie in het hele land.",
+    intro:
+      "Kemerya Tours coördineert de Egyptische kant van privaatreisprogramma's voor reisagenties, toeroperateerders, reisadviseurs, DMC's en grossiers. Vanuit Giza regelen we de praktische kant van Egyptische reisplannen — gidsen, transport, accommodatie en logistiek — zodat uw relatie met de klant onaangeroerd blijft.",
+    paragraphs: [
+      "Ons team werkt vanuit Giza en door heel Egypte elke dag. Dat betekent dat de routes, tijden en toegang die we coördineren hoe het land zich beweegt tussen zijn bezienswaardigheden — niet een sjabloon van een verre kantoor.",
+      "Wij bestaan voor partners die een lokaal team nodig hebben op de grond. We werken achter uw merk bij elke interactie, met de reizigerscommunicatie in uw handen en de opbrengsten bij u.",
+      "Onze dienstverleging omvat professionele Egyptologen als gidsen, particuliere airconditionede voertuigen, hotel- en Nileritetoeristiek en ondersteuning ter plekken gedurende de gehele verblijf. Elke reis wordt gecoördineerd als één verbonden plan, met een aangewezen contact dat bereikbaar blijft als details veranderen.",
+    ],
+    principles: [],
+    cta: "SPreek EEN PARTNERSHIP",
+  },
   whyKemerya: {
     title: "DE KEMERYA-AANPAK",
     items: [

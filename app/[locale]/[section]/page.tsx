@@ -11,6 +11,7 @@ import { CommercialConfidence } from "@/components/sections/CommercialConfidence
 import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
 import { ProgramCapabilities } from "@/components/sections/ProgramCapabilities";
+import { WhoKemerya } from "@/components/sections/WhoKemerya";
 import { WhyKemerya } from "@/components/sections/WhyKemerya";
 import { BrandPhilosophy } from "@/components/sections/BrandPhilosophy";
 import { WhyPartner } from "@/components/sections/WhyPartner";
@@ -60,8 +61,8 @@ function getSectionTitle(
       return copy.categories.title;
     case "why-partner":
       return copy.whyPartner.title;
-    case "about-us":
-      return copy.whyKemerya.title;
+        case "about-us":
+      return copy.aboutUs?.title ?? copy.whyKemerya.title;
     case "who-we-work-with":
       return copy.clientTypes.title;
     case "commercial-confidence":
@@ -101,7 +102,7 @@ export async function generateMetadata({
     capabilities: [copy.capabilities.title, copy.capabilities.intro],
     categories: [copy.categories.title, copy.categories.intro],
 "why-partner": [copy.whyPartner.title, copy.whyPartner.intro],
-    "about-us": [copy.whyKemerya.title, ""],
+        "about-us": [copy.aboutUs?.title ?? copy.whyKemerya.title, copy.aboutUs?.intro ?? ""],
     "who-we-work-with": [copy.clientTypes.title, copy.clientTypes.intro],
     "commercial-confidence": [
       copy.commercialConfidence.title,
@@ -214,10 +215,14 @@ export default async function LocaleSectionPage({
                   </>
       );
       break;
-    case "about-us":
+          case "about-us":
       content = (
         <>
-          <WhyKemerya copy={copy.whyKemerya} />
+          {copy.aboutUs ? (
+            <WhoKemerya copy={copy.aboutUs} ui={ui} />
+          ) : (
+            <WhyKemerya copy={copy.whyKemerya} />
+          )}
           <BrandPhilosophy copy={copy.brandPhilosophy} />
                   </>
       );

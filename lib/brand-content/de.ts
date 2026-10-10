@@ -40,6 +40,20 @@ export const de: BrandContent = {
     principles: [],
     cta: "",
   },
+  aboutUs: {
+    eyebrow: "ÜBER KEMERYA TOURS",
+    title: "EIN CAIRO-BASIERTER TEAM, DAS ÄGYPTEN FÜR IHRE REISENDE KOORDINIERT.",
+    subtitle: "Wir sind ein DMC mit Sitz in Ägypten, verwurzelt in Giza, und unterstützen Reisevertraute mit lokaler Koordination im ganzen Land.",
+    intro:
+      "Kemerya Tours koordiniert die ägyptische Seite von Privatreiseprogrammen für Reiseagenturen, Touroperatoren, Reiseberater, DMCs und Großhandler. In Giza kümmern wir uns um die praktische Seite ägyptischer Itineraries — Guides, Transport, Unterkünfte und Logistik — damit Ihre Kundenbeziehung intakt bleibt.",
+    paragraphs: [
+      "Unser Team arbeitet von Giza und quer durch Ägypten täglich. Das bedeutet, dass die Routen, Zeitpläne und Zugänge, die wir koordinieren, wie das Land wirklich zwischen seinen Sehenswürdigkeiten bewegt — nicht nach einem Template aus einem fernen Büro.",
+      "Wir existieren für Partner, die ein lokales Team auf dem Boden brauchen. Wir arbeiten hinter Ihrer Marke bei jeder Interaktion und halten die Reisendenkommunikation in Ihren Händen und das Einkommen bei Ihnen.",
+      "Unsere Dienstleistungen umfassen professionelle Ägyptologen als Guides, private Klimaanlagen, Hotel- und Nils-Cruise-Arrangements sowie lokalen Support während des gesamten Aufenthalts. Jede Reise wird als ein zusammenhängender Plan koordiniert, mit einem namhaften Kontakt, der erreichbar bleibt, wenn sich Details ändern.",
+    ],
+    principles: [],
+    cta: "PARTNERSCHAFT BESPROCHEN",
+  },
   whyKemerya: {
     title: "DER KEMERYA-ANSATZ",
     items: [

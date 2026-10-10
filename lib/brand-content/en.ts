@@ -37,8 +37,22 @@ export const en: BrandContent = {
       "From Giza we coordinate the services behind an itinerary: guides, transport, stays and logistics. Our role is to keep the Egyptian side of the plan practical and connected to the journey your client is taking.",
       "We arrange private and tailor-made travel across Egypt: professional Egyptologist guides, private air-conditioned vehicles, hotels, Nile experiences and support through the stay. You keep the client relationship. Our team takes responsibility for the Egyptian side of the trip.",
     ],
-    principles: [],
+        principles: [],
     cta: "",
+  },
+  aboutUs: {
+    eyebrow: "ABOUT KEMERYA TOURS",
+    title: "A CAIRO-BASED TEAM THAT COORDINATES EGYPT FOR YOUR TRAVELERS.",
+    subtitle: "We are an Egypt-based DMC rooted in Giza, serving travel partners with local coordination across the country.",
+    intro:
+      "Kemerya Tours coordinates the Egyptian side of private travel programs for travel agencies, tour operators, travel advisors, DMCs, and wholesalers. Based in Giza, we handle the practical side of Egyptian itineraries — guides, transport, stays, and logistics — so your client relationship stays intact.",
+    paragraphs: [
+      "Our team works from Giza and across Egypt daily. That means the routes, timing, and access we coordinate reflect how the country moves between its sites — not a template pulled from a distant office.",
+      "We exist for partners who need a Cairo-based team on the ground. We work behind your brand on every interaction, keeping traveler communication in your hands and the revenue with you.",
+      "Our services include professional Egyptologist guides, private air-conditioned vehicles, hotel and Nile experience arrangements, and on-site support throughout the stay. Each journey is coordinated as a single connected plan, with a named contact who stays reachable when details change.",
+    ],
+    principles: [],
+    cta: "DISCUSS A PARTNERSHIP",
   },
   whyKemerya: {
     title: "KEMERYA'S EGYPT APPROACH",

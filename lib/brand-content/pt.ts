@@ -40,6 +40,20 @@ export const pt: BrandContent = {
     principles: [],
     cta: "",
   },
+  aboutUs: {
+    eyebrow: "SOBRE KEMERYA TOURS",
+    title: "UMA EQUIPE BASEADA NO CAIRO QUE COORDUNA O EGITO PARA SEUS VIAJANTES.",
+    subtitle: "Somos uma DMC com sede no Egito, localizada no Cairo, atendendo parceiros de viagem com coordenação local em todo o país.",
+    intro:
+      "Kemerya Tours coordena o lado egípcio de programas de viagem privados para agências de viagem, operadoras de turismo, consultores de viagem, DMCs e atacadistas. A partir do Cairo, gerenciamos o aspecto prático das itinerâncias egípcias — guias, transporte, hospedagem e logística — para que sua relação com o cliente permaneça intacta.",
+    paragraphs: [
+      "Nossa equipe trabalha a partir do Cairo e por todo o Egito diariamente. Isso significa que as rotas, horários e acessos que coordenamos refletem como o país se move entre seus sítios — não um modelo de um escritório distante.",
+      "Existimos para parceiros que precisam de uma equipe local no local. Trabalhamos por trás da sua marca em cada interação, mantendo a comunicação com os viajantes em suas mãos e os recursos com você.",
+      "Nossos serviços incluem guias egípcios profissionais, veículos privados com ar condicionado, arranjos de hotéis e cruzeiros pelo Nilo, e suporte local durante toda a permanência. Cada viagem é coordenada como um plano conectado, com um contato dedicado sempre disponível quando os detalhes mudam.",
+    ],
+    principles: [],
+    cta: "DISCUZIR UMA PARTNERSHIP",
+  },
   whyKemerya: {
     title: "A ABORDAGEM KEMERYA",
     items: [

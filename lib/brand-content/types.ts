@@ -19,7 +19,7 @@ export type BrandContent = {
     statement: string;
     labels: readonly string[];
   };
-  whoKemerya: {
+    whoKemerya: {
     eyebrow: string;
     title: string;
     subtitle: string;
@@ -28,7 +28,16 @@ export type BrandContent = {
     principles: readonly string[];
     cta: string;
   };
-        whyKemerya: {
+  aboutUs?: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    intro: string;
+    paragraphs: readonly string[];
+    principles: readonly string[];
+    cta: string;
+  };
+  whyKemerya: {
     title: string;
     items: readonly { title: string; description: string }[];
   };
