@@ -1,4 +1,4 @@
-/* ── ARABIC TYPOGRAPHY & RTL EDITORIAL STYLING ─────────────────── */
+﻿/* ── ARABIC TYPOGRAPHY & RTL EDITORIAL STYLING ─────────────────── */
 /* Arabic must feel intentionally designed, not English forced into RTL.
    Uses Noto Sans Arabic (loaded in locale layout). */
 
@@ -1754,24 +1754,23 @@ body::before {
   .footer-grid { grid-template-columns: 1fr; text-align: center; }
 }
 .footer-brand { display: flex; flex-direction: column; gap: 0.75rem; }
-.footer-blurb { font-size: 0.85rem; line-height: 1.7; color: rgba(255, 255, 255, 0.76); margin: 0; }
-.footer-business-headline { font-size: 0.85rem; font-weight: 600; color: var(--color-ivory, #f2ead9); margin: 0; }
+.footer-blurb { font-size: 0.85rem; line-height: 1.7; color: rgba(38, 37, 37, 0.84); margin: 0; }
+.footer-business-headline { font-size: 0.85rem; font-weight: 600; color: rgba(38, 37, 37, 0.92); margin: 0; }
 .footer-nav h3, .footer-contact h3 {
-  font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 1rem; color: var(--color-ivory, #f2ead9);
-}
+  font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 1rem; color: rgba(38, 37, 37, 0.88); }
 .footer-nav__list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin: 0; padding: 0; }
-.footer-nav__list a { color: rgba(255, 255, 255, 0.72); text-decoration: none; font-size: 0.85rem; transition: color 0.25s ease, transform 0.25s ease; }
+.footer-nav__list a { color: rgba(38, 37, 37, 0.85); text-decoration: none; font-size: 0.85rem; transition: color 0.25s ease, transform 0.25s ease; }
 .footer-nav__list a:hover { color: var(--color-antique-gold, #c88f2f); transform: translateX(3px); }
 .footer-contact__details { display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.85rem; }
-.footer-contact__details span, .footer-contact__details a { color: rgba(255, 255, 255, 0.82); text-decoration: none; }
+.footer-contact__details span, .footer-contact__details a { color: rgba(38, 37, 37, 0.86); text-decoration: none; }
 .footer-bottom { display: flex; flex-direction: column; gap: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--soft-border, rgba(200, 143, 47, 0.18)); }
 .footer-social { display: flex; align-items: center; gap: 1rem; }
-.footer-social__label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.6); white-space: nowrap; }
-.footer-social__links { display: flex; gap: 0.75rem; color: rgba(255, 255, 255, 0.82); }
+.footer-social__label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(38, 37, 37, 0.65); white-space: nowrap; }
+.footer-social__links { display: flex; gap: 0.75rem; color: rgba(38, 37, 37, 0.8); }
 .footer-bottom__links { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
-.footer-bottom__link { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.65); text-decoration: none; }
-.footer-bottom__separator { color: rgba(255, 255, 255, 0.45); }
-.footer-credit { font-size: 0.75rem; color: rgba(255, 255, 255, 0.65); margin: 0; }
+.footer-bottom__link { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(38, 37, 37, 0.78); text-decoration: none; }
+.footer-bottom__separator { color: rgba(38, 37, 37, 0.45); }
+.footer-credit { font-size: 0.75rem; color: var(--color-antique-gold); margin: 0; }
 [dir="rtl"] .footer-grid { direction: rtl; }
 [dir="rtl"] .footer-nav__list a:hover { transform: translateX(-3px); }
 [dir="rtl"] .footer-bottom__links { flex-direction: row-reverse; justify-content: flex-end; }
