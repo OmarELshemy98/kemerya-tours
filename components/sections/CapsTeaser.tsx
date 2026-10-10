@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { business } from "@/data/business";
 import type { Capability } from "@/data/capabilities";
+import type { Locale } from "@/lib/i18n";
 
 type CapsTeaserProps = {
+  locale: Locale;
   copy: {
     eyebrow: string;
     title: string;
@@ -14,7 +15,7 @@ type CapsTeaserProps = {
   items: readonly Capability[];
 };
 
-export function CapsTeaser({ copy, items }: CapsTeaserProps) {
+export function CapsTeaser({ locale, copy, items }: CapsTeaserProps) {
   return (
     <Section id="capabilities-teaser" className="caps-teaser">
       <Container>
@@ -32,7 +33,7 @@ export function CapsTeaser({ copy, items }: CapsTeaserProps) {
               </span>
               <div>
                 <h3 className="caps-teaser__item-title">{item.title}</h3>
-                                {item.description && (
+                {item.description && (
                   <p className="section-intro" style={{ maxWidth: "38rem" }}>
                     {item.description}
                   </p>
@@ -43,7 +44,7 @@ export function CapsTeaser({ copy, items }: CapsTeaserProps) {
         </div>
 
         <div className="caps-teaser__cta">
-          <Button href={business.ctaUrl} variant="gold" aria-label={copy.cta}>
+          <Button href={`/${locale}/capabilities`} variant="gold" aria-label={copy.cta}>
             {copy.cta}
           </Button>
         </div>

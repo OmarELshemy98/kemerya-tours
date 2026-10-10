@@ -8,69 +8,69 @@ export const pt: BrandContent = {
   },
   hero: {
     eyebrow: "PARCERIAS DE VIAGENS B2B · EGITO",
-    title: ["O SEU PARCEIRO NO EGITO,", "PRESENTE NO DESTINO."],
+    title: ["O SEU PARCEIRO NO EGITO,", "COORDINAMOS AS SUAS VIAGENS PRIVADAS."],
     subtitle:
       "Para empresas de viagens que planeiam programas no Egito, a Kemerya reúne conhecimento local, coordenação prática e viagens personalizadas através de uma única equipe baseada no Egito.",
     primary: "SEJA PARCEIRO",
     secondary: "FALE COM A EQUIPA B2B",
-    note: "Com sede no Egito · Mais de 10 anos de experiência",
+    note: "Com sede no Cairo · O Cairo, Egito",
   },
-  trust: {
-    eyebrow: "UM OPERADOR LOCAL COM EXPERIÊNCIA COMPROVADA",
+    trust: {
+    eyebrow: "UM PARCEIRO DE CAIRO PARA COORDENAÇÃO NO EGITO",
     statement:
-      "Mais de uma década no Egito, com mais de 2.000 viajantes recebidos e uma classificação média de 4,9 nas avaliações.",
+      "Kemerya coordena a parte local dos programas de viagem privada para parceiros da nossa equipe no Cairo.",
     labels: [
-      "Anos no Egito",
-      "Viajantes recebidos",
-      "Classificação média nas avaliações",
+      "Com sede no Cairo",
+      "Viagens privadas",
+      "Contato dedicado",
       "Viagens personalizadas",
-      "Apoio no destino",
+      "Suporte durante a estadia",
     ],
   },
   whoKemerya: {
     eyebrow: "COM SEDE EM GIZÉ, EGITO",
     title: "CONHECEMOS O QUE O ITINERÁRIO NÃO MOSTRA.",
-    subtitle: "Os percursos, os horários e as pessoas no destino fazem a diferença.",
+    subtitle: "Os percursos, os horários e os detalhes locais fazem a diferença.",
     intro:
       "A Kemerya Tours é uma empresa de viagens sediada no Egito, que trabalha com agências, operadores turísticos e consultores de viagens que precisam de uma equipa local acessível.",
     paragraphs: [
       "Um programa pode parecer adequado no papel e ainda assim depender dos detalhes entre os seus pontos altos: a duração de um transfer, a melhor hora para uma visita e quem pode adaptar-se quando o dia muda. A partir de Gizé, coordenamos com as pessoas responsáveis por cada parte e acompanhamos esses aspetos práticos.",
-      "Organizamos viagens privadas e personalizadas em todo o Egito, coordenando guias profissionais especializados em egiptologia, veículos privados com ar condicionado, hotéis, experiências no Nilo e apoio no destino. A relação com o viajante continua a ser sua. A nossa equipa assume a responsabilidade pela parte egípcia da viagem.",
+      "Organizamos viagens privadas e personalizadas em todo o Egito, coordenando guias profissionais especializados em egiptologia, veículos privados com ar condicionado, hotéis, experiências no Nilo e apoio na coordenaão. A relação com o viajante continua a ser sua. A nossa equipa assume a responsabilidade pela parte egípcia da viagem.",
     ],
     principles: [],
     cta: "",
   },
   whyKemerya: {
-    title: "A ABORDAGEM KEMERA",
+    title: "A ABORDAGEM KEMERYA",
     items: [
       { title: "O LUGAR EM PRIMEIRO", description: "Estamos baseados em Giza e trabalhamos no Egito todos os dias, por isso rotas e horários refletem como o país realmente se move." },
       { title: "OS DETALHES QUE IMPORTAM", description: "O que importa não é a lista dos principais pontos turísticos, mas como a viagem chega lá e quem se adapta quando o dia muda." },
       { title: "SEU VIAJANTE, SUA RELAÇÃO", description: "Preparamos o lado egípcio do plano para que sua empresa permaneça próxima ao viajante." },
-      { title: "RESPONSABILIDADE NO TERRENO", description: "Permanecemos no terreno com o programa enquanto os viajantes estão no Egito, coordenamos na chegada e permanecemos disponíveis para ajustes." }
+      { title: "DISPONIBILIDADE DURANTE A ESTADIA", description: "Permanecemos em coordenaão com o programa enquanto os viajantes estão no Egito, coordenamos na chegada e permanecemos disponíveis para ajustes." }
     ],
   },
   brandStatement: {
     eyebrow: "COM SEDE EM GIZÉ, EGIPTO",
     title: "CONHECEMOS O QUE O ITINERÁRIO NÃO MOSTRA.",
-    subtitle: "As rotas, os horários e as pessoas no destino fazem a diferença.",
+    subtitle: "As rotas, os horários e as pessoas na coordenaão fazem a diferença.",
     intro:
       "A Kemerya Tours é uma empresa de viagens sediada no Egito, que trabalha com agências, operadores turísticos e consultores de viagens que precisam de uma equipa local acessível.",
     paragraphs: [
       "Um programa pode parecer adequado no papel e ainda assim depender dos detalhes entre os seus pontos altos: a duração de um transfer, a melhor hora para uma visita e quem pode adaptar-se quando o dia muda. A partir de Gizé, coordenamos com as pessoas responsáveis por cada parte e acompanhamos esses aspectos práticos.",
-      "Organizamos viagens privadas e personalizadas em todo o Egito, coordenando guias profissionais especializados em egiptologia, veículos privados com ar condicionado, hotéis, experiências no Nilo e apoio no destino. A relação com o viajante continua a ser sua. A nossa equipa assume a responsabilidade pela parte egípcia da viagem.",
+      "Organizamos viagens privadas e personalizadas em todo o Egito, coordenando guias profissionais especializados em egiptologia, veículos privados com ar condicionado, hotéis, experiências no Nilo e apoio na coordenaão. A relação com o viajante continua a ser sua. A nossa equipa assume a responsabilidade pela parte egípcia da viagem.",
     ],
     image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
     cta: "",
   },
   kemeryaApproach: {
     eyebrow: "Nossa metodologia",
-    title: "A ABORDAGEM KEMERA",
+    title: "A ABORDAGEM KEMERYA",
     intro: "Quatro princípios que moldam cada programa que coordenamos no Egito.",
     items: [
       { title: "O LUGAR EM PRIMEIRO", description: "Estamos baseados em Giza e trabalhamos no Egito todos os dias, por isso rotas e horários refletem como o país realmente se move." },
       { title: "OS DETALHES QUE IMPORTAM", description: "O que importa não é a lista dos principais pontos turísticos, mas como a viagem chega lá e quem se adapta quando o dia muda." },
       { title: "SEU VIAJANTE, SUA RELAÇÃO", description: "Preparamos o lado egípcio do plano para que sua empresa permaneça próxima ao viajante." },
-      { title: "RESPONSABILIDADE NO TERRENO", description: "Permanecemos no terreno com o programa enquanto os viajantes estão no Egito, coordenamos na chegada e permanecemos disponíveis para ajustes." }
+      { title: "DISPONIBILIDADE DURANTE A ESTADIA", description: "Permanecemos em coordenaão com o programa enquanto os viajantes estão no Egito, coordenamos na chegada e permanecemos disponíveis para ajustes." }
     ],
   },
   capTeaser: {
@@ -90,7 +90,7 @@ export const pt: BrandContent = {
         label: "VENDA EGIPTO",
         title: "Agências de viagens, operadores turísticos e consultores de viagens",
         description:
-          "Você mantém a relação com o cliente. Nós fornecemos a experiência no Egito: guias egítoras profissionais, veículos privados, experiências no Nilo e coordenação no destino. Cada programa foi concebido para ser vendido por você sem interrupções.",
+          "Você mantém a relação com o cliente. Nós fornecemos a experiência no Egito: guias egítoras profissionais, veículos privados, experiências no Nilo e coordenação na coordenaão. Cada programa foi concebido para ser vendido por você sem interrupções.",
         clients: ["Agências de viagens", "Operadores turísticos", "Consultores de viagens"],
         image: "/images/areas-we-support-cards/egypt-day-tours.webp",
       },
@@ -116,11 +116,11 @@ export const pt: BrandContent = {
     eyebrow: "PORQUE OS PARCEIROS ESCOLHEM KEMERYA",
     title: "UM PARCEIRO LOCAL, NÃO MAIS UMA PASSAGEM DE RESPONSABILIDADE.",
     intro:
-      "Um programa no Egito exige mais do que reservar serviços. Precisa de uma equipa que conheça o destino, os seus padrões e os detalhes que podem mudar no terreno.",
+      "Um programa no Egito exige mais do que reservar serviços. Precisa de uma equipa que conheça o destino, os seus padrões e os detalhes que podem mudar em coordenaão.",
     reasons: [
       { title: "Julgamento local antes de fixar o itinerário", description: "Estamos no Egito todos os dias. Rotas, horários e considerações práticas refletem como o país realmente se move, não apenas um modelo." },
       { title: "Seu viajante continua sendo seu viajante", description: "Coordenamos o lado egípcio da viagem enquanto você mantém a relação com o cliente e as receitas. Trabalhamos por trás da sua marca." },
-      { title: "Flexibilidade sem caos", description: "Os planos são adaptados às necessidades do viajante sem perder de vista o itinerário mais amplo. Alguém no terreno é acessível quando os detalhes mudam." },
+      { title: "Flexibilidade sem caos", description: "Os planos são adaptados às necessidades do viajante sem perder de vista o itinerário mais amplo. Alguém em coordenaão é acessível quando os detalhes mudam." },
     ],
   },
   brandPhilosophy: {
@@ -137,7 +137,7 @@ export const pt: BrandContent = {
     eyebrow: "PORQUÊ TRABALHAR COM A KEMERYA",
     title: "UM PARCEIRO LOCAL, NÃO MAIS UMA PASSAGEM DE RESPONSABILIDADE.",
     intro:
-      "Um programa no Egito exige mais do que reservar serviços. Precisa de uma equipa que conheça o destino, os seus padrões e os detalhes que podem mudar no terreno.",
+      "Um programa no Egito exige mais do que reservar serviços. Precisa de uma equipa que conheça o destino, os seus padrões e os detalhes que podem mudar em coordenaão.",
   },
   advantages: {
     eyebrow: "A VANTAGEM KEMERYA",
@@ -190,7 +190,7 @@ export const pt: BrandContent = {
   },
   conversion: {
     eyebrow: "O SEU PROGRAMA NO EGITO, COM UMA EQUIPA LOCAL",
-    title: ["CONHECE O SEU VIAJANTE.", "NÓS CONHECEMOS O EGITO NO TERRENO."],
+    title: ["CONHECE O SEU VIAJANTE.", "NÓS CONHECEMOS O EGITO NA COORDENAÇÃO."],
     description:
       "Envie-nos o pedido. Conversaremos sobre o percurso, os detalhes práticos e o tipo de apoio de que o seu cliente precisa ao longo da viagem.",
     primary: "SEJA PARCEIRO",
@@ -202,7 +202,7 @@ export const pt: BrandContent = {
     intro:
       "Um parceiro local no Egito oferece um julgamento que uma simples reserva não pode capturar: como um dia realmente flui, qual Localização se adapta ao ritmo de um viajante e a quem contactar quando o programa muda. Estas são as forças que sustentam os itinerários que coordenamos.",
     note:
-      "Mais de 10 anos coordenando programas no Egito, com mais de 2.000 viajantes atendidos e uma classificação média de 4,9.",
+      "Kemerya coordena a parte local dos programas de viagem privada para parceiros da nossa equipe no Cairo.",
   },
   commercialConfidence: {
     eyebrow: "O ASPECTO PRÁTICO DA PARceria",
@@ -219,7 +219,7 @@ export const pt: BrandContent = {
         "Programas podem ser moldados ao redor de seus viajantes, rota, timing e prioridades em vez de impor um itinerário fixo.",
       ],
       [
-        "Coordenação no terreno",
+        "Coordenação em coordenaão",
         "Transferências, guias, visitas, hospedagens e experiências precisam trabalhar juntas. Nosso papel é manter o lado egípcio conectado.",
       ],
       [
@@ -263,7 +263,7 @@ export const pt: BrandContent = {
       ["Podem apoiar viagens acessíveis?", "Sim. Opções de viagem em cadeira de rodas estão disponíveis onde apropriado, organizadas em torno das necessidades específicas de cada viajante."],
       ["Quem devo contatar sobre um programa no Egito?", "Sua consulta vai diretamente para a equipe Kemerya através dos contatos neste site."],
       ["Que informações devo incluir em minha primeira consulta?", "Compartilhe o tipo de empresa de viagens que você representa, seus viajantes, datas, destinos de interesse e o tipo de experiência que deseja oferecer."],
-      ["O que acontece após eu enviar meu brief?", "Revisamos o aspecto prático da viagem e esclarecemos o que deve funcionar no terreno, então construímos o lado egípcio em torno de seus requisitos."],
+      ["O que acontece após eu enviar meu brief?", "Revisamos o aspecto prático da viagem e esclarecemos o que deve funcionar em coordenaão, então construímos o lado egípcio em torno de seus requisitos."],
       ["Meus viajantes se tornam clientes da Kemerya?", "A relação com seu viajante permanece sua. O papel da Kemerya é apoiar e coordenar o lado egípcio da viagem enquanto você permanece a empresa com a qual seu viajante trabalha."],
       [
         "Trabalha com agências fora do Egito?",
@@ -328,7 +328,7 @@ export const pt: BrandContent = {
       {
         title: "A realidade da logística de viagens no Egito",
         excerpt:
-          "O que esperar no terreno: timing, transferências.",
+          "O que esperar em coordenaão: timing, transferências.",
         category: "Operações",
         readTime: "5 min de leitura",
         href: "/pt/knowledge/the-reality-of-travel-logistics-in-egypt",
@@ -368,22 +368,22 @@ export const pt: BrandContent = {
     ],
     clientTypes: [
       ["Agências de viagens", "A sua empresa conduz a venda e aconselha o viajante. Nós coordenamos os serviços no Egito de acordo com o padrão definido por si."],
-      ["Operadores turísticos", "Inclua o Egito num programa com uma equipa local responsável por coordenar guias, transporte e os detalhes no destino."],
+      ["Operadores turísticos", "Inclua o Egito num programa com uma equipa local responsável por coordenar guias, transporte e os detalhes na coordenaão."],
       ["Consultores de viagens", "Conte com um interlocutor local acessível para conversar sobre um pedido, responder a questões práticas e acompanhar a viagem."],
       ["Empresas de gestão de destinos", "Para empresas de gestão de destinos que expandem a atividade para o Egito, asseguramos a coordenação local dos serviços acordados em conjunto."],
-      ["Grossistas de viagens", "Integre o Egito numa carteira mais ampla, com detalhes claros do programa e um parceiro operacional no destino."],
+      ["Grossistas de viagens", "Integre o Egito numa carteira mais ampla, com detalhes claros do programa e um parceiro operacional na coordenaão."],
       ["Consultores de viagens de luxo", "Transforme as expectativas do cliente num percurso cuidado, com transporte privado e serviços locais coordenados com atenção."],
       ["Organizadores de viagens de grupo", "Coordene horários, transporte e visitas guiadas para o grupo, mantendo um itinerário viável para todos."],
-      ["Viagens empresariais e de incentivo", "Planeie programas no Egito para grupos empresariais com uma equipa local a coordenar os serviços no destino."],
+      ["Viagens empresariais e de incentivo", "Planeie programas no Egito para grupos empresariais com uma equipa local a coordenar os serviços na coordenaão."],
       ["Parceiros de cruzeiros e excursões em terra", "Aproveite o tempo disponível em terra, tendo em conta o horário do porto e o regresso ao navio."],
     ],
     whyPartner: [
       ["Conhecimento local antes de fechar o itinerário", "Converse sobre percursos, horários e viabilidade com pessoas que trabalham no Egito."],
       ["O viajante continua a ser seu cliente", "Coordenamos com a sua empresa e respeitamos a relação que construiu com o cliente."],
       ["Um programa pensado para cada pessoa", "Os interesses, o ritmo e as necessidades de acessibilidade orientam o plano, não um modelo fixo."],
-      ["Uma equipa local acessível", "Quando um detalhe muda no destino, tem um contacto no Egito."],
+      ["Uma equipa local acessível", "Quando um detalhe muda na coordenaão, tem um contacto no Egito."],
       ["Detalhes ligados, não reservas isoladas", "Visitas guiadas, transporte, estadias e passagens entre serviços são considerados como partes da mesma viagem."],
-      ["Apoio durante a viagem", "A nossa equipa no destino continua disponível para apoiar os serviços combinados durante a viagem."],
+      ["Apoio durante a viagem", "A nossa equipa na coordenaão continua disponível para apoiar os serviços combinados durante a viagem."],
     ],
     advantages: [
       ["Uma pessoa, não um número de reserva", "Fala com uma equipa local que conhece os serviços e pode conversar sobre o que requer atenção."],
@@ -396,7 +396,7 @@ export const pt: BrandContent = {
       ["Conte-nos sobre o viajante", "Partilhe os interesses, as datas, o ritmo e as necessidades práticas que já conhece."],
       ["Conversemos sobre os detalhes", "Falamos sobre percursos, horários, serviços e os padrões esperados pela sua empresa."],
       ["Desenhamos o programa em conjunto", "Preparamos um plano para o Egito com base no pedido e aperfeiçoamo-lo com a sua equipa."],
-      ["Coordenamos o Egito no destino", "A nossa equipa local organiza os serviços acordados e mantém-se disponível durante a viagem."],
+      ["Coordenamos o Egito na coordenaão", "A nossa equipa local organiza os serviços acordados e mantém-se disponível durante a viagem."],
     ],
     commercialCategories: [
       ["Excursões de um dia no Egito", "Programas urbanos, patrimoniais e privados de um dia, coordenados localmente para estadias curtas e extensões de itinerário.","Parceiros podem criar experiências de um dia no Cairo, Luxor, Assuã e Mar Vermelho sem um programa multi-dias completo."],

@@ -25,3 +25,85 @@
 @import "./styles/egyptian-svg-component-styles.css";
 @import "./styles/premium-refinements.css";
 @import "./styles/commercial-categories.css";
+
+/* Screen-reader-only utility: visually hidden but accessible to assistive tech */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Contact form error states */
+.b2b-contact__input--error,
+.b2b-contact__textarea--error {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 2px rgba(192, 57, 43, 0.2);
+}
+
+.b2b-contact__error {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #c0392b;
+}
+
+.b2b-contact__error--general {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #c0392b;
+}
+
+.b2b-contact__success {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.b2b-contact__success-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.b2b-contact__success-note {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.b2b-contact__optional {
+  opacity: 0.6;
+  font-size: 0.85em;
+}
+
+.b2b-contact__submitting {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.b2b-contact__spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .b2b-contact__spinner {
+    animation: none;
+  }
+}

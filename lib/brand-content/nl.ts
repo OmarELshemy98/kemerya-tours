@@ -8,69 +8,69 @@ export const nl: BrandContent = {
   },
   hero: {
     eyebrow: "B2B-REISSAMENWERKING · EGYPTE",
-    title: ["UW PARTNER IN EGYPTE,", "TER PLAATSE AANWEZIG."],
+        title: ["UW PARTNER IN EGYPTE,", "WE COÖRDINEREN UW PRIVÉREISEN."],
     subtitle:
       "Voor reisorganisaties die Egypte plannen: Kemerya combineert lokale expertise, praktische coördinatie en op maat gemaakte reizen in één Egyptisch team.",
     primary: "PARTNER WORDEN",
     secondary: "NEEM CONTACT OP MET ONS B2B-TEAM",
-    note: "Gevestigd in Egypte · Meer dan 10 jaar ervaring",
+    note: "In Giza · Cairo, Egypte",
   },
-  trust: {
-    eyebrow: "EEN LOKALE OPERATOR MET ERVARING",
+    trust: {
+    eyebrow: "EEN CAIRO PARTNER VOOR COÖRDINATIE IN EGYPTE",
     statement:
-      "Meer dan tien jaar actief in Egypte, met ruim 2.000 reizigers en een gemiddelde beoordelingsscore van 4,9.",
+      "Kemerya coördineert de lokale kant van prive-reisprogramma's voor partners van ons team in Giza.",
     labels: [
-      "Jaar in Egypte",
-      "Ontvangen reizigers",
-      "Gemiddelde beoordelingsscore",
+      "Gevestigd in Giza",
+      "Prive-reizen",
+      "Toegewijde contactpersoon",
       "Reizen op maat",
-      "Ondersteuning ter plaatse",
+      "Ondersteuning tijdens verblijf",
     ],
   },
   whoKemerya: {
     eyebrow: "GEVESTIGD IN GIZEH, EGYPTE",
     title: "WIJ KENNEN WAT HET REISSCHEMA NIET LAAT ZIEN.",
-    subtitle: "Routes, timing en mensen ter plaatse maken het verschil.",
+    subtitle: "Routes, timing en lokale details maken het verschil.",
     intro:
       "Kemerya Tours is een in Egypte gevestigd reisbedrijf dat samenwerkt met reisbureaus, touroperators en reisadviseurs die een bereikbaar lokaal team nodig hebben.",
     paragraphs: [
       "Een programma kan er op papier goed uitzien en toch afhangen van de details tussen de hoogtepunten: hoelang een transfer duurt, wanneer een bezoek het beste uitkomt en wie kan bijsturen als de dag anders loopt. Vanuit Gizeh stemmen we af met de mensen die elk onderdeel verzorgen en houden we die praktische details in het oog.",
-      "We organiseren privé- en maatwerkreizen door heel Egypte, met professionele egyptologengidsen, privévoertuigen met airconditioning, hotels, ervaringen op de Nijl en ondersteuning ter plaatse. De relatie met de reiziger blijft bij u. Ons team neemt de verantwoordelijkheid voor de Egyptische kant van de reis op zich.",
+      "We organiseren privé- en maatwerkreizen door heel Egypte, met professionele egyptologengidsen, privévoertuigen met airconditioning, hotels, ervaringen op de Nijl en ondersteuning in de coördinatie. De relatie met de reiziger blijft bij u. Ons team neemt de verantwoordelijkheid voor de Egyptische kant van de reis op zich.",
     ],
     principles: [],
     cta: "",
   },
   whyKemerya: {
-    title: "DE KEMERA-AANPAK",
+    title: "DE KEMERYA-AANPAK",
     items: [
       { title: "PLAATS EERST", description: "We zijn gevestigd in Giza en werken elke dag in Egypte, waardoor routes en tijden weerspiegelen hoe het land werkelijk beweegt." },
       { title: "DE DETAILS DIE TEGAAN", description: "Wat telt, is niet de bekende bezienswaardigheden maar hoe de reis daarheen komt en wie zich aanpast als de dag verandert." },
       { title: "JOUW REIZIGER, JOUW RELATIE", description: "We nemen het Egyptische deel van het plan op zodat jouw bedrijf dicht bij de reiziger blijft." },
-      { title: "VERANTWOORDELIJKHEID OP DE GROND", description: "We blijven terug op de grond met het programma terwijl reizigers in Egypte zijn, coördineren bij aankomst en blijven beschikbaar voor aanpassingen." }
+      { title: "BESCHIKBAARHEID TIJDENS HET VERBLIJF", description: "We blijven terug in Egypte met het programma terwijl reizigers in Egypte zijn, coördineren bij aankomst en blijven beschikbaar voor aanpassingen." }
     ],
   },
   brandStatement: {
     eyebrow: "GEVESTIGD IN GIZEH, EGYPTE",
     title: "WIJ KENNEN WAT HET REISSCHEMA NIET LAAT ZIEN.",
-    subtitle: "Routes, timing en mensen ter plaatse maken het verschil.",
+    subtitle: "Routes, timing en lokale details maken het verschil.",
     intro:
       "Kemerya Tours is een in Egypte gevestigd reisbedrijf dat samenwerkt met reisbureaus, touroperators en reisadviseurs die een bereikbaar lokaal team nodig hebben.",
     paragraphs: [
       "Een programma kan er op papier goed uitzien en toch afhangen van de details tussen de hoogtepunten: hoelang een transfer duurt, wanneer een bezoek het beste uitkomt en wie kan bijsturen als de dag anders loopt. Vanuit Gizeh stemmen we af met de mensen die elk onderdeel verzorgen en houden we die praktische details in het oog.",
-      "We organiseren privé- en maatwerkreizen door heel Egypte, met professionele egyptologengidsen, privévoertuigen met airconditioning, hotels, ervaringen op de Nijl en ondersteuning ter plaatse. De relatie met de reiziger blijft bij u. Ons team neemt de verantwoordelijkheid voor de Egyptische kant van de reis op zich.",
+      "We organiseren privé- en maatwerkreizen door heel Egypte, met professionele egyptologengidsen, privévoertuigen met airconditioning, hotels, ervaringen op de Nijl en ondersteuning in de coördinatie. De relatie met de reiziger blijft bij u. Ons team neemt de verantwoordelijkheid voor de Egyptische kant van de reis op zich.",
     ],
     image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
     cta: "",
   },
   kemeryaApproach: {
     eyebrow: "Onze aanpak",
-    title: "DE KEMERA-AANPAK",
+    title: "DE KEMERYA-AANPAK",
     intro: "Vier principes die elk programma in Egypte vormgeven.",
     items: [
       { title: "PLAATS EERST", description: "We zijn gevestigd in Giza en werken elke dag in Egypte, waardoor routes en tijden weerspiegelen hoe het land werkelijk beweegt." },
       { title: "DE DETAILS DIE TEGAAN", description: "Wat telt, is niet de bekende bezienswaardigheden maar hoe de reis daarheen komt en wie zich aanpast als de dag verandert." },
       { title: "JOUW REIZIGER, JOUW RELATIE", description: "We nemen het Egyptische deel van het plan op zodat jouw bedrijf dicht bij de reiziger blijft." },
-      { title: "VERANTWOORDELIJKHEID OP DE GROND", description: "We blijven terug op de grond met het programma terwijl reizigers in Egypte zijn, coördineren bij aankomst en blijven beschikbaar voor aanpassingen." }
+      { title: "BESCHIKBAARHEID TIJDENS HET VERBLIJF", description: "We blijven terug in Egypte met het programma terwijl reizigers in Egypte zijn, coördineren bij aankomst en blijven beschikbaar voor aanpassingen." }
     ],
   },
   capTeaser: {
@@ -90,7 +90,7 @@ export const nl: BrandContent = {
         label: "VERKOOP EGYPTEN",
         title: "Reisbureaus, touroperators en reisadviseurs",
         description:
-          "U houdt de klantrelatie. Wij leveren Egypte-kennis: professionele Egyptoloog-gidsen, privévoertuigen, Nijl-ervaringen en coördinatie ter plaatse. Elk programma is ontworpen om door u vlotte te verkopen.",
+          "U houdt de klantrelatie. Wij leveren Egypte-kennis: professionele Egyptoloog-gidsen, privévoertuigen, Nijl-ervaringen en coördinatie in de coördinatie. Elk programma is ontworpen om door u vlotte te verkopen.",
         clients: ["Reisbureaus", "Touroperators", "Reisadviseurs"],
         image: "/images/areas-we-support-cards/egypt-day-tours.webp",
       },
@@ -116,11 +116,11 @@ export const nl: BrandContent = {
     eyebrow: "WAAROM PARTNERS KEMERYA KIEZEN",
     title: "EEN LOCALE PARTNER, GEEN EXTRA DOORSCHUIFMOMENT.",
     intro:
-      "Een programma in Egypte vraagt om meer dan alleen diensten boeken. Het vraagt om een team dat de bestemming, uw normen en de veranderlijke details ter plaatse begrijpt.",
+      "Een programma in Egypte vraagt om meer dan alleen diensten boeken. Het vraagt om een team dat de bestemming, uw normen en de veranderlijke details in de coördinatie begrijpt.",
     reasons: [
       { title: "Lokaal gevoel voor de zaak, voordat het schema is vastliggen", description: "We zijn elke dag in Egypte. Routes, timing en praktische overwegingen spiegelen hoe het land echt beweegt, niet alleen een patroon." },
       { title: "Uw reiziger blijft uw reiziger", description: "We coördineren de Egyptische kant terwijl u de klantrelatie en inkomsten behoudt. Wij werken achter uw merk." },
-      { title: "Flexibiliteit zonder chaos", description: "Plannen passen zich aan reishulp aan zonder het bredere schema uit het oog te verliezen. Iemand ter plaatse is bereikbaar wanneer details veranderen." },
+      { title: "Flexibiliteit zonder chaos", description: "Plannen passen zich aan reishulp aan zonder het bredere schema uit het oog te verliezen. Iemand in de coördinatie is bereikbaar wanneer details veranderen." },
     ],
   },
   brandPhilosophy: {
@@ -137,7 +137,7 @@ export const nl: BrandContent = {
     eyebrow: "WAAROM SAMENWERKEN MET KEMERYA",
     title: "EEN LOKALE PARTNER, GEEN EXTRA DOORSCHUIFMOMENT.",
     intro:
-      "Een programma in Egypte vraagt om meer dan alleen diensten boeken. Het vraagt om een team dat de bestemming, uw normen en de veranderlijke details ter plaatse begrijpt.",
+      "Een programma in Egypte vraagt om meer dan alleen diensten boeken. Het vraagt om een team dat de bestemming, uw normen en de veranderlijke details in de coördinatie begrijpt.",
   },
   advantages: {
     eyebrow: "HET VOORDEEL VAN KEMERYA",
@@ -190,7 +190,7 @@ export const nl: BrandContent = {
   },
   conversion: {
     eyebrow: "UW PROGRAMMA IN EGYPTE, MET EEN LOKAAL TEAM",
-    title: ["U KENT UW REIZIGER.", "WIJ KENNEN EGYPTE TER PLAATSE."],
+    title: ["U KENT UW REIZIGER.", "WIJ KENNEN EGYPTE IN DE COÖRDINATIE."],
     description:
       "Leg uw briefing aan ons voor. We bespreken de route, de praktische details en de ondersteuning die uw klant onderweg nodig heeft.",
     primary: "PARTNER WORDEN",
@@ -202,7 +202,7 @@ export const nl: BrandContent = {
     intro:
       "Een lokale partner in Egypte biedt inzicht dat een simpele boeking niet kan vangen: hoe een dag werkelijk verloopt, welke locatie past bij de ritmes van een reiziger en wie men kan bereiken als het plan verandert. Dit zijn de sterke punten die de van ons gecoördineerde reisplannen ondersteunen.",
     note:
-      "Meer dan 10 jaar ervaring in het coördineren van Egyptische programma's, met meer dan 2.000 ontvangen reizigers en een gemiddelde beoordeling van 4,9.",
+      "Kemerya coördineert de lokale kant van prive-reisprogramma's voor partners van ons team in Giza.",
   },
   commercialConfidence: {
     eyebrow: "DE PRAKTISCHE KANT VAN SAMENWERKING",
@@ -219,7 +219,7 @@ export const nl: BrandContent = {
         "Programma's kunnen worden aangepast aan uw reizigers, route, timing en prioriteiten in plaats van een vast reisplan op te leggen.",
       ],
       [
-        "Coördinatie ter plaatse",
+        "Coördinatie in de coördinatie",
         "Transfertjes, gidsen, bezoeken, verblijven en ervaringen moeten samenwerken. Onze rol is om de Egyptische kant verbonden te houden.",
       ],
       [
@@ -263,7 +263,7 @@ export const nl: BrandContent = {
       ["Kunt u toegankelijke reizen ondersteunen?", "Ja. Toegankelijke reisopties zijn beschikbaar waar passend, afgestemd op de specifieke behoeften van elke reiziger."],
       ["Wie neem ik contact op over een Egypte-programma?", "Uw aanvraag gaat direct naar het Kemerya-team via de contactgegevens op deze site."],
       ["Welke informatie moet ik in mijn eerste aanvraag opnemen?", "Geef het type reisbedrijf dat u vertegenwoordigt, uw reizigers, data, interessante bestemmingen en het type ervaring dat u wilt aanbieden."],
-      ["Wat gebeurt er na dat ik mijn briefing heb verzonden?", "We bekijken de praktische kant van de reis en verduidelijken wat op de grond moet werken, daarna bouwen we de Egyptische kant rond uw eisen."],
+      ["Wat gebeurt er na dat ik mijn briefing heb verzonden?", "We bekijken de praktische kant van de reis en verduidelijken wat in Egypte moet werken, daarna bouwen we de Egyptische kant rond uw eisen."],
       ["Worden mijn reizigers klanten van Kemerya?", "Uw relatie met de reiziger blijft van u. De rol van Kemerya is om de Egyptische kant van de reis te ondersteunen en te coördineren terwijl u blijft de onderneming waarmee de reiziger werkt."],
       [
         "Werk je met reisbureaus buiten Egypte?",
@@ -286,7 +286,7 @@ export const nl: BrandContent = {
         "We werken met u samen om binnen praktische beperkingen aan te passen.",
       ],
       [
-        "Biedt u ondersteuning ter plaatse tijdens de reis?",
+        "Biedt u ondersteuning in de coördinatie tijdens de reis?",
         "Ja. Ons team blijft beschikbaar van aankomst tot vertrek.",
       ],
       [
@@ -328,7 +328,7 @@ export const nl: BrandContent = {
       {
         title: "De realiteit van reislogistiek",
         excerpt:
-          "Wat u op de grond kunt verwachten.",
+          "Wat u in Egypte kunt verwachten.",
         category: "Operaties",
         readTime: "5 min leestijd",
         href: "/nl/knowledge/the-reality-of-travel-logistics-in-egypt",
@@ -368,7 +368,7 @@ export const nl: BrandContent = {
     ],
     clientTypes: [
       ["Reisbureaus", "U verzorgt de verkoop en adviseert de reiziger. Wij coördineren de afspraken in Egypte volgens de norm die u heeft bepaald."],
-      ["Touroperators", "Voeg Egypte toe aan een programma met een lokaal team dat gidsen, vervoer en de praktische zaken ter plaatse coördineert."],
+      ["Touroperators", "Voeg Egypte toe aan een programma met een lokaal team dat gidsen, vervoer en de praktische zaken in de coördinatie coördineert."],
       ["Reisadviseurs", "Werk samen met een bereikbaar lokaal aanspreekpunt om een briefing te bespreken, praktische vragen te beantwoorden en betrokken te blijven bij de reis."],
       ["Destination management companies", "Voor DMC's die hun aanbod uitbreiden naar Egypte verzorgen we de lokale coördinatie van de diensten die we samen afspreken."],
       ["Reisgroothandels", "Neem Egypte op in een breder aanbod, met duidelijke programmagegevens en een uitvoerende partner op de bestemming."],
@@ -381,9 +381,9 @@ export const nl: BrandContent = {
       ["Lokale inzichten voordat het reisplan vastligt", "Bespreek routes, timing en wat haalbaar is met mensen die in Egypte werken."],
       ["Uw reiziger blijft uw reiziger", "We stemmen af met uw bedrijf en respecteren de klantrelatie die u heeft opgebouwd."],
       ["Een programma afgestemd op de reiziger", "Interesses, reistempo en toegankelijkheidsbehoeften bepalen het plan, niet een vast sjabloon."],
-      ["Een bereikbaar lokaal team", "Verandert er ter plaatse iets, dan heeft u een aanspreekpunt in Egypte."],
+      ["Een bereikbaar lokaal team", "Verandert er in de coördinatie iets, dan heeft u een aanspreekpunt in Egypte."],
       ["Samenhangende details, geen losse boekingen", "Gidsen, vervoer, verblijven en overdrachten worden beschouwd als onderdelen van dezelfde reis."],
-      ["Ondersteuning tijdens de reis", "Ons team ter plaatse blijft beschikbaar om de afspraken tijdens de reis te ondersteunen."],
+      ["Ondersteuning tijdens de reis", "Ons team in de coördinatie blijft beschikbaar om de afspraken tijdens de reis te ondersteunen."],
     ],
     advantages: [
       ["Een contactpersoon, geen boekingsnummer", "U spreekt met een lokaal team dat de afspraken kent en kan bespreken wat aandacht vraagt."],
@@ -396,7 +396,7 @@ export const nl: BrandContent = {
       ["Vertel ons over de reiziger", "Deel de interesses, data, het gewenste reistempo en de praktische behoeften die al bekend zijn."],
       ["Bespreek de details", "We bespreken routes, timing, diensten en de normen die uw bedrijf verwacht."],
       ["Werk samen het programma uit", "We maken op basis van de briefing een plan voor Egypte en verfijnen het met uw team."],
-      ["Wij coördineren Egypte ter plaatse", "Ons lokale team regelt de afgesproken diensten en blijft beschikbaar tijdens de reis."],
+      ["Wij coördineren Egypte in de coördinatie", "Ons lokale team regelt de afgesproken diensten en blijft beschikbaar tijdens de reis."],
     ],
     commercialCategories: [
       ["Dagtochten in Egypte", "Stads-, erfgoed- en privéprogramma's voor één dag, lokaal gecoördineerd voor korte verblijven en uitbreidingen van een reisplan.","Partners kunnen gefocuste dagervaringen creëren rondom Cairo, Luxor, Assuan en de Rode Zee zonder een compleet meerdagenprogramma."],

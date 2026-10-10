@@ -45,7 +45,7 @@ export function ConversionCTA({ copy }: ConversionCTAProps) {
           </Button>
           {copy.secondary ? (
             <Button
-              href={business.ctaUrl}
+            href={business.partnerCtaUrl}
               variant="secondary"
               aria-label={copy.secondary}
             >

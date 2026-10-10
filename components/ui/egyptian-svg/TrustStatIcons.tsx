@@ -6,11 +6,11 @@
  * icon maps 1:1 to a business metric so the badge still reads as a meaningful
  * "record" while dropping the literal number, per the Light Egyptian direction:
  *
- *   "10+"   → Obelisk       (enduring stone pillar = lasting Egypt presence)
- *   "2,000+"→ Papyrus scroll (rolled scroll = traveler itineraries served)
- *   "4.9"   → Eye of Horus   (Wedjat = vision, protection, wholeness of quality)
- *   "100%"  → Ankh           (key of life = bespoke, one-of-a-life journeys)
- *   "24/7"  → Sun disk       (Ra's eternal disc = always-on ground support)
+  *   "presence" → Obelisk       (enduring stone pillar = lasting Egypt presence)
+ *   "volume"   → Papyrus scroll (rolled scroll = traveler itineraries served)
+ *   "quality"  → Eye of Horus   (Wedjat = vision, protection, wholeness of quality)
+ *   "bespoke"  → Ankh           (key of life = bespoke, one-of-a-life journeys)
+ *   "availability" → Sun disk   (Ra's eternal disc = always-on ground support)
  *
  * Icons are decorative line art using `stroke="currentColor"`, so they inherit
  * the trust-bar's luxury gold accent (`color: var(--color-antique-gold)`) via the
@@ -147,11 +147,11 @@ function SunDiskIcon() {
 }
 
 const trustIconMap: Record<string, ReactElement> = {
-  "10+": <ObeliskIcon />,
-  "2,000+": <PapyrusIcon />,
-  "4.9": <EyeOfHorusIcon />,
-  "100%": <AnkhIcon />,
-  "24/7": <SunDiskIcon />,
+  "presence": <ObeliskIcon />,
+  "volume": <PapyrusIcon />,
+  "quality": <EyeOfHorusIcon />,
+  "bespoke": <AnkhIcon />,
+  "availability": <SunDiskIcon />,
 };
 
 /**

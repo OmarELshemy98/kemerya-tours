@@ -10,7 +10,7 @@ export const privacy: LegalPageContent = {
       blocks: [
         {
           type: "paragraph",
-          text: "Kemerya Tours è un'azienda turistica con sede in Egitto che fornisce servizi di viaggio locali e supporto sul posto per viaggiatori e aziende di viaggio internazionali."
+          text: "Kemerya Tours è un'azienda turistica con sede in Egitto che fornisce servizi di viaggio locali e supporto durante il soggiorno per viaggiatori e aziende di viaggio internazionali."
         },
         {
           type: "paragraph",

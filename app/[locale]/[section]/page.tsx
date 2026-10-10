@@ -48,6 +48,39 @@ function isSection(value: string): value is Section {
   return sections.includes(value as Section);
 }
 
+/** Returns the localized title for a given section, used for page H1 and metadata. */
+function getSectionTitle(
+  copy: ReturnType<typeof getPageCopy>,
+  section: Section,
+): string {
+  switch (section) {
+    case "capabilities":
+      return copy.capabilities.title;
+    case "categories":
+      return copy.categories.title;
+    case "why-partner":
+      return copy.whyPartner.title;
+    case "about-us":
+      return copy.whyKemerya.title;
+    case "who-we-work-with":
+      return copy.clientTypes.title;
+    case "commercial-confidence":
+      return copy.commercialConfidence.title;
+    case "program-capabilities":
+      return copy.programCapabilities.title;
+    case "credibility":
+      return copy.credibility.title;
+    case "faq":
+      return copy.faq.title;
+    case "knowledge":
+      return copy.knowledge.title;
+    case "contact":
+      return copy.contact.title;
+    default:
+      return "";
+  }
+}
+
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
     sections.map((section) => ({ locale, section })),
@@ -248,8 +281,11 @@ export default async function LocaleSectionPage({
       notFound();
   }
 
+    const sectionTitle = getSectionTitle(copy, section);
+
   return (
     <LocaleSiteShell locale={safeLocale} copy={copy} ui={ui}>
+      <h1 className="sr-only">{sectionTitle}</h1>
       {content}
     </LocaleSiteShell>
   );

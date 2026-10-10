@@ -34,7 +34,7 @@ export function LocalExpertise({ copy, ui }: LocalExpertiseProps) {
             </ul>
 
             <div style={{ marginTop: "2rem" }}>
-              <Button href={business.ctaUrl} external variant="dark" aria-label={ui.contactKemeryaTours}>
+              <Button href={business.partnerCtaUrl} external variant="dark" aria-label={ui.contactKemeryaTours}>
                 {copy.cta}
               </Button>
             </div>

@@ -2,7 +2,7 @@ import type { EgyptianSvgProps } from "./types";
 import { resolveSize } from "./types";
 
 /**
- * Seamless repeatable geometric border inspired by Egyptian
+  * Repeatable geometric border inspired by Egyptian
  * architectural patterning. Thin, orderly, suitable for section edges.
  * Uses CSS mask for clean tiling.
  */

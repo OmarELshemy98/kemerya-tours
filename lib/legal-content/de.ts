@@ -143,7 +143,7 @@ export const privacy: LegalPageContent = {
       blocks: [
         {
           type: "paragraph",
-          text: "Wir implementieren angemessene technische und organisatorische Maßnahmen, die zum Schutz der verarbeiteten Informationen geeignet sind, einschließlich sicheren Hostings, Zugriffskontrollen und Transportverschlüsselung. Es gibt jedoch keine Methode der Übertragung über das Internet oder elektronische Speicherung, die zu 100% sicher ist, und wir können keine absolute Sicherheit gewährleisten."
+          text: "Wir implementieren angemessene technische und organisatorische Maßnahmen, die zum Schutz der verarbeiteten Informationen geeignet sind, einschließlich sicheren Hostings, Zugriffskontrollen und Transportverschlüsselung. Es gibt jedoch keine Methode der Übertragung über das Internet oder elektronische Speicherung, die vollständig sicher ist, und wir können keine absolute Sicherheit gewährleisten."
         }
       ]
     },

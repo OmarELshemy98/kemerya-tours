@@ -15,6 +15,7 @@ import { WhoWeWorkWithEditorial } from "@/components/sections/WhoWeWorkWithEdito
 import { WhyPartner } from "@/components/sections/WhyPartner";
 import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { WhyPartnerTeaser } from "@/components/sections/WhyPartnerTeaser";
+import { ConversionCTA } from "@/components/sections/ConversionCTA";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
 import { getPageCopy } from "@/lib/brand-content";
 import { getCapabilities } from "@/data/capabilities";
@@ -140,7 +141,7 @@ export default async function LocalePage({
         )}
 
         {copy.capTeaser ? (
-          <CapsTeaser copy={copy.capTeaser} items={capabilitiesItems} />
+                    <CapsTeaser locale={safeLocale} copy={copy.capTeaser} items={capabilitiesItems} />
         ) : null}
 
         {copy.whoWeWorkWithGroups ? (
@@ -160,8 +161,9 @@ export default async function LocalePage({
             <WhyPartner copy={copy.whyPartner} items={whyPartnerItems} />
             <KemeryaAdvantage copy={copy.advantages} items={advantageItems} />
           </>
-        )}
+                )}
 
+        <ConversionCTA copy={copy.conversion} />
               </LocaleSiteShell>
     </>
   );

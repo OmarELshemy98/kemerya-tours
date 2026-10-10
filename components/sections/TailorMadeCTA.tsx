@@ -33,7 +33,7 @@ export function TailorMadeCTA({ copy, ui }: TailorMadeCTAProps) {
             </h2>
             <p>{copy.description}</p>
             <div className="cta-panel__actions">
-              <Button href={business.ctaUrl} external variant="primary" aria-label={ui.contactKemeryaTours}>
+              <Button href={business.partnerCtaUrl} external variant="primary" aria-label={ui.contactKemeryaTours}>
                 {copy.primary}
               </Button>
               <Button href="tel:+201275050450" variant="light">

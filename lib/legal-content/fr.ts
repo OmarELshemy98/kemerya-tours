@@ -10,7 +10,7 @@ export const privacy: LegalPageContent = {
       blocks: [
         {
           type: "paragraph",
-          text: "Kemerya Tours est une entreprise touristique basée en Égypte offrant des services de voyage locaux et un soutien sur place pour les voyageurs et les entreprises de voyage internationales."
+          text: "Kemerya Tours est une entreprise touristique basée en Égypte offrant des services de voyage locaux et un soutien durant le séjour pour les voyageurs et les entreprises de voyage internationales."
         },
         {
           type: "paragraph",

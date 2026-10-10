@@ -8,69 +8,69 @@ export const en: BrandContent = {
   },
   hero: {
     eyebrow: "B2B TRAVEL PARTNERSHIPS · EGYPT",
-    title: ["YOUR EGYPT PARTNER,", "ON THE GROUND."],
+        title: ["YOUR CAIRO-BASED EGYPT PARTNER.", "WE COORDINATE PRIVATE TRAVEL FOR YOUR CLIENTS."],
     subtitle:
-      "For travel companies planning Egypt, Kemerya brings local knowledge, practical coordination and tailor-made travel together through one Egypt-based team.",
+      "We give travel companies a Cairo-based team that coordinates the Egyptian side of private journeys, from first brief to arrival. You keep your client relationship and your revenue.",
     primary: "BECOME A PARTNER",
     secondary: "TALK TO OUR B2B TEAM",
-    note: "Egypt-based · 10+ years of experience",
+    note: "Based in Giza · Cairo, Egypt",
   },
   trust: {
-    eyebrow: "A LOCAL PARTNER, WITH A TRACK RECORD",
+    eyebrow: "A CAIRO PARTNER FOR EGYPT-BASED COORDINATION",
     statement:
-      "More than a decade in Egypt, with 2,000+ travelers served and a 4.9 average review rating.",
+      "Kemerya coordinates the Egyptian side of private travel programs for travel partners from our team in Giza.",
     labels: [
-      "Years in Egypt",
-      "Travelers welcomed",
-      "Average review rating",
+      "Based in Giza",
+      "Private journeys",
+      "Named contact",
       "Tailor-made trips",
-      "On-ground support",
+      "Support through the stay",
     ],
   },
   whoKemerya: {
     eyebrow: "BASED IN GIZA, EGYPT",
     title: "WE KNOW WHAT THE ITINERARY DOESN'T SHOW.",
-    subtitle: "Routes, timing and people on the ground matter. Kemerya gives travel companies a local team that can coordinate the Egyptian side of the journey while they remain close to their travelers.",
+    subtitle: "Routes, timing and local details shape how a program actually works.",
     intro:
-      "Kemerya Tours is an Egypt-based travel company working with agencies, tour operators and travel designers who need a local team they can reach.",
+      "Kemerya Tours coordinates the Egyptian side of private travel programs for agencies, tour operators and travel designers who need a Cairo-based team during the trip.",
     paragraphs: [
-      "A program can look right on paper and still depend on the details between its highlights: how long a transfer takes, when a visit works best, and who can adapt when the day shifts. From Giza, we coordinate with the people delivering each part and keep those practical details in view.",
-      "We arrange private and tailor-made travel across Egypt, coordinating professional Egyptologist guides, private air-conditioned vehicles, hotels, Nile experiences and support on the ground. You keep the traveler relationship. Our team takes responsibility for the Egyptian side of the trip.",
+      "From Giza we coordinate the services behind an itinerary: guides, transport, stays and logistics. Our role is to keep the Egyptian side of the plan practical and connected to the journey your client is taking.",
+      "We arrange private and tailor-made travel across Egypt: professional Egyptologist guides, private air-conditioned vehicles, hotels, Nile experiences and support through the stay. You keep the client relationship. Our team takes responsibility for the Egyptian side of the trip.",
     ],
     principles: [],
     cta: "",
   },
   whyKemerya: {
-    title: "THE KEMERA APPROACH",
+    title: "KEMERYA'S EGYPT APPROACH",
     items: [
-      { title: "PLACE FIRST", description: "We are based in Giza and work in Egypt every day, so routes and timing reflect how the country actually moves." },
-      { title: "DETAILS THAT MATTER", description: "What matters is not the headline sight but how the journey gets there, and who adapts when the day shifts." },
-      { title: "YOUR TRAVELER, YOUR RELATIONSHIP", description: "We carry the Egyptian side of the plan so your business stays close to the traveler." },
-      { title: "ACCOUNTABILITY ON THE GROUND", description: "We stay with the plan while travelers are in Egypt, coordinating on arrival and staying reachable for adjustments." }
+      { title: "BASED IN GIZA", description: "Our team works in Egypt daily. Routes, timing and access reflect how the country actually moves between its sites." },
+      { title: "THE EGYPT SIDE, COORDINATED", description: "We hold the local side of your brief: guides, transport, stays and logistics, so your own plan stays coherent with the practical situation in Egypt." },
+      { title: "YOUR PARTNER ROLE, PRESERVED", description: "We work behind your brand. The traveler relationship and the revenue stay with you." },
+      { title: "AVAILABLE THROUGH THE STAY", description: "A named contact in our Giza team stays reachable for the practical changes that come up while a program is under way." }
     ],
   },
   brandStatement: {
     eyebrow: "BASED IN GIZA, EGYPT",
-    title: "WE KNOW WHAT THE ITINERARY DOESN'T SHOW.",
-    subtitle: "Routes, timing and people on the ground matter.",
+    title: "WHAT THE ITINERARY DOESN'T SHOW MATTERS.",
+    subtitle: "Routes, timing and local details shape how a program actually works.",
     intro:
-      "Kemerya Tours is an Egypt-based travel company working with agencies, tour operators and travel designers who need a local team they can reach.",
+      "Kemerya Tours coordinates the Egyptian side of private travel programs for agencies, tour operators and travel designers who need a Cairo-based team during the trip.",
     paragraphs: [
-      "A program can look right on paper and still depend on the details between its highlights: how long a transfer takes, when a visit works best, and who can adapt when the day shifts. From Giza, we coordinate with the people delivering each part and keep those practical details in view.",
-      "We arrange private and tailor-made travel across Egypt, coordinating professional Egyptologist guides, private air-conditioned vehicles, hotels, Nile experiences and support on the ground. You keep the traveler relationship. Our team takes responsibility for the Egyptian side of the trip.",
+      "From Giza we coordinate the services behind an itinerary: guides, transport, stays and logistics. Our role is to keep the Egyptian side of the plan practical and connected to the journey your client is taking.",
+      "We arrange private and tailor-made travel across Egypt: professional Egyptologist guides, private air-conditioned vehicles, hotels, Nile experiences and support through the stay. You keep the client relationship. Our team takes responsibility for the Egyptian side of the trip.",
     ],
     image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
     cta: "",
   },
   kemeryaApproach: {
-    eyebrow: "OUR APPROACH",
-    title: "THE KEMERA APPROACH",
-    intro: "Four principles that shape every program we coordinate in Egypt.",
+    eyebrow: "HOW WE WORK",
+    title: "KEMERYA'S APPROACH",
+    intro: "How we coordinate the Egyptian side of a private travel program for partners like you.",
     items: [
-      { title: "PLACE FIRST", description: "We are based in Giza and work in Egypt every day, so routes and timing reflect how the country actually moves." },
-      { title: "DETAILS THAT MATTER", description: "What matters is not the headline sight but how the journey gets there, and who adapts when the day shifts." },
-      { title: "YOUR TRAVELER, YOUR RELATIONSHIP", description: "We carry the Egyptian side of the plan so your business stays close to the traveler." },
-      { title: "ACCOUNTABILITY ON THE GROUND", description: "We stay with the plan while travelers are in Egypt, coordinating on arrival and staying reachable for adjustments." },
+      { title: "BASED IN GIZA", description: "We are in Egypt every day. Routes, timing and access reflect how the country moves between its sites." },
+      { title: "DETAILS CONNECTED", description: "Guides, transport, stays and hand-offs are coordinated as one plan, not a pile of separate bookings." },
+      { title: "YOUR PARTNER ROLE, PRESERVED", description: "We handle the Egyptian side so your own client relationship and revenue stay intact." },
+      { title: "AVAILABLE WHEN IT MATTERS", description: "A named contact in our team stays reachable while travelers are in Egypt, for the changes that come up." },
     ],
   },
   capTeaser: {
@@ -82,15 +82,15 @@ export const en: BrandContent = {
   },
   whoWeWorkWithGroups: {
     eyebrow: "WHO WE WORK WITH",
-    title: "THERE IS SOMEONE ON EGYPT'S SIDE.",
+    title: "EGYPT COORDINATION FOR TRAVEL BUSINESSES.",
     intro:
-      "Different travel businesses need different things from a local partner. We shape the working relationship around your travelers, your standards and how you sell.",
+      "We coordinate the Egyptian side of programs for agencies, operators, advisors, DMCs, wholesalers, luxury designers and group and cruise partners. Each brief gets a named contact in Giza.",
     groups: [
       {
         label: "SELL EGYPT",
         title: "Travel agencies, tour operators and travel advisors",
         description:
-          "You bring the client relationship. We provide the Egypt expertise: Egyptologist guides, private vehicles, Nile experiences and on-ground coordination. Every program is designed to be sold by you seamlessly.",
+          "You bring the client relationship. We handle the Egypt side: Egyptologist guides, private vehicles, Nile experiences and destination coordination arranged to the standard your business sets.",
         clients: ["Travel Agencies", "Tour Operators", "Travel Advisors"],
         image: "/images/areas-we-support-cards/egypt-day-tours.webp",
       },
@@ -98,7 +98,7 @@ export const en: BrandContent = {
         label: "EXTEND YOUR DESTINATION",
         title: "DMCs, travel wholesalers and luxury travel designers",
         description:
-          "Add Egypt to your portfolio with a local partner that understands your standards and can coordinate the destination side of the journey. We work behind your brand while you own the client relationship.",
+          "Add Egypt to your portfolio with an operator that understands your standards and can coordinate the destination side of the journey. We work behind your brand while you own the client relationship.",
         clients: ["Destination Management Companies", "Travel Wholesalers", "Luxury Travel Designers"],
         image: "/images/areas-we-support-cards/egypt-travel-packages.webp",
       },
@@ -114,13 +114,13 @@ export const en: BrandContent = {
   },
   whyPartnerTeaser: {
     eyebrow: "WHY PARTNERS CHOOSE KEMERYA",
-    title: "A LOCAL PARTNER, NOT ANOTHER HAND-OFF.",
+    title: "AN EGYPT PROGRAM COORDINATED FROM CAIRO.",
     intro:
-      "An Egypt program asks for more than a supplier booking. It needs a team that understands the place, your standards and the details that change on the ground.",
+      "An Egypt program needs more than a booking. It needs a team that understands the place, your standards and the practical details that change during the journey.",
     reasons: [
-      { title: "Local judgment, before the itinerary is set", description: "We are in Egypt every day. Routes, timing and practical considerations reflect how the country actually moves, not a template." },
-      { title: "Your traveler stays your traveler", description: "We coordinate the Egypt side while you keep the client relationship and the revenue. We work behind your brand." },
-      { title: "Flexibility without chaos", description: "Plans adapt to traveler needs without losing sight of the broader itinerary. Someone on the ground stays reachable when details change." },
+      { title: "Local judgment, before the itinerary is set", description: "We are in Egypt every day, so routes, timing and access reflect how the country moves, not a template." },
+      { title: "Your partner role, preserved", description: "We coordinate the Egyptian side while you keep the client relationship and the revenue, working behind your brand." },
+      { title: "Plans that adapt without losing sight", description: "Plans adapt to traveler needs while keeping the broader itinerary coherent. A named contact stays reachable when details change." },
     ],
   },
   brandPhilosophy: {
@@ -129,21 +129,21 @@ export const en: BrandContent = {
   },
   clientTypes: {
     eyebrow: "WHO WE WORK WITH",
-    title: "BUILT AROUND THE WAY YOUR BUSINESS TRAVELS.",
+    title: "EGYPT COORDINATION FOR YOUR TRAVEL BUSINESS.",
     intro:
-      "Different travel businesses need different things from a local partner. We shape the working relationship around your travelers, your standards and how you sell.",
+      "Built for the way your business works: we handle the Egyptian side of each program from Giza, with a named contact for your brief.",
   },
   whyPartner: {
     eyebrow: "WHY WORK WITH KEMERYA",
-    title: "A LOCAL PARTNER, NOT ANOTHER HAND-OFF.",
+    title: "AN EGYPT PROGRAM, COORDINATED FROM GIZA.",
     intro:
-      "An Egypt program asks for more than a supplier booking. It needs a team that understands the place, your standards and the details that change on the ground.",
+      "An Egypt program asks for more than a booking. It needs a team that understands the place, your standards and the practical details that change during the journey.",
   },
   advantages: {
     eyebrow: "THE KEMERYA ADVANTAGE",
-    title: "THERE IS SOMEONE ON EGYPT'S SIDE.",
+    title: "EGYPT COORDINATION, BEHIND YOUR BRAND.",
     intro:
-      "There is a difference between placing bookings and taking responsibility for how a trip comes together. We stay close to the details that shape a traveler's time in Egypt.",
+      "Booking a guide is different from coordinating how a trip comes together. We keep the practical details in view so each traveler's time in Egypt is well arranged.",
   },
   capabilities: {
     eyebrow: "WHAT WE CAN HANDLE",
@@ -190,7 +190,7 @@ export const en: BrandContent = {
   },
   conversion: {
     eyebrow: "YOUR EGYPT PROGRAM, WITH A LOCAL TEAM",
-    title: ["YOU KNOW YOUR TRAVELER.", "WE KNOW EGYPT ON THE GROUND."],
+    title: ["YOU KNOW YOUR TRAVELER.", "WE COORDINATE EGYPT DURING THE STAY."],
     description:
       "Bring us the brief. We'll work through the route, the practical details and the support your travelers should have along the way.",
     primary: "BECOME A PARTNER",
@@ -200,9 +200,9 @@ export const en: BrandContent = {
     eyebrow: "BUILT FOR THE PEOPLE WHO SELL EGYPT",
     title: "WHY TRAVEL COMPANIES WORK WITH LOCAL OPERATORS",
     intro:
-      "A local partner in Egypt brings judgment that a booking cannot capture: how a day actually flows, which site suits a traveler's pace, and who to call when the plan shifts. These are the strengths that back the itineraries we coordinate.",
+      "Judgment from a team that works in Egypt every day is hard to put in a booking: how a day actually flows, which site suits a traveler's pace, and who to call when the plan shifts. These are the strengths that back the itineraries we coordinate.",
     note:
-      "10+ years coordinating Egypt programs, with 2,000+ travelers served and a 4.9 average review rating.",
+      "Kemerya coordinates the Egyptian side of private travel programs for partners from our team in Giza.",
   },
   commercialConfidence: {
     eyebrow: "THE PRACTICAL SIDE OF PARTNERSHIP",
@@ -219,16 +219,16 @@ export const en: BrandContent = {
         "Programs can be shaped around your travelers, route, timing and priorities rather than forcing a fixed itinerary.",
       ],
       [
-        "Coordination on the ground",
+        "Connected coordination",
         "Transfers, guides, visits, stays and experiences need to work together. Our role is to keep the Egyptian side connected.",
       ],
       [
-        "Flexibility when plans change",
-        "Travel does not always follow the original schedule. The value of a local partner is being able to respond when the day changes.",
+        "When plans change",
+        "Travel does not always follow the original schedule. The value of responding quickly from Egypt is what keeps a program moving.",
       ],
       [
         "Your relationship stays yours",
-        "You know your traveler. We handle the Egyptian side while you remain the trusted relationship on the other side.",
+        "You know your traveler. We handle the Egyptian side while you remain the relationship on the other side.",
       ],
     ],
   },
@@ -316,7 +316,7 @@ export const en: BrandContent = {
       ],
       [
         "What happens after I send my brief?",
-        "We review the practical side of the journey and clarify what needs to work on the ground, then build the Egypt side around your requirements.",
+        "We review the practical side of the journey and clarify what needs to work during the stay, then build the Egypt side around your requirements.",
       ],
       [
         "Do my travelers become Kemerya customers?",
@@ -343,7 +343,7 @@ export const en: BrandContent = {
         "We work with you to adjust within practical constraints. Our local team stays available during the journey.",
       ],
       [
-        "Do you provide on-ground support during the journey?",
+        "Do you provide support during the journey?",
         "Yes. Our team remains available from arrival to departure, coordinating any adjustments while travelers are in Egypt.",
       ],
       [
@@ -385,7 +385,7 @@ export const en: BrandContent = {
       {
         title: "The Reality of Travel Logistics in Egypt",
         excerpt:
-          "What to expect on the ground: timing, transfers, and how local knowledge makes or breaks an itinerary.",
+          "What to expect during the journey: timing, transfers, and how local knowledge makes or breaks an itinerary.",
         category: "Operations",
         readTime: "5 min read",
         href: "/en/knowledge/the-reality-of-travel-logistics-in-egypt",
@@ -401,7 +401,7 @@ export const en: BrandContent = {
       {
         title: "Group Coordination in Egypt: A Field Guide",
         excerpt:
-          "Managing large traveler groups across Egypt with practical advice on timing, transport, and on-ground support.",
+          "Managing large traveler groups across Egypt with practical advice on timing, transport, and support.",
         category: "Groups",
         readTime: "6 min read",
         href: "/en/knowledge/group-coordination-in-egypt",
@@ -414,46 +414,46 @@ export const en: BrandContent = {
   },
   datasets: {
     capabilities: [
-      ["Private and tailor-made journeys", "A route, pace and set of experiences shaped around the traveler, not a standard departure."],
-      ["Egyptologist-guided travel", "Professional Egyptologist guides bring context to historical sites and the stories around them."],
-      ["Nile cruises and stays", "Coordinate Nile cruise arrangements and hotels as part of a considered, multi-stop program."],
-      ["Shore excursions", "Plan the time ashore around the port call, the route and the traveler’s interests."],
-      ["Desert, Red Sea and Sinai", "Add desert excursions or Red Sea and Sinai stops to a broader Egypt itinerary."],
-      ["Groups, families and honeymoons", "Adjust the pace and practical arrangements to suit a group, a family or a couple travelling together."],
-      ["Private air-conditioned vehicles", "Arrange private ground transport to connect the itinerary and its stops."],
-      ["Accessible and multilingual support", "Plan wheelchair-accessible travel and multilingual assistance around each traveler’s needs."],
+      ["Private journeys", "Routes paced and routed to the traveler, arranged privately and not tied to a fixed departure."],
+      ["Egyptologist-guided travel", "Professional Egyptologist guides add context to historical sites, timed to the group’s pace."],
+      ["Nile cruises and stays", "Nile cruise and hotel legs arranged to sit within the wider Egypt itinerary."],
+      ["Shore excursions", "Time ashore planned around the port window, the route and the traveler’s interests."],
+      ["Desert, Red Sea and Sinai", "Desert, Red Sea and Sinai legs added to a broader Egypt program as private arrangements."],
+      ["Groups, families and honeymoons", "Pace and practical arrangements adjusted for a group, a family or a couple travelling together."],
+      ["Private air-conditioned vehicles", "Private ground transport connecting the itinerary stops, with driver-guide options."],
+      ["Accessible and multilingual support", "Wheelchair access and multilingual coordination arranged around each traveler’s needs."],
     ],
     clientTypes: [
-      ["Travel agencies", "You shape the sale and advise the traveler. We coordinate the Egypt arrangements to fit the standard you have set."],
-      ["Tour operators", "Add Egypt to a program with a local team responsible for guides, transport and the moving parts on the ground."],
-      ["Travel advisors", "Get a reachable local counterpart to discuss a brief, answer practical questions and keep you close to the trip."],
-      ["Destination management companies", "For DMCs extending into Egypt, we provide local coordination for the services agreed together."],
-      ["Travel wholesalers", "Build Egypt into a wider portfolio with clear program details and an operating partner in the destination."],
-      ["Luxury travel designers", "Translate a traveler’s expectations into a considered route, private transport and carefully coordinated local arrangements."],
+      ["Travel agencies", "You bring the client relationship and advise the traveler. We coordinate the Egypt arrangements to the standard your business sets."],
+      ["Tour operators", "Add Egypt to a program with a team coordinating guides, transport and the practical details of each leg."],
+      ["Travel advisors", "Get a named contact to discuss a brief, answer practical questions and keep you informed as the trip takes shape."],
+      ["Destination management companies", "For DMCs extending into Egypt, we provide destination coordination for the services agreed together."],
+      ["Travel wholesalers", "Build Egypt into a wider portfolio with clear program details and a coordinating team in the destination."],
+      ["Luxury travel designers", "Translate a traveler’s expectations into a practical route, private transport and carefully arranged local services."],
       ["Group travel organizers", "Coordinate timing, transport and guiding across the group while keeping the itinerary workable for everyone."],
-      ["Corporate and incentive travel", "Plan Egypt programs for company groups with a local team coordinating the destination arrangements."],
-      ["Cruise and shore-excursion partners", "Make the available time ashore count, with the port schedule and return transfer kept in view."],
+      ["Corporate and incentive travel", "Plan Egypt programs for company groups with a destination team coordinating each arrangement."],
+      ["Cruise and shore-excursion partners", "Make the time ashore count, around the port schedule and the return transfer."],
     ],
     whyPartner: [
-      ["Local judgment, before the itinerary is set", "Talk through routes, timing and what is practical with people who work in Egypt."],
-      ["Your traveler stays your traveler", "We coordinate with your business and respect the traveler relationship you have built."],
-      ["A program shaped around the person", "Interests, pace and access needs guide the plan; a fixed template does not."],
-      ["A local team you can reach", "When a detail changes on the ground, you have a point of contact in Egypt."],
-      ["Connected details, not isolated bookings", "Guiding, transport, stays and hand-offs are considered as parts of the same journey."],
-      ["Support while the journey is under way", "Our on-ground team remains available to support the arrangements during travel."],
+      ["Local judgment, before the itinerary is set", "We are in Egypt daily, so routes, timing and access reflect how the country moves."],
+      ["Your partner role, preserved", "We coordinate the Egyptian side while you keep the client relationship and the revenue."],
+      ["Interest-led planning", "Interests, pace and access needs guide the plan; a fixed template does not."],
+      ["A named contact you can reach", "When a detail changes, you have a point of contact in Egypt who can adjust the practical arrangements."],
+      ["Connected details, not isolated bookings", "Guiding, transport, stays and hand-offs are arranged as parts of the same journey."],
+      ["Support while the journey is under way", "Our Egypt team remains available to support the arrangements during travel."],
     ],
     advantages: [
-      ["A person, not a ticket number", "You speak with a local team that knows the arrangements and can discuss what needs attention."],
-      ["Judgment when the day changes", "Local context helps the team consider the next practical step when timing or conditions shift."],
+      ["A named contact, not a number", "You speak with the Egypt team that knows the arrangements and can discuss what needs attention."],
+      ["Judgment as conditions shift", "Local context helps the team take the next practical step when timing or conditions change."],
       ["Room to adapt, with coordination", "The plan can respond to a traveler's needs without losing sight of the broader itinerary."],
-      ["Care for the relationship you own", "We work behind your brand and keep communication with your traveler in your hands."],
+      ["Respect for the relationship you own", "We work behind your brand and keep communication about the traveler in your hands."],
       ["Responsibility beyond the booking", "Our role includes the coordination around the service, not simply passing on a confirmation."],
     ],
     partnershipSteps: [
       ["Tell us about the traveler", "Share the interests, dates, pace and practical needs you already know."],
       ["Talk through the details", "We discuss routes, timing, services and the standard your business expects."],
       ["Shape the program together", "We prepare an Egypt plan around the brief, then refine it with your team."],
-      ["We coordinate Egypt on the ground", "Our local team arranges the agreed services and stays available during the journey."],
+      ["We coordinate the Egypt side", "Our team arranges the agreed services and stays available during the journey."],
     ],
         commercialCategories: [
       ["Egypt Day Tours", "Focused day experiences across Egypt's cities and sites, coordinated locally for shorter stays and program extensions.", "Partners can build focused day experiences around Cairo, Luxor, Aswan and Red Sea destinations without requiring a full multi-day program."],

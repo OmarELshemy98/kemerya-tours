@@ -10,11 +10,13 @@ export const privacy: LegalPageContent = {
       blocks: [
         {
           type: "paragraph",
-          text: "Kemerya Tours is an Egypt-based tourism company providing local travel services and on-ground support for travelers and international travel businesses."
+          text: "Kemerya Tours is an Egypt-based tourism company providing local travel services and coordination for travelers and international travel businesses."
+
+
         },
         {
           type: "paragraph",
-          text: "Through our B2B services, we work with travel agencies, tour operators, travel advisors, DMCs, wholesalers, group organizers, and other travel professionals seeking a local partner in Egypt."
+          text: "Through our B2B services, we work with travel agencies, tour operators, travel advisors, DMCs, wholesalers, group organizers, and other travel professionals seeking a partner in Egypt."
         }
       ]
     },
@@ -143,7 +145,7 @@ export const privacy: LegalPageContent = {
       blocks: [
         {
           type: "paragraph",
-          text: "We implement reasonable technical and organizational measures appropriate for the nature of the information we process, including secure hosting, access controls, and encryption in transit. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security."
+          text: "We implement reasonable technical and organizational measures appropriate for the nature of the information we process, including secure hosting, access controls, and encryption in transit. However, no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee absolute security."
         }
       ]
     },

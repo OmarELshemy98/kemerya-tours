@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
+
 import type { Locale } from "@/lib/i18n";
 
 /** Site-wide Organization + WebSite structured data (JSON-LD) rendered in the
@@ -24,7 +25,6 @@ export function SiteSchema({ locale }: { locale: Locale }): ReactNode {
         },
         sameAs: socialLinks.map((link) => link.href),
         areaServed: "Egypt",
-        foundingDate: "2016",
       },
       {
         "@type": "WebSite",

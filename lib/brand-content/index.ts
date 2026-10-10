@@ -26,7 +26,7 @@ export const brandContent: Record<Locale, BrandContent> = {
 export function getPageCopy(locale: Locale) {
   const current = translations[locale];
   const brand = brandContent[locale];
-  const metricValues = ["10+", "2,000+", "4.9", "100%", "24/7"];
+    const metricValues = ["presence", "volume", "quality", "bespoke", "availability"];
 
   return {
     ...brand,
