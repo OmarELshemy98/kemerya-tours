@@ -23,6 +23,7 @@ export { ObeliskSilhouette } from "./ObeliskSilhouette";
 export { SandstoneReliefTexture, sandstoneReliefDataUri } from "./SandstoneReliefTexture";
 export { TempleColumnPair } from "./TempleColumnPair";
 export { LotusCornerOrnament } from "./LotusCornerOrnament";
+export { TrustStatIcon } from "./TrustStatIcons";
 
 // ── Type re-exports ──────────────────────────────────────────
 export type { EgyptianSvgProps } from "./types";

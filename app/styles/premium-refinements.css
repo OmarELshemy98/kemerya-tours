@@ -337,6 +337,15 @@
   color: var(--color-nile-deep);
 }
 
+.trust-item__icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0.85rem;
+  color: var(--color-antique-gold);
+}
+
+
 @media (max-width: 768px) {
   .trust-bar__inner {
     grid-template-columns: repeat(2, minmax(0, 1fr));
