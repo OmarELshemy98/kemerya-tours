@@ -3,7 +3,7 @@
 /* === Footer (compact) === */
 
 .site-footer {
-  padding: clamp(2rem, 4vw, 3rem) 0 1rem;
+    padding: clamp(1.2rem, 2.5vw, 1.8rem) 0 0.6rem;
   background: var(--footer-bg);
   border-top: 1px solid rgba(200, 143, 47, 0.18);
   color: rgba(255, 255, 255, 0.85);
@@ -133,9 +133,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 1.8rem;
+  padding-top: 1rem;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.6);
 }

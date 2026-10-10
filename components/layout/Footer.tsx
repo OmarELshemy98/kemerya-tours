@@ -46,8 +46,7 @@ type FooterProps = {
 };
 
 export function Footer({ locale, copy, ui, nav }: FooterProps) {
-  const currentYear = new Date().getFullYear();
-  const whatsappHref = `https://wa.me/${business.whatsapp}`;
+    const currentYear = new Date().getFullYear();
   const [ctaRef, ctaRevealed] = useRevealOnScroll<HTMLDivElement>();
 
   return (
@@ -100,16 +99,7 @@ export function Footer({ locale, copy, ui, nav }: FooterProps) {
             <address className="footer-contact__details">
               <span>{copy.business.address}</span>
               <a href={`tel:${business.tel}`}>{business.phone}</a>
-                            <a href={`mailto:${business.email}`}>{business.email}</a>
-              <a
-                href={whatsappHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={ui.whatsapp ?? "WhatsApp"}
-                className="footer-contact__whatsapp"
-              >
-                <SocialIcon name="WhatsApp" />
-              </a>
+              <a href={`mailto:${business.email}`}>{business.email}</a>
             </address>
           </div>
         </div>

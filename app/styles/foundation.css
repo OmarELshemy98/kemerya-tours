@@ -23,10 +23,11 @@
     --max-width: 1280px;
   --nav-height: 88px;
 
-  /* Nile-night theme (navbar + footer base) — tunable in one place */
-  --nav-bg: rgba(3, 45, 53, 0.85);
-  --nav-bg-solid: #032d35;
-  --footer-bg: #032d35;
+    /* Dark Egyptian theme — navbar + footer base (charcoal on the ivory page,
+     letting the antique-gold accents read crisp). Tunable in one place. */
+  --nav-bg: rgba(26, 25, 25, 0.9);
+  --nav-bg-solid: #1a1919;
+  --footer-bg: #1a1919;
 
   /* Pharaonic texture blend */
   --pharaonic-texture:

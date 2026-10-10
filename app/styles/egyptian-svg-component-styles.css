@@ -95,12 +95,36 @@
   z-index: 0;
   width: 32px;
   height: 32px;
-  opacity: 0.12;
+  opacity: 0.18;
   pointer-events: none;
-  color: var(--color-stone, #5d544f);
+  color: var(--color-antique-gold, #c88f2f);
 }
 
-/* BrandStatement image: subtle column capital accent */
+/* ── Ambient motion for Egyptian ornaments (motion-safe) ───────────────
+   Gentle idle movement on the previously-static ornaments so the page
+   breathes. Animation only touches transform/opacity (compositor-friendly)
+   and is disabled for users that request reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .footer__lotus-corner {
+    animation: floatCard 11s ease-in-out infinite;
+  }
+  .editorial-chapter__accent {
+    animation: floatCard 9s ease-in-out infinite;
+  }
+  .brand-statement__capital {
+    animation: floatCard 10s ease-in-out infinite;
+  }
+}
+
+/* Ambient float/idle motion for Egyptian ornaments.
+   Transform-only (compositor-friendly) so it never overrides the
+   base opacity or the mobile (max-width:720px) subtlety override. */
+@keyframes floatCard {
+  0%   { transform: translateY(0) scale(1) rotate(-0.4deg); }
+  50%  { transform: translateY(-7px) scale(1.03) rotate(0.4deg); }
+  100% { transform: translateY(0) scale(1) rotate(-0.4deg); }
+}
+
 .brand-statement__image {
   position: relative;
 }
