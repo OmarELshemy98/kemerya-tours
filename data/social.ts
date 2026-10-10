@@ -4,4 +4,5 @@ export const socialLinks = [
   { label: "YouTube", href: "https://www.youtube.com/@kemeryatours" },
   { label: "X", href: "https://x.com/kemeryatours" },
   { label: "TikTok", href: "https://www.tiktok.com/@kemeryatours" },
+  { label: "WhatsApp", href: "https://wa.me/201275050450" },
 ] as const;
