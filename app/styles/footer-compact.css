@@ -239,3 +239,73 @@
   height: auto;
   display: block;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   LIGHT EGYPTIAN LUXURY — footer text flipped dark-on-ivory.
+   (Charcoal was rejected: it hid the Kemerya logo wordmark which
+   uses gold/nile/charcoal fills.) `footer.site-footer` (0,1,1)
+   wins over any bare .site-footer (0,0,1) regardless of load order. */
+footer.site-footer {
+  color: rgba(38, 37, 37, 0.88);
+}
+
+.footer-brand .brand {
+  color: var(--color-obsidian);
+}
+
+.footer-brand .brand-logo {
+  filter: brightness(1.02) contrast(1.02) drop-shadow(0 2px 8px rgba(200, 143, 47, 0.12));
+}
+
+.footer-tagline {
+  color: rgba(38, 37, 37, 0.75);
+}
+
+.footer-nav h3,
+.footer-contact h3 {
+  color: var(--color-obsidian);
+}
+
+.footer-nav__list a,
+.footer-contact__details a,
+.footer-contact__details span {
+  color: rgba(38, 37, 37, 0.82);
+}
+
+.footer-nav__list a:hover,
+.footer-contact__details a:hover {
+  color: var(--color-antique-gold);
+}
+
+.footer-bottom {
+  color: rgba(38, 37, 37, 0.6);
+  border-top-color: rgba(200, 143, 47, 0.12);
+}
+
+.footer-bottom__links a {
+  color: rgba(38, 37, 37, 0.78);
+}
+
+.footer-bottom__links a:hover {
+  color: var(--color-antique-gold);
+}
+
+.social-link {
+  color: var(--color-obsidian);
+  border: 1px solid var(--soft-border-light);
+  background: rgba(200, 143, 47, 0.04);
+}
+
+.social-link:hover {
+  color: var(--color-antique-gold);
+  border-color: rgba(200, 143, 47, 0.32);
+  background: rgba(200, 143, 47, 0.06);
+}
+
+.footer-compact {
+  border-bottom-color: rgba(200, 143, 47, 0.12);
+}
+
+.footer-hieroglyphic {
+  opacity: 0.42;
+}

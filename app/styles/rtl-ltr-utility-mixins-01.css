@@ -403,3 +403,59 @@ h4 {
   flex-shrink: 0;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
+
+/* ─────────────────────────────────────────────────────────────
+   LIGHT EGYPTIAN LUXURY — header / nav / lang-switcher flipped
+   dark-on-ivory so the Kemerya logo (gold / nile / charcoal
+   fills) reads crisp. Appended overrides win via source order. */
+.site-header {
+  border-bottom-color: rgba(200, 143, 47, 0.12);
+}
+
+.nav-links a {
+  color: var(--color-obsidian);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--color-antique-gold);
+}
+
+.lang-trigger {
+  border: 1px solid rgba(200, 143, 47, 0.22);
+  background: rgba(200, 143, 47, 0.05);
+  color: var(--color-obsidian);
+}
+
+.lang-trigger:hover,
+.lang-trigger:focus-visible {
+  background: rgba(200, 143, 47, 0.08);
+  border-color: rgba(200, 143, 47, 0.42);
+}
+
+.lang-menu {
+  background: var(--color-white);
+  border-color: rgba(200, 143, 47, 0.18);
+  box-shadow: var(--shadow);
+}
+
+.lang-option {
+  color: var(--color-obsidian);
+  border: 1px solid transparent;
+}
+
+.lang-option:hover,
+.lang-option:focus-visible {
+  color: var(--color-obsidian);
+  border-color: rgba(200, 143, 47, 0.24);
+}
+
+.lang-option.is-active {
+  color: var(--color-obsidian);
+  background: rgba(200, 143, 47, 0.1);
+  border-color: rgba(200, 143, 47, 0.34);
+}
+
+.lang-option__flag {
+  box-shadow: 0 0 0 1px rgba(200, 143, 47, 0.18);
+}

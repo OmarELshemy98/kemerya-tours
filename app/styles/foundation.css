@@ -23,11 +23,11 @@
     --max-width: 1280px;
   --nav-height: 88px;
 
-    /* Dark Egyptian theme — navbar + footer base (charcoal on the ivory page,
-     letting the antique-gold accents read crisp). Tunable in one place. */
-  --nav-bg: rgba(26, 25, 25, 0.9);
-  --nav-bg-solid: #1a1919;
-  --footer-bg: #1a1919;
+      /* Light Egyptian luxury — warm-ivory navbar + footer base (lets the
+     gold / nile / charcoal logo read crisp). Tunable in one place. */
+  --nav-bg: rgba(242, 234, 217, 0.9); /* frosted warm ivory */
+  --nav-bg-solid: var(--color-white); /* clean scrolled base */
+  --footer-bg: var(--color-ivory); /* warm ivory */
 
   /* Pharaonic texture blend */
   --pharaonic-texture:

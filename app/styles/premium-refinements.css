@@ -1696,8 +1696,8 @@ body::before {
   border-top: 1px solid var(--soft-border, rgba(200, 143, 47, 0.18));
   padding: clamp(1.4rem, 4vw, 2.2rem) 0 0.8rem;
   font-size: 0.9rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.82);
+    line-height: 1.6;
+  color: rgba(38, 37, 37, 0.88);
   position: relative;
 }
 .footer-closing-cta {
@@ -1705,11 +1705,11 @@ body::before {
   margin: clamp(2rem, 4vw, 2.8rem) auto;
   padding: clamp(1.75rem, 3vw, 2.4rem);
   border-radius: 18px;
-  background: linear-gradient(135deg, var(--color-ivory), var(--color-limestone-warm));
-  border: 1px solid rgba(200, 143, 47, 0.22);
+    background: linear-gradient(135deg, var(--color-white), #f5ebe0);
+  border: 1px solid rgba(200, 143, 47, 0.4);
   box-shadow:
-    0 30px 80px rgba(5, 7, 7, 0.18),
-    0 0 0 1px rgba(200, 143, 47, 0.1) inset;
+    0 24px 48px rgba(200, 143, 47, 0.12),
+    0 0 0 1px rgba(200, 143, 47, 0.08) inset;
   max-width: 1180px;
   position: relative;
 }
