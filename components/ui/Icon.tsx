@@ -62,6 +62,9 @@ const iconPaths: Record<IconName, ReactNode> = {
   brand: (
     <path d="M6 10h12v2H6zm0 4h12v6a2 2 0 01-2 2H8a2 2 0 01-2-2z" />
   ),
+  compass: (
+    <path d="M12 2C8 2 5 5 5 9c0 4 5 9 7 11 2-2 7-7 7-11 0-4-3-7-7-7zm0 19c-1.76-2.33-5-7.33-5-9 0-3.31 2.69-6 6-6s6 2.69 6 6c0 1.67-3.24 6.67-5 9z" />
+  ),
 };
 
 export function Icon({ name }: { name: IconName }) {

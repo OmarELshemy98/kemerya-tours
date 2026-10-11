@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
-import { LegalPage } from "@/components/LegalPage";
+import { LegalLayout } from "@/components/LegalLayout";
 import { getPageCopy } from "@/lib/brand-content";
 import { getLegalPrivacy } from "@/data/legalPrivacy";
 import { locales, uiTranslations, type Locale } from "@/lib/i18n";
@@ -57,7 +57,7 @@ export default async function PrivacyPage({
 
   return (
     <LocaleSiteShell locale={safeLocale} copy={copy} ui={ui}>
-      <LegalPage locale={safeLocale} content={content} ui={ui} />
+      <LegalLayout locale={safeLocale} content={content} ui={ui} />
     </LocaleSiteShell>
   );
 }

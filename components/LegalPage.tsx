@@ -17,19 +17,29 @@ function getLegalHref(locale: string, target: LegalLinkTarget): string {
   return `/${locale}/${target}`;
 }
 
-export function LegalPage({ locale, content }: LegalPageProps) {
+export function LegalPage({ locale, content, ui }: LegalPageProps) {
+  const updatedDate = content.lastUpdated ?? business.legalLastUpdated;
+  const formattedDate = new Intl.DateTimeFormat(locale, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(new Date(updatedDate));
+
   return (
-    <article className="legal-page">
+    <article className="legal-page" id="legal-page-top">
       <header className="legal-header">
         <div className="legal-eyeliner">{content.eyeliner}</div>
         <h1 className="legal-title">{content.title}</h1>
         <p className="legal-intro">{content.intro}</p>
+        <p className="legal-last-updated">
+          {ui.lastUpdated}: <time dateTime={updatedDate}>{formattedDate}</time>
+        </p>
       </header>
 
       <div className="legal-sections">
         {content.sections.map((section, i) => (
-          <section key={i} className="legal-section">
-            <h2 className="legal-section__title">{section.title}</h2>
+          <section key={i} id={`section-${i}`} className="legal-section">
+            <h2 id={`section-${i}-anchor`} className="legal-section__title">{section.title}</h2>
             <div className="legal-section__body">
               {section.blocks.map((block, j) => {
                 if (block.type === "paragraph") {

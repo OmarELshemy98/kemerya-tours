@@ -62,6 +62,18 @@ export const commercialCategories: readonly CommercialCategory[] = [
   },
   {
     number: "03",
+    title: "Egypt Nile Cruise Tours",
+    description: "",
+    href: "https://www.kemeryatours.com/egypt-nile-cruise-tours",
+    image: "/images/areas-we-support-cards/nile-cruise.webp",
+    b2bBlurb: "",
+    subcategories: [
+      { label: "Dahabiya Nile Cruise", href: "https://www.kemeryatours.com/egypt-nile-cruise-tours#dahabiya" },
+      { label: "Luxor & Aswan Nile Cruise", href: "https://www.kemeryatours.com/egypt-nile-cruise-tours#luxor-aswan" },
+    ],
+  },
+  {
+    number: "04",
     title: "Egypt Shore Excursions",
     description: "",
     href: "https://www.kemeryatours.com/egypt-shore-excursions",
@@ -72,18 +84,6 @@ export const commercialCategories: readonly CommercialCategory[] = [
       { label: "Safaga Shore Excursions", href: "https://www.kemeryatours.com/egypt-shore-excursions#safaga" },
       { label: "Port Said Shore Excursions", href: "https://www.kemeryatours.com/egypt-shore-excursions#port-said" },
       { label: "Sokhna Excursions", href: "https://www.kemeryatours.com/egypt-shore-excursions#sokhna" },
-    ],
-  },
-  {
-    number: "04",
-    title: "Egypt Nile Cruise Tours",
-    description: "",
-    href: "https://www.kemeryatours.com/egypt-nile-cruise-tours",
-    image: "/images/areas-we-support-cards/nile-cruise.webp",
-    b2bBlurb: "",
-    subcategories: [
-      { label: "Dahabiya Nile Cruise", href: "https://www.kemeryatours.com/egypt-nile-cruise-tours#dahabiya" },
-      { label: "Luxor & Aswan Nile Cruise", href: "https://www.kemeryatours.com/egypt-nile-cruise-tours#luxor-aswan" },
     ],
   },
 ] as const;

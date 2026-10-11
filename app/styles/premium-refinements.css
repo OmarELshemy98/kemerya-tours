@@ -2574,6 +2574,14 @@ html:not(.js) .chapter-number__digit {
   margin-top: 1rem;
 }
 
+/* What Matters section */
+.what-matters .section__heading {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 /* What Matters — points grid */
 .points-grid {
   display: grid;
@@ -2730,6 +2738,10 @@ html:not(.js) .chapter-number__digit {
 }
 .related-link:hover {
   gap: 0.6rem;
+  color: var(--color-antique-gold);
+}
+
+.why-partner-cta .eyebrow {
   color: var(--color-antique-gold);
 }
 

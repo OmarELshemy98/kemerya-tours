@@ -17,12 +17,16 @@ type B2BContactFormProps = {
       email: string;
       company: string;
       role: string;
-      phone: string;
+      website: string;
+      program: string;
+      travelers: string;
+      dates: string;
       destination: string;
       message: string;
     };
     submit: string;
     note: string;
+    success: string;
   };
 };
 
@@ -35,7 +39,10 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
     email: "",
     company: "",
     role: "",
-    phone: "",
+    website: "",
+    program: "",
+    travelers: "",
+    dates: "",
     destination: "",
     message: "",
   });
@@ -50,6 +57,7 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
     else if (!EMAIL_REGEX.test(formData.email)) ne.email = "Please enter a valid email address.";
     if (!formData.company.trim()) ne.company = "Please enter your company name.";
     if (!formData.role.trim()) ne.role = "Please tell us your type of business.";
+    if (!formData.program.trim()) ne.program = "Please tell us which travel program you're interested in.";
     if (!formData.message.trim()) ne.message = "Please describe what you have in mind.";
     setErrors(ne);
     return Object.keys(ne).length === 0;
@@ -69,7 +77,7 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
     setStatus("submitting");
     const subject = encodeURIComponent(ui.partnershipInquirySubject);
     const body = encodeURIComponent(
-      `${copy.fields.name}: ${formData.name}\n${copy.fields.email}: ${formData.email}\n${copy.fields.company}: ${formData.company}\n${copy.fields.role}: ${formData.role}\n${copy.fields.phone}: ${formData.phone}\n${copy.fields.destination}: ${formData.destination}\n${ui.messageField}: ${formData.message}`,
+      `${copy.fields.name}: ${formData.name}\n${copy.fields.email}: ${formData.email}\n${copy.fields.company}: ${formData.company}\n${copy.fields.role}: ${formData.role}\n${copy.fields.website}: ${formData.website}\n${copy.fields.program}: ${formData.program}\n${copy.fields.travelers}: ${formData.travelers}\n${copy.fields.dates}: ${formData.dates}\n${copy.fields.destination}: ${formData.destination}\n${ui.messageField}: ${formData.message}`,
     );
     setSubmitted(true);
     setStatus("success");
@@ -87,10 +95,7 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
             <h1 className="split-lines">{copy.title}</h1>
           </div>
           <div className="b2b-contact__success" role="status" aria-live="polite">
-            <p className="b2b-contact__success-text">
-              Your inquiry has been prepared. Your email client should open next —
-              please review and send the message.
-            </p>
+            <p className="b2b-contact__success-text">{copy.success}</p>
             <p className="b2b-contact__success-note">{copy.note}</p>
           </div>
         </Container>
@@ -199,15 +204,64 @@ export function B2BContactForm({ copy, ui }: B2BContactFormProps) {
             </div>
 
             <div className="b2b-contact__field-group b2b-contact__full">
-              <label className="b2b-contact__label" htmlFor="phone">
-                {copy.fields.phone}
+              <label className="b2b-contact__label" htmlFor="website">
+                {copy.fields.website}
               </label>
               <input
-                id="phone"
-                type="tel"
+                id="website"
+                type="url"
                 className="b2b-contact__input"
-                value={formData.phone}
-                onChange={(e) => handleChange("phone", e.target.value)}
+                value={formData.website}
+                onChange={(e) => handleChange("website", e.target.value)}
+                placeholder="https://"
+              />
+            </div>
+
+            <div className="b2b-contact__field-group b2b-contact__full">
+              <label className="b2b-contact__label" htmlFor="program">
+                {copy.fields.program}
+              </label>
+              <input
+                id="program"
+                type="text"
+                className={`b2b-contact__input ${errors.program ? "b2b-contact__input--error" : ""}`}
+                value={formData.program}
+                aria-invalid={errors.program ? "true" : "false"}
+                aria-describedby={errors.program ? "program-error" : undefined}
+                onChange={(e) => handleChange("program", e.target.value)}
+                required
+              />
+              {errors.program && (
+                <span id="program-error" className="b2b-contact__error" role="alert">{errors.program}</span>
+              )}
+            </div>
+
+            <div className="b2b-contact__field-group">
+              <label className="b2b-contact__label" htmlFor="travelers">
+                {copy.fields.travelers}
+              </label>
+              <input
+                id="travelers"
+                type="number"
+                className="b2b-contact__input"
+                value={formData.travelers}
+                onChange={(e) => handleChange("travelers", e.target.value)}
+                min="1"
+                placeholder="e.g. 8"
+              />
+            </div>
+
+            <div className="b2b-contact__field-group">
+              <label className="b2b-contact__label" htmlFor="dates">
+                {copy.fields.dates}
+              </label>
+              <input
+                id="dates"
+                type="text"
+                className="b2b-contact__input"
+                value={formData.dates}
+                onChange={(e) => handleChange("dates", e.target.value)}
+                placeholder="e.g. March 2025"
               />
             </div>
 

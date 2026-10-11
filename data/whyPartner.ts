@@ -11,7 +11,8 @@ export type WhyPartnerIcon =
   | "client"
   | "globe"
   | "briefcase"
-  | "users";
+  | "users"
+  | "compass";
 
 export type WhyPartnerItem = {
   title: string;

@@ -5,7 +5,8 @@
   email: "kemeryatours@gmail.com",
   phone: "+20 127 505 0450",
   tel: "+201275050450",
-  whatsapp: "+201275050450",
+    whatsapp: "+201275050450",
   address: "250 Aboul Houl Street, Haram, Giza, Egypt",
+  legalLastUpdated: "2026-10-10",
 } as const;
 

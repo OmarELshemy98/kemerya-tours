@@ -264,7 +264,7 @@ export type BrandContent = {
     title: string;
     intro: string;
   };
-  contact: {
+    contact: {
     eyebrow: string;
     title: string;
     subtitle: string;
@@ -273,12 +273,16 @@ export type BrandContent = {
       email: string;
       company: string;
       role: string;
-      phone: string;
+      website: string;
+      program: string;
+      travelers: string;
+      dates: string;
       destination: string;
       message: string;
     };
     submit: string;
     note: string;
+    success: string;
   };
   conversion: {
     eyebrow: string;
@@ -389,9 +393,15 @@ export type LegalBlock =
   | { type: "list"; items: readonly string[] }
   | { type: "link"; prefix: string; label: string; target: LegalLinkTarget };
 
+export type LegalSubsection = {
+  title: string;
+  blocks: readonly LegalBlock[];
+};
+
 export type LegalSection = {
   title: string;
   blocks: readonly LegalBlock[];
+  subsections?: readonly LegalSubsection[];
 };
 
 export type LegalContactInfo = {
@@ -404,6 +414,7 @@ export type LegalPageContent = {
   eyeliner: string;
   title: string;
   intro: string;
+  lastUpdated?: string;
   sections: readonly LegalSection[];
   contact: LegalContactInfo;
 };

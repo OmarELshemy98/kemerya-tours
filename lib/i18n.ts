@@ -322,6 +322,10 @@ export type UiTranslations = {
   nileImageAlt: string;
   partnershipInquirySubject: string;
   viewAllFaq: string;
+  tableOfContents: string;
+  lastUpdated: string;
+  toggleTableOfContents: string;
+  backToTop: string;
 };
 
 export const uiTranslations: Record<Locale, UiTranslations> = {
@@ -350,7 +354,11 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Local guide sharing insights during an Egypt journey",
     nileImageAlt: "Cinematic view of Egypt and the Nile",
         partnershipInquirySubject: "Partnership Inquiry",
-    viewAllFaq: "VIEW ALL FAQ",
+        viewAllFaq: "VIEW ALL FAQ",
+    tableOfContents: "Table of Contents",
+    lastUpdated: "Last updated",
+    toggleTableOfContents: "Toggle table of contents",
+    backToTop: "Back to top",
   },
   ar: {
     skipToMainContent: "انتقل إلى المحتوى الرئيسي",
@@ -377,7 +385,11 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "مرشد محلي يشارك معارفه خلال رحلة في مصر",
     nileImageAlt: "مشهد سينمائي لمصر ونهر النيل",
     partnershipInquirySubject: "استفسار عن الشراكة",
-    viewAllFaq: "عرض جميع الأسئلة",
+        viewAllFaq: "عرض جميع الأسئلة",
+    tableOfContents: "فهرص المحتويات",
+    lastUpdated: "آخر تحديث",
+    toggleTableOfContents: "تبديل فهص المحتويات",
+    backToTop: "العودة للأعلى",
   },
   fr: {
     skipToMainContent: "Aller au contenu principal",
@@ -404,7 +416,11 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Un guide local partage ses connaissances pendant un voyage en Égypte",
     nileImageAlt: "Vue cinématographique de l’Égypte et du Nil",
     partnershipInquirySubject: "Demande de partenariat",
-    viewAllFaq: "VOIR TOUTES LES FAQ",
+        viewAllFaq: "VOIR TOUTES LES FAQ",
+    tableOfContents: "Table des matiÃ¨res",
+    lastUpdated: "DerniÃ¨re mise Ã  jour",
+    toggleTableOfContents: "Basculer la table des matiÃ¨res",
+    backToTop: "Retour en haut",
   },
   it: {
     skipToMainContent: "Vai al contenuto principale",
@@ -431,7 +447,11 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Una guida locale racconta l’Egitto durante il viaggio",
     nileImageAlt: "Veduta cinematografica dell’Egitto e del Nilo",
     partnershipInquirySubject: "Richiesta di partnership",
-    viewAllFaq: "VEDI TUTTE LE FAQ",
+        viewAllFaq: "VEDI TUTTE LE FAQ",
+    tableOfContents: "Indice",
+    lastUpdated: "Ultimo aggiornamento",
+    toggleTableOfContents: "Attiva/disattiva indice",
+    backToTop: "Torna su",
   },
   es: {
     skipToMainContent: "Ir al contenido principal",
@@ -458,7 +478,11 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Un guía local comparte sus conocimientos durante un viaje por Egipto",
     nileImageAlt: "Vista cinematográfica de Egipto y el Nilo",
     partnershipInquirySubject: "Consulta de colaboración",
-    viewAllFaq: "VER TODAS LAS FAQ",
+        viewAllFaq: "VER TODAS LAS FAQ",
+    tableOfContents: "Tabla de contenidos",
+    lastUpdated: "Ãšltima actualizaciÃ³n",
+    toggleTableOfContents: "Alternar tabla de contenidos",
+    backToTop: "Volver arriba",
   },
   de: {
     skipToMainContent: "Zum Hauptinhalt springen",
@@ -485,7 +509,11 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Ein lokaler Guide gibt Einblicke während einer Ägyptenreise",
     nileImageAlt: "Filmischer Blick auf Ägypten und den Nil",
     partnershipInquirySubject: "Partnerschaftsanfrage",
-    viewAllFaq: "ALLE FAQ ANSEHEN",
+        viewAllFaq: "ALLE FAQ ANSEHEN",
+    tableOfContents: "Inhaltsverzeichnis",
+    lastUpdated: "Zuletzt aktualisiert",
+    toggleTableOfContents: "Inhaltsverzeichnis ein-/ausblenden",
+    backToTop: "ZurÃ¼ck nach oben",
   },
   pt: {
     skipToMainContent: "Ir para o conteúdo principal",
@@ -512,7 +540,11 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Guia local partilha conhecimentos durante uma viagem pelo Egito",
     nileImageAlt: "Vista cinematográfica do Egito e do Nilo",
     partnershipInquirySubject: "Pedido de parceria",
-    viewAllFaq: "VER TODAS AS FAQ",
+        viewAllFaq: "VER TODAS AS FAQ",
+    tableOfContents: "Ãndice",
+    lastUpdated: "Ãšltima atualizaÃ§Ã£o",
+    toggleTableOfContents: "Alternar Ã­ndice",
+    backToTop: "Voltar ao inÃ­cio",
   },
   nl: {
     skipToMainContent: "Ga naar de hoofdinhoud",
@@ -539,7 +571,11 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "Een lokale gids deelt inzichten tijdens een reis door Egypte",
     nileImageAlt: "Sfeervol uitzicht op Egypte en de Nijl",
     partnershipInquirySubject: "Aanvraag voor samenwerking",
-    viewAllFaq: "ALLES FAQ BEKIJKEN",
+        viewAllFaq: "ALLES FAQ BEKIJKEN",
+    tableOfContents: "Inhoudsopgave",
+    lastUpdated: "Laatst bijgewerkt",
+    toggleTableOfContents: "Inhoudsopgave in-/uitschakelen",
+    backToTop: "Terug naar boven",
   },
   zh: {
     skipToMainContent: "跳转至主要内容",
@@ -566,7 +602,14 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     localGuideImageAlt: "当地导游在埃及旅途中分享见解",
     nileImageAlt: "埃及与尼罗河的电影般景致",
     partnershipInquirySubject: "合作咨询",
-    viewAllFaq: "查看所有常见问题",
+        viewAllFaq: "查看所有常见问题",
+    tableOfContents: "目录",
+    lastUpdated: "最后更新",
+    toggleTableOfContents: "切换目录",
+    backToTop: "返回顶部",
   },
 };
+
+
+
 

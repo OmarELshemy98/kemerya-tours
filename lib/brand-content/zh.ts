@@ -419,12 +419,16 @@ export const zh: BrandContent = {
       email: "工作邮箱",
       company: "公司",
       role: "旅游业务类型",
-      phone: "电话（选填）",
+      website: "公司网站（选填）",
+      program: "所需旅行项目",
+      travelers: "预估旅行人数（选填）",
+      dates: "预期出行日期（选填）",
       destination: "目的地或旅行需求（选填）",
       message: "关于行程或合作，您希望我们了解什么？",
     },
     submit: "发送需求",
     note: "您的咨询将直接发送给Kemerya团队。",
+    success: "感谢您联系Kemerya Tours。您的咨询已成功发送。我们的团队将审核详情并尽快回复您。",
   },
   conversion: {
     eyebrow: "您的埃及行程，由本地团队协助",
@@ -655,208 +659,528 @@ export const zh: BrandContent = {
       ["适合家庭节奏的埃及之旅", "私人行程构想，可根据同行者的年龄和兴趣灵活调整每天的安排。"],
     ],
   },
-  whyPartnerPage: {
-    seo: {
-      title: "Why Partner With Kemerya Tours | Egypt DMC",
-      description:
-        "Discover how Kemerya Tours works with travel agencies and tour operators to plan Egypt itineraries, discuss local arrangements and develop tailored travel programs.",
-      primaryKeyword: "Egypt DMC for travel agencies",
-      supportingKeywords: [
-        "Egypt local travel partner",
-        "Egypt tour supplier",
-        "B2B Egypt travel partner",
-      ],
-    },
-    hero: {
-      eyebrow: "PARTNER WITH EGYPT LOCALS",
-      title: ["A Local Egypt Partner Who", "Understands Your Business"],
-      subtitle:
-        "Choosing a travel partner in Egypt is about more than finding someone to arrange individual services. You need a working relationship built around your clients' requirements, your program objectives and the practical details that shape each journey.\nKemerya Tours works with international travel agencies, tour operators and travel advisors to discuss Egypt travel arrangements, from private itineraries to multi-day programs. We start by understanding the brief, identifying the arrangements required and discussing the options relevant to the trip.",
-      primary: "Discuss a Partnership",
-      secondary: "Explore Our Capabilities",
-      image: {
-        src: "/images/pages/why-partner-with-kemerya-tours/kemerya-tours-where-the-story-begins-pyramids-tour-main-image-card-min.webp",
-        alt: "Pyramids of Giza at sunrise, the starting point for Egypt travel programs",
-      },
-    },
-    whatMatters: {
-      title: "What Matters When Choosing an Egypt Travel Partner?",
-      intro:
-        "Every travel business has its own clients, expectations and way of working. The right local partner should understand those differences rather than treating every inquiry as the same itinerary.",
-      points: [
-        { title: "A Local Perspective on Egypt", description: "Planning a journey across Egypt means considering destinations, travel times, sightseeing schedules and the connections between different parts of the itinerary. Local knowledge helps inform these discussions and identify practical details that may need attention.", icon: "globe" },
-        { title: "Programs Shaped Around the Brief", description: "Your clients may have different interests, available travel dates, preferred experiences or special requirements. We discuss the proposed arrangements around those needs instead of assuming that one standard program will suit everyone.", icon: "puzzle" },
-        { title: "Clarity Before Confirmation", description: "It is important to understand what a proposed program includes, which details remain subject to availability and what still needs to be confirmed. Clear discussions help establish expectations before arrangements are finalized.", icon: "briefcase" },
-        { title: "A Range of Travel Experiences", description: "From private sightseeing and multi-day itineraries to Nile cruise programs and shore excursions, different services may be considered according to the requirements of the proposed journey.", icon: "compass" },
-      ],
-    },
-    designedFor: {
-      title: "Designed for the Way Travel Businesses Work",
-      intro:
-        "Different businesses need different things from a local partner. Our approach is shaped by the type of travel you arrange and the clients you serve.",
-      audiences: [
-        { title: "For travel agencies", description: "Discuss arrangements for individual clients, including private tours, transfers and wider Egypt itineraries.", icon: "users" },
-        { title: "For tour operators", description: "Explore destination programs and combinations of travel services that may fit your planned tours.", icon: "map" },
-        { title: "For independent travel advisors", description: "Develop a clearer outline for clients with specific interests, preferred travel styles or individual requirements.", icon: "briefcase" },
-        { title: "For cruise and group travel planners", description: "Discuss the route, schedule, group requirements and services relevant to the proposed program.", icon: "ship" },
-      ],
-      content:
-        "The scope of each inquiry depends on the specific requirements and the arrangements that can be confirmed.",
-    },
-    process: {
-      title: "A Clear Process From Inquiry to Itinerary",
-      intro:
-        "Every partnership begins with a clear conversation about what you need and how the program should work.",
-      steps: [
-        { number: "01", title: "Tell Us What You Need", description: "Share your travel dates, destinations, number of travelers, preferred experiences and any requirements that may affect the program." },
-        { number: "02", title: "Discuss the Options", description: "We can review the brief and discuss the services and itinerary details relevant to your request. Any missing information or important practical considerations can be identified at this stage." },
-        { number: "03", title: "Review the Proposal", description: "Consider the proposed route, services, pricing and details that require confirmation before proceeding." },
-        { number: "04", title: "Confirm the Arrangements", description: "Move forward based on the agreed scope, confirmed availability and applicable booking conditions." },
-      ],
-    },
-    supportingClient: {
-      title: "Supporting Your Client Experience",
-      content:
-        "Your clients' experience depends on the way the itinerary comes together, not simply on the number of places included. A realistic schedule, suitable travel arrangements and clear information all contribute to setting the right expectations.",
-      description:
-        "When discussing a program, we consider the details provided by the partner, including the purpose of the trip, preferred pace, destinations and relevant traveler requirements. The proposed arrangements can then be reviewed against those priorities.\nOur aim is to help you discuss a practical Egypt program with a clearer understanding of its scope, while keeping the client's needs at the center of the planning conversation.",
-    },
-    relationship: {
-      title: "Build a Working Relationship",
-      subtitle: "Around Your Requirements",
-      description:
-        "Whether you are arranging your first Egypt itinerary or exploring a potential relationship for future programs, the conversation can begin with one specific inquiry.",
-      ctaTitle: "Lets Discuss Your Egypt Partnership",
-      content:
-        "Tell us about your business, the travelers you serve and the kind of Egypt arrangements you are looking for. We can then discuss whether the requested services and proposed way of working are a suitable fit.\nAn initial outline is enough to start the conversation. The details can be reviewed together before a program is finalized.",
-      primary: "Contact Our Team",
-      secondary: "View Our Services",
-    },
-    relatedLinks: [
-      { text: "Explore Our Capabilities", href: "capabilities" },
-      { text: "About Kemerya Tours", href: "about-us" },
-      { text: "Who We Work With", href: "who-we-work-with" },
-    ],
-    cta: {
-      eyebrow: "BUILD YOUR EGYPT PARTNERSHIP",
-      title: ["Lets Discuss Your", "Egypt Partnership"],
-      description:
-        "Tell us about your business, the travelers you serve and the kind of Egypt arrangements you are looking for. We can then discuss whether the requested services and proposed way of working are a suitable fit.",
-      primary: "Contact Our Team",
-      secondary: "Explore Our Capabilities",
-    },
-  },
-  whyWeWorkWithPage: {
-    seo: {
-      title: "Who We Work With | Egypt DMC for Travel Businesses",
-      description:
-        "Explore how Kemerya Tours works with travel agencies, tour operators, travel advisors, group planners and cruise businesses arranging travel in Egypt.",
-      primaryKeyword: "Egypt travel partner for agencies",
-      supportingKeywords: [
-        "Egypt DMC for tour operators",
-        "Egypt travel partner for travel advisors",
-        "B2B Egypt travel services",
-        "Egypt shore excursion partner",
-      ],
-    },
-    hero: {
-      eyebrow: "B2B TRAVEL PARTNERSHIPS · EGYPT",
-      title: ["An Egypt Travel Partner for", "Different Types of Travel Businesses"],
-      subtitle: "Working with your business model from the start.",
-      intro:
-        "No two travel businesses serve exactly the same clients. Some arrange individual private holidays, others build scheduled group programs, and some specialize in luxury travel, cruise experiences or tailor-made journeys.\n\nKemerya Tours works with international travel businesses exploring travel arrangements in Egypt. We start with your business model, the travelers you serve and the type of program you want to develop, then discuss the services relevant to your request.\n\nWhether you have a specific itinerary in mind or are exploring a potential working relationship, the first step is a conversation about your requirements.",
-      primary: "Discuss Your Requirements",
-      secondary: "Explore Our Capabilities",
-      image: {
-        src: "/images/pages/who-work-with-kemerya-tours/Tour Operators and Groups.jpg",
-        alt: "Tour operators and group planners coordinating Egypt travel",
-      },
-    },
-    audiences: {
-      title: "Who We Work With",
-      intro: "Travel businesses bring different client profiles, itinerary structures and service expectations. We support each type of partner with services tailored to their working model.",
-      items: [
-        {
-          title: "Travel Agencies",
-          description:
-            "Travel agencies often need a local contact when arranging holidays for clients visiting Egypt. You may be planning a private sightseeing trip, coordinating transfers or putting together a multi-day itinerary across several destinations.\n\nWe can discuss the requested services, travel dates and itinerary details to help clarify the arrangements needed for your client's trip.",
-        },
-        {
-          title: "Tour Operators",
-          description:
-            "Tour operators developing Egypt programs may need to consider destination combinations, sightseeing schedules, transportation and the relationship between individual services.\n\nWhether you are exploring a new itinerary or reviewing arrangements for an existing program, we can discuss the proposed route, required services and practical details relevant to the brief.",
-        },
-        {
-          title: "Independent Travel Advisors",
-          description:
-            "Independent advisors often work with travelers who have specific interests, preferred travel styles or individual expectations. Their requests may require a more personal approach than a standard itinerary.\n\nWe can discuss tailor-made Egypt programs around the information you provide, including preferred destinations, available time, accommodation preferences and experiences the traveler would like to include.",
-        },
-        {
-          title: "Luxury Travel Designers",
-          description:
-            "Luxury travel planning depends on understanding what matters to the individual traveler, from the pace of the journey to accommodation preferences and the experiences selected along the way.\n\nIf you are developing a premium Egypt itinerary, we can discuss the requested level of service, proposed destinations and relevant arrangements, subject to availability and confirmation.",
-          image: {
-            src: "/images/pages/who-work-with-kemerya-tours/Luxury Travel.jpg",
-            alt: "Luxury Egypt itinerary planning",
-          },
-        },
-        {
-          title: "Group Travel Planners",
-          description:
-            "Group programs require attention to the number of travelers, itinerary timing, transportation requirements and the schedule of planned visits. The right arrangements also depend on the purpose of the trip and the group's interests.\n\nShare your expected group size, travel dates and proposed route so the requirements can be reviewed before the program is finalized.",
-        },
-        {
-          title: "Cruise and Shore Excursion Businesses",
-          description:
-            "Cruise-related travel comes with specific timing requirements. Shore excursions need to account for the port of call, time available ashore, transport and the destinations included in the proposed visit.\n\nWe can discuss the excursion requirements and itinerary options relevant to your port schedule and passengers' interests.",
-          image: {
-            src: "/images/pages/who-work-with-kemerya-tours/nile-cruise.jpg",
-            alt: "Nile cruise and shore excursion planning",
-          },
-        },
-      ],
-    },
-    differentRequirements: {
-      title: "Different Businesses, Different Requirements",
-      content:
-        "The way you arrange travel influences the kind of support you need. An agency handling one private booking may have different priorities from an operator planning several departures or an advisor developing an individual itinerary.\n\nThat is why we begin with the specific request rather than assuming that every partner needs the same services. The discussion can cover the proposed destinations, travel dates, number of travelers, preferred experiences and any requirements that may affect the itinerary.\n\nThe aim is to establish a clear understanding of the program before discussing the arrangements that may be suitable.",
-    },
-    inquiry: {
-      title: "What to Include in Your First Inquiry",
-      intro: "You do not need a fully finalized itinerary to start a conversation. A few practical details can help us understand what you are planning.",
-      items: [
-        "Your business: Tell us whether you are a travel agency, tour operator, advisor or another type of travel business.",
-        "The proposed trip: Share the destinations or type of experience you want to arrange.",
-        "Travel dates: Include confirmed dates or an approximate travel period.",
-        "Number of travelers: Provide an estimated group size or the number of guests.",
-        "Requested services: Mention tours, transfers, cruise arrangements, accommodation preferences or other services you would like to discuss.",
-        "Special requirements: Include relevant traveler needs or itinerary considerations at the outset.",
-      ],
-      closing:
-        "If some details are still open, share what you know so far. The remaining points can be discussed as the inquiry develops.",
-    },
-    practicalStartingPoint: {
-      title: "A Practical Starting Point for Working Together",
-      content: [
-        "A potential partnership begins with understanding whether the requested services and the way of working are a suitable fit.",
-        "Once we understand your business and the program you have in mind, we can discuss the relevant arrangements, identify details that need confirmation and review the proposed scope.",
-        "Any subsequent arrangements depend on the agreed services, availability, pricing and applicable booking conditions. This gives both sides a clearer basis for deciding how to proceed.",
-      ],
-    },
-    relatedLinks: [
-      { text: "Explore Our Capabilities", href: "capabilities" },
-      { text: "Why Partner With Kemerya", href: "why-partner" },
-      { text: "About Kemerya Tours", href: "about-us" },
-      { text: "Contact Our Team", href: "contact" },
-    ],
-    cta: {
-      eyebrow: "Planning Travel in Egypt for Your Clients?",
-      title: ["Planning Travel in Egypt", "for Your Clients?"],
-      description:
-        "Tell us a little about your business and the Egypt program you are exploring. Whether you have a specific booking to discuss or are considering future travel arrangements, we welcome an initial inquiry.",
-      primary: "Contact Our Team",
-      secondary: "View Our Services",
-    },
-  },
 
+
+    
+    whyPartnerPage: {
+
+      seo: {
+
+        title: "为什么选择 Kemerya Tours | 埃及 DMC",
+
+        description:
+
+          "发现 Kemerya Tours 如何与旅行社和旅游运营商合作，规划埃及之行，讨论当地安排，开发定制旅行方案。",
+
+        primaryKeyword: "埃及 DMC 适合旅行社",
+
+        supportingKeywords: [
+
+          "埃及本地旅行合伙伴",
+
+          "埃及旅游供应商",
+
+          "埃及 B2B 旅行合伙伴",
+
+        ],
+
+      },
+
+      hero: {
+
+        eyebrow: "与埃及当地人合作",
+
+        title: ["一位了解", "贵公司业务的埃及本地合伙伴"],
+
+        subtitle:
+
+          "选择埃及旅行合伙伴不仅仅是找到可以安排个人服务的人。您需要建立在贵客户的要求、贵项目目标和影响每趟旅行的实践细节基础上的合作关系。\nKemerya Tours 与国际旅行社、旅游运营商和独立旅行顾问合作，讨论埃及旅行安排，从私人行程到多日计划。我们首先通过理解简介，确定所需的安排，然后讨论与此行相关的选项。",
+
+        primary: "讨论合作伙伴关系",
+
+        secondary: "探索我们的能力",
+
+        image: {
+
+          src: "/images/pages/why-partner-with-kemerya-tours/kemerya-tours-where-the-story-begins-pyramids-tour-main-image-card-min.webp",
+
+          alt: "埃及吉萨金字塔在日出时分，埃及旅行计划的起点",
+
+        },
+
+      },
+
+      whatMatters: {
+
+        title: "选择埃及旅行合伙伴时，什么最重要？",
+
+        intro:
+
+          "每间旅行公司都有自己的客户、期望和工作方式。正确的本地合伙伴应该理解这些区别，而不是将每个询问都当作相同的行程。",
+
+        points: [
+
+          {
+
+            title: "对埃及的本地视角",
+
+            description:
+
+              "规划穿越埃及的旅程意味着需要考虑目的地、旅行时间、观光时间表以及行程各部分之间的联系。本地知识可以帮助我们在这些讨论中提供信息，并识别可能需要关注的实践细节。",
+
+            icon: "globe",
+
+          },
+
+          {
+
+            title: "根据简介制定的计划",
+
+            description:
+
+              "您的客户可能有不同的兴趣、可用的旅行日期、首选体验或特殊要求。我们会根据这些需求讨论拟定的安排，而不是假设一个标准方案适合所有人。",
+
+            icon: "puzzle",
+
+          },
+
+          {
+
+            title: "确认前的清晰度",
+
+            description:
+
+              "了解拟定方案包含什么内容，哪些细节仍有待可用性确认，以及什么还需要确认，这很重要。在最终确定安排之前，清晰的讨论有助于建立期望。",
+
+            icon: "briefcase",
+
+          },
+
+          {
+
+            title: "多样的旅行体验",
+
+            description:
+
+              "从私人观光和多日行程到尼罗河游轮计划和港口郊游，可以根据拟定旅行的要求考虑不同的服务。",
+
+            icon: "compass",
+
+          },
+
+        ],
+
+      },
+
+      designedFor: {
+
+        title: "适合旅行公司的工作方式",
+
+        intro:
+
+          "不同企业对本地合伙人有不同的需求。我们的做法取决于您安排的旅行类型和您服务的客户。",
+
+        audiences: [
+
+          {
+
+            title: "适合旅行社",
+
+            description:
+
+              "Discuss arrangements for individual clients, including private tours, transfers and wider Egypt itineraries.",
+
+            icon: "users",
+
+          },
+
+          {
+
+            title: "适合旅游运营商",
+
+            description:
+
+              "Explore destination programs and combinations of travel services that may fit your planned tours.",
+
+            icon: "map",
+
+          },
+
+          {
+
+            title: "适合独立旅行顾问",
+
+            description:
+
+              "Develop a clearer outline for clients with specific interests, preferred travel styles or individual requirements.",
+
+            icon: "briefcase",
+
+          },
+
+          {
+
+            title: "适合 cruise and group travel planners",
+
+            description:
+
+              "Discuta a rota, o cronograma, os requisitos do grupo e os serviços relevantes para o programa proposto.",
+
+            icon: "ship",
+
+          },
+
+        ],
+
+        content:
+
+          "每个询问的范围取决于具体要求和可以确认的安排。",
+
+      },
+
+      process: {
+
+        title: "从询问到行程的清晰流程",
+
+        intro:
+
+          "每次合作伙伴关系都是从一次清晰的对话开始的，了解您需要什么以及如何运作该计划。",
+
+        steps: [
+
+          {
+
+            number: "01",
+
+            title: "告诉我们您需要什么",
+
+            description:
+
+              "分享您的旅游日期、目的地、旅行人数、首选体验和可能影响计划的任何要求。",
+
+          },
+
+          {
+
+            number: "02",
+
+            title: "讨论选项",
+
+            description:
+
+              "We can review the brief and discuss the services and itinerary details relevant to your request. Any missing information or important practical considerations can be identified at this stage.",
+
+          },
+
+          {
+
+            number: "03",
+
+            title: "审查提案",
+
+            description:
+
+              "Consider the proposed route, services, pricing and details that require confirmation before proceeding.",
+
+          },
+
+          {
+
+            number: "04",
+
+            title: "确认安排",
+
+            description:
+
+              "Move forward based on the agreed scope, confirmed availability and applicable booking conditions.",
+
+          },
+
+        ],
+
+      },
+
+      supportingClient: {
+
+        title: "支持您的客户体验",
+
+        content:
+
+          "Your clients' experience depends on the way the itinerary comes together, not simply on the number of places included. A realistic schedule, suitable travel arrangements and clear information all contribute to setting the right expectations.",
+
+        description:
+
+          "When discussing a program, we consider the details provided by the partner, including the purpose of the trip, preferred pace, destinations and relevant traveler requirements. The proposed arrangements can then be reviewed against those priorities.\nOur aim is to help you discuss a practical Egypt program with a clearer understanding of its scope, while keeping the client's needs at the center of the planning conversation.",
+
+      },
+
+      relationship: {
+
+        title: "建立良好的合作关系",
+
+        subtitle: "围绕您的需求",
+
+        description:
+
+          "无论您是正在安排您的第一条埃及之旅行程，还是探索未来计划的潜在合作伙伴关系，对话都可以从一个具体的询问开始。",
+
+        ctaTitle: "让我们讨论您的埃及合作伙伴关系",
+
+        content:
+
+          "Tell us about your business, the travelers you serve and the kind of Egypt arrangements you are looking for. We can then discuss whether the requested services and proposed way of working are a suitable fit.\nAn initial outline is enough to start the conversation. The details can be reviewed together before a program is finalized.",
+
+        primary: "联系我们的团队",
+
+        secondary: "查看我们的服务",
+
+      },
+
+      relatedLinks: [
+
+        { text: "探索我们的能力", href: "capabilities" },
+
+        { text: "关于 Kemerya Tours", href: "about-us" },
+
+        { text: "我们与谁合作", href: "who-we-work-with" },
+
+      ],
+
+      cta: {
+
+        eyebrow: "建立您的埃及合作伙伴关系",
+
+        title: ["让我们讨论您的", "埃及合作伙伴关系"],
+
+        description:
+
+          "Tell us about your business, the travelers you serve and the kind of Egypt arrangements you are looking for. We can then discuss whether the requested services and proposed way of working are a suitable fit.",
+
+        primary: "联系我们的团队",
+
+        secondary: "探索我们的能力",
+
+      },
+
+    },
+
+  whyWeWorkWithPage: {
+
+    seo: {
+
+      title: "我们与谁合作 | 面向旅行公司的埃及 DMC",
+
+      description:
+
+        "探索 Kemerya Tours 如何与旅行社、旅游运营商、旅行顾问、团队规划者和邮轮公司合作，组织埃及之旅。",
+
+      primaryKeyword: "面向旅行社的埃及旅行伙伴",
+
+      supportingKeywords: [
+
+        "面向旅游运营商的埃及 DMC",
+
+        "面向旅行顾问的埃及旅行伙伴",
+
+        "埃及 B2B 旅行服务",
+
+        "埃及岸上观光伙伴"
+
+      ],
+
+    },
+
+    hero: {
+
+      eyebrow: "B2B 旅行伙伴关系 · 埃及",
+
+      title: ["一位埃及本地伙伴为", "不同的旅行公司提供服务"],
+
+      subtitle: "从一开始就与您的业务模式合作。",
+
+      intro:
+
+        "没有两家旅行公司为完全相同的客户服务。有些安排私人假期，有些创建团队旅行计划，有些专注于豪华旅行、邮轮体验或定制旅程。\n\nKemerya Tours 与国际旅行公司合作，探索埃及旅行安排。我们从您的业务模式、您为客户服务的对象以及您希望开发的项目类型开始，然后讨论与您的需求相关的服务。\n\n无论您是心中有具体的行程，还是正在探索潜在的合作关系，第一步都是就您的需求进行一次对话。",
+
+      primary: "讨论您的需求",
+
+      secondary: "探寻我们的能力",
+
+      image: {
+
+        src: "/images/pages/who-work-with-kemerya-tours/Tour Operators and Groups.jpg",
+
+        alt: "旅行社和团队规划者在埃及协调旅行",
+
+      },
+
+    },
+
+    audiences: {
+
+      title: "我们与谁合作",
+
+      intro: "旅行公司带来不同的客户群体、行程结构和服务期望。我们为每个类型的合作伙伴提供适合其工作模式的服务。",
+
+      items: [
+
+        {
+
+          title: "旅行社",
+
+          description:
+
+            "旅行社在为来埃及的客户安排假期时通常需要一位本地联系人。你可以计划一次私人观光旅行，协调交通接送，或在多个目的地策划一个多日行程。\n\n我们可以讨论所要求的服务、旅行日期和行程细节，以帮助澄清为您的客户旅程所需的安排。",
+
+        },
+
+        {
+
+          title: "旅游运营商",
+
+          description:
+
+            "开发埃及项目的旅游运营商可能需要考虑目的地组合、观光时间表、交通工具以及各个服务之间的关系。\n\n无论您是正在探索新的行程，还是正在审查现有项目的安排，我们都可以讨论建议的路线、所需服务和与方案相关的实际细节。",
+
+        },
+
+        {
+
+          title: "独立旅行顾问",
+
+          description:
+
+            "独立顾问经常与有特定兴趣、偏好的旅行方式或个人期望的旅行者合作。他们的要求可能需要比标准行程更个人化的处理方式。\n\n我们可以根据您提供的信息讨论定制埃及项目，包括首选目的地、可用时间、住宿偏好和旅行者希望包含的体验。",
+
+        },
+
+        {
+
+          title: "豪华旅行设计师",
+
+          description:
+
+            "豪华旅行计划依赖于理解对单个旅行者来说什么重要，从这次旅程的步伐到住宿偏好以及在途中选择的体验。\n\n如果您正在开发一个优质的埃及行程，我们可以讨论所要求的服务级别、建议的目的地和相关安排，前提是可用的并得到确认的。",
+
+          image: {
+
+            src: "/images/pages/who-work-with-kemerya-tours/Luxury Travel.jpg",
+
+            alt: "豪华埃及行程规划",
+
+          },
+
+        },
+
+        {
+
+          title: "团队旅行规划师",
+
+          description:
+
+            "团队计划需要注意旅行人数、行程时间、交通要求以及计划访问的日程表。正确的安排也取决于行程目的和团队的兴趣。\n\n分享您的预期团队规模、旅行日期和建议路线，以便在最终确定项目之前审查这些要求。",
+
+        },
+
+        {
+
+          title: "邮轮和岸上观光业务",
+
+          description:
+
+            "与邮轮相关的旅行具有特定的时间要求。岸上观光需要考虑港口、可用的陆上时间、交通工具以及建议拜访中包含的目的地。\n\n我们可以讨论与您的港口时间表和乘客兴趣相关的观光要求和行程选项。",
+
+          image: {
+
+            src: "/images/pages/who-work-with-kemerya-tours/nile-cruise.jpg",
+
+            alt: "尼罗河游轮和岸上观光规划",
+
+          },
+
+        }
+
+      ],
+
+    },
+
+    differentRequirements: {
+
+      title: "不同的企业，不同的需求",
+
+      content:
+
+        "您安排旅行的方式影响到您所需的支持类型。一个经纪人处理一次私人的预订可能具有不同的优先事项，而一个计划多个出发的运营商或一个开发个人行程的顾问则可能不同。\n\n这就是为什么我们从具体的请求开始，而不是认为每个合作伙伴都需要相同的服务。讨论可以涵盖建议的目的地、旅行日期、旅行人数、偏好的体验以及可能影响行程的任何要求。\n\n目的是在讨论可能适合的安排之前，建立对项目的清晰理解。",
+
+    },
+
+    inquiry: {
+
+      title: "在您的第一个询盘中包含的内容",
+
+      intro: "您不需要一个完整的最终确定的行程来开始对话。一些实际的细节可以帮助我们理解您的计划。",
+
+      items: [
+
+        "您的公司：告诉我们您是旅行社、旅游运营商、顾问还是其他类型的旅行公司。",
+
+        "建议的旅行：分享您想要安排的目的地或体验类型。",
+
+        "旅行日期：包括确认的日期或大致的旅行时间。",
+
+        "旅行人数：提供估计的团队规模或客人人数。",
+
+        "要求的服务：提及旅游、交通接送、邮轮安排、住宿偏好或其他您希望讨论的服务。",
+
+        "特殊要求：在一开始就包含相关的旅行需求或行程考虑事项。"
+
+      ],
+
+      closing:
+
+        "如果一些细节仍然悬而未决，请分享您目前所知道的。随着询盘的发展，可以讨论其余的要点。",
+
+    },
+
+    practicalStartingPoint: {
+
+      title: "一起合作的实用起点",
+
+      content: [
+
+        "潜在的合作伙伴关系始于了解所要求的服务和工作方式是否相合。\n\n一旦我们理解您的业务和您心目中的项目，我们就可以讨论相关安排，确定需要确认的细节，并审查建议的范围。\n\n任何后续安排都取决于约定的服务、可用性、定价和适用的预订条件。这为双方提供了一个更清晰的基础来决定如何进一步进行。"
+
+      ],
+
+    },
+
+    relatedLinks: [
+
+      { text: "探寻我们的能力", href: "capabilities" },
+
+      { text: "为什么选择 Kemerya", href: "why-partner" },
+
+      { text: "关于 Kemerya Tours", href: "about-us" },
+
+      { text: "联系我们的团队", href: "contact" }
+
+    ],
+
+    cta: {
+
+      eyebrow: "为您的客户规划埃及之旅?",
+
+      title: ["规划埃及之旅", "为您的客户?"],
+
+      description:
+
+        "告诉我们一点有关您的公司和您正在探索的埃及项目的信息。无论您是要讨论具体的预订，还是正在考虑未来的旅行安排，我们欢迎您的初步询盘。",
+
+      primary: "联系我们的团队",
+
+      secondary: "查看我们的服务",
+
+    },
+
+  },
 };
