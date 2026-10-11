@@ -125,12 +125,19 @@ export default async function LocaleLayout({
     ? (locale as Locale)
     : defaultLocale;
 
-  return (
+    return (
     <html
       lang={safeLocale}
       dir={getDirection(safeLocale)}
-      className={`${display.variable} ${sans.variable} ${arabic.variable}`}
+      className={`no-js ${display.variable} ${sans.variable} ${arabic.variable}`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');`,
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

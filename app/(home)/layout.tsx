@@ -28,8 +28,15 @@ export default function HomeLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className={`${display.variable} ${sans.variable} ${arabic.variable}`}>
+    return (
+    <html lang="en" className={`no-js ${display.variable} ${sans.variable} ${arabic.variable}`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');`,
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

@@ -1970,6 +1970,9 @@ body::before {
 .reveal-lines.revealed .line:nth-child(4) { transition-delay: 0.3s; }
 
 /* Editorial chapter reveal */
+/* Fix: the component adds "revealed" to .chapters, not .editorial-chapter,
+   so we must target the full ancestor chain to trigger the reveal. */
+.chapters.revealed .editorial-chapter .editorial-chapter__media,
 .editorial-chapter.revealed .editorial-chapter__media {
   opacity: 1;
   transform: translateY(0);
@@ -1981,7 +1984,9 @@ body::before {
 }
 
 /* Section number draw-in */
-.chapter-number.revealed .chapter-number__digit {
+.chapter-number.revealed .chapter-number__digit,
+.chapters.revealed .chapter-number__digit {
+  opacity: 1;
   stroke-dashoffset: 0;
 }
 .chapter-number__digit {
@@ -2014,7 +2019,31 @@ body::before {
     transform: none !important;
     transition: none !important;
   }
-  .reveal-lines.revealed .line {
+    .reveal-lines.revealed .line {
     transition-delay: 0s !important;
   }
+}
+
+/* ── NO-JS FALLBACK ────────────────────────────────────────────────
+   When JavaScript is not available (or hasn't loaded yet), make all
+   scroll-reveal content immediately visible instead of hiding it with
+   opacity: 0. This ensures images and other content on the categories
+   page and home page are always visible, even without client-side JS.
+*/
+html:not(.js) .chapters,
+html:not(.js) .reveal,
+html:not(.js) .reveal-stagger,
+html:not(.js) .reveal-lines .line,
+html:not(.js) .editorial-chapter .editorial-chapter__media,
+html:not(.js) .chapter-number,
+html:not(.js) .chapter-number__digit,
+html:not(.js) .closing-cta {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+html:not(.js) .chapter-number__digit {
+  stroke-dashoffset: 0 !important;
+  stroke-dasharray: none !important;
 }
