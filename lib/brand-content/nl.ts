@@ -53,6 +53,11 @@ export const nl: BrandContent = {
     ],
     principles: [],
     cta: "SPREKEN OVER EEN PARTNERSHIP",
+    images: [
+      { src: "/images/pages/about-us/pyramids.jpg", alt: "Piramiden van Giza" },
+      { src: "/images/pages/about-us/temples.jpg", alt: "Oude Egyptische tempels in Luxor" },
+      { src: "/images/pages/about-us/nile-cruise.jpg", alt: "Niltournee langs de rivier" },
+    ],
   },
   whyKemerya: {
     title: "DE KEMERYA-AANPAK",

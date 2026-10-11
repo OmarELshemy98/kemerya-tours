@@ -53,6 +53,11 @@ export const fr: BrandContent = {
     ],
     principles: [],
     cta: "DISCUTER D'UN PARTENARIAT",
+    images: [
+      { src: "/images/pages/about-us/pyramids.jpg", alt: "Pyramides de Gizeh" },
+      { src: "/images/pages/about-us/temples.jpg", alt: "Temples égyptiens anciens à Louxor" },
+      { src: "/images/pages/about-us/nile-cruise.jpg", alt: "Croisière sur le Nil" },
+    ],
   },
   whyKemerya: {
     title: "L'APPROCHE KEMERYA",

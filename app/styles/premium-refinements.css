@@ -1031,6 +1031,60 @@ body::before {
   margin-top: 2.5rem;
 }
 
+/* ── WhoKemerya: About Us image gallery ────────────────────── */
+/* When the About Us page has images, the gallery appears
+   alongside the text content. Images use fill mode and are
+   always visible — no opacity:0 reveal (works without JS). */
+.who-kemerya--with-images .who-kemerya__content {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 3rem !important;
+}
+@media (min-width: 768px) {
+  .who-kemerya--with-images .who-kemerya__content {
+    grid-template-columns: 1.1fr 0.9fr !important;
+    gap: 4rem !important;
+    align-items: start !important;
+  }
+  .who-kemerya--with-images .who-kemerya__images {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 1rem !important;
+  }
+  .who-kemerya--with-images .who-kemerya__image {
+    position: relative;
+    z-index: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    min-height: 160px;
+    background: linear-gradient(135deg, var(--color-nile-deep), var(--color-obsidian-deep));
+  }
+}
+@media (max-width: 768px) {
+  .who-kemerya--with-images .who-kemerya__images {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  .who-kemerya--with-images .who-kemerya__image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    min-height: 200px;
+    background: linear-gradient(135deg, var(--color-nile-deep), var(--color-obsidian-deep));
+  }
+}
+.who-kemerya__image img {
+  transform: scale(1.03);
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  object-position: center !important;
+}
+.who-kemerya__image:hover img {
+  transform: scale(1.05);
+}
+
 /* Hero tamed — single visual composition, no animation sequence */
 .hero__content {
   position: relative;

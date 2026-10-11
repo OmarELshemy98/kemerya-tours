@@ -53,6 +53,11 @@ export const ar: BrandContent = {
     ],
     principles: [],
     cta: "ناقش شراكة",
+    images: [
+      { src: "/images/pages/about-us/pyramids.jpg", alt: "أهرامات الجيزة" },
+      { src: "/images/pages/about-us/temples.jpg", alt: "معابد مصر القديمة في الأقصر" },
+      { src: "/images/pages/about-us/nile-cruise.jpg", alt: "رحلة على نهر النيل" },
+    ],
   },
   whyKemerya: {
     title: "نهج كيمريا",

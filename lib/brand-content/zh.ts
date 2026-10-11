@@ -52,6 +52,11 @@ export const zh: BrandContent = {
     ],
     principles: [],
     cta: "讨论合作伙伴关系",
+    images: [
+      { src: "/images/pages/about-us/pyramids.jpg", alt: "吉萨大金字塔" },
+      { src: "/images/pages/about-us/temples.jpg", alt: "河毕克的古埃及寺庙群" },
+      { src: "/images/pages/about-us/nile-cruise.jpg", alt: "尼罗河游轮之旅" },
+    ],
   },
   whyKemerya: {
     title: "KEMERYA的方法论",

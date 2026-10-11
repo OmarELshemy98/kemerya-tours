@@ -1,4 +1,5 @@
-﻿import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { TempleColumnPair } from "@/components/ui/egyptian-svg";
@@ -15,12 +16,15 @@ type WhoKemeryaProps = {
     paragraphs: readonly string[];
     principles: readonly string[];
     cta: string;
+    images?: readonly { src: string; alt: string }[];
   };
 };
 
 export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
+  const hasImages = copy.images && copy.images.length > 0;
+
   return (
-    <Section id="who-kemerya" className="who-kemerya">
+    <Section id="who-kemerya" className={`who-kemerya ${hasImages ? "who-kemerya--with-images" : ""}`}>
       <div className="editorial__column-pair" aria-hidden="true">
         <TempleColumnPair decorative size={140} />
       </div>
@@ -51,6 +55,23 @@ export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
               </div>
             )}
           </div>
+
+          {hasImages && (
+            <div className="who-kemerya__images">
+              {copy.images!.map((image, index) => (
+                <div key={index} className="who-kemerya__image chapter-image">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                    priority={index === 0}
+                  />
+                </div>
+              ))}
+            </div>
+          )}
 
           {copy.cta && copy.cta.length > 0 && (
             <div className="who-kemerya__cta">

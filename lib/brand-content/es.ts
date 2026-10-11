@@ -53,6 +53,11 @@ export const es: BrandContent = {
     ],
     principles: [],
     cta: "DISCUSIÓN UNA ASOCIACIÓN",
+    images: [
+      { src: "/images/pages/about-us/pyramids.jpg", alt: "Pirámides de Giza" },
+      { src: "/images/pages/about-us/temples.jpg", alt: "Templos egipcios antiguos en Luxor" },
+      { src: "/images/pages/about-us/nile-cruise.jpg", alt: "Crucero por el Nilo" },
+    ],
   },
   whyKemerya: {
     title: "EL ENFOQUE KEMERYA",
