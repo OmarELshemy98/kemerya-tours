@@ -16,15 +16,20 @@ type WhoKemeryaProps = {
     paragraphs: readonly string[];
     principles: readonly string[];
     cta: string;
-    images?: readonly { src: string; alt: string }[];
+    sections?: readonly {
+      title: string;
+      content: string;
+      items?: readonly string[];
+      image?: { src: string; alt: string };
+    }[];
   };
 };
 
 export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
-  const hasImages = copy.images && copy.images.length > 0;
+  const hasSections = copy.sections && copy.sections.length > 0;
 
   return (
-    <Section id="who-kemerya" className={`who-kemerya ${hasImages ? "who-kemerya--with-images" : ""}`}>
+    <Section id="who-kemerya" className={`who-kemerya ${hasSections ? "who-kemerya--with-sections" : ""}`}>
       <div className="editorial__column-pair" aria-hidden="true">
         <TempleColumnPair decorative size={140} />
       </div>
@@ -56,19 +61,34 @@ export function WhoKemerya({ copy, ui }: WhoKemeryaProps) {
             )}
           </div>
 
-          {hasImages && (
-            <div className="who-kemerya__images">
-              {copy.images!.map((image, index) => (
-                <div key={index} className="who-kemerya__image chapter-image">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    style={{ objectFit: "cover" }}
-                    priority={index === 0}
-                  />
-                </div>
+          {hasSections && (
+            <div className="who-kemerya__sections">
+              {copy.sections!.map((section, index) => (
+                <article key={index} className="who-kemerya__section">
+                  {section.image && (
+                    <div className="who-kemerya__section-image chapter-image">
+                      <Image
+                        src={section.image.src}
+                        alt={section.image.alt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 40vw"
+                        style={{ objectFit: "cover" }}
+                        priority={index === 0}
+                      />
+                    </div>
+                  )}
+                  <div className="who-kemerya__section-body">
+                    <h3 className="who-kemerya__section-title">{section.title}</h3>
+                    <p className="who-kemerya__section-content">{section.content}</p>
+                    {section.items && section.items.length > 0 && (
+                      <ul className="who-kemerya__section-items">
+                        {section.items.map((item, i) => (
+                          <li key={i} className="who-kemerya__item">{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </article>
               ))}
             </div>
           )}

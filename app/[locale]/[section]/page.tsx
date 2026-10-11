@@ -5,6 +5,7 @@ import { B2BCredibility } from "@/components/sections/B2BCredibility";
 import { B2BFaq } from "@/components/sections/B2BFaq";
 import { B2BContactForm } from "@/components/sections/B2BContactForm";
 import { Capabilities } from "@/components/sections/Capabilities";
+import { CapabilitiesPage } from "@/components/sections/CapabilitiesPage";
 import { ClientTypes } from "@/components/sections/ClientTypes";
 import { CommercialCategories } from "@/components/sections/CommercialCategories";
 import { CommercialConfidence } from "@/components/sections/CommercialConfidence";
@@ -15,6 +16,8 @@ import { WhoKemerya } from "@/components/sections/WhoKemerya";
 import { WhyKemerya } from "@/components/sections/WhyKemerya";
 import { BrandPhilosophy } from "@/components/sections/BrandPhilosophy";
 import { WhyPartner } from "@/components/sections/WhyPartner";
+import { WhyPartnerPage } from "@/components/sections/WhyPartnerPage";
+import { WhyWeWorkWithPage } from "@/components/sections/WhyWeWorkWithPage";
 import { getAdvantages } from "@/data/advantages";
 import { getCapabilities } from "@/data/capabilities";
 import { getClientTypes } from "@/data/clientTypes";
@@ -55,16 +58,16 @@ function getSectionTitle(
   section: Section,
 ): string {
   switch (section) {
-    case "capabilities":
-      return copy.capabilities.title;
+        case "capabilities":
+      return copy.capabilitiesPage?.hero.title.join(" ") ?? copy.capabilities.title;
     case "categories":
       return copy.categories.title;
-    case "why-partner":
-      return copy.whyPartner.title;
+        case "why-partner":
+      return copy.whyPartnerPage?.hero.title.join(" ") ?? copy.whyPartner.title;
         case "about-us":
       return copy.aboutUs?.title ?? copy.whyKemerya.title;
-    case "who-we-work-with":
-      return copy.clientTypes.title;
+        case "who-we-work-with":
+      return copy.whyWeWorkWithPage?.hero.title.join(" ") ?? copy.clientTypes.title;
     case "commercial-confidence":
       return copy.commercialConfidence.title;
     case "program-capabilities":
@@ -99,11 +102,17 @@ export async function generateMetadata({
   const safeLocale = locale as Locale;
   const copy = getPageCopy(safeLocale);
   const content = {
-    capabilities: [copy.capabilities.title, copy.capabilities.intro],
+        capabilities: copy.capabilitiesPage
+      ? [copy.capabilitiesPage.seo.title, copy.capabilitiesPage.seo.description]
+      : [copy.capabilities.title, copy.capabilities.intro],
     categories: [copy.categories.title, copy.categories.intro],
-"why-partner": [copy.whyPartner.title, copy.whyPartner.intro],
+    "why-partner": copy.whyPartnerPage
+      ? [copy.whyPartnerPage.seo.title, copy.whyPartnerPage.seo.description]
+      : [copy.whyPartner.title, copy.whyPartner.intro],
         "about-us": [copy.aboutUs?.title ?? copy.whyKemerya.title, copy.aboutUs?.intro ?? ""],
-    "who-we-work-with": [copy.clientTypes.title, copy.clientTypes.intro],
+        "who-we-work-with": copy.whyWeWorkWithPage
+      ? [copy.whyWeWorkWithPage.seo.title, copy.whyWeWorkWithPage.seo.description]
+      : [copy.clientTypes.title, copy.clientTypes.intro],
     "commercial-confidence": [
       copy.commercialConfidence.title,
       copy.commercialConfidence.intro,
@@ -116,11 +125,19 @@ export async function generateMetadata({
     faq: [copy.faq.title, copy.faq.intro],
     knowledge: [copy.knowledge.title, copy.knowledge.intro],
     contact: [copy.contact.title, copy.contact.subtitle],
-  }[section];
+     }[section];
+
+    const seoKeywords =
+    (section === "capabilities" && copy.capabilitiesPage?.seo) ||
+    (section === "why-partner" && copy.whyPartnerPage?.seo) ||
+    (section === "who-we-work-with" && copy.whyWeWorkWithPage?.seo);
 
   return {
-    title: `${content[0]} | Kemerya Tours`,
+            title: `${content[0]} | Kemerya Tours`,
     description: content[1],
+    ...(seoKeywords
+      ? { keywords: `${seoKeywords.primaryKeyword}, ${seoKeywords.supportingKeywords.join(", ")}` }
+      : {}),
     alternates: {
       canonical: `/${safeLocale}/${section}`,
       languages: {
@@ -186,10 +203,21 @@ export default async function LocaleSectionPage({
   let content;
   switch (section) {
     case "capabilities":
-      content = (
+            content = (
         <>
-          <Capabilities copy={copy.capabilities} items={getCapabilities(safeLocale)} />
-                  </>
+          {copy.capabilitiesPage ? (
+            <CapabilitiesPage
+              locale={safeLocale}
+              copy={copy.capabilitiesPage}
+              ui={ui}
+            />
+          ) : (
+            <Capabilities
+              copy={copy.capabilities}
+              items={getCapabilities(safeLocale)}
+            />
+          )}
+        </>
       );
       break;
     case "categories":
@@ -203,16 +231,26 @@ export default async function LocaleSectionPage({
                   </>
       );
       break;
-    case "why-partner":
+        case "why-partner":
       content = (
         <>
-          <WhyPartner copy={copy.whyPartner} items={getWhyPartner(safeLocale)} />
-          <KemeryaAdvantage copy={copy.advantages} items={getAdvantages(safeLocale)} />
-          <KemeryaDifference
-            copy={copy.partnership}
-            steps={getPartnershipSteps(safeLocale)}
-          />
-                  </>
+          {copy.whyPartnerPage ? (
+            <WhyPartnerPage
+              locale={safeLocale}
+              copy={copy.whyPartnerPage}
+              ui={ui}
+            />
+          ) : (
+            <>
+              <WhyPartner copy={copy.whyPartner} items={getWhyPartner(safeLocale)} />
+              <KemeryaAdvantage copy={copy.advantages} items={getAdvantages(safeLocale)} />
+              <KemeryaDifference
+                copy={copy.partnership}
+                steps={getPartnershipSteps(safeLocale)}
+              />
+            </>
+          )}
+        </>
       );
       break;
           case "about-us":
@@ -227,11 +265,19 @@ export default async function LocaleSectionPage({
                   </>
       );
       break;
-    case "who-we-work-with":
+        case "who-we-work-with":
       content = (
         <>
-          <ClientTypes copy={copy.clientTypes} items={getClientTypes(safeLocale)} />
-                  </>
+          {copy.whyWeWorkWithPage ? (
+            <WhyWeWorkWithPage
+              locale={safeLocale}
+              copy={copy.whyWeWorkWithPage}
+              ui={ui}
+            />
+          ) : (
+            <ClientTypes copy={copy.clientTypes} items={getClientTypes(safeLocale)} />
+          )}
+        </>
       );
       break;
     case "contact":

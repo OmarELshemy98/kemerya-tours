@@ -28,15 +28,20 @@ export type BrandContent = {
     principles: readonly string[];
     cta: string;
   };
-    aboutUs?: {
+        aboutUs?: {
     eyebrow: string;
     title: string;
     subtitle: string;
     intro: string;
     paragraphs: readonly string[];
     principles: readonly string[];
+    sections: readonly {
+      title: string;
+      content: string;
+      items?: readonly string[];
+      image?: { src: string; alt: string };
+    }[];
     cta: string;
-    images: readonly { src: string; alt: string }[];
   };
   whyKemerya: {
     title: string;
@@ -100,10 +105,147 @@ export type BrandContent = {
     title: string;
     intro: string;
   };
-  capabilities: {
+    capabilities: {
     eyebrow: string;
     title: string;
     intro: string;
+  };
+  capabilitiesPage?: {
+    seo: {
+      title: string;
+      description: string;
+      primaryKeyword: string;
+      supportingKeywords: readonly string[];
+    };
+    hero: {
+      eyebrow: string;
+      title: readonly string[];
+      subtitle: string;
+      primary: string;
+      secondary: string;
+      image: { src: string; alt: string };
+    };
+    services: {
+      title: string;
+      intro: string;
+      items: readonly {
+        title: string;
+        description: string;
+        image?: { src: string; alt: string };
+        icon: string;
+        link?: string;
+      }[];
+    };
+    groundArrangements: {
+      title: string;
+      intro: string;
+      items: readonly string[];
+    };
+    approachTypes: {
+      title: string;
+      intro: string;
+      items: readonly {
+        title: string;
+        description: string;
+        icon: string;
+      }[];
+    };
+    inquirySteps: {
+      title: string;
+      intro: string;
+      steps: readonly {
+        number: string;
+        title: string;
+        description: string;
+      }[];
+    };
+    whoCanDiscuss: {
+      title: string;
+      intro: string;
+      items: readonly string[];
+      content: string;
+      linkText: string;
+      linkPath: string;
+    };
+    relatedLinks: readonly {
+      text: string;
+      href: string;
+    }[];
+        cta: {
+      eyebrow: string;
+      title: readonly string[];
+      description: string;
+      primary: string;
+    };
+  };
+  whyPartnerPage?: {
+    seo: {
+      title: string;
+      description: string;
+      primaryKeyword: string;
+      supportingKeywords: readonly string[];
+    };
+    hero: {
+      eyebrow: string;
+      title: readonly string[];
+      subtitle: string;
+      primary: string;
+      secondary: string;
+      image: { src: string; alt: string };
+    };
+    whatMatters: {
+      title: string;
+      intro: string;
+      points: readonly {
+        title: string;
+        description: string;
+        icon: string;
+      }[];
+    };
+    designedFor: {
+      title: string;
+      intro: string;
+      audiences: readonly {
+        title: string;
+        description: string;
+        icon: string;
+      }[];
+      content: string;
+    };
+    process: {
+      title: string;
+      intro: string;
+      steps: readonly {
+        number: string;
+        title: string;
+        description: string;
+      }[];
+    };
+    supportingClient: {
+      title: string;
+      content: string;
+      description: string;
+    };
+    relationship: {
+      title: string;
+      subtitle: string;
+      description: string;
+      ctaTitle: string;
+      content: string;
+      primary: string;
+      secondary: string;
+    };
+    relatedLinks: readonly {
+      text: string;
+      href: string;
+    }[];
+    cta: {
+      eyebrow: string;
+      title: readonly string[];
+      description: string;
+      primary: string;
+      secondary: string;
+    };
   };
   categories: {
     eyebrow: string;
@@ -188,6 +330,54 @@ export type BrandContent = {
             commercialCategories: readonly CategoryCopyTriple[];
     commercialCategoriesSubcategories: readonly (readonly string[])[];
     journeys: readonly CopyPair[];
+  };
+  whyWeWorkWithPage?: {
+    seo: {
+      title: string;
+      description: string;
+      primaryKeyword: string;
+      supportingKeywords: readonly string[];
+    };
+    hero: {
+      eyebrow: string;
+      title: readonly string[];
+      subtitle: string;
+      intro: string;
+      primary: string;
+      secondary: string;
+      image: { src: string; alt: string };
+    };
+    audiences: {
+      title: string;
+      intro: string;
+      items: readonly {
+        title: string;
+        description: string;
+        image?: { src: string; alt: string };
+      }[];
+    };
+    differentRequirements: {
+      title: string;
+      content: string;
+    };
+    inquiry: {
+      title: string;
+      intro: string;
+      items: readonly string[];
+      closing: string;
+    };
+    practicalStartingPoint: {
+      title: string;
+      content: readonly string[];
+    };
+    relatedLinks: readonly { text: string; href: string }[];
+    cta: {
+      eyebrow: string;
+      title: readonly string[];
+      description: string;
+      primary: string;
+      secondary: string;
+    };
   };
 };
 
