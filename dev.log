@@ -9,3 +9,5 @@
 ✓ Running next.config.mjs took 35ms
 
  GET /en/about 200 in 1644ms (next.js: 718ms, generate-params: 640ms, application-code: 286ms)
+ GET /en/about 200 in 106ms (next.js: 7ms, generate-params: 9ms, application-code: 90ms)
+[?25h
