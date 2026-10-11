@@ -1,0 +1,11 @@
+
+> kemerya-tours@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.8 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.14:3000
+✓ Ready in 721ms
+✓ Running next.config.mjs took 35ms
+
+ GET /en/about 200 in 1644ms (next.js: 718ms, generate-params: 640ms, application-code: 286ms)
