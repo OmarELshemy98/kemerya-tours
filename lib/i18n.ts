@@ -326,6 +326,10 @@ export type UiTranslations = {
   lastUpdated: string;
   toggleTableOfContents: string;
   backToTop: string;
+  collapse?: string;
+  expand?: string;
+  readMore?: string;
+  readLess?: string;
 };
 
 export const uiTranslations: Record<Locale, UiTranslations> = {
@@ -359,6 +363,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "Last updated",
     toggleTableOfContents: "Toggle table of contents",
     backToTop: "Back to top",
+    collapse: "Collapse",
+    expand: "Expand",
+    readMore: "Read more",
+    readLess: "Show less",
   },
   ar: {
     skipToMainContent: "انتقل إلى المحتوى الرئيسي",
@@ -390,6 +398,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "آخر تحديث",
     toggleTableOfContents: "تبديل فهص المحتويات",
     backToTop: "العودة للأعلى",
+    collapse: "طي",
+    expand: "توسيع",
+    readMore: "قراءة المزيد",
+    readLess: "إخفاء",
   },
   fr: {
     skipToMainContent: "Aller au contenu principal",
@@ -421,6 +433,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "DerniÃ¨re mise Ã  jour",
     toggleTableOfContents: "Basculer la table des matiÃ¨res",
     backToTop: "Retour en haut",
+    collapse: "Réduire",
+    expand: "Développer",
+    readMore: "Lire la suite",
+    readLess: "Afficher moins",
   },
   it: {
     skipToMainContent: "Vai al contenuto principale",
@@ -452,6 +468,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "Ultimo aggiornamento",
     toggleTableOfContents: "Attiva/disattiva indice",
     backToTop: "Torna su",
+    collapse: "Comprimi",
+    expand: "Espandi",
+    readMore: "Leggi tutto",
+    readLess: "Mostra meno",
   },
   es: {
     skipToMainContent: "Ir al contenido principal",
@@ -483,6 +503,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "Ãšltima actualizaciÃ³n",
     toggleTableOfContents: "Alternar tabla de contenidos",
     backToTop: "Volver arriba",
+    collapse: "Contraer",
+    expand: "Expandir",
+    readMore: "Leer más",
+    readLess: "Mostrar menos",
   },
   de: {
     skipToMainContent: "Zum Hauptinhalt springen",
@@ -514,6 +538,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "Zuletzt aktualisiert",
     toggleTableOfContents: "Inhaltsverzeichnis ein-/ausblenden",
     backToTop: "ZurÃ¼ck nach oben",
+    collapse: "Reduzieren",
+    expand: "Erweitern",
+    readMore: "Mehr lesen",
+    readLess: "Weniger anzeigen",
   },
   pt: {
     skipToMainContent: "Ir para o conteúdo principal",
@@ -545,6 +573,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "Ãšltima atualizaÃ§Ã£o",
     toggleTableOfContents: "Alternar Ã­ndice",
     backToTop: "Voltar ao inÃ­cio",
+    collapse: "Recolher",
+    expand: "Expandir",
+    readMore: "Ler mais",
+    readLess: "Mostrar menos",
   },
   nl: {
     skipToMainContent: "Ga naar de hoofdinhoud",
@@ -576,6 +608,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "Laatst bijgewerkt",
     toggleTableOfContents: "Inhoudsopgave in-/uitschakelen",
     backToTop: "Terug naar boven",
+    collapse: "Vouwen",
+    expand: "Uitklappen",
+    readMore: "Lees meer",
+    readLess: "Toon minder",
   },
   zh: {
     skipToMainContent: "跳转至主要内容",
@@ -607,6 +643,10 @@ export const uiTranslations: Record<Locale, UiTranslations> = {
     lastUpdated: "最后更新",
     toggleTableOfContents: "切换目录",
     backToTop: "返回顶部",
+    collapse: "折叠",
+    expand: "展开",
+    readMore: "阅读更多",
+    readLess: "收起",
   },
 };
 

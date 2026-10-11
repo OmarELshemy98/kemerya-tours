@@ -99,10 +99,9 @@
 }
 
 .about-section__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-l, 2rem);
-  align-items: start;
 }
 
 .about-section__image {
@@ -117,6 +116,10 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background: var(--color-white, #ffffff);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .about-section__title {
@@ -163,22 +166,6 @@
 html[dir="rtl"] .about-section__item::before {
   left: auto;
   right: 0;
-}
-
-.about-section--image-right .about-section__grid {
-  grid-template-areas: "text image";
-}
-
-.about-section--image-right .about-section__body {
-  grid-area: text;
-}
-
-.about-section--image-right .about-section__image {
-  grid-area: image;
-}
-
-html[dir="rtl"] .about-section--image-right .about-section__grid {
-  grid-template-areas: "image text";
 }
 
 /* ── Final CTA ── */
@@ -230,10 +217,8 @@ html[dir="rtl"] .about-section--image-right .about-section__grid {
     padding: 3rem 0;
   }
 
-  .about-section__grid {
-    grid-template-columns: 1fr !important;
-    grid-template-areas: none !important;
-    gap: 2rem;
+    .about-section__grid {
+    gap: 1.5rem;
   }
 
   .about-section__image {
@@ -245,8 +230,35 @@ html[dir="rtl"] .about-section--image-right .about-section__grid {
     align-items: stretch;
   }
 
-  .about-cta__actions .btn {
+    .about-cta__actions .btn {
     width: 100%;
     text-align: center;
   }
+}
+
+/* ── Content toggle (Read more) ── */
+
+/* Collapsed: clamp the chapter paragraph to three lines */
+.about-section__content.is-clamped {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Collapsed: keep the item list hidden until the reader expands it */
+.about-section__content-wrapper.is-collapsed .about-section__items {
+  display: none;
+}
+
+/* Make the rendered image cover its frame */
+.about-section__image img {
+  object-fit: cover;
+}
+
+/* Read more toggle — gold pill matching the design-system Button */
+.about-section__toggle {
+  align-self: flex-start;
+  margin-top: 0.25rem;
 }

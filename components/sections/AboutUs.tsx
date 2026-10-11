@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -68,49 +69,13 @@ export function AboutUs({ locale, ui, copy, conversion }: AboutUsProps) {
         </Container>
       </Section>
 
-      {/* ── Sections ── */}
+            {/* ── Sections (vertical stack: image on top, text below, with a Read more toggle) ── */}
       {hasSections && (
         <div className="about-sections">
           <LotusDivider decorative className="about-sections__divider" />
-          {sections.map((section, index) => {
-            const isEven = index % 2 === 0;
-            return (
-              <article
-                key={index}
-                className={`about-section about-section--${isEven ? "image-left" : "image-right"}`}
-              >
-                <Container>
-                  <div className="about-section__grid">
-                    {section.image && (
-                      <div className="about-section__image chapter-image">
-                        <Image
-                          src={section.image.src}
-                          alt={section.image.alt}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 45vw"
-                          style={{ objectFit: "cover" }}
-                          priority={index === 0}
-                        />
-                      </div>
-                    )}
-                    <div className="about-section__body">
-                      <h3 className="about-section__title">{section.title}</h3>
-                      <p className="about-section__content">{section.content}</p>
-                      {section.items && section.items.length > 0 && (
-                        <ul className="about-section__items">
-                          {section.items.map((item, i) => (
-                            <li key={i} className="about-section__item">
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  </div>
-                </Container>
-              </article>
-            );
-          })}
+          {sections.map((section, index) => (
+            <AboutChapter key={index} index={index} section={section} ui={ui} />
+          ))}
         </div>
       )}
 
@@ -148,6 +113,92 @@ export function AboutUs({ locale, ui, copy, conversion }: AboutUsProps) {
           </div>
         </Container>
       </Section>
-    </>
+        </>
+  );
+}
+
+const READ_TOGGLE_CLASSES =
+  "relative inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-full border border-transparent px-[1.8rem] py-[0.95rem] text-[0.72rem] font-bold uppercase tracking-[0.14em] transition-[transform,box-shadow,background,border-color] duration-[250ms] hover:-translate-y-0.5 button button--gold";
+
+type AboutChapterProps = {
+  index: number;
+  section: {
+    title: string;
+    content: string;
+    items?: readonly string[];
+    image?: { src: string; alt: string };
+  };
+  ui: UiTranslations;
+};
+
+function AboutChapter({ index, section, ui }: AboutChapterProps) {
+  const [open, setOpen] = useState(false);
+  const hasItems = !!(section.items && section.items.length);
+  const contentId = `about-chapter-${index}-content`;
+  const readMoreLabel = ui.readMore ?? "Read more";
+  const readLessLabel = ui.readLess ?? "Show less";
+
+  return (
+    <article
+      className="about-section"
+      aria-labelledby={`about-chapter-${index}-title`}
+    >
+      <Container>
+        <div className="about-section__grid">
+          {section.image && (
+            <div className="about-section__image chapter-image">
+              <Image
+                src={section.image.src}
+                alt={section.image.alt}
+                fill
+                sizes="(max-width: 768px) 100vw, 45vw"
+                style={{ objectFit: "cover" }}
+                priority={index === 0}
+              />
+            </div>
+          )}
+          <div className="about-section__body">
+            <h3
+              id={`about-chapter-${index}-title`}
+              className="about-section__title"
+            >
+              {section.title}
+            </h3>
+            <div
+              id={contentId}
+              className={`about-section__content-wrapper ${
+                open ? "is-expanded" : "is-collapsed"
+              }`}
+            >
+              <p
+                className={`about-section__content ${
+                  open ? "is-expanded" : "is-clamped"
+                }`}
+              >
+                {section.content}
+              </p>
+              {hasItems && (
+                <ul className="about-section__items">
+                  {(section.items ?? []).map((item, i) => (
+                    <li key={i} className="about-section__item">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            <button
+              type="button"
+              className={`about-section__toggle ${READ_TOGGLE_CLASSES}`}
+              aria-controls={contentId}
+              aria-expanded={open}
+              onClick={() => setOpen(!open)}
+            >
+              {open ? readLessLabel : readMoreLabel}
+            </button>
+          </div>
+        </div>
+      </Container>
+    </article>
   );
 }

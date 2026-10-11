@@ -1,10 +1,7 @@
-import Link from "next/link";
 import { business } from "@/data/business";
-import type {
-  LegalPageContent,
-  LegalLinkTarget,
-} from "@/lib/brand-content/types";
+import type { LegalPageContent } from "@/lib/brand-content/types";
 import type { UiTranslations } from "@/lib/i18n";
+import { LegalSection } from "@/components/LegalSection";
 
 export type LegalPageProps = {
   locale: string;
@@ -12,9 +9,18 @@ export type LegalPageProps = {
   ui: UiTranslations;
 };
 
-function getLegalHref(locale: string, target: LegalLinkTarget): string {
-  if (target === "contact") return `/${locale}/contact`;
-  return `/${locale}/${target}`;
+/**
+ * Extract the first word of the intro to use as a drop-cap letter.
+ * If the intro starts with a quotation or tag, we fall back to a span.
+ */
+function getDropCap(intro: string): string {
+  const trimmed = intro.trim();
+  return trimmed.charAt(0) || "";
+}
+
+function getRestIntro(intro: string): string {
+  const trimmed = intro.trim();
+  return trimmed.slice(1);
 }
 
 export function LegalPage({ locale, content, ui }: LegalPageProps) {
@@ -25,74 +31,67 @@ export function LegalPage({ locale, content, ui }: LegalPageProps) {
     day: "numeric",
   }).format(new Date(updatedDate));
 
+  const dropCapLetter = getDropCap(content.intro);
+  const restIntro = getRestIntro(content.intro);
+  const sectionCount = content.sections.length;
+  const readingMinutes = Math.max(1, Math.ceil(sectionCount * 1.2));
+
   return (
     <article className="legal-page" id="legal-page-top">
+      {/* ── Header ── */}
       <header className="legal-header">
         <div className="legal-eyeliner">{content.eyeliner}</div>
-        <h1 className="legal-title">{content.title}</h1>
-        <p className="legal-intro">{content.intro}</p>
+
+        <div className="legal-title-wrapper">
+          <h1 className="legal-title">{content.title}</h1>
+          <div className="legal-meta">
+            <span className="legal-meta__item legal-meta__count">
+              {sectionCount} sections · {readingMinutes} min read
+            </span>
+          </div>
+        </div>
+
+                                {/* Intro with drop-cap */}
+        <p
+          className="legal-intro legal-intro--dropcap"
+          data-dropcap={dropCapLetter}
+        >
+          <span className="legal-intro__dropcap">{dropCapLetter}</span>
+          {restIntro}
+        </p>
+
         <p className="legal-last-updated">
           {ui.lastUpdated}: <time dateTime={updatedDate}>{formattedDate}</time>
         </p>
       </header>
 
-      <div className="legal-sections">
+      {/* ── Sections (collapsible) ── */}
+      <div
+        className="legal-sections"
+        role="group"
+        aria-label={ui.tableOfContents}
+      >
         {content.sections.map((section, i) => (
-          <section key={i} id={`section-${i}`} className="legal-section">
-            <h2 id={`section-${i}-anchor`} className="legal-section__title">{section.title}</h2>
-            <div className="legal-section__body">
-              {section.blocks.map((block, j) => {
-                if (block.type === "paragraph") {
-                  return (
-                    <p key={j} className="legal-paragraph">
-                      {block.text}
-                    </p>
-                  );
-                }
-                if (block.type === "subheading") {
-                  return (
-                    <h3 key={j} className="legal-subheading">
-                      {block.text}
-                    </h3>
-                  );
-                }
-                if (block.type === "list") {
-                  return (
-                    <ul key={j} className="legal-list">
-                      {block.items.map((item, k) => (
-                        <li key={k}>{item}</li>
-                      ))}
-                    </ul>
-                  );
-                }
-                if (block.type === "link") {
-                  return (
-                    <p key={j} className="legal-link-block">
-                      {block.prefix}{" "}
-                      <Link
-                        href={getLegalHref(locale, block.target)}
-                        className="legal-link"
-                      >
-                        {block.label}
-                      </Link>
-                    </p>
-                  );
-                }
-                return null;
-              })}
-            </div>
-          </section>
+          <LegalSection
+            key={i}
+            section={section}
+            index={i}
+            locale={locale}
+          />
         ))}
       </div>
 
+      {/* ── Contact / CTA footer ── */}
       <footer className="legal-contact">
-        <p className="legal-contact__address">{content.contact.intro}</p>
-        <a
-          href={business.partnerCtaUrl}
-          className="btn btn--primary legal-contact__cta"
-        >
-          {content.contact.ctaLabel}
-        </a>
+        <div className="legal-contact__inner">
+          <p className="legal-contact__address">{content.contact.intro}</p>
+          <a
+            href={business.partnerCtaUrl}
+            className="btn btn--primary legal-contact__cta"
+          >
+            {content.contact.ctaLabel}
+          </a>
+        </div>
       </footer>
     </article>
   );
