@@ -17,6 +17,8 @@ import {
   type Locale,
 } from "@/lib/i18n";
 
+import { NoJSSwap } from "@/components/NoJSSwap";
+
 const display = Cormorant_Garamond({
   variable: "--font-display",
   subsets: ["latin", "latin-ext"],
@@ -131,14 +133,11 @@ export default async function LocaleLayout({
       dir={getDirection(safeLocale)}
       className={`no-js ${display.variable} ${sans.variable} ${arabic.variable}`}
     >
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');`,
-          }}
-        />
-      </head>
-      <body>{children}</body>
+            <head />
+      <body>
+        <NoJSSwap />
+        {children}
+      </body>
     </html>
   );
 }

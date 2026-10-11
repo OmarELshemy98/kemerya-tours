@@ -5,9 +5,98 @@
 ▲ Next.js 16.3.8 (Turbopack)
 - Local:         http://localhost:3000
 - Network:       http://192.168.100.14:3000
-✓ Ready in 721ms
-✓ Running next.config.mjs took 35ms
+✓ Ready in 542ms
+✓ Running next.config.mjs took 24ms
 
- GET /en/about 200 in 1644ms (next.js: 718ms, generate-params: 640ms, application-code: 286ms)
- GET /en/about 200 in 106ms (next.js: 7ms, generate-params: 9ms, application-code: 90ms)
-[?25h
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollHandlerNew focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en/about-us" notFound={{...}} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en/about-us" tree={[...]} params={{locale:"en"}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <link>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+                              dir="ltr"
+                              className="no-js cormorant_garamond_c5f2c3a-module__ytIYhG__variable manrope_30c2185a-mo..."
+-                             suppresshydrationwarning="true"
+-                             data-qb-installed="true"
+                            >
+                      ...
+          ...
+ 
+ GET /en/about-us 200 in 1347ms (next.js: 305ms, generate-params: 625ms, application-code: 417ms)
+ GET /en/about 200 in 1377ms (next.js: 66ms, generate-params: 1144ms, application-code: 166ms)
+✓ Compiled in 549ms
+ GET /en/about 200 in 494ms (next.js: 402ms, generate-params: 6ms, application-code: 86ms)
+ GET /en/about 200 in 148ms (next.js: 61ms, generate-params: 7ms, application-code: 80ms)
+⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+▲ Next.js 16.3.8 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.14:3000
+✓ Ready in 687ms
+✓ Running next.config.mjs took 27ms
+
+ GET /en/about-us 200 in 1477ms (next.js: 576ms, generate-params: 559ms, application-code: 342ms)
+ GET /en/about 200 in 833ms (next.js: 36ms, generate-params: 685ms, application-code: 113ms)
+ GET /en/about 200 in 100ms (next.js: 7ms, generate-params: 7ms, application-code: 85ms)
+ GET /en/about 200 in 102ms (next.js: 6ms, generate-params: 9ms, application-code: 88ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollHandlerNew focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en/about-us" notFound={{...}} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en/about-us" tree={[...]} params={{locale:"en"}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <link>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+                              dir="ltr"
+                              className="no-js cormorant_garamond_c5f2c3a-module__ytIYhG__variable manrope_30c2185a-mo..."
+-                             suppresshydrationwarning="true"
+-                             data-qb-installed="true"
+                            >
+                      ...
+          ...
+ 

@@ -27,14 +27,21 @@ export function AboutUs({ locale, ui, copy, conversion }: AboutUsProps) {
       <section
         className="about-hero"
         aria-labelledby="about-hero-heading"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(13,17,18,0.72), rgba(13,17,18,0.72)), url('/images/pages/about-us/pyramids.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
       >
+        <Image
+          src="/images/pages/about-us/pyramids.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          quality={70}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            zIndex: 0,
+          }}
+          aria-hidden="true"
+        />
         <div className="about-hero__overlay" aria-hidden="true" />
         <Container className="about-hero__content">
           <p className="eyebrow about-hero__kicker">{eyebrow}</p>
@@ -154,6 +161,7 @@ function AboutChapter({ index, section, ui }: AboutChapterProps) {
                 alt={section.image.alt}
                 fill
                 sizes="(max-width: 768px) 100vw, 45vw"
+                quality={70}
                 style={{ objectFit: "cover" }}
                 priority={index === 0}
               />
@@ -204,3 +212,4 @@ function AboutChapter({ index, section, ui }: AboutChapterProps) {
     </article>
   );
 }
+

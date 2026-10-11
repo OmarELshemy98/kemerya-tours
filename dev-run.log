@@ -10,3 +10,140 @@
 
  GET /en/about 200 in 2.0s (next.js: 791ms, generate-params: 799ms, application-code: 440ms)
  GET /en/about 200 in 136ms (next.js: 7ms, generate-params: 10ms, application-code: 119ms)
+ GET /en/about 200 in 129ms (next.js: 8ms, generate-params: 7ms, application-code: 115ms)
+ GET /en/about 200 in 198ms (next.js: 13ms, generate-params: 0.1ms, application-code: 185ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollHandlerNew focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en/about" notFound={{...}} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en/about" tree={[...]} params={{locale:"en"}} cacheNode={{rsc:{...}, ...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <link>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+                              dir="ltr"
++                             className="no-js cormorant_garamond_c5f2c3a-module__ytIYhG__variable manrope_30c2185a-mo..."
+-                             className="cormorant_garamond_c5f2c3a-module__ytIYhG__variable manrope_30c2185a-module__..."
+                            >
+                      ...
+          ...
+ 
+ GET /en/about 200 in 285ms (next.js: 13ms, generate-params: 15ms, application-code: 257ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollHandlerNew focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en/about" notFound={{...}} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en/about" tree={[...]} params={{locale:"en"}} cacheNode={{rsc:{...}, ...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <link>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+                              dir="ltr"
++                             className="no-js cormorant_garamond_c5f2c3a-module__ytIYhG__variable manrope_30c2185a-mo..."
+-                             className="cormorant_garamond_c5f2c3a-module__ytIYhG__variable manrope_30c2185a-module__..."
+                            >
+                      ...
+          ...
+ 
+ GET /en/categories 200 in 2.2s (next.js: 221ms, generate-params: 1871ms, application-code: 151ms)
+ GET /en/why-partner 200 in 210ms (next.js: 16ms, generate-params: 14ms, application-code: 180ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /en/about-us 200 in 163ms (next.js: 16ms, generate-params: 0.1ms, application-code: 147ms)
+ GET /en/why-partner 200 in 367ms (next.js: 25ms, generate-params: 0.1ms, application-code: 342ms)
+ GET /en/who-we-work-with 200 in 299ms (next.js: 41ms, generate-params: 51ms, application-code: 207ms)
+ GET /en/categories 200 in 478ms (next.js: 18ms, generate-params: 22ms, application-code: 438ms)
+ GET /en/why-partner 200 in 236ms (next.js: 18ms, generate-params: 21ms, application-code: 197ms)
+ GET /en/about-us 200 in 139ms (next.js: 14ms, generate-params: 16ms, application-code: 108ms)
+ GET /en/about-us 200 in 280ms (next.js: 14ms, generate-params: 11ms, application-code: 254ms)
+ GET /en/about 200 in 161ms (next.js: 33ms, generate-params: 14ms, application-code: 113ms)
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+ GET /en/about 200 in 81ms (next.js: 9ms, generate-params: 9ms, application-code: 62ms)
+ GET /en/about-us 200 in 170ms (next.js: 9ms, generate-params: 8ms, application-code: 152ms)
+ GET /en/about 200 in 148ms (next.js: 22ms, generate-params: 7ms, application-code: 119ms)
+ GET /en/about-us 200 in 149ms (next.js: 61ms, generate-params: 12ms, application-code: 75ms)
+✓ Compiled in 555ms
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+ GET /en/about 200 in 503ms (next.js: 157ms, generate-params: 36ms, application-code: 310ms)
+ GET /en/about-us 200 in 501ms (next.js: 307ms, generate-params: 21ms, application-code: 173ms)
+ GET /en/about 200 in 179ms (next.js: 19ms, generate-params: 14ms, application-code: 146ms)
+ GET / 307 in 136ms (next.js: 47ms, application-code: 88ms)
+ GET /en/about 200 in 89ms (next.js: 6ms, generate-params: 9ms, application-code: 75ms)
+ GET / 307 in 64ms (next.js: 7ms, application-code: 57ms)
+ GET /en/about 200 in 85ms (next.js: 5ms, generate-params: 6ms, application-code: 73ms)
+ GET / 307 in 55ms (next.js: 6ms, application-code: 50ms)
+ GET / 307 in 57ms (next.js: 6ms, application-code: 51ms)
+ GET /en/about 200 in 166ms (next.js: 8ms, generate-params: 10ms, application-code: 148ms)
+ GET / 307 in 62ms (next.js: 6ms, application-code: 56ms)
+ GET /en 200 in 827ms (next.js: 42ms, generate-params: 589ms, application-code: 196ms)
+ GET /en 200 in 116ms (next.js: 8ms, generate-params: 8ms, application-code: 100ms)
+ GET /en/about 200 in 92ms (next.js: 5ms, generate-params: 8ms, application-code: 80ms)
+ GET /en/about 200 in 135ms (next.js: 7ms, generate-params: 9ms, application-code: 119ms)
+✓ Compiled in 132ms
+ GET /en/about 200 in 170ms (next.js: 21ms, generate-params: 9ms, application-code: 140ms)
+ GET /en/about-us 200 in 155ms (next.js: 65ms, generate-params: 6ms, application-code: 84ms)
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+✓ Compiled in 126ms
+ GET /en/about 200 in 245ms (next.js: 16ms, generate-params: 12ms, application-code: 217ms)
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+ GET /en/about-us 200 in 246ms (next.js: 70ms, generate-params: 8ms, application-code: 168ms)
+✓ Compiled in 156ms
+ GET /en/about 200 in 228ms (next.js: 19ms, generate-params: 10ms, application-code: 198ms)
+ GET /en/about-us 200 in 150ms (next.js: 17ms, generate-params: 14ms, application-code: 119ms)
+✓ Compiled in 238ms
+ GET /en/about 200 in 163ms (next.js: 13ms, generate-params: 7ms, application-code: 143ms)
+ GET /en/about-us 200 in 160ms (next.js: 56ms, generate-params: 13ms, application-code: 90ms)
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+Image with src "/images/pages/about-us/pyramids.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/images/pages/about-us/pyramids.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/images/pages/about-us/temples.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/images/pages/about-us/nile-cruise.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET /en/about 200 in 99ms (next.js: 6ms, generate-params: 7ms, application-code: 87ms)
+ GET /en/about 200 in 105ms (next.js: 7ms, generate-params: 8ms, application-code: 90ms)
+ GET /en/about 200 in 103ms (next.js: 7ms, generate-params: 6ms, application-code: 90ms)
+ GET /en/about 200 in 116ms (next.js: 6ms, generate-params: 7ms, application-code: 102ms)
+ GET /en/about 200 in 163ms (next.js: 8ms, generate-params: 11ms, application-code: 145ms)
+[?25h

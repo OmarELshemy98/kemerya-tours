@@ -4,6 +4,7 @@ import {
   Noto_Sans_Arabic,
 } from "next/font/google";
 import "../globals.css";
+import { NoJSSwap } from "@/components/NoJSSwap";
 
 const display = Cormorant_Garamond({
   variable: "--font-display",
@@ -30,14 +31,11 @@ export default function HomeLayout({
 }>) {
     return (
     <html lang="en" className={`no-js ${display.variable} ${sans.variable} ${arabic.variable}`}>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');`,
-          }}
-        />
-      </head>
-      <body>{children}</body>
+            <head />
+      <body>
+        <NoJSSwap />
+        {children}
+      </body>
     </html>
   );
 }
