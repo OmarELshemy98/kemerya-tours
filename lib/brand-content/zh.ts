@@ -2,9 +2,9 @@ import type { BrandContent } from "@/lib/brand-content/types";
 
 export const zh: BrandContent = {
   meta: {
-    title: "埃及目的地管理公司与本地旅行合作伙伴 | Kemerya Tours",
+    title: "面向埃及私人之旅的 B2B 旅行合作伙伴 | Kemerya Tours",
     description:
-      "为旅行社、旅游运营商和旅行顾问提供埃及本地合作支持。涵盖私人行程、本地协调及埃及各地的旅行支持。",
+      "总部位于开罗的当地合作伙伴，为旅行公司在埃及协调私人之旅。我们处理埃及方面的接待 — 导游、交通和住宿 — 同时您保留与客户的关系。",
   },
   hero: {
     eyebrow: "B2B旅行合作 · 埃及",

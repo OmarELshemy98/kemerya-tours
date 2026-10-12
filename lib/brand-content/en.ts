@@ -2,9 +2,9 @@
 
 export const en: BrandContent = {
   meta: {
-    title: "Egypt DMC & Local Travel Partner | Kemerya Tours",
+    title: "Egypt B2B Travel Partner for Private Journeys | Kemerya Tours",
     description:
-      "An Egypt-based ground partner for travel agencies, tour operators and travel designers. Private journeys, local coordination and support across Egypt.",
+      "Cairo-based B2B partner for private journeys in Egypt. We handle the ground — guides, transport & stays — while you keep your client relationship.",
   },
   hero: {
     eyebrow: "B2B TRAVEL PARTNERSHIPS · EGYPT",

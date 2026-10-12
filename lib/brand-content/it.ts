@@ -2,9 +2,9 @@ import type { BrandContent } from "@/lib/brand-content/types";
 
 export const it: BrandContent = {
   meta: {
-    title: "DMC in Egitto e partner locale | Kemerya Tours",
+    title: "Partner viaggi B2B per viaggi privati in Egitto | Kemerya Tours",
     description:
-      "Un partner operativo con sede in Egitto per agenzie di viaggio, tour operator e travel designer. Viaggi privati, coordinamento locale e assistenza in tutto il Paese.",
+      "Partner locale con sede al Cairo per le aziende di viaggio. Gestiamo l'aspetto egiziano dei viaggi privati — guide, trasporti e alloggi — mantenendo intatta la relazione con il viaggiatore.",
   },
   hero: {
     eyebrow: "PARTNERSHIP B2B · EGITTO",
