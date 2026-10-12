@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
@@ -30,19 +30,20 @@ export function AboutUs({ locale, ui, copy, conversion }: AboutUsProps) {
       >
         <Container>
           <div className="about-hero__figure">
-            <Image
-              src="/images/pages/about-us/pyramids.jpg"
-              alt=""
-              fill
-              priority
-              sizes="100vw"
-              quality={75}
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-              aria-hidden="true"
-            />
+              <Image
+                src="/images/pages/about-us/about-us-cover-page.png"
+                alt=""
+                fill
+                priority
+                fetchPriority="high"
+                sizes="(max-width: 768px) 100vw, 100vw"
+                quality={75}
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+                aria-hidden="true"
+              />
           </div>
           <div className="about-hero__content">
             <p className="eyebrow about-hero__kicker">{eyebrow}</p>
