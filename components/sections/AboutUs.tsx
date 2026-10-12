@@ -49,7 +49,7 @@ export function AboutUs({ locale, ui, copy, conversion }: AboutUsProps) {
             {title}
           </h1>
           <p className="about-hero__subtitle">{subtitle}</p>
-                    <div className="about-hero__actions">
+          <div className="about-hero__actions">
             <Button
               href={business.partnerCtaUrl}
               variant="gold"
@@ -103,7 +103,7 @@ export function AboutUs({ locale, ui, copy, conversion }: AboutUsProps) {
               </h2>
               <p className="about-cta__description">{conversion.description}</p>
             </div>
-                                  <div className="about-cta__actions">
+            <div className="about-cta__actions">
               <Button
                 href={business.partnerCtaUrl}
                 variant="gold"
