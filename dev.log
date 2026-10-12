@@ -100,3 +100,9 @@ https://react.dev/link/hydration-mismatch
                       ...
           ...
  
+ GET /en/about-us 200 in 134ms (next.js: 23ms, generate-params: 11ms, application-code: 100ms)
+✓ Compiled in 518ms
+ GET /en/about 200 in 182ms (next.js: 12ms, generate-params: 14ms, application-code: 156ms)
+✓ Compiled in 592ms
+ GET /en/about 200 in 127ms (next.js: 9ms, generate-params: 9ms, application-code: 109ms)
+ GET /en/about 200 in 229ms (next.js: 11ms, generate-params: 9ms, application-code: 209ms)
