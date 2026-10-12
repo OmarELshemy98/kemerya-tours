@@ -5,7 +5,6 @@ import {
   Noto_Sans_Arabic,
 } from "next/font/google";
 import "../globals.css";
-import "../styles/legal-pages.css";
 import { business } from "@/data/business";
 import { socialLinks } from "@/data/social";
 import { brandContent } from "@/lib/brand-content";
@@ -23,18 +22,23 @@ const display = Cormorant_Garamond({
   variable: "--font-display",
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+  fallback: ["Georgia", "serif"],
 });
 
 const sans = Manrope({
   variable: "--font-sans",
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  fallback: ["system-ui", "sans-serif"],
 });
 
 const arabic = Noto_Sans_Arabic({
   variable: "--font-arabic",
   subsets: ["arabic"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export function generateStaticParams() {
@@ -133,7 +137,10 @@ export default async function LocaleLayout({
       dir={getDirection(safeLocale)}
       className={`no-js ${display.variable} ${sans.variable} ${arabic.variable}`}
     >
-            <head />
+                  <head>
+        {/* External identity link for social graph / WebMCP */}
+        <link rel="me" href="https://omarelshemy.vercel.app" />
+      </head>
       <body>
         <NoJSSwap />
         {children}

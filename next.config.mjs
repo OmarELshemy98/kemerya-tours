@@ -1,15 +1,10 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: '/:locale/why-kemerya',
-        destination: '/:locale/about-us',
-        permanent: true,
-      },
-    ];
-  },
+  output: 'export',
+
   images: {
+    unoptimized: true,
     qualities: [70, 75, 80],
     remotePatterns: [
       {
