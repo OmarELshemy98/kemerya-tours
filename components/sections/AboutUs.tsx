@@ -180,7 +180,7 @@ function AboutChapter({ index, section, ui }: AboutChapterProps) {
                 src={section.image.src}
                 alt={section.image.alt}
                 fill
-                sizes="(max-width: 768px) 100vw, 45vw"
+                sizes="(max-width: 768px) 220px, 280px"
                 quality={70}
                 style={{ objectFit: "cover" }}
                 priority={index === 0}

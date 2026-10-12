@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { business } from "@/data/business";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -22,15 +23,19 @@ export function Hero({ locale, copy, ui }: HeroProps) {
         <section
       className="hero"
       aria-labelledby="hero-heading"
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(13,17,18,0.72), rgba(13,17,18,0.72)), url('/images/areas-we-support-cards/egypt-travel-packages.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
     >
-            <div className="hero__image" aria-hidden="true" />
+            <div className="hero__image" aria-hidden="true">
+          <Image
+                src="/images/areas-we-support-cards/egypt-travel-packages.webp"
+                alt=""
+                fill
+                priority
+                fetchPriority="high"
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
+                aria-hidden="true"
+              />
+        </div>
       <div
         className="hero__egyptian-gateway"
         aria-hidden="true"
