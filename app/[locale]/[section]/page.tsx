@@ -13,7 +13,7 @@ import { CommercialConfidence } from "@/components/sections/CommercialConfidence
 import { KemeryaAdvantage } from "@/components/sections/KemeryaAdvantage";
 import { KemeryaDifference } from "@/components/sections/KemeryaDifference";
 import { ProgramCapabilities } from "@/components/sections/ProgramCapabilities";
-import { WhoKemerya } from "@/components/sections/WhoKemerya";
+import { AboutUs } from "@/components/sections/AboutUs";
 import { WhyKemerya } from "@/components/sections/WhyKemerya";
 import { BrandPhilosophy } from "@/components/sections/BrandPhilosophy";
 import { WhyPartner } from "@/components/sections/WhyPartner";
@@ -258,7 +258,12 @@ export default async function LocaleSectionPage({
       content = (
         <>
           {copy.aboutUs ? (
-            <WhoKemerya copy={copy.aboutUs} ui={ui} />
+            <AboutUs
+                locale={safeLocale}
+                ui={ui}
+                copy={copy.aboutUs}
+                conversion={copy.conversion}
+              />
           ) : (
             <WhyKemerya copy={copy.whyKemerya} />
           )}
@@ -335,6 +340,7 @@ export default async function LocaleSectionPage({
 
       const sectionTitle = getSectionTitle(copy, section);
   const hasOwnHero = Boolean(
+    section === "about-us" ||
     (section === "capabilities" && copy.capabilitiesPage) ||
     (section === "why-partner" && copy.whyPartnerPage) ||
     (section === "who-we-work-with" && copy.whyWeWorkWithPage),
