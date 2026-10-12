@@ -80,6 +80,7 @@ export const en: BrandContent = {
       {
         title: "Working With International Travel Businesses",
         content: "Every travel business has its own clients, standards and way of designing trips. An independent travel advisor may need arrangements for one private itinerary, while a tour operator may be developing a broader program or exploring several Egypt experiences. Kemerya Tours works with travel businesses to discuss the Egypt services relevant to their requests. We understand the importance of a clear working relationship in which the partner's brief, client requirements and agreed scope guide the planning conversation. Whether you are preparing a specific itinerary or exploring a potential business relationship, the conversation can begin with the program you have in mind.",
+        image: { src: "/images/pages/who-work-with-kemerya-tours/Tour Operators and Groups.jpg", alt: "Tour operators and travel advisors coordinating Egypt programs" },
       }
     ],
   },

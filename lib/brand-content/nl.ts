@@ -80,6 +80,7 @@ export const nl: BrandContent = {
       {
         title: "Werk samen met internationale reisbedrijven",
         content: "Elk reisbedrijf heeft zijn eigen cliënten, standaarden en manier van reizen te ontwerpen. Een onafhankelijke reisadviseur kan afspraken nodig hebben voor een privé-itinerary, terwijl een tour-operator een breders programma ontwikkelt of meerdere Egypte-ervaringen verkent. Kemerya Tours werkt met reisbedrijven om de relevante Egypte-diensten voor hun verzoeken te bespreken. Wij begrijpen het belang van een heldere werkrelatie waarbij het brief van de partner, de cliëntvereisten en het overeengekomen bereik de planungsconversatie leiden. Of u nu een specifiek itinerary voorbereidt of een potentiële zakelijke relatie verkent, het gesprek kan beginnen met het programma dat u in gedachten heeft.",
+        image: { src: "/images/pages/who-work-with-kemerya-tours/Tour Operators and Groups.jpg", alt: "Reisoperators en reisadviseurs die reisprogramma's coördineren in Egypte" },
       }
     ],
   },

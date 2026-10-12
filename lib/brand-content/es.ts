@@ -80,6 +80,7 @@ export const es: BrandContent = {
       {
         title: "Trabajando con empresas de viaje internacionales",
         content: "Cada empresa de viaje tiene sus propios clientes, estándares y forma de diseñar viajes. Un asesor de viajes independiente puede necesitar arreglos para un itinerario privado, mientras que un operador de tours puede estar desarrollando un programa más amplio o explorando varias experiencias en Egipto. Kemerya Tours trabaja con empresas de viaje para discutir los servicios de Egipto relevantes para sus solicitudes. Entendemos la importancia de una relación de trabajo clara en la que el brief del socio, los requisitos del cliente y el alcance acordado guíen la conversación de planificación. Ya sea que estés preparando un itinerario específico o explorando una posible relación comercial, la conversación puede comenzar con el programa que tienes en mente.",
+        image: { src: "/images/pages/who-work-with-kemerya-tours/Tour Operators and Groups.jpg", alt: "Operadores de viajes y asesores de viajes coordinando programas en Egipto" },
       }
     ],
   },

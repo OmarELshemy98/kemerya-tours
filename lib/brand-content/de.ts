@@ -80,6 +80,7 @@ export const de: BrandContent = {
       {
         title: "Mit internationalen Reiseunternehmen arbeiten",
         content: "Jedes Reiseunternehmen hat seine eigenen Kunden, Standards und seine Art, Reisen zu gestalten. Ein unabhängiger Reiseberater kann Arrangements für eine private Reiseroute benötigen, während ein Tour-Operator ein umfassenderes Programm entwickelt oder mehrere Ägypten-Erlebnisse erkundet. Kemerya Tours arbeitet mit Reiseunternehmen zusammen, um die relevanten ägyptischen Dienstleistungen für ihre Anfragen zu besprechen. Wir verstehen die Bedeutung einer klaren Arbeitsbeziehung, in der die Anforderungen des Partners, die Kundenanforderungen und der vereinbarte Umfang die Planungsgespräche leiten. Ob Sie ein spezifisches Reiserouten vorbereiten oder ein potenzielles geschäftliches Verhältnis erkunden, das Gespräch kann mit dem Programm beginnen, das Sie im Sinn haben.",
+        image: { src: "/images/pages/who-work-with-kemerya-tours/Tour Operators and Groups.jpg", alt: "Reiseversteller und Reiseberater, die Reiseprogramme in Ägypten koordinieren" },
       }
     ],
   },

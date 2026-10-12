@@ -79,6 +79,7 @@ export const zh: BrandContent = {
       {
         title: "与国际旅行企业合作",
         content: "每个旅行企业都有自己的客户、标准和旅行设计方式。一位独立的旅行顾问可能需要为一个私人的行程安排服务，而一位旅游运营商可能正在开发一个更广泛的项目或探索多个埃及体验。Kemerya Tours 与旅行企业合作，讨论与他们请求相关的埃及服务。我们理解明确的工作关系的重要性，其中合作伙伴的要求、客户要求和约定的范围指导规划对话。无论您是准备一个具体的行程还是探索潜在的商业关系，都可以从您脑海中的项目开始对话。",
+        image: { src: "/images/pages/who-work-with-kemerya-tours/Tour Operators and Groups.jpg", alt: "旅行社运营商和旅行顾问协调埃及旅行项目" },
       }
     ],
   },

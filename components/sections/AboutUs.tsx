@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -23,40 +23,42 @@ export function AboutUs({ locale, ui, copy, conversion }: AboutUsProps) {
 
   return (
     <>
-      {/* ── Hero ── */}
+      {/* ── Hero (image above, text below — no overlay) ── */}
       <section
         className="about-hero"
         aria-labelledby="about-hero-heading"
       >
-        <Image
-          src="/images/pages/about-us/pyramids.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          quality={70}
-          style={{
-            objectFit: "cover",
-            objectPosition: "center",
-            zIndex: 0,
-          }}
-          aria-hidden="true"
-        />
-        <div className="about-hero__overlay" aria-hidden="true" />
-        <Container className="about-hero__content">
-          <p className="eyebrow about-hero__kicker">{eyebrow}</p>
-          <h1 id="about-hero-heading" className="about-hero__title">
-            {title}
-          </h1>
-          <p className="about-hero__subtitle">{subtitle}</p>
-          <div className="about-hero__actions">
-            <Button
-              href={business.partnerCtaUrl}
-              variant="gold"
-              aria-label={ui.becomePartnerKemeryaTours}
-            >
-              {cta}
-            </Button>
+        <Container>
+          <div className="about-hero__figure">
+            <Image
+              src="/images/pages/about-us/pyramids.jpg"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              quality={75}
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
+              aria-hidden="true"
+            />
+          </div>
+          <div className="about-hero__content">
+            <p className="eyebrow about-hero__kicker">{eyebrow}</p>
+            <h1 id="about-hero-heading" className="about-hero__title">
+              {title}
+            </h1>
+            <p className="about-hero__subtitle">{subtitle}</p>
+            <div className="about-hero__actions">
+              <Button
+                href={business.partnerCtaUrl}
+                variant="gold"
+                aria-label={ui.becomePartnerKemeryaTours}
+              >
+                {cta}
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
@@ -142,10 +144,28 @@ type AboutChapterProps = {
 
 function AboutChapter({ index, section, ui }: AboutChapterProps) {
   const [open, setOpen] = useState(false);
+  const [hasOverflow, setHasOverflow] = useState(false);
+  const paragraphRef = useRef<HTMLParagraphElement>(null);
   const hasItems = !!(section.items && section.items.length);
   const contentId = `about-chapter-${index}-content`;
   const readMoreLabel = ui.readMore ?? "Read more";
   const readLessLabel = ui.readLess ?? "Show less";
+
+  useEffect(() => {
+    const el = paragraphRef.current;
+    if (!el) return;
+    const checkOverflow = () => {
+      const style = getComputedStyle(el);
+      const lineHeight = parseFloat(style.lineHeight) || 1.5;
+      const clampHeight = Math.round(lineHeight * 3);
+      setHasOverflow(el.scrollHeight > clampHeight + 1);
+    };
+    checkOverflow();
+    window.addEventListener("resize", checkOverflow);
+    return () => window.removeEventListener("resize", checkOverflow);
+  }, []);
+
+  const isCollapsed = !open && hasOverflow;
 
   return (
     <article
@@ -177,12 +197,13 @@ function AboutChapter({ index, section, ui }: AboutChapterProps) {
             <div
               id={contentId}
               className={`about-section__content-wrapper ${
-                open ? "is-expanded" : "is-collapsed"
+                isCollapsed ? "is-collapsed" : "is-expanded"
               }`}
             >
               <p
+                ref={paragraphRef}
                 className={`about-section__content ${
-                  open ? "is-expanded" : "is-clamped"
+                  isCollapsed ? "is-clamped" : "is-expanded"
                 }`}
               >
                 {section.content}
@@ -197,15 +218,17 @@ function AboutChapter({ index, section, ui }: AboutChapterProps) {
                 </ul>
               )}
             </div>
-            <button
-              type="button"
-              className={`about-section__toggle ${READ_TOGGLE_CLASSES}`}
-              aria-controls={contentId}
-              aria-expanded={open}
-              onClick={() => setOpen(!open)}
-            >
-              {open ? readLessLabel : readMoreLabel}
-            </button>
+            {hasOverflow && (
+              <button
+                type="button"
+                className={`about-section__toggle ${READ_TOGGLE_CLASSES}`}
+                aria-controls={contentId}
+                aria-expanded={open}
+                onClick={() => setOpen(!open)}
+              >
+                {open ? readLessLabel : readMoreLabel}
+              </button>
+            )}
           </div>
         </div>
       </Container>

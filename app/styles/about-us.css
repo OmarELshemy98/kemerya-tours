@@ -1,33 +1,25 @@
 /* === About Us page styles === */
 
-/* ── Hero ── */
+/* ── Hero (image above, text below — no overlay) ── */
 .about-hero {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  isolation: isolate;
-  padding: 0 0 5rem;
+  padding: var(--space-xl, 4rem) 0;
 }
 
-.about-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(13, 17, 18, 0.92) 0%,
-    rgba(13, 17, 18, 0.62) 60%,
-    rgba(13, 17, 18, 0.38) 100%
-  );
-  z-index: 1;
+.about-hero__figure {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  overflow: hidden;
+}
+
+.about-hero__figure img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-hero__content {
-  position: relative;
-  z-index: 2;
   max-width: 42rem;
+  margin: 1.5rem auto 0;
 }
 
 .about-hero__kicker {
@@ -43,7 +35,7 @@
   font-family: var(--font-display, "Cormorant Garamond", serif);
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 600;
-  color: var(--color-ivory, #f8f4e9);
+  color: var(--color-charcoal, #171b1a);
   margin: 0 0 1.5rem;
   line-height: 1.1;
 }
@@ -51,15 +43,14 @@
 .about-hero__subtitle {
   font-size: 1.125rem;
   line-height: 1.6;
-  color: var(--color-sand, #c88727);
+  color: var(--color-slate, #4a5568);
   margin: 0 0 2rem;
 }
 
-.about-hero__btn {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.about-hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* ── Intro ── */
@@ -199,19 +190,23 @@ html[dir="rtl"] .about-section__item::before {
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .about-hero {
-    min-height: 80vh;
-    padding: 0 0 3rem;
+    padding: 2.5rem 0;
+  }
+
+  .about-hero__figure {
+    aspect-ratio: 4 / 3;
   }
 
   .about-hero__content {
     max-width: 100%;
+    margin-top: 1.25rem;
   }
 
   .about-sections {
     padding: 3rem 0;
   }
 
-    .about-section__grid {
+  .about-section__grid {
     gap: 1.5rem;
   }
 
@@ -224,13 +219,12 @@ html[dir="rtl"] .about-section__item::before {
     align-items: stretch;
   }
 
-    .about-cta__actions .btn {
+  .about-cta__actions .btn {
     width: 100%;
     text-align: center;
   }
 }
-
-/* ── Content toggle (Read more) ── */
+/* Content toggle (Read more) */
 
 /* Collapsed: clamp the chapter paragraph to three lines */
 .about-section__content.is-clamped {
@@ -251,7 +245,7 @@ html[dir="rtl"] .about-section__item::before {
   object-fit: cover;
 }
 
-/* Read more toggle — gold pill matching the design-system Button */
+/* Read more toggle */
 .about-section__toggle {
   align-self: flex-start;
   margin-top: 0.25rem;
