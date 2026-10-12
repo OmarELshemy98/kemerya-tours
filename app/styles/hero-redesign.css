@@ -200,3 +200,72 @@
     color: var(--color-white);
   font-weight: 700;
 }
+
+/* === Page hero (shared full-bleed hero with bg image + dark overlay) ===
+   Matches the .about-hero language so content pages start consistently.     */
+.page-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 0 0 5rem;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 17, 18, 0.92) 0%,
+    rgba(13, 17, 18, 0.62) 60%,
+    rgba(13, 17, 18, 0.38) 100%
+  );
+  z-index: 1;
+}
+
+.page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 17, 18, 0.92) 0%,
+    rgba(13, 17, 18, 0.62) 60%,
+    rgba(13, 17, 18, 0.38) 100%
+  );
+  z-index: 1;
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 42rem;
+}
+
+.page-hero__title {
+  font-family: var(--font-display, "Cormorant Garamond", serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  color: var(--color-ivory, #f8f4e9);
+  margin: 0 0 1.5rem;
+  line-height: 1.1;
+}
+
+.page-hero__subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-sand, #c88727);
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 80vh;
+    padding: 0 0 3rem;
+  }
+
+  .page-hero__content {
+    max-width: 100%;
+  }
+}

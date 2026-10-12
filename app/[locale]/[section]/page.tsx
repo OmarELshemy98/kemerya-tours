@@ -1,6 +1,7 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LocaleSiteShell } from "@/components/layout/LocaleSiteShell";
+import { PageHero } from "@/components/sections/PageHero";
 import { B2BCredibility } from "@/components/sections/B2BCredibility";
 import { B2BFaq } from "@/components/sections/B2BFaq";
 import { B2BContactForm } from "@/components/sections/B2BContactForm";
@@ -332,11 +333,16 @@ export default async function LocaleSectionPage({
       notFound();
   }
 
-    const sectionTitle = getSectionTitle(copy, section);
+      const sectionTitle = getSectionTitle(copy, section);
+  const hasOwnHero = Boolean(
+    (section === "capabilities" && copy.capabilitiesPage) ||
+    (section === "why-partner" && copy.whyPartnerPage) ||
+    (section === "who-we-work-with" && copy.whyWeWorkWithPage),
+  );
 
   return (
     <LocaleSiteShell locale={safeLocale} copy={copy} ui={ui}>
-      <h1 className="sr-only">{sectionTitle}</h1>
+      {!hasOwnHero && <PageHero title={sectionTitle} />}
       {content}
     </LocaleSiteShell>
   );
