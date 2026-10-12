@@ -31,7 +31,7 @@
   "d1_databases": [
     {
       "binding": "NEXT_TAG_CACHE_D1",
-      "database_id": "<DATABASE_ID>",
+      "database_id": "744f834a-875f-42fd-9acc-eef3d2466594",
       "database_name": "kemerya-tours-next-tag-cache"
     }
   ]
