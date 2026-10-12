@@ -1,3 +1,9 @@
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+
+// Initialize OpenNext Cloudflare dev integration for local development
+// This enables Cloudflare bindings (KV, R2, DO, D1) in next dev
+initOpenNextCloudflareForDev();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async redirects() {
