@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -31,6 +31,8 @@ type FooterProps = {
     policy: string;
     terms: string;
     developer: string;
+    developerName: string;
+    developerSuffix?: string;
     business: {
       headline: string;
       address: string;
@@ -56,7 +58,7 @@ export function Footer({ locale, copy, ui, nav }: FooterProps) {
       </div>
       <Container>
         {/* Closing CTA — premium architectural centerpiece */}
-                <div className={`footer-closing-cta closing-cta ${ctaRevealed ? "revealed" : ""}`} ref={ctaRef}>
+        <div className="footer-closing-cta closing-cta " ref={ctaRef}>
           <h2 className="closing-cta__headline">{copy.closingCta.headline}</h2>
           <p className="closing-cta__description">{copy.closingCta.description}</p>
           <Link href={`/${locale}/contact`} className="button button--primary closing-cta__primary">
@@ -125,6 +127,16 @@ export function Footer({ locale, copy, ui, nav }: FooterProps) {
 
           <p className="footer-credit neon-text">
             © {currentYear} {business.name}. {copy.developer}
+            <a
+              href="https://omarelshemy.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-credit__link"
+              aria-label="Visit Omar Elshemy portfolio"
+            >
+              {copy.developerName}
+            </a>
+            {copy.developerSuffix ?? ""}
           </p>
         </div>
       </Container>

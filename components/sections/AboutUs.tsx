@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
@@ -23,43 +23,41 @@ export function AboutUs({ locale, ui, copy, conversion }: AboutUsProps) {
 
   return (
     <>
-      {/* ── Hero (image above, text below — no overlay) ── */}
+      {/* ── Hero (full-bleed bg image + dark overlay + overlaid text) ── */}
       <section
         className="about-hero"
         aria-labelledby="about-hero-heading"
       >
-        <Container>
-          <div className="about-hero__figure">
-              <Image
-                src="/images/pages/about-us/about-us-cover-page.png"
-                alt=""
-                fill
-                priority
-                fetchPriority="high"
-                sizes="(max-width: 768px) 100vw, 100vw"
-                quality={75}
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                }}
-                aria-hidden="true"
-              />
-          </div>
-          <div className="about-hero__content">
-            <p className="eyebrow about-hero__kicker">{eyebrow}</p>
-            <h1 id="about-hero-heading" className="about-hero__title">
-              {title}
-            </h1>
-            <p className="about-hero__subtitle">{subtitle}</p>
-            <div className="about-hero__actions">
-              <Button
-                href={business.partnerCtaUrl}
-                variant="gold"
-                aria-label={ui.becomePartnerKemeryaTours}
-              >
-                {cta}
-              </Button>
-            </div>
+        <Image
+          src="/images/pages/about-us/about-us-cover-page.png"
+          alt=""
+          fill
+          priority
+          fetchPriority="high"
+          sizes="(max-width: 768px) 100vw, 100vw"
+          quality={75}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            zIndex: 0,
+          }}
+          aria-hidden="true"
+        />
+        <div className="about-hero__overlay" aria-hidden="true" />
+        <Container className="about-hero__content">
+          <p className="eyebrow about-hero__kicker">{eyebrow}</p>
+          <h1 id="about-hero-heading" className="about-hero__title">
+            {title}
+          </h1>
+          <p className="about-hero__subtitle">{subtitle}</p>
+          <div className="about-hero__actions">
+            <Button
+              href={business.partnerCtaUrl}
+              variant="gold"
+              aria-label={ui.becomePartnerKemeryaTours}
+            >
+              {cta}
+            </Button>
           </div>
         </Container>
       </section>

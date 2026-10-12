@@ -1,4 +1,4 @@
-﻿export const locales = ["en", "ar", "fr", "it", "es", "de", "pt", "nl", "zh"] as const;
+export const locales = ["en", "ar", "fr", "it", "es", "de", "pt", "nl", "zh"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -26,7 +26,8 @@ export const translations = {
       contactTitle: "Contact",
       policy: "Privacy Policy",
       terms: "Terms of Service",
-      developer: "Designed and developed by Omar Elshemy",
+      developer: "Designed and developed by ",
+      developerName: "Omar Elshemy",
       business: {
         headline: "Egypt-based coordination for private journeys.",
         address: "250 Aboul Houl Street, Haram, Giza, Egypt",
@@ -56,7 +57,8 @@ export const translations = {
       contactTitle: "اتصل بنا",
       policy: "سياسة الخصوصية",
       terms: "شروط الخدمة",
-      developer: "صمم وطور بواسطة عمر الشيمي",
+      developer: "صمم وطور بواسطة ",
+      developerName: "عمر الشيمي",
       business: {
         headline: "شريكك الموثوق في مصر للرحلات الخاصة.",
         address: "شارع أبو الهول 250، الهرم، الجيزة، مصر",
@@ -87,7 +89,8 @@ export const translations = {
       contactTitle: "Contact",
       policy: "Politique de Confidentialité",
       terms: "Conditions d'Utilisation",
-      developer: "Conçu et développé par Omar Elshemy",
+      developer: "Conçu et développé par ",
+      developerName: "Omar Elshemy",
       business: {
         headline:
           "Coordination égyptienne pour des voyages privés.",
@@ -119,7 +122,8 @@ export const translations = {
       contactTitle: "Contatti",
       policy: "Politica sulla Privacy",
       terms: "Termini di Servizio",
-      developer: "Progettato e sviluppato da Omar Elshemy",
+      developer: "Progettato e sviluppato da ",
+      developerName: "Omar Elshemy",
       business: {
         headline: "Il tuo partner egiziano affidabile per viaggi privati.",
         address: "Via Aboul Houl 250, Haram, Giza, Egitto",
@@ -150,7 +154,8 @@ export const translations = {
       contactTitle: "Contacto",
       policy: "Política de Privacidad",
       terms: "Términos de Servicio",
-      developer: "Diseñado y desarrollado por Omar Elshemy",
+      developer: "Diseñado y desarrollado por ",
+      developerName: "Omar Elshemy",
       business: {
         headline: "Tu socio egipcio de confianza para viajes privados.",
         address: "Calle Aboul Houl 250, Haram, Guiza, Egipto",
@@ -181,7 +186,8 @@ export const translations = {
       contactTitle: "Kontakt",
       policy: "Datenschutzrichtlinie",
       terms: "Nutzungsbedingungen",
-      developer: "Entworfen und entwickelt von Omar Elshemy",
+      developer: "Entworfen und entwickelt von ",
+      developerName: "Omar Elshemy",
       business: {
         headline: "Ihr verlässlicher ägyptischer Partner für private Reisen.",
         address: "Aboul Houl Straße 250, Haram, Gizeh, Ägypten",
@@ -212,7 +218,8 @@ export const translations = {
       contactTitle: "Contato",
       policy: "Política de Privacidade",
       terms: "Termos de Serviço",
-      developer: "Desenhado e desenvolvido por Omar Elshemy",
+      developer: "Desenhado e desenvolvido por ",
+      developerName: "Omar Elshemy",
       business: {
         headline: "Seu parceiro egípcio confiável para viagens privadas.",
         address: "Rua Aboul Houl 250, Haram, Gizé, Egito",
@@ -243,7 +250,8 @@ export const translations = {
       contactTitle: "Contact",
       policy: "Privacybeleid",
       terms: "Servicevoorwaarden",
-      developer: "Ontworpen en ontwikkeld door Omar Elshemy",
+      developer: "Ontworpen en ontwikkeld door ",
+      developerName: "Omar Elshemy",
       business: {
         headline: "Uw vertrouwde Egyptische partner voor privéreizen.",
         address: "Aboul Houlstraat 250, Haram, Gizeh, Egypte",
@@ -274,7 +282,9 @@ export const translations = {
       contactTitle: "联系",
       policy: "隐私政策",
       terms: "服务条款",
-      developer: "由 Omar Elshemy 设计与开发",
+      developer: "由 ",
+      developerName: "Omar Elshemy",
+      developerSuffix: " 设计与开发",
       business: {
         headline: "您值得信赖的埃及私人旅行伙伴。",
         address: "阿布尔·胡尔街 250 号，哈拉姆，吉萨，埃及",
